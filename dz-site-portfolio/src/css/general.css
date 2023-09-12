@@ -1,0 +1,16 @@
+html,
+body {
+    @apply text-base font-effra font-normal antialiased;
+}
+
+#gatsby-focus-wrapper::before {
+    content: "";
+    height: 84px;
+    @apply w-full block;
+}
+
+@screen lg {
+    #gatsby-focus-wrapper::before {
+        height: 92px;
+    }
+}

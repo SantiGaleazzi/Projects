@@ -1,0 +1,44 @@
+ul.has-dots li {
+    @apply relative;
+}
+
+ul.has-dots li:last-of-type::after {
+    @apply hidden;
+}
+
+ul li.has-children::before {
+    content: "";
+    width: 13px;
+    height: 8px;
+    background-image: url('../images/down-arrow.png');
+    @apply leading-none absolute top-4 -right-2 transform -translate-y-1/2 -translate-x-1/2;
+}
+
+ul.has-legacy-dots>li:nth-last-child(2)::after {
+    @apply hidden;
+}
+
+ul.has-legacy-dots > li.is-contact::after {
+    @apply hidden;
+}
+
+@screen md {
+
+    ul li.has-children::before {
+        content: "";
+        width: 13px;
+        height: 8px;
+        background-image: url('../images/down-arrow.png');
+        @apply leading-none absolute top-1/2 -right-2 -translate-y-1/2 -translate-x-1/2;
+    }
+
+    ul.has-legacy-dots>li::after {
+        content: "";
+        @apply w-1 h-1 bg-digi-legacy rounded-full absolute top-1/2 -right-1 -translate-y-1/2 translate-x-1/2;
+    }
+
+    ul.has-dots>li::after {
+        content: "";
+        @apply w-1 h-1 bg-digi-blue rounded-full absolute top-1/2 -translate-y-1/2 -right-5;
+    }
+}
