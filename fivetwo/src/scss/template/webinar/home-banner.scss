@@ -1,0 +1,125 @@
+.webinar-banner {
+    padding: 15rem 0rem 18rem;
+    margin-bottom: 3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    overflow-x: hidden;
+
+    @include breakpoint(medium only) {
+        padding: 7rem 0rem
+    }
+
+    @include breakpoint(small down) {
+        padding: 5rem 2rem 0rem;
+        overflow-x: visible;
+        text-align: center;
+    }
+
+    // Side Imagen
+    &__aside-image-container {
+        position: relative;
+
+        @include breakpoint(small down) {
+            text-align: center;
+        }
+
+        .webinar-aside-image {
+            bottom: -17rem;
+            right: 3rem;
+            position: absolute;
+
+            @include breakpoint(medium only) {
+               right: initial;
+               bottom: initial;
+               position: relative;
+            }
+
+            @include breakpoint(small down) {
+                max-width: 25rem;
+                bottom: -2rem;
+                right: initial;
+                text-align: center;
+                margin: 0rem auto;
+                position: relative;
+                
+            }
+        }
+    }
+
+    // Left Top Image
+    img.intro-left-top-img {
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+        position: absolute;
+    }
+
+    // Title
+    &__title {
+        z-index: 1;
+        color: $white;
+        font-size: 6rem;
+        position: relative;
+        line-height: 6.2rem;
+        font-family: 'PT Sans', sans-serif;
+
+        @include breakpoint(medium only) {
+            font-size: 4.5rem;
+            line-height: 4.8rem;
+        }
+
+        @include breakpoint(small down) {
+            font-size: 3.1rem;
+            line-height: 3.6rem;
+            font-weight: 600;
+        }
+    }
+
+    // Description
+    &__description {
+        color: $white;
+        font-size: 2rem;
+        line-height: 3.6rem;
+        margin-bottom: 2rem;
+        font-family: 'Roboto', sans-serif;
+
+
+        @include breakpoint(medium down) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    // Link
+    &__link {
+        text-align: center;
+        color: #26466c;
+        font-size: 2.4rem;
+        line-height: 1;
+        padding: 1.2rem 4rem;
+        display: inline-block;
+        font-weight: bold;
+        font-family: 'PT Sans', sans-serif;
+        background: #ffac46;
+        border-radius: 999px;
+        background: -moz-linear-gradient(left,  #ffac46 0%, #e2ad5b 100%);
+        background: -webkit-linear-gradient(left,  #ffac46 0%,#e2ad5b 100%);
+        background: linear-gradient(to right,  #ffac46 0%,#e2ad5b 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac46', endColorstr='#e2ad5b',GradientType=1 );
+        -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2);
+
+        &:hover {
+            color: inherit;
+        }
+
+        @include breakpoint(small down) {
+            width: 100%;
+            font-size: 2rem;
+            max-width: 31rem;
+            padding: 1.2rem 2.5rem;
+        }
+    }
+}

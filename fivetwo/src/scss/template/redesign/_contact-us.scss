@@ -1,0 +1,216 @@
+.contact-us-section{
+	width: 100%;
+}
+
+.heading-contact-us{
+	width: 100%;
+	height: auto;
+	background: #001a38;
+	padding: 70px 30px 80px;
+	border-bottom-right-radius: 70px;
+	font-family: "Roboto";
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 60px;
+	line-height: 1.2;
+	text-align: center;
+	box-shadow: 0px 8px 21.15px 23.85px rgba(0, 0, 0, 0.08); 
+}
+
+.contact-us-container{
+	max-width: 1175px;
+	margin: auto;
+	padding: 94px 20px 94px 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.copy-contact-us{
+	font-family: "Roboto Condensed";
+	font-size: 18px;
+	line-height: 1.2;
+	color: #000000;
+	max-width: 385px;
+	margin-right: 30px;
+}
+
+.copy-contact-us p{
+	font-family: "Roboto Condensed";
+	font-size: 18px;
+	line-height: 1.2;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.form-style-container{
+	max-width: 560px;
+	width: 100%;
+	background: #e4e6e8;
+	border-radius: 24px;
+	padding: 33px 36px 13px 36px;
+	box-shadow: 0px 8px 40.5px 4.5px rgba(0, 0, 0, 0.08); 
+}
+
+.form-style-container input{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #232323;
+	line-height: 1.2;
+	height: 38px;
+	padding: 3px 15px !important;
+	border-radius: 4px;
+	border: none !important;
+	margin: 0px !important;
+}
+
+.form-style-container input::placeholder{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #232323;
+	line-height: 1.2;
+	opacity: 1;
+	margin: 0px !important;
+}
+
+.form-style-container select{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #232323;
+	line-height: 1.2;
+	height: 38px;
+	padding: 3px 15px !important;
+	border-radius: 4px;
+	border: none !important;
+	margin: 0px !important;
+}
+
+.form-style-container select::placeholder{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #232323;
+	line-height: 1.2;
+	border-radius: 4px;
+	opacity: 1;
+	margin: 0px !important;
+}
+
+.form-style-container textarea{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #232323;
+	line-height: 1.2;
+	height: 150px;
+	padding: 10px 15px !important;
+	border-radius: 4px;
+	border: none !important;
+	margin: 0px !important;
+}
+
+
+.form-style-container textarea::placeholder{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #232323;
+	line-height: 1.2;
+	border-radius: 4px;
+	opacity: 1;
+	margin: 0px !important;
+}
+
+.form-style-container .gform_footer input{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #FFFFFF;
+	line-height: 1.2 !important;
+	height: 50px;
+	padding: 15px 35px !important;
+	border-radius: 10px !important;
+	background: #da10c9;
+	margin: auto;
+}
+
+.form-style-container .gfield{
+	margin-top: 0px !important;
+	margin-bottom: 20px !important;
+	padding-right: 0px !important;
+}
+
+.form-style-container .gform_footer{
+	margin-top: 25px !important;
+	text-align: center;
+}
+
+.page-template-template-contact header{
+	box-shadow: 0px 8px 40.5px 4.5px rgba(0, 0, 0, 0.08);
+}
+
+.form-style-container .gform_confirmation_message{
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px !important;
+	color: #232323;
+	line-height: 1.2;
+}
+
+@media screen and (max-width: 1024px){
+	.form-style-container .gfield{
+		margin-top: 0px !important;
+		margin-bottom: 15px !important;
+		padding-right: 0px !important;
+	}
+
+	.form-style-container .gform_footer{
+		margin-top: 30px !important;
+	}
+
+	.contact-us-container{
+		padding: 94px 30px 94px;
+	}
+
+	.form-style-container .name_first{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.contact-us-container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.copy-contact-us{
+		margin: 0px auto 30px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.contact-us-container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.copy-contact-us{
+		margin: 0px auto 30px;
+	}	
+}
+
+@media screen and (max-width: 640px){
+	.heading-contact-us{
+		font-size: 52px;
+		padding: 40px 30px 50px;
+	}
+
+	.contact-us-container {
+	    padding: 74px 30px 74px;
+	}
+
+	.form-style-container{
+		padding: 43px 26px 13px 26px;
+	}
+
+	.form-style-container .name_first {
+	    margin-top: 0px !important;
+	    margin-bottom: 15px !important;
+	}
+}

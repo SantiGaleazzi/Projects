@@ -1,0 +1,131 @@
+.webinar-widget {
+    margin: 3rem 0rem 2rem;
+    padding: 0rem 2rem;
+    
+    .grid-container {
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .webinar-widget-content {
+            align-items: stretch;
+            display: flex;
+            align-items: center;
+    
+            // Header
+            .webinar-widget-head {
+                flex: 1 1 0%;
+                position: relative;
+                padding: 0px 0rem 0px 1.5rem;
+
+                @include breakpoint(medium down) {
+                    width: 100%;
+                    padding-left: 0px;
+                    text-align: center;
+                    padding-top: 4rem;
+                }
+    
+                // Title
+                &__title {
+                    color: $white;
+                    font-weight: normal;
+                    font-family: 'PT Sans', sans-serif;
+                    font-size: 3.2rem;
+                    line-height: 3.5rem;
+                    margin-bottom: 1.2rem;
+
+                    @include breakpoint(medium down) {
+                        font-size: 3.5rem;
+                        line-height: 3.8rem;
+                    }
+                }
+    
+                // Description
+                &__description {
+                    color: $white;
+                    font-size: 2rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 0rem;
+                }
+            }
+
+            .webinar-widget-body {
+                
+                display: flex;
+                padding: 0px 2rem;
+                position: relative;
+                align-items: flex-end;
+
+                @include breakpoint(medium down) {
+                    display: none;
+                }
+
+                // Image
+                &__image {
+                    left: 50%;
+                    bottom: 0rem;
+                    transform: translateX(-50%);
+                    position: relative;
+
+                    @include breakpoint(medium down) {
+                        margin-top: 3rem;
+                    }
+                }
+
+                
+            }
+
+            // Footer
+            .webinar-widget-footer {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+                padding: 2rem 1.5rem;
+
+                @include breakpoint(medium down) {
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 5rem;
+                    flex-direction: column-reverse;
+                }
+
+                // Button
+                &__button {
+                    text-align: center;
+                    color: #26466c;
+                    font-size: 2.4rem;
+                    line-height: 1;
+                    padding: 1.2rem 4rem;
+                    display: inline-block;
+                    font-weight: bold;
+                    font-family: 'PT Sans', sans-serif;
+                    background: #ffac46;
+                    border-radius: 999px;
+                    background: -moz-linear-gradient(left,  #ffac46 0%, #e2ad5b 100%);
+                    background: -webkit-linear-gradient(left,  #ffac46 0%,#e2ad5b 100%);
+                    background: linear-gradient(to right,  #ffac46 0%,#e2ad5b 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac46', endColorstr='#e2ad5b',GradientType=1 );
+                    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2);
+                    -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2);
+                    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2);
+
+                    &:hover {
+                        color: inherit;
+                    }
+
+                    @include breakpoint(medium down) {
+                        width: 100%;
+                        max-width: 31rem;
+                        font-size: 1.8rem;
+                        padding: 1.5rem 3.5rem;
+                    }
+                }
+            }
+    
+        }
+    }
+
+    
+}

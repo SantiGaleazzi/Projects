@@ -1,0 +1,39 @@
+.widget_product_categories
+
+    &:focus
+        @apply outline-none #{!important}
+
+    // Title
+    h2.widgettitle
+        @apply hidden
+
+    // Custom Select
+    span.select2
+
+        &.select2-container--focus
+           
+            &:focus
+                @apply outline-none
+        
+        span.selection
+
+            span.select2-selection
+                @apply h-auto text-xs font-medium tracking-wider pl-4 pr-10 py-2 bg-gray-300 border-none uppercase rounded relative cursor-pointer
+
+                &::after
+                    content: '\f078'
+                    font-family: 'Font Awesome 5 Free'
+                    @apply text-xs font-bold absolute right-4 top-2 transition duration-100 ease-in-out
+
+                span.select2-selection__rendered
+                    @apply leading-normal px-0
+
+                    span.select2-selection__clear
+                        @apply hidden
+
+                    span.select2-selection__placeholder
+                        @apply text-default
+
+                // Arrow Down
+                span.select2-selection__arrow
+                    @apply hidden

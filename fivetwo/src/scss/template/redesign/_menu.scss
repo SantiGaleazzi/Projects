@@ -1,0 +1,197 @@
+.header__navigation{
+	background: #001a38;
+	border: none;
+}
+
+.top-bar{
+	background: #001a38;
+}
+
+.pink-button{
+	background: #da10c9;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	border-radius: 10px;
+	padding: 15px 30px;
+	font-size: 18px;
+	display: inline-block;
+	font-family: "Roboto Condensed";
+	font-weight: bold;
+	transition: all 0.1s linear;
+	max-width: 250px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+
+	&.big {
+		max-width: max-content;
+	}
+}
+
+.pink-button-ffz{
+	max-width: 250px;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 0px !important;
+}
+
+.pink-button-ffz .ffz-button-form .ffz-anywhere-button{
+	background-color: #da10c9 !important; 
+	color: #FFFFFF;
+	text-transform: uppercase;
+	border-radius: 10px !important;
+	padding: 16px 30px;
+	font-size: 18px;
+	display: inline-block;
+	font-family: "Roboto Condensed" !important;
+	font-weight: bold;
+	transition: all 0.1s linear;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 0px !important;
+}
+
+.pink-button-ffz .pink-button-ffz{
+	margin-bottom: 0px !important;
+}
+
+.pink-button-ffz .ffz-button-form{
+	margin-bottom: 0px !important;
+}
+
+.pink-button-ffz .ffz-flex-row{
+	margin: 0px !important;
+}
+
+.pink-button-ff div{
+	margin: 0px !important;
+}
+
+.pink-button:hover{
+	color: #FFFFFF;
+	transform: scale(1.02);
+	transition: all 0.1s linear;
+}
+
+.header-container{
+	max-width: 1300px;
+	padding: 0px 10px;
+	margin: auto;
+}
+
+.header{
+	background: #001a38;
+}
+
+.header-container .main-menu-link{
+	color: #FFFFFF;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: "Roboto Condensed";
+	padding: 0px 20px !important;
+
+	@include breakpoint(medium){
+		font-size: 16px;
+	}
+}
+
+.nav-menu{
+	padding: 20px 0px ;
+}
+
+.mobile-menu{
+	width: 100%;
+	display: flex;
+	padding: 20px 10px;
+	align-items: center;
+}
+
+.header-donor{
+	max-width: 250px !important;
+	width: 100% !important;
+}
+
+.header__menu {
+	width: 100%;
+
+	@include breakpoint(large up){
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	@include breakpoint(medium down){
+		.dropdown {
+			gap: 15px;
+			margin-bottom: 15px;
+		}
+	}
+	@include breakpoint(medium down) {
+	  .main-menu-link {
+	  	padding: 0px !important
+	  }
+	}
+}
+
+.address-text{
+	font-family: "Roboto Condensed";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #FFFFFF;
+	padding: 20px 0px 20px;
+}
+
+.address-text p{
+	font-family: "Roboto Condensed";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #FFFFFF;
+	margin-bottom: 0px;
+}
+
+.footer__logo .pink-button{
+	width: 100%;
+	padding: 15px 5px;
+}
+
+@media screen and (max-width: 1120px){
+	.footer-text{
+		max-width: 370px !important;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.header__logo{
+		max-width: 115px;
+	}
+
+	.header-container .main-menu-link{
+		width: 100%;
+		text-align: left;
+		font-size: 16px;
+	}
+
+	.pink-button{
+		padding: 12px 15px;
+	}	
+
+}
+
+@media screen and (max-width: 640px){
+	#responsive-menu ul{
+		width: 100%;
+		text-align: left;
+	}
+
+	.header__menu{
+		align-items: start;
+		padding: 0px 10px;
+	}
+}
+
+.menu-icon::after{
+	background: #FFF !important;
+	box-shadow: 0 7px 0 #FFF, 0 14px 0 #FFF !important;
+}

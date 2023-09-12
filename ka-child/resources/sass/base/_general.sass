@@ -1,0 +1,11 @@
+html, body
+    @apply tw-text-default tw-text-base tw-font-sans tw-leading-normal tw-bg-white tw-antialiased
+
+body
+
+    &::before
+        content: ''
+        height: 64px #{!important}
+        @apply tw-w-full tw-block
+        @screen md
+            height: 96px #{!important}

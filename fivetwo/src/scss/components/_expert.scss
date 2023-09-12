@@ -1,0 +1,8 @@
+$block: '.expert';
+
+#{$block}{
+    padding: 5.7rem 0 6.7rem;
+    &__title {
+        color: $dark-blue;
+    }
+}

@@ -1,0 +1,42 @@
+a:focus
+  @apply tw-text-white #{!important}
+
+.has-wysiwyg
+
+  &-14
+
+    p
+      font-size: 14px
+
+      &:last-of-type
+        @apply tw-mb-0
+
+    a
+      @apply tw-text-orange-400 tw-font-semibold
+
+      &:hover
+        @apply tw-text-orange-400
+
+  p
+
+    &:last-of-type
+      @apply tw-mb-0
+
+  a
+    @apply tw-text-orange-400 tw-font-semibold
+
+    &:hover
+      @apply tw-text-orange-400
+
+  ul,
+  ol
+    @apply tw-ml-12 tw-mb-6
+
+.has-video
+  padding-bottom: 56.25%
+  @apply tw-max-w-full tw-h-0 tw-relative tw-overflow-hidden
+
+  iframe,
+  object,
+  embed
+    @apply tw-w-full tw-h-full tw-top-0 tw-left-0 tw-absolute

@@ -1,0 +1,32 @@
+.faqs-questions
+
+    .question
+        @apply bg-white rounded-lg mb-4
+
+        &.is-open
+
+            .header
+
+                .action
+                    @apply rotate-0
+
+            .expandable
+                max-height: 350px
+                @apply pb-5 opacity-100 visible
+
+        .header
+            @apply font-serif text-xl font-medium leading-none flex justify-between px-6 py-5
+
+            .the-question
+                @apply flex-1 pr-6
+
+            .action
+                @apply w-6 h-6 bg-gray-150 flex items-center justify-center rounded-full cursor-pointer transition transform rotate-45 duration-200 ease-in-out
+
+        .expandable
+            max-height: 0px
+            @apply text-gray-600 px-6 opacity-0 invisible transition duration-200 ease-in-out
+
+            a
+                @apply text-teal-400
+                

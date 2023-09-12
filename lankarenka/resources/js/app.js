@@ -1,0 +1,13 @@
+require('./aside-cart');
+//require('./cookies');
+require('./hamburger');
+require('./mobile-nav');
+require('./woocommerce');
+//require('./lightbox');
+require('./scroll-top');
+require('./slider');
+require('./search-product');
+require('./product-quantity-control');
+require('./custom-select');
+require('./aside-filter');
+require('./faqs');

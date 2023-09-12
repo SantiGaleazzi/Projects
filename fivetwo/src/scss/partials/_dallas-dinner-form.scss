@@ -1,0 +1,31 @@
+.page-dallasdinner{
+    h2{
+        color: #27466c;
+        font-family: "Roboto Condensed",sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 4rem;
+    }
+    .ginput_container_select{
+        width: 48%;
+    }
+    .gform_wrapper .top_label select.medium{
+        width: 100% !important;
+        background-color: #fafafa;
+        border: 1px solid #dcdcdc;
+        height: 4rem;
+      color: #555555;
+      border-radius: 4px;
+    }
+    .ginput_container_select:before {
+        bottom: 25px;
+    }
+    .title_bold label{
+        font-weight: bold !important;
+    }
+    @media screen and (max-width: 640px){
+        .ginput_container_select{
+            width: 100%;
+        }
+    }
+}

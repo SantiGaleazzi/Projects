@@ -1,0 +1,14 @@
+.quiz__page {
+	padding: 3rem 0;
+	#quizModal {
+		@media screen and (max-width: 750px) {
+            width: 100%;
+        }
+	}
+}
+
+.quiz__bg {
+	box-shadow: 0 0 15px $medium-gray;
+	padding-top: 3rem;
+	margin-top: 2rem;
+}

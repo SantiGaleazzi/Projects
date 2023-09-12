@@ -1,0 +1,42 @@
+.checkbox-visible
+	appearance: checkbox
+	-webkit-appearance: checkbox
+	-moz-appearance: checkbox
+
+.border-select-mobile
+	@apply border border-separator rounded-md
+
+.custom-select-arrow::after
+	content: ''
+	position: absolute
+	right: 10px 
+	top: 12px
+	width: 10px
+	height: 10px
+	background-image: url(../images/arrow-down.png)
+	background-repeat: no-repeat
+	background-size: 8px
+	background-position: center
+
+.custom-select-up-arrow::after
+	transform: rotate(180deg)
+
+.term-name
+	margin-left: -20px
+	padding-left: 20px
+
+.check-all
+	margin-left: -20px
+	padding-left: 20px
+
+@screen lg
+
+	.panel
+		top: calc(100% - 4px)
+		@apply bg-black-500-new absolute left-0 border-b border-r border-l border-separator rounded-b-md		
+
+	.custom-select-arrow
+		@apply border border-separator rounded-md
+
+	.border-select-mobile
+		@apply border-none

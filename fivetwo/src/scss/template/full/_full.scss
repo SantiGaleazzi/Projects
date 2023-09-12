@@ -1,0 +1,36 @@
+$block: '.full';
+
+#{$block}{
+    padding: 3rem 0 7rem;
+    h5 {
+        color: $light-blue;
+        font-weight: 400;
+        margin: .7rem 0 .7rem;
+    }
+    p {
+        margin-bottom: 2.5rem;
+    }
+    &__header {
+        padding-bottom: 1.5rem;
+        .title {
+            line-height: 1.1;
+        }
+    }
+    &__share {
+        width: 25rem;
+        padding: 0 6rem;
+        strong {
+            font-family: $header-font-family;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        .fab {
+            color: $dark-blue;
+            font-size: 1.8rem;
+        }
+        @include breakpoint(small only) {
+            width: 15rem;
+            padding: 1.5rem 0rem 0rem ;
+        }
+    }
+}

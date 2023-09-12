@@ -1,0 +1,100 @@
+@import ~swiper/scss
+@import ~swiper/scss/pagination
+@import ~swiper/scss/parallax
+@import ~swiper/scss/effect-fade
+@import ~swiper/scss/thumbs
+
+.swiper
+
+  // Location: template-home.php
+  &.oven-swiper
+    @apply tw-overflow-visible
+
+    .swiper-pagination
+      @apply tw-relative tw-bottom-0
+      @screen lg
+        @apply tw-text-right
+
+      .swiper-pagination-bullet
+        @apply tw-bg-gray-500 tw-mx-2
+
+        &-active
+          @apply tw-bg-orange-500
+
+  // Location: template-oven_catalog.php
+  &.catalog-testimonials
+
+    .swiper-slide
+      @apply tw-flex tw-h-auto
+
+      &.swiper-slide-active
+
+        .testimony
+          @apply tw-bg-gradient-to-tr tw-from-orange-500 tw-to-orange-400
+
+  // Location: single-oven.php
+  &.single-oven-swiper
+
+    .swiper-slide
+      @apply tw-flex tw-h-auto tw-opacity-50
+
+      .oven-description
+        p
+          @apply tw-text-[13px] tw-mb-0
+
+      &.swiper-slide-active
+        @apply tw-opacity-100
+
+        .oven-description
+          p
+            @apply tw-text-[16px]
+
+        .oven
+          @apply tw-bg-gradient-to-tr tw-from-orange-500 tw-to-orange-400
+
+          a.link
+            @apply tw-text-orange-500 tw-bg-white
+
+      a.link
+        @apply tw-transition-colors tw-duration-150 tw-ease-in-out
+
+  // Location: single-oven.php
+  &.oven-gallery-thumbs
+
+    .swiper-slide
+      @apply tw-opacity-60 tw-border-4 tw-border-solid tw-transition-all tw-duration-200 tw-ease-in-out
+
+      &.swiper-slide-thumb-active
+        @apply tw-opacity-100 tw-border-orange-500
+
+.nav-button-next
+  right: 10px
+  left: auto
+  z-index: 10
+  width: 30px
+  height: 30px
+  top: 50%
+  @apply tw-absolute tw-cursor-pointer tw-flex tw-items-center tw-justify-center tw-top-2/4 tw-bg-orange-500 tw-rounded-full tw-text-white tw-font-bold
+  &::after
+    content: 'next'
+    font-family: swiper-icons
+    font-size: var(--swiper-navigation-size)
+    text-transform: none !important
+    font-variant: initial
+    @apply tw-tracking-normal tw-leading-none
+
+.nav-button-prev
+  left: 10px
+  right: auto
+  z-index: 10
+  width: 30px
+  height: 30px
+  top: 50%
+  @apply tw-absolute tw-cursor-pointer tw-flex tw-items-center tw-justify-center tw-top-2/4 tw-bg-orange-500 tw-rounded-full tw-text-white tw-font-bold
+  &::after
+    content: 'prev'
+    font-family: swiper-icons
+    font-size: var(--swiper-navigation-size)
+    text-transform: none !important
+    font-variant: initial
+    @apply tw-tracking-normal tw-leading-none

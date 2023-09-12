@@ -1,0 +1,106 @@
+body
+
+  &.logged-in
+
+    header
+      @apply tw-top-[46px]
+      .navigation
+        height: calc( 100vh - 103px )
+      @screen md
+        @apply tw-top-[32px]
+        .navigation
+          @apply tw-h-auto
+
+  &.search-on
+    #search
+      @screen md
+        @apply tw-block
+
+#search
+  @apply tw-block
+  @screen md
+    @apply tw-hidden
+
+header
+
+  .navigation-overlay
+    @apply tw-w-full tw-h-screen tw-bg-black/40 tw-backdrop-blur-sm tw-absolute tw-top-0 tw-left-0 tw-opacity-0 tw-invisible tw-transition-opacity tw-duration-150 tw-ease-in-out
+
+    &.is-active
+      @apply tw-opacity-100 tw-visible
+
+  .navigation
+    height: calc( 100vh - 64px )
+    @apply tw-w-4/5 tw-bg-white tw-transition-transform -tw-translate-x-full tw-duration-300 tw-ease-in-out tw-absolute tw-top-full tw-left-0 tw-z-10 tw-overflow-y-scroll
+    @screen sm
+      @apply tw-w-1/2
+    @screen md
+      @apply tw-w-auto tw-h-auto tw-translate-x-0 tw-overflow-y-visible tw-relative
+
+    &.is-active
+      @apply tw-translate-x-0
+
+    #cart-status-links
+      @apply tw-flex tw-gap-6 tw-mb-4 tw-bg-transparent
+      @screen md
+        @apply tw-py-0 tw-mb-0 tw-mr-6
+
+      a
+        @apply tw-text-sm tw-text-blue-800 tw-font-semibold
+
+        &:hover
+          @apply tw-no-underline
+
+    ul.header-menu
+      @apply tw-w-full tw-h-full tw-flex tw-flex-col tw-list-none tw-p-0 tw-m-0
+      @screen md
+        @apply tw-w-auto tw-h-auto tw-flex-row tw-items-center tw-gap-x-3
+
+      li.main-menu-item
+        @apply tw-relative tw-border-b tw-border-gray-200
+        @screen md
+          @apply tw-p-4 tw-border-none
+
+        &.current-menu-parent
+          @apply tw-bg-gray-200/50
+
+        &.menu-item-has-children
+
+          &.is-active
+
+            ul.dropdown-content
+              @apply tw-h-auto tw-block
+
+            .toogle-submenu
+              svg
+                @apply tw-rotate-180
+
+          &:hover
+
+            ul.dropdown-content
+              @apply tw-opacity-100 tw-visible
+
+        a.main-menu-link
+          @apply tw-text-blue-900 tw-font-bold tw-leading-none tw-pl-5 tw-py-4 tw-block
+          @screen md
+            @apply tw-p-0  tw-inline-block
+
+          &:hover
+            @apply tw-no-underline
+
+        ul.dropdown-content
+          max-height: 10000px
+          @apply tw-w-full tw-h-0 tw-list-none tw-p-0 tw-m-0 tw-bg-blue-800 tw-overflow-hidden
+          @screen md
+            @apply tw-w-56 tw-h-auto tw-opacity-0 tw-invisible tw-absolute tw-top-full tw-right-0 tw-shadow-xl tw-transition-all tw-duration-200 tw-ease-in-out
+
+          li.sub-menu-item
+
+            &.current-menu-item
+              @apply tw-bg-orange-800
+
+            a.sub-menu-link
+              @apply tw-text-white tw-text-xs tw-font-bold tw-leading-none tw-px-4 tw-py-3 tw-block
+
+              &:hover
+                @apply tw-bg-orange-800 tw-no-underline

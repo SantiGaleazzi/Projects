@@ -1,0 +1,36 @@
+@tailwind base
+
+@tailwind components
+
+@import 'components'
+
+@tailwind utilities
+
+@tailwind screens
+
+html, body
+  @apply text-zinc-900 dark:text-white text-base font-jakarta font-medium antialiased bg-slate-100/50 dark:bg-zinc-800
+
+@font-face
+  font-family: "PlusJakartaSans"
+  src: url("webfonts/PlusJakartaSans-Regular.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: "PlusJakartaSans"
+  src: url("webfonts/PlusJakartaSans-Medium.woff2") format("woff2")
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: "PlusJakartaSans"
+  src: url("webfonts/PlusJakartaSans-SemiBold.woff2") format("woff2")
+  font-weight: 600
+  font-style: normal
+
+@font-face
+  font-family: "PlusJakartaSans"
+  src: url("webfonts/PlusJakartaSans-Bold.woff2") format("woff2")
+  font-weight: 700
+  font-style: normal

@@ -1,0 +1,246 @@
+.learndash-wrapper
+
+  &.notepad
+    background-image: url(../images/dots-pattern.png) !important
+    background-repeat: repeat
+    background-size: cover
+    @apply bg-white #{!important}
+
+    nav.nav-shape
+
+      &::after
+        @apply border-l-lms-tangerine-500
+
+    .ld-focus
+
+      .ld-focus-sidebar
+
+        .ld-course-navigation-heading
+
+          .ld-progress-bar
+            @apply bg-lms-tangerine-700 #{!important}
+
+            .ld-progress-bar-percentage
+              @apply bg-lms-tangerine-500 #{!important}
+
+        .ld-focus-sidebar-wrapper
+
+          .ld-lesson-items
+
+            .ld-lesson-item
+
+              &.learndash-complete
+
+                .ld-lesson-item-preview
+                  @apply bg-lms-tangerine-700 #{!important}
+
+                  .ld-lesson-item-preview-heading
+
+                    .ld-status-icon
+                      @apply bg-white #{!important}
+
+                    .ld-lesson-title
+                      @apply text-lms-tangerine-500 #{!important}
+
+                  .ld-expand-button
+
+                    .ld-icon-arrow-down
+                      @apply text-white #{!important}
+
+                    .ld-text
+                      @apply text-lms-tangerine-500 #{!important}
+
+              &.ld-is-not-current-lesson
+
+                &.learndash-complete
+
+                  .ld-lesson-item-preview
+                    @apply bg-lms-tangerine-500 #{!important}
+
+                    .ld-lesson-item-preview-heading
+
+                      .ld-status-icon
+                        @apply bg-lms-tangerine-300 #{!important}
+
+                      .ld-lesson-title
+                        @apply text-white #{!important}
+
+                    .ld-expand-button
+
+                      .ld-icon-arrow-down
+                        @apply text-white #{!important}
+
+                      .ld-text
+                        @apply text-white #{!important}
+
+              &.ld-is-current-lesson
+
+                &.learndash-complete
+
+                  .ld-lesson-item-preview
+                    @apply bg-lms-tangerine-500 #{!important}
+
+                    .ld-lesson-item-preview-heading
+
+                      .ld-status-icon
+                        @apply bg-lms-tangerine-300 #{!important}
+
+                      .ld-lesson-title
+                        @apply text-white #{!important}
+
+                    .ld-expand-button
+
+                      .ld-icon-arrow-down
+                        @apply text-white #{!important}
+
+                      .ld-text
+                        @apply text-white #{!important}
+
+                .ld-lesson-item-preview
+                  @apply bg-lms-tangerine-500 rounded #{!important}
+
+                .ld-lesson-item-expanded
+
+                  .ld-table-list-item
+
+                    &.learndash-complete
+
+                      .ld-table-list-item-preview
+
+                        &.ld-is-current-item
+
+                          .ld-topic-title
+                            @apply opacity-100
+
+              .ld-lesson-item-expanded
+
+                .ld-table-list-item
+
+                  &.learndash-complete
+
+                    .ld-table-list-item-preview
+
+                      &.ld-is-current-item
+
+                        .ld-topic-title
+                          @apply text-lms-tangerine-500 #{!important}
+
+                      .ld-status-icon
+                        @apply bg-lms-tangerine-500 #{!important}
+
+                      .ld-topic-title
+                        @apply opacity-50
+
+      .ld-focus-main
+        .wpProQuiz_question_text
+          p
+            @apply text-gray-500 
+            strong
+              @apply text-gray-500 
+          .has-text-color
+            strong
+              @apply text-orange-500 #{!important}
+
+        .wpProQuiz_content
+          @apply flex flex-col-reverse
+
+        .wpProQuiz_catOverview
+          .wpProQuiz_catName, .wpProQuiz_catPercent
+            @apply bg-white #{!important}
+
+        .ld-focus-content
+
+          .learndash-wrapper
+            background-image: none !important
+            @apply bg-transparent #{!important}
+
+          .learndash.learndash_post_sfwd-topic
+
+            .learndash-wrapper
+
+              .ld-tabs
+
+                .ld-tabs-content
+
+                  .callout
+                    max-width: 550px
+                    @apply w-full text-center text-sm text-[#4D4D4D] bg-[#FCF3D0] p-4 mx-auto  #{!important}
+
+                  ul.comment-box
+                    @apply bg-lms-mustard-500 #{!important}
+
+                    li
+                      @apply text-white #{!important}
+
+                      &::marker
+                        @apply text-lms-mustard-700 #{!important}
+
+                  .has-inner-text
+
+                    p
+                      @apply text-white #{!important}
+
+                  .wpProQuiz_content
+
+                    .wpProQuiz_quiz
+
+                      ol.wpProQuiz_list
+
+                        li.wpProQuiz_listItem
+
+                          p
+                            @apply text-gray-500 #{!important}
+
+                          .wpProQuiz_response
+                            min-height: auto !important
+                            @apply p-0 bg-transparent border-none my-1 #{!important}
+
+                            .wpProQuiz_incorrect
+                              @apply text-white py-2 bg-red-400 border-red-600 rounded #{!important}
+
+                              p
+                                @apply text-white #{!important}
+
+                            .wpProQuiz_correct
+                              @apply text-white py-2 bg-green-400 border-green-600 rounded #{!important}
+
+                              p
+                                @apply text-white #{!important}
+
+                          ul.wpProQuiz_questionList
+
+                            li.wpProQuiz_questionListItem
+
+                              &.wpProQuiz_answerIncorrect
+
+                                label
+
+                                  &.is-selected
+                                    @apply bg-red-400 border-red-600 #{!important}
+
+                              &.wpProQuiz_answerCorrect
+
+                                label
+
+                                  &.is-selected
+                                    @apply bg-green-400 border-green-600 #{!important}
+
+                              .wpProQuiz_cloze
+                                @apply p-0 m-0 #{!important}
+
+                                input
+                                  @apply px-4 py-2 #{!important}
+
+                              label
+
+                                &.is-selected
+                                  @apply bg-lms-mustard-700/70 border-lms-mustard-700 #{!important}
+
+                              textarea,
+                              input[type="text"],
+                              input[type="number"]
+                                @apply font-bold border-2 border-solid border-transparent bg-lms-mustard-100 #{!important}
+                                @apply transition-colors duration-150 ease-in-out
+
+                                &:focus
+                                  @apply border-lms-mustard-500 #{!important}

@@ -1,0 +1,183 @@
+.single-post
+	.wp-caption-text
+		@apply font-noto-extra-cond-bold text-left text-base text-orange-500 mt-5 mb-4 px-0 #{!important}
+	.wp-caption
+		@apply border-none px-0 mx-0 bg-transparent #{!important}
+
+.home, .page-id-24
+	.footer-section
+		&::after
+			@apply hidden
+		&::before
+			@apply hidden
+
+.current-menu-item.articles-topics
+	border-left: 6px solid #fab216 
+	@apply text-yellow-500
+
+.single-students
+	.articles-topics
+		border-left: 6px solid #fab216 
+		@apply text-yellow-500
+
+.single-coaches
+	.articles-topics
+		border-left: 6px solid #fab216 
+		@apply text-yellow-500
+	.gfield_label
+		@apply text-gray-500 font-normal text-base mb-4 #{!important}
+	select, input
+		height: 50px !important
+		@apply border border-gray-300 text-gray-500 text-sm bg-white w-full mb-2 px-5 #{!important}
+	input[type=checkbox] 
+		@apply align-top mb-0 mt-1.5 mr-2 cursor-pointer #{!important}
+		appearance: checkbox !important
+		width: 16px !important
+		height: 16px !important
+	.gfield_select, .groups-select
+		background-image: url(../images/chevron-down.png)
+		background-size: 10px
+		background-position: 97%
+		@apply bg-no-repeat 
+	.gform_footer
+		@apply text-right pb-3 #{!important}
+		input
+			height: 52px
+			@apply bg-orange-500 text-white w-auto font-noto-cond-bold ml-auto mb-0 border-none #{!important}		
+
+.terms-item
+	@apply py-2 px-3 mx-1 mb-4
+
+
+.category-title
+	max-width: 490px
+	border-radius: 3px	
+	background-size: 35px !important
+	background-position: 20px bottom !important
+	&::before
+		content: ""
+		border-radius: 3px
+		transform: rotate(3deg)
+		height: 60px
+		left: -10px
+		top: 0px
+		z-index: -1
+		@apply bg-orange-500 absolute w-full
+	&::after
+		content: ""
+		border-radius: 3px
+		transform: rotate(-3deg)
+		height: 60px
+		left: -15px
+		top: 0px
+		z-index: -2
+		@apply bg-blue-500 absolute w-full	
+	@apply bg-no-repeat pl-20 #{!important}
+
+.title-before
+	height: 34px
+	transition: linear 0.1s all
+	@apply w-full absolute left-0 bottom-0	
+
+.title-after
+	border-left: 16px solid transparent
+	border-right: 16px solid transparent		
+	clear: both
+	left: calc(50% - 16px)
+	bottom: -18px
+	transition: linear 0.1s all
+	@apply absolute w-0 h-0
+
+.post-item-container
+	max-width: 100%
+	min-height: 64px
+
+.post-item-container:hover .title-after	
+		bottom: -38px
+		transition: linear 0.1s all
+
+.post-item-container:hover .title-before
+		bottom: -20px
+		transition: linear 0.1s all
+
+.trigger-marker
+	top: -120px
+
+.terms-item
+	transition: all .08s ease-in 0s
+	&:hover
+		transition: all .08s ease-in 0s
+		@apply bg-purple-400
+
+.topic-image
+	left: 5px
+	bottom: -15px
+	height: 80px
+	width: 80px
+	@apply bg-no-repeat bg-left-bottom bg-contain absolute 
+
+.post-terms
+	transition: all .08s ease-in 0s
+
+@screen sm
+	.post-item-container
+		max-width: 42%
+		@apply mx-6
+		&::after
+			content: ''
+			border-left: 15px solid transparent
+			border-right: 15px solid transparent
+			border-top: 15px solid #512462
+			clear: both
+			left: calc(50% - 14px)
+			bottom: -15px
+			@apply absolute w-0 h-0
+
+	.category-title
+		background-position: 30px !important
+		background-size: contain !important
+		&::before
+			width: 400px
+		&::after
+			width: 400px
+		@apply pl-36 #{!important}
+	.topic-image
+		height: 155px
+		width: 120px
+		bottom: -45px
+
+@screen md
+	.platform-nav
+		li
+			margin: 0px 3px
+			padding: 12px 34px
+			@apply text-xl
+	.terms-item
+		@apply px-12
+	.trigger-marker
+		top: -100px
+	.current-menu-item.articles-topics
+		transition: all .08s ease-in 0s
+		border-bottom: 4px solid #9ad2d9
+		border-left: none
+		@apply text-teal-300 
+	.single-students
+		.articles-topics
+			transition: all .08s ease-in 0s
+			border-bottom: 4px solid #9ad2d9
+			border-left: none
+			@apply text-teal-300 
+	.single-coaches
+		.articles-topics
+			transition: all .08s ease-in 0s
+			border-bottom: 4px solid #9ad2d9
+			border-left: none
+			@apply text-teal-300 
+
+@screen lg
+	.post-item-container
+		max-width: 28%
+
+@screen xl
+	.post-item-container
+		max-width: 360px

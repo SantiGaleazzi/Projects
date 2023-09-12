@@ -1,0 +1,44 @@
+.get-help-form
+	.gform_description
+		@apply font-noto-sans-cond font-bold text-base text-blue-500
+	textarea
+		height: 88px !important
+		margin-top: 16px !important
+		@apply bg-white border border-gray-400 font-noto-sans-cond text-sm text-gray-500 py-4 px-4 opacity-100 resize-none
+		&::placeholder
+			@apply text-gray-500 opacity-100 #{!important}
+	.gform_footer
+		@apply relative h-16 mt-11 block #{!important}
+		input
+			left: calc(50% - 96px)
+			@apply w-48 bg-blue-500 text-white text-center font-noto-cond-bold text-xl py-2 px-3 mx-auto cursor-pointer absolute top-0
+			transition: all .08s ease-in 0s
+			&:hover
+				transition: all .08s ease-in 0s
+				transform: translate(3px, -3px)
+				border-left:  4px solid #FAB216
+				border-bottom:  4px solid #FAB216
+				box-shadow: -3px 6px 0px #EE5235
+			&:active
+				@apply bg-orange-500
+			&:disabled
+				background-color: #E6E6E6
+
+.form-widget
+	.gform_footer
+		@apply mt-5 #{!important}
+	.gform_confirmation_message
+		@apply pb-4
+
+.single-coaches
+	input[type="checkbox"]
+		@apply inline-block mt-3 #{!important}
+	.gfield_consent_label
+		@apply inline-block
+	li		
+		h1,h2,h3,h4
+			@apply my-0  #{!important}
+	.gform_body
+		.gfield_consent_label
+			h1,h2,h3,h4
+				@apply my-0  #{!important}

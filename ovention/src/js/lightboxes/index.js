@@ -1,0 +1,7 @@
+require('./contact')
+require('./gallery')
+require('./quiz')
+require('./search')
+require('./videos')
+require('./request-demo')
+require('./store')

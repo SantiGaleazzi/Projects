@@ -1,0 +1,17 @@
+/*
+	Theme Name: OVENTION-2018
+	Theme URI: 
+	Author: Digizent
+	Version: 1.0
+*/
+
+@media print, screen and (max-width: 47.93625em) {
+
+	.home-banner__single-slider img {
+		max-width: 100% !important;
+	}
+}
+
+.prod-list-wrap .prod-list .woocommerce .products .product .woocommerce-loop-product__title {
+	text-align:center;
+}

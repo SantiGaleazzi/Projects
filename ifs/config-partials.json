@@ -1,0 +1,7 @@
+{
+    "scripts": [
+      "./src/jsfilters/*.js",
+      "./src/homepage/*.js"
+    ]
+}
+  

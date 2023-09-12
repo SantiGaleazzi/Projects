@@ -1,0 +1,47 @@
+{
+	"name": "ifs-theme",
+	"version": "1.0.0",
+	"description": "ulp 4 theme",
+	"main": "gulpfile.js",
+	"scripts": {
+		"maps": "npm run prod-maps",
+		"prod-maps": "mix --production",
+		"dev": "cross-env NODE_ENV=dev gulp default",
+		"prod": "cross-env NODE_ENV=production gulp production"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"ie >= 9"
+	],
+	"author": "Digizent",
+	"license": "MIT",
+	"devDependencies": {
+		"@amcharts/amcharts4": "4.10.20",
+		"@amcharts/amcharts4-geodata": "4.1.21",
+		"@babel/core": "7.15.5",
+		"@babel/preset-env": "7.15.6",
+		"@fortawesome/fontawesome-free": "6.1.1",
+		"@fullhuman/postcss-purgecss": "4.1.3",
+		"browser-sync": "2.27.10",
+		"cross-env": "7.0.3",
+		"foundation-sites": "6.4.4-rc1",
+		"gulp": "4.0.2",
+		"gulp-autoprefixer": "8.0.0",
+		"gulp-babel": "8.0.0",
+		"gulp-concat": "2.6.1",
+		"gulp-if": "3.0.0",
+		"gulp-postcss": "9.0.1",
+		"gulp-sass": "5.1.0",
+		"gulp-sourcemaps": "3.0.0",
+		"gulp-uglify": "3.0.2",
+		"gulp-wp-rev": "0.3.0",
+		"infinite-scroll": "3.0.4",
+		"jquery": "3.3.1",
+		"jscroll": "2.4.1",
+		"laravel-mix": "6.0.43",
+		"node-sass": "7.0.1",
+		"postcss": "8.4.14",
+		"sass": "1.52.2",
+		"slick-carousel": "1.8.1"
+	}
+}

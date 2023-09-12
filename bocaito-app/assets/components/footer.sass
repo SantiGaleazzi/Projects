@@ -1,0 +1,25 @@
+footer
+
+  .menu
+    @apply text-center
+    @screen sm
+      @apply text-left
+
+    .main-menu-item
+
+      .main-menu-head
+        @apply font-bold mb-4
+
+      .children-options
+
+        .sub-menu-item
+          @apply mb-2
+
+          &:last-of-type
+            @apply mb-0
+
+          .sub-menu-link
+            @apply text-white text-sm transition-colors duration-150 ease-in-out
+
+            &:hover
+              @apply text-indigo-500

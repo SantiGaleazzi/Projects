@@ -1,0 +1,119 @@
+$main-banner: '.main-banner';
+
+#{$main-banner}{
+  &__description{
+    padding-top: 5rem;
+    @include breakpoint(medium down){
+      padding-top: 2rem;
+    }
+  }
+
+  .state-rank-and-score {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+    .data-separator {
+      width: 1px;
+      height: 50px;
+      margin: 0px 20px;
+      background-color: #d3d9dd;
+    }
+
+    .state-rank,
+    .state-score {
+
+      .option {
+        color: #1e3764;
+        font-size: 30px;
+        line-height: 1;
+      }
+
+      .option-value {
+        color: #2d9be1;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 900;
+
+      }
+    }
+  }
+  
+  &__info{
+    color: $secondary-color;
+    font:{
+      family: $font-sanspro;
+      size: 1.2rem;
+      weight: 300;
+    }
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    a{
+      color: inherit;
+      font:{
+        family: $font-sanspro;
+        size: 1.2rem;
+        weight: 400;
+      }
+    }
+  }
+  &__title{
+    color: $secondary-color;
+    font:{
+      size: 5rem;
+    }
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  &__subtitle{
+    color: $blue-neuton;
+    font:{
+      size: 2.8rem;
+      weight: 300;
+    }
+    line-height: 1;
+  }
+  .attachment-post-thumbnail{
+    @include breakpoint(medium down){
+      margin: 0 auto;
+    }
+  }
+}
+
+$social-block: '.social_share';
+#{$social-block}{
+  color: $blue-neuton;
+  font:{
+    family: $font-sanspro;
+    size: 1.2rem;
+    weight: 400;
+  }
+  span{
+    padding-right: 1rem;
+  }
+  a{
+    padding: 1rem;
+  }
+  i{
+    color: $blue-neuton;
+  }
+  #cliptext{
+    position: relative;
+  }
+  .copied{
+    position: absolute;
+    left: -55%;
+    right: -55%;
+    display: block;
+    width: 8rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: $blue-neuton;
+  }
+  @include breakpoint(medium down){
+    display: block;
+    margin: 0 auto 2rem;
+  }
+}

@@ -1,0 +1,242 @@
+$organization: '.organization';
+$modal: '.staff-reveal';
+
+#{$organization}
+{
+    .tabs-content{
+        border: none;
+    }
+    &__controls{
+        .tabs{
+            .tabs-title{
+                width:33.3333%;
+                text-align: center;
+                a{
+                    font-size: 1.2rem;
+                    color: #1e3764;
+                     &[aria-selected='true']{
+                        background-color: #ffbe32 !important;
+                    }
+                    @include breakpoint(medium down){
+                        text-align: center;
+                    }
+                }
+                &.is-active{
+                    a{
+                        background-color: #ffbe32 !important;
+                    }
+                }
+                @include breakpoint(medium down){
+                    width:100%;
+                }
+            }
+        }
+    }
+    &__board_directors{
+        padding: 5rem 0;
+        .columns:last-child:not(:first-child){
+            float:left;
+        }
+        .columns{
+            &:nth-child(odd){
+               .organization__staff__single{
+                    border-right: 1px solid #dddddd;
+                    @include breakpoint(medium down){
+                        border:none;
+                    }
+                }
+            }
+        }
+    }
+    &__academic_advisors{
+        padding: 5rem 0;
+        .columns:last-child:not(:first-child){
+            float:left;
+        }
+        .columns{
+            &:nth-child(odd){
+               .organization__staff__single{
+                    border-right: 1px solid #dddddd;
+                    @include breakpoint(medium down){
+                        border:none;
+                    }
+                }
+            }
+        }
+    }
+    &__staff{
+        padding: 5rem 0;
+        .columns:last-child:not(:first-child){
+            float:left;
+        }
+        .columns{
+            &:nth-child(odd){
+               .organization__staff__single{
+                    border-right: 1px solid #dddddd;
+                    @include breakpoint(medium down){
+                        border:none;
+                    }
+                }
+            }
+        }
+        &__single{
+            margin-bottom: 3rem;
+            cursor: pointer;
+
+            .w100{
+                width: 100%;
+                padding-right: 1rem;
+            }
+            
+            h3{
+                font-size: 2.8rem;
+                color: #1e3764;
+                line-height: 3rem;
+                margin-bottom: 1.2rem;
+                cursor:pointer;
+                font-weight: 300;
+            }
+            &__profile{
+                display: inline-block;
+                vertical-align: top;
+                width: 17rem;
+                margin-right: 2rem;
+                margin-bottom: 1rem;
+                cursor:pointer;
+                img{
+                    max-width: 17rem;
+                }
+                @include breakpoint(medium down){
+                    width: 100%;
+                    text-align: center;
+                    margin-right:0;
+                    padding: 1rem 0;
+                }
+            }
+            &__description{
+                display: inline-block;
+                vertical-align: middle;
+                width: 35rem;
+
+                p{
+                    line-height: 2.4rem;
+                    margin-bottom: 1rem;
+                }
+                &__lastpost{
+                    span{
+                        display: block;
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                        color: #757575;
+                        font-weight: 300;
+                    }
+                    a{
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                        color: #1e3764;
+                    }
+                }
+                @include breakpoint(medium down){
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#{$modal}
+{
+    border-left: 3.5rem solid #ffbe32;
+    padding: 4rem 5rem 3rem 7rem;
+    z-index: 199999;
+    h1{
+        font-size: 6.5rem;
+        line-height: 5.8rem;
+        color:#1e3764;
+        margin-bottom: 3rem;
+        font-weight: 300;
+    }
+    img{
+        float: left;
+        margin-right:1.5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        line-height: 2.4rem;
+        a{
+            color:#009be1;
+        }
+    }
+    ul{
+        
+        list-style-position: inside;
+        li{
+            list-style-position: outside;
+            line-height: 2.4rem;
+            a{
+                color:#009be1;
+                display: inline-block;
+                width: 90%;
+                vertical-align: top;               
+                @include breakpoint(medium down){
+                    width: 100%;
+                }
+            }
+        }
+        @include breakpoint(xlarge down){
+            margin-left: 52%;
+        }
+        @include breakpoint(large down){
+            margin-left: 56%;
+        }
+        @include breakpoint(medium down){
+            margin-left: 1.5rem;
+        }        
+    }
+    .close-button{
+        top:1.5rem;
+        span{
+            font-size:3rem;
+        }
+    }
+    
+    &__extra-info{
+        &__linkedin{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 1.2rem;
+            a{
+                i{
+                    color: #009be1;
+                    font-size: 3rem;
+                }
+            }
+        }
+        &__last-post{
+            display: inline-block;
+            vertical-align: top;
+            span{
+                line-height: 1;
+            }
+            a{
+                line-height: 1;
+            }
+        }
+    }
+    &__arrows{
+        text-align:center;
+        clear: both;
+        &__button{
+            padding: 0 4rem;
+            cursor: pointer;
+            i{  
+                font-size: 5rem;
+                color: #757575;
+                &:hover{
+                    color:#009be1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.gform_wrapper
+
+  .gform_validation_errors
+    @apply hidden
+
+  form
+
+    .gform_body
+
+      .gform_fields
+
+        .gfield
+
+          &.gfield_error
+
+            .ginput_container
+              input,
+              select,
+              textarea
+                @apply border-red-500
+
+          label,
+          legend
+            @apply text-white font-semibold
+
+            .gfield_required
+              @apply hidden
+
+          .ginput_container
+            input,
+            select,
+            textarea
+              @apply text-white px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg shadow-sm placeholder:text-zinc-600 placeholder:font-normal
+
+            textarea
+              @apply resize-none
+
+          .gfield_validation_message
+            @apply text-red-500 p-0 bg-transparent border-none
+
+    .gform_footer
+      @apply flex justify-center pb-0 m-0 #{!important}
+
+      input[type='submit']
+        @apply text-zinc-900 hover:text-yellow-300 px-6 py-3 bg-yellow-300 hover:bg-yellow-300/10 border border-yellow-300 rounded-lg cursor-pointer transition-colors duration-200 ease-in-out

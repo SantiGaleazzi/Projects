@@ -1,0 +1,16 @@
+.sub-banner-header{
+    margin-top: 3rem;
+}
+.image-banner-desktop{
+    @include breakpoint(small down) {
+        display: none;
+    }
+}
+.image-banner-mobile{
+    display: none;
+    @include breakpoint(small down) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}

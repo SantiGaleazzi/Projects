@@ -1,0 +1,49 @@
+.has-mautic-form
+
+  &.has-dark-bg
+
+    .mauticform_wrapper
+
+      .mauticform-innerform
+
+        .mauticform-row
+
+          label
+            @apply tw-text-white
+
+  .mauticform_wrapper
+    @apply tw-mt-10
+
+    .mauticform-innerform
+
+      .mauticform-row
+
+        label
+          @apply tw-font-semibold
+
+        input,
+        select,
+        textarea
+          @apply tw-px-6 tw-py-3 tw-bg-gray-100 tw-border-2 tw-border-solid tw-border-gray-100 tw-rounded-2xl tw-shadow-none tw-transition-colors tw-duration-100 tw-ease-in-out
+
+          &:hover
+            @apply tw-border-orange-600
+
+        textarea
+          @apply tw-resize-none
+
+        .mauticform-errormsg
+          @apply tw-text-[14px] tw-text-red-400 tw-font-semibold
+
+        &.mauticform-has-error
+
+          input,
+          select,
+          textarea
+            @apply tw-border-red-400
+
+        &.mauticform-button-wrapper
+          @apply tw-text-center
+
+          button.mauticform-button
+            @apply tw-text-white tw-px-12 tw-py-5 tw-bg-gradient-to-r tw-from-orange-600 tw-to-orange-900 tw-rounded-2xl tw-border-none tw-cursor-pointer

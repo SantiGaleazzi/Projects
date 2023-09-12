@@ -1,0 +1,21 @@
+html, body
+	@apply text-blue-900 text-base font-inter leading-normal antialiased
+
+body
+
+	&::before
+		content: ''
+		@apply w-full h-[109px] block
+		@screen md
+			@apply h-[100px]
+
+p
+	@apply leading-7
+
+span
+
+	&.heavy
+		@apply font-black
+
+	&.light
+		@apply font-light

@@ -1,0 +1,97 @@
+// WooCommerce Wrapper
+.woocommerce
+    @apply relative
+    
+// Woocommerce Notices and Messages
+.woocommerce-notices-wrapper
+    @apply w-full text-sm text-purple-100 bg-purple-500 sticky top-0 left-0 z-30 transition duration-200 ease-in-out
+
+    .woocommerce-message,
+    .woocommerce-info
+        @apply text-center flex flex-col items-center px-5 py-5
+
+        a
+            @apply text-xs text-purple-600 px-5 py-2 bg-white font-medium rounded transition-all duration-200 ease-in-out inline-block my-3
+
+            &:focus
+                @apply outline-none
+
+    // Errors
+    ul.woocommerce-error
+        @apply px-5 py-4
+
+        li
+            @apply text-purple-100
+
+            strong
+                @apply text-purple-700 font-medium
+
+    // Empty Cart
+    p.cart-empty
+        @apply text-sm px-6 pb-4
+
+// Required Fields
+span.required,
+abbr.required
+    @apply text-purple-700 no-underline
+
+// Button
+button[type="submit"],
+input[type="submit"]
+    @apply text-sm leading-none text-purple-100 font-medium px-5 py-3 bg-purple-500 rounded inline-block transition duration-200 ease-in-out cursor-pointer
+                            
+    &:hover
+        @apply bg-purple-600
+
+input[type="radio"]
+    appearance: radio
+    -webkit-appearance: radio
+
+// On select DropDown
+span.select2-container--default
+
+    span.select2-dropdown
+        @apply mt-3 border border-gray-300 rounded shadow-lg
+
+        // Search Bar
+        span.select2-search
+            @apply w-full p-2 inline-block border-b border-gray-300
+
+            input
+                @apply text-gray-500 px-3 border border-gray-400 rounded
+
+        // Results
+        span.select2-results
+                
+            ul.select2-results__options
+
+                li.select2-results__option
+                    @apply text-sm px-3 transition-all duration-300 ease-in-out
+
+                    &:focus
+                        @apply outline-none
+
+                    &[data-selected=true]
+                        @apply text-white bg-purple-400
+
+                    &.select2-results__option--highlighted
+                        @apply text-gray-900 bg-gray-300
+
+                        &[data-selected=true]
+                            @apply text-white bg-purple-400
+
+@screen sm
+
+    // Woocommerce Notices and Messages
+    .woocommerce-notices-wrapper
+        @apply absolute
+
+        .woocommerce-message
+            @apply text-left flex-row py-4
+
+            a
+                @apply mx-4 my-0
+
+    // WooCommerce Breadcrumbs
+    .woocommerce-breadcrumb
+        @apply px-0

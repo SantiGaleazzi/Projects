@@ -1,0 +1,182 @@
+$block: '.woocommerce';
+
+#{$block}{
+    &__checkout {
+        padding-bottom: 8rem;
+        &-title {
+            color: $light-blue;
+        }
+        &-subtitle {
+            color: $dark-blue;
+            line-height: 1;
+            padding-bottom: 3rem;
+        }
+    }
+    &-shipping-methods {
+        margin-left: 0;
+        list-style-type: none;
+        .amount {
+            display: block;
+        }
+        label {
+            color: $dark-blue;
+            font-family: $header-font-family;
+            font-size: 1.6rem;
+            line-height: 1.2;
+        }
+    }
+    .shipping-calculator-button {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    &-cart-actions{
+        background-color: $light-gray;
+        padding: 3rem 4rem;
+        border-radius: 5px;
+        width: 26rem;
+        @include breakpoint(small only) {
+            margin-top: 2rem;
+        }
+    }
+    &__subtotal-title,
+    &__total-title,
+    &__shipping-title {
+        color: $dark-blue;
+        font-family: $header-font-family;
+        font-weight: normal;
+        font-size: 1.6rem;
+    }
+    .cart {
+        .update-cart-button {
+            color: $white;
+            padding: 1.3rem 1rem;
+            margin-bottom: 0;
+            background-color: $light-blue;
+            width: 11.6rem;
+            &:before {
+                content: '';
+            }
+        }
+        .cart_item {
+            .amount {
+                color: $light-blue;
+                font-size: 1.6rem;
+                font-weight: normal;
+            }
+        }
+    }
+    .quantity {
+        .qty{
+            @include breakpoint(small only) {
+                width: 3rem;
+            }
+        }
+    }
+}
+
+$cart: '.woocommerce-cart-form';
+
+#{$cart} {
+    &__contents {
+        td {
+            border-top: 2px solid $light-gray;
+            &.product-thumbnail {
+                padding: 1.5rem .5rem;
+                img {
+                    @include breakpoint(small only) {
+                        width: 10rem;
+                    }
+                }
+            }
+            &.product-name {
+                padding-left: 2rem;
+                padding-right: 4rem;
+                a {
+                    color: $medium-gray;
+                    font-weight: 500;
+                }
+                > a {
+                    @include breakpoint(small only) {
+                        display: none;
+                    }
+                }
+                a.remove {
+                    color: $light-blue;
+                    text-decoration: underline;
+                }
+                @include breakpoint(small only) {
+                    padding: 0 1rem;
+                }
+            }
+            &.product-price {
+                padding: 0 3rem;
+                @include breakpoint(small only) {
+                    padding: 0 1rem;
+                }
+                .amount {
+                    padding-left: 0;
+                }
+            }
+            &.product-quantity {
+                padding: 0 1rem;
+            }
+        }
+    }
+    .woocommerce-Price-amount {
+        padding-left: 0;
+        color: $dark-blue;
+        font-family: $header-font-family;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 1;
+        @include breakpoint(medium down) {
+            font-size: 2rem;
+        }
+    }
+    .cart-discount {
+        > td {
+            color: $dark-blue;
+            font-family: $header-font-family;
+            font-weight: bold;
+            font-size: 4rem;
+            line-height: 1;
+            @include breakpoint(medium down) {
+                font-size: 2rem;
+            }
+        }
+    }
+    .woocommerce-remove-coupon {
+        font-size: 1.4rem;
+    }
+}
+
+#coupon_code {
+    font-family: $header-font-family;
+    font-size: 1.8rem;
+}
+
+.checkout-button {
+    padding: 1.4rem 1.3rem;
+}
+
+.checkout-button,
+.apply-button,
+.update-cart-button {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.wc_payment_methods {
+    list-style-type: none;
+}
+
+.place-order {
+    padding-left: 1.25rem;
+}
+
+#place_order {
+    border-radius: 5px;
+    text-transform: uppercase;
+}

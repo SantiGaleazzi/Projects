@@ -1,0 +1,68 @@
+$block: '.secondaryBanner';
+
+#{$block}{
+    background-color: $lighter-blue;
+    // height: 42.3rem;
+    height: 48.5rem;
+    &__subtitle {
+        font-family: $header-font-family;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    &__medium {
+        font-family: $header-font-family;
+        font-size: 1.8rem;
+    }
+    &__title {
+        line-height: 1;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    &__script {
+        color: $dark-blue;
+        font-family: 'Festus', sans-serif;
+        font-size: 4.4rem;
+        font-weight: 400;
+        @include breakpoint(medium down) {
+           font-size: 2.5rem;
+        }
+    }
+    &__video {
+        cursor: pointer;
+        @include breakpoint(medium down) {
+           margin-bottom: 3rem;
+        }
+    }
+    &__incubator {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    p {
+        a {
+            text-decoration: underline;
+        }
+    }
+    /*@include breakpoint(medium large) {
+        padding: 2.5rem 0;
+    }
+    @include breakpoint(large down) {
+        height: auto !important;
+    }*/
+}
+
+.page-template-template-incubator {
+    .secondaryBanner {
+        &__incubator{
+            display: block;
+        }
+        @include breakpoint(medium down) {
+           background-image: url('../img/internal/incubator/StartNew-BG-Mobile.jpg') !important;
+           background-repeat: no-repeat;
+           background-position: center top;
+        }
+    }
+}
+

@@ -1,0 +1,52 @@
+$block: '.contactUs';
+
+#{$block}{
+    &__form {
+        .top_label .gfield_label,
+        .field_sublabel_below .ginput_complex.ginput_container label {
+            display: none !important;
+        }
+        input[type="text"] {
+            margin: 0 !important;
+        }
+        .gform_footer {
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center;
+            input[type="submit"] {
+                margin: 0 !important;
+                border-radius: 5px;
+            }
+        }
+    }
+    &__subtitle {
+        color: $light-blue;
+        font-weight: normal;
+    }
+    &__title {
+        color: $dark-blue;
+        line-height: 1.1;
+    }
+    &__logo {
+        margin-bottom: 4.5rem;
+    }
+}
+
+.gform_confirmation_message_2 {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.returnPolicyModal__title{
+    margin-top: 0.8rem;
+    color: $dark-blue;
+    line-height: 1.1;
+}
+
+.form-style-container .top_label .gfield_label, .form-style-container .field_sublabel_below .ginput_complex.ginput_container label{
+    display: block !important;
+    font-family: "Roboto Condensed" !important;
+    font-size: 18px !important;
+    color: #232323 !important;
+    line-height: 1.2;
+    font-weight: normal !important;
+}

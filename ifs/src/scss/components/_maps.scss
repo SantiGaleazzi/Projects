@@ -1,0 +1,52 @@
+#map-chart {
+    display: block;
+
+    @include breakpoint(small down) {
+        display: none;
+    }
+}
+
+.legend-container{
+    border: 2px solid #1e3764;
+    padding: 10px 12px 13px;
+    width: 300px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle-icon{
+    width: 20px;
+    height: 20px;    
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
+.dark-green-marker{
+    background: #54a557;
+}
+
+.light-green-marker{
+    background: #90ee90;
+}
+
+.yellow-marker{
+    background: #ffb434;
+}
+
+.orange-marker{
+    background: #ff7300;
+}
+
+.orange-marker{
+    background: #ff7300;
+}
+
+.red-marker{
+    background: #d7172a;
+}
+
+.map-marker{
+    font-size: 15px;
+}

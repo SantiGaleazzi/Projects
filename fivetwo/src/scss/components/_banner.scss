@@ -1,0 +1,22 @@
+$block: '.banner';
+
+#{$block}{
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    .button.green,
+    .button.red {
+        margin: 1.4rem 1rem 2.5rem 0;
+        @include breakpoint(medium down) {
+            margin: 1.4rem 0;
+        }
+    }
+    @include breakpoint(xlarge down) {
+        background-size: cover;
+    }
+    @include breakpoint(medium down) {
+        background-size: auto 20rem;
+        height: auto !important;
+        padding: 22rem 0 3rem;
+    }
+}

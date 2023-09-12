@@ -1,0 +1,26 @@
+.woocommerce-breadcrumb {
+    margin-top: 30px !important;
+    font-size: 0.7em;
+    a {
+        font-weight: 700;
+    }
+    .woocommerce-breadcrumb-delimiter {
+        font-weight: 700;
+        color: $orange;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+}
+
+
+.o-breadcrumb {
+
+    margin-bottom: 5rem;
+
+    .o-breadcrumb-link {
+        font-size: 14px;
+        font-weight: 700;
+        color: #404041;
+    }
+
+}

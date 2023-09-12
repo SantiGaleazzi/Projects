@@ -1,0 +1,329 @@
+.logotop-black{
+    display: block;
+    margin: 0px auto 60px;
+}
+.container-auto{
+    max-width: 1180px;
+    margin: auto;
+}
+.section-steps{
+    padding: 55px 10px 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+}
+.content-text{
+    display: flex;
+    font-family: Roboto;
+    align-items: start;
+    justify-content: center;
+}
+.label-text{
+    background-color: #000000;
+    font-weight: bold;
+    color: #f1c24b;
+    font-size: 20px;
+    line-height: 34px;
+    display: inline-block;
+    padding: 0 9px;
+}
+.title-text{
+    color: #030000;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+}
+.subtitle-text{
+    font-family: 'Roboto Condensed', Roboto;
+    color: #030000;
+    font-size: 24px;
+}
+.box-text-steps{
+    max-width: 500px;
+    width: 100%;
+}
+.description-text-steps{
+    color: #030000;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+.margin-negative{
+    margin-top: -300px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 10px 110px;
+}
+.container-left-form{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: -9px -6px 39px 13px #00000012;
+    padding: 0px 9% 60px;
+    box-sizing: border-box;
+    z-index: 1;
+    position: absolute;
+    width: 58%;
+    top: 0;
+    left: 0;
+    height: 870px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container-right-form{
+    background-color: #26466c;
+    border-radius: 20px;
+    box-shadow: -9px -6px 39px 13px #00000012;
+    padding: 0px 6% 190px 25%;
+    box-sizing: border-box;
+    height: 970px;
+    position: relative;
+    width: 58%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container-right-form .vimeo{
+    cursor: pointer;
+}
+.items-text-form{
+    color: #585858;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 28px;
+}
+.items-text-form strong{
+    color: #030000;
+    font-family: Roboto;
+}
+.title-form-ebook{
+    font-family: Roboto;
+    font-weight: 700;
+    color: #030000;
+    font-size: 24px;
+    line-height: 36px;
+}
+.title-form-ebook span{
+    color: #f1bf3e;
+}
+.ebook-form-steps li{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.ebook-form-steps .ebook-input-name label,
+.ebook-form-steps .ebook-input-address label,
+.ebook-form-steps .ebook-input-phone label{
+    display: none !important;
+}
+.ebook-form-steps .ebook-input-name span,
+.ebook-form-steps .ebook-input-address input,
+.ebook-form-steps .ebook-input-phone input{
+    width: 100% !important;
+}
+.ebook-form-steps li input{
+    height: 40px !important;
+    background-color: transparent !important;
+    box-shadow: 0px 0px 5px -3px #010201;
+    border-radius: 5px;
+    padding: 5px 10px !important;
+}
+.ebook-form-steps li input:focus{
+    border: 1px solid #f1bf3e !important;
+}
+.ebook-form-steps #gform_submit_button_23{
+    width: 100%;
+    background-color: #f1bf3e;
+    height: 75px;
+    font-family: 'Roboto Condensed';
+    color: #030000;
+    font-size: 24px;
+    line-height: 22px;
+    border-radius: 4px;
+}
+.title-video-steps{
+    font-family: 'Roboto Condensed', Roboto;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+}
+.description-video-steps{
+    font-family: 'Roboto';
+    color: #fec05a;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 20px 0;
+}
+//Thank you content
+.thankyou-content{
+    text-align: center;
+}
+.margin-titleb{
+    margin-bottom: 50px;
+}
+.thankyou-left-form{
+    height: 650px;
+    right: 0;
+    margin: auto;
+}
+.thankyou-right-form{
+    padding: 0px 50px 40px;
+    height: 840px;
+    margin: 0 auto 0;
+    left: 50px;
+}
+.download-ebook{
+    background-color: #f1bf3e;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    height: 75px;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    color: #030000;
+    font-size: 24px;
+    line-height: 75px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 55px auto;
+}
+.download-ebook:hover{
+    color: #030000;
+    opacity: 1;
+}
+.footer-thankyou{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-description{
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 380px;
+    padding-right: 10px;
+}
+.footer-description a{
+    text-decoration: none;
+    color: #00a7e1;
+}
+.link-learnmore{
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    background-color: #00a7e1;
+    width: 186px;
+    height: 44px;
+    border-radius: 4px;
+    line-height: 44px;
+    color: #ffffff;
+    text-align: center;
+}
+.link-learnmore:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+.social-icons-ebook{
+    border-top: 1px solid #ffffff;
+    font-family: 'Roboto Condensed';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px auto 0;
+    padding-top: 20px;
+}
+.social-icons-ebook a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0 0 13px;
+}
+@media screen and (max-width: 900px){
+    .hidden-mobile-br{
+        display: none;
+    }
+    .content-text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-left-form{
+        right: 0;
+        margin: auto;
+        width: 80%;
+        height: 900px;
+    }
+    .container-right-form{
+        margin: auto;
+        width: 85%;
+        height: 1300px;
+        padding: 200px 5% 30px;
+    }
+    .container-right-form .vimeo {
+        margin: auto;
+        display: block;
+    }
+
+    //Thank you section
+    .thankyou-left-form{
+        height: 650px;
+    }
+    .thankyou-right-form{
+        height: 840px;
+    }
+    .hidden-mobile-fo{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 570px){
+    .title-text{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .subtitle-text{
+        font-size: 20px;
+    }
+    .description-text-steps{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .container-left-form{
+        width: 88%;
+        padding: 200px 9% 20px;
+        height: 1000px;
+    }
+    .container-right-form{
+        width: 98%;
+        height: 1450px;
+    }
+    img.image-books-steps{
+        width: 80%;
+        height: auto;
+    }
+
+    //Thak you section
+    .thankyou-left-form{
+        padding: 280px 9% 20px;
+        height: 650px;
+    }
+    .margin-titleb{
+        font-size: 30px;
+        line-height: 38px;
+        margin: 0;
+    }
+    .thankyou-right-form{
+        left: 0;
+        height: 870px;
+    }
+    .download-ebook{
+        height: auto;
+        line-height: 30px;
+        padding: 10px 0;
+        margin: 25px auto;
+    }
+    .footer-thankyou{
+        flex-direction: column;
+    }
+}

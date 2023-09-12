@@ -1,0 +1,118 @@
+body.logged-in
+
+  &::before
+    content: ''
+    @apply w-full h-[103px] block
+    @screen md
+      @apply h-[100px]
+
+  header
+    @apply top-10
+    @screen md
+      @apply top-8
+
+header
+
+  .navigation-overlay
+    @apply backdrop-blur-md bg-blue-500/75 fixed inset-0 transition-all duration-200 ease-in-out -translate-x-full
+
+    &.is-active
+      @apply translate-x-0
+
+  ul#preheader-menu
+
+    li.main-menu-item
+      @apply leading-none
+
+      a.main-menu-link
+        @apply text-white text-sm font-helvetica-neue font-black leading-none
+
+  nav
+
+    &.is-active
+
+      .main-navigation
+        @apply translate-x-0
+
+    .main-navigation
+      @apply absolute top-full left-0 right-0 -translate-x-full transition-transform duration-200 ease-in-out
+      @screen md
+        @apply translate-x-0 relative
+
+      ul#header-menu
+        @apply divide-y divide-gray-100
+        @screen md
+          @apply divide-y-0
+
+        li.main-menu-item
+          @apply relative bg-white block
+          @screen md
+            @apply p-0 bg-transparent inline-block
+
+            &:hover
+
+              ul.dropdown-content
+                @apply h-auto
+
+          &.is-open
+
+            button.toogle-open
+              @apply rotate-180
+
+            ul.dropdown-content
+              @apply h-auto
+
+          a.main-menu-link
+            @apply text-lg font-helvetica-neue font-bold pl-4 py-4 inline-block
+            @screen md
+              @apply text-sm pl-0 py-6
+
+              &::after
+                content: ''
+                @apply w-0 h-1 bg-yellow-500 absolute bottom-0 left-0 transition-all duration-200 ease-in-out
+
+              &:hover
+
+                &::after
+                  content: ''
+                  @apply w-full
+
+          ul.dropdown-content
+            @apply w-full h-0 bg-white z-10 overflow-hidden
+            @screen md
+              @apply w-[220px] absolute top-full left-0
+
+            li.sub-menu-item
+
+              a.sub-menu-link
+                @apply w-full text-lg font-bold font-helvetica p-4 bg-white block transition-colors duration-200 ease-in-out
+                @screen md
+                  @apply text-sm
+
+                &:hover
+                  @apply bg-gold-500
+
+footer
+
+  ul#footer-menu
+
+    li.main-menu-item
+
+      &.dropdown
+
+        a.main-menu-link
+          @apply inline-block mb-4
+
+        ul.dropdown-content
+
+          li.sub-menu-item
+            @apply mb-4
+
+            &:last-of-type
+              @apply mb-0
+
+      a.menu-link
+        @apply text-sm transition-colors duration-200 ease-in-out
+
+        &:hover
+          @apply text-red-500

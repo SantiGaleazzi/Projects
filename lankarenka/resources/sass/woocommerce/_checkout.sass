@@ -1,0 +1,362 @@
+body.woocommerce-checkout
+
+    .woocommerce
+        @apply max-w-3xl mx-auto
+
+        // Login
+        // Hook has been disabled on the woocommerce/checkout/form-checkout.php file
+        .woocommerce-form-login-toggle
+
+            // Info
+            .woocommerce-info
+                @apply text-sm text-purple-600 font-medium flex flex-col items-center justify-center mb-6
+
+                a.showlogin
+                    @apply text-purple-100 text-xs font-normal px-5 py-2 bg-purple-500 rounded inline-block mt-2
+        
+        // Login Form
+        // Hook has been disabled on the woocommerce/checkout/form-checkout.php file
+        form.woocommerce-form-login
+            @apply max-w-xs mb-6
+
+            & > p
+                @apply text-sm text-gray-500 mb-3
+
+            p.form-row-first,
+            p.form-row-last
+                @apply flex flex-col items-start justify-start
+
+                label
+                    @apply text-sm text-gray-500
+
+                input
+                    @apply w-full text-purple-500 text-sm px-4 py-2 border-2 border-gray-300 rounded transition duration-300 ease-in-out
+
+                    &:focus
+                        @apply border-purple-500
+
+            p.form-row
+                @apply flex items-center justify-between
+
+            p.lost_password
+                @apply text-sm text-center text-purple-500 underline
+
+        // Coupon
+        // Hook has been disabled on the woocommerce/checkout/form-checkout.php file
+        .woocommerce-form-coupon-toggle
+
+            .woocommerce-info
+                @apply text-sm text-purple-600 font-medium flex flex-col items-center justify-center mb-6
+
+                a.showcoupon
+                    @apply text-purple-100 text-xs font-normal px-5 py-2 bg-purple-500 rounded inline-block mt-2
+        
+        // Checkou Form
+        form.checkout
+            @apply flex flex-col relative
+
+            // On submit message
+            .woocommerce-NoticeGroup
+                @apply w-full px-5 py-3 bg-purple-500 top-0 left-0 absolute z-10
+
+                ul.woocommerce-error
+
+                    li
+                        @apply text-xs text-white py-1
+
+                        strong
+                            @apply font-medium
+
+            // Customer Review
+            #customer_details
+                @apply w-full text-gray-500 py-12 px-4 bg-white flex flex-col border-r border-gray-300 relative
+
+                // PayPal Express Checkout Settings
+                h3
+                    @apply text-xl text-purple-500 mb-4
+
+                ul
+                    @apply mb-6
+                    li
+                        @apply text-sm text-purple-500
+
+                        strong
+                            @apply font-medium text-gray-500
+
+                // Billing
+                .woocommerce-billing-fields
+                    @apply mb-2
+
+                    h3
+                        @apply text-xl text-purple-500 mb-4
+
+                    .woocommerce-billing-fields__field-wrapper
+
+                        p.form-row
+                            @apply flex flex-col mb-3
+
+                            // If validation fails
+                            &.woocommerce-invalid-required-field
+                                
+                                input
+                                    @apply border-purple-400
+
+                            label
+                                @apply text-sm text-gray-500 mb-1
+
+                            input
+                                @apply w-full text-sm text-purple-500 px-4 py-1 bg-white rounded border-2 border-gray-300 transition duration-300 ease-in-out
+
+                                &:focus
+                                    @apply border-purple-400
+                            
+                            // When a country is set on the store
+                            span.woocommerce-input-wrapper
+
+                                strong
+                                    @apply text-sm text-purple-500 font-normal
+
+                            // Select
+                            span.select2
+                                @apply w-full
+
+                                span.select2-selection
+                                    @apply h-auto flex items-center justify-between px-4 py-2 border-2 border-gray-300 rounded m-0 relative
+
+                                    &:focus
+                                        @apply outline-none border-purple-400
+
+                                    span.select2-selection__rendered
+                                        @apply text-sm text-purple-500 px-0 leading-snug
+
+                                    span.select2-selection__arrow
+                                        @apply w-6 h-full top-0 right-0 relative
+
+                                        &::before
+                                            top: -0.3rem
+                                            content: '\f078' 
+                                            font-family: 'Font Awesome 5 Free'
+                                            @apply text-sm text-gray-400 leading-none font-bold right-0 absolute
+
+                                        b
+                                            @apply hidden
+
+                // Acccount Fields
+                .woocommerce-account-fields
+                    @apply mb-6
+
+                    p.form-row
+                        @apply text-xs text-purple-500
+                
+                // Shipping Fields
+                .woocommerce-shipping-fields
+                    @apply pt-4 mt-4 border-t-2 border-gray-300
+
+                    h3#ship-to-different-address
+
+                        label.woocommerce-form__label
+                            @apply text-base
+
+                    .shipping_address
+
+                        .woocommerce-shipping-fields__field-wrapper
+
+                            p.form-row
+                                @apply flex flex-col mb-3
+
+                                // If validation fails
+                                &.woocommerce-invalid-required-field
+                                    
+                                    input
+                                        @apply border-purple-400
+
+                                label
+                                    @apply text-sm text-gray-500 mb-1
+
+                                input
+                                    @apply w-full text-sm leading-none text-purple-500 px-4 py-1 bg-white rounded border-2 border-gray-300 transition duration-300 ease-in-out
+
+                                    &:focus
+                                        @apply border-purple-400
+                                
+                                // When a country is set on the store
+                                span.woocommerce-input-wrapper
+
+                                    strong
+                                        @apply text-sm text-purple-500 font-normal
+
+                                // Select
+                                span.select2
+                                    @apply w-full
+
+                                    span.select2-selection
+                                        @apply h-auto flex items-center justify-between px-4 py-2 border-2 border-gray-300 rounded m-0 relative
+
+                                        &:focus
+                                            @apply outline-none border-purple-400
+
+                                        span.select2-selection__rendered
+                                            @apply text-sm text-purple-500 px-0 leading-snug
+
+                                        span.select2-selection__arrow
+                                            @apply w-6 h-full top-0 right-0 relative
+
+                                            &::before
+                                                top: -0.3rem
+                                                content: '\f078' 
+                                                font-family: 'Font Awesome 5 Free'
+                                                @apply text-sm text-gray-400 leading-none font-bold right-0 absolute
+
+                                            b
+                                                @apply hidden
+
+                // Additional Comments
+                .woocommerce-additional-fields
+
+                    h3
+                        @apply text-xl text-purple-500 mb-4
+
+                    .woocommerce-additional-fields__field-wrapper
+
+                        p.form-row
+                            @apply flex flex-col
+
+                            label
+                                @apply text-sm text-gray-500 mb-1
+
+                            textarea
+                                @apply w-full h-24 text-sm px-4 py-3 border-2 border-gray-300 rounded resize-none
+
+            // Order Review
+            #order_review
+                @apply w-full pt-12 px-4
+
+                h3
+                    @apply text-xl text-purple-500 mb-4
+
+                table.shop_table
+                    @apply w-full bg-white rounded overflow-hidden mb-8 border-collapse border-none
+
+                    // Form Head
+                    thead
+                        @apply bg-gray-400
+
+                        tr
+                            @apply text-left text-sm text-white px-5 py-2 flex items-center justify-between
+
+                            th
+                                @apply font-normal
+                    
+                    // Form Body
+                    tbody
+
+                        tr
+                            @apply text-left text-sm flex items-center justify-between px-5 py-2 border-l-2 border-r-2 border-b-2 border-gray-300
+
+                            td
+
+                                strong.product-quantity
+                                    @apply font-medium text-purple-100 px-3 bg-purple-400 mr-3 rounded-full inline-block
+
+                                &.product-name
+                                    @apply flex flex-row-reverse truncate
+                            
+                    // Form Footer
+                    tfoot
+
+                        tr.cart-subtotal
+                            @apply text-sm flex items-center justify-between px-5 py-2 border-l-2 border-r-2 border-b-2 border-gray-300
+
+                            th
+                                @apply text-gray-500 font-normal
+
+                        tr.woocommerce-shipping-totals
+                            @apply text-sm flex items-center justify-between px-5 py-2 border-l-2 border-r-2 border-b-2 border-gray-300
+
+                            th,
+                            td
+                                @apply text-default
+
+                        tr.order-total
+                            @apply text-base flex items-center justify-between px-5 py-2 border-l-2 border-r-2 border-b-2 border-gray-300 rounded-bl rounded-br
+
+                            th,
+                            td
+                                @apply text-default
+                
+                // Payments
+                .woocommerce-checkout-payment
+
+                    ul.wc_payment_methods
+                        @apply mb-4
+
+                        li.wc_payment_method
+                            @apply mb-5
+
+                            &.payment_method_conektaoxxopay
+                                @apply text-sm mt-3
+                            
+                            // Conekta Card
+                            &.payment_method_conektacard
+                                @apply text-sm
+
+                                .payment_method_conektacard
+                                    @apply mt-3
+
+                                    .form-row
+                                        @apply text-sm mb-2
+
+                                        label
+                                            @apply text-gray-500 mb-1 block
+
+                                        input
+                                            @apply w-full leading-none px-4 py-2 border border-gray-300 rounded-md block
+
+                                        select
+                                            @apply w-full leading-none px-4 py-3 border border-gray-300 rounded-md block
+
+                    // Place Order
+                    .place-order
+                        @apply pb-12
+
+                        .woocommerce-terms-and-conditions-wrapper
+                            
+                            .woocommerce-privacy-policy-text
+                                
+                                p
+                                    @apply text-xs text-gray-500 mb-6
+
+                                    a.woocommerce-privacy-policy-link
+                                        @apply text-purple-500
+                        
+                        button[type="submit"]
+                            @apply w-full text-center
+
+                        // PayPal Express Checkout Cancl Button
+                        a.wc-gateway-ppec-cancel
+                            @apply text-sm text-center text-white px-4 py-2 bg-gray-400 rounded mt-3 transition duration-300 ease-in-out
+
+                            &:hover
+                                @apply bg-gray-500
+
+@screen sm
+
+    body.woocommerce-checkout
+
+        .woocommerce
+
+            // Checkou Form
+            form.checkout
+                @apply flex-row
+
+                // On submit message
+                .woocommerce-NoticeGroup
+                    @apply w-1/2
+
+                // Customer Review
+                #customer_details
+                    @apply flex-1 w-1/2 pr-10 pl-6
+
+                // Order Review
+                #order_review
+                    @apply w-1/2 pl-10 pr-6

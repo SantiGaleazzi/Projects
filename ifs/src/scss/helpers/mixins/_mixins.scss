@@ -1,0 +1,5 @@
+@mixin width-class($size, $fullWidth: 100%) {
+  &--#{$size} {
+    width: $fullWidth / $size;
+  }
+}

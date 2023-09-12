@@ -1,0 +1,98 @@
+.default-template
+    @apply text-default pt-8
+    @screen md
+        @apply pt-32
+
+    .template-header
+        @apply py-10
+        @screen md
+            @apply pt-32
+
+    // Headings Styles
+    h1,
+    h2,
+    h3,
+    h4,
+    h5
+        @apply leading-none mb-2
+
+    // Headings Fonts
+    h1
+        @apply text-4xl
+        @screen md
+            @apply text-5xl
+
+    h2
+        @apply text-3xl
+        @screen md
+            @apply text-4xl
+
+    h3
+        @apply text-2xl
+        @screen md
+            @apply text-3xl
+
+    h4
+        @apply text-xl
+        @screen md
+            @apply text-2xl
+
+    p
+        @apply text-base mb-6
+
+        &.medium
+            @apply text-xl
+
+        &.big
+            @apply text-2xl
+
+    // Links
+    a
+        @apply text-red-500 no-underline
+
+        &.big
+            @apply text-xl
+
+        &.default-btn
+            @apply text-white-pure leading-none font-bold px-8 py-3 bg-red-500 rounded-full inline-block
+
+    // Lists
+    ul
+        @apply my-4 ml-6
+        @screen md
+            @apply ml-12
+
+        li
+            @apply mb-2
+
+            &:last-of-type
+                @apply mb-0
+
+            &::before
+                content: "\2022"
+                width: 1em
+                margin-left: -1em
+                @apply text-red-500 font-bold rounded-full inline-block
+
+    .custom-quote
+        @apply flex justify-center items-start mb-5
+
+        p
+            @apply px-1 text-xl leading-9 mb-0
+            @screen md
+                @apply text-2xl px-3
+
+@screen md
+
+    body.logged-in
+
+        // Admin
+        &.admin-bar
+            @apply pt-0 #{!important}
+
+            .default-template
+
+                .template-header
+                    @apply pt-24
+                    @screen lg
+                        @apply pt-32

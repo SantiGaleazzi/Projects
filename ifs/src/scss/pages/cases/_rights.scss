@@ -1,0 +1,89 @@
+$block-rights:'.your-rights';
+
+#{$block-rights}{
+  background:{
+    repeat: no-repeat;
+    size: cover;
+    position: right center;
+  }
+  
+  &__box{
+    background-color: $secondary-color;
+    display: block;
+    color: $white;
+    width: 63rem;
+    max-width: 100%;
+    margin: 0 auto;  
+    padding: 4rem 6rem 5rem;
+    text-align: center;  
+    h2{
+      font:{        
+        size: 7.2rem;
+        weight: 200;        
+      }
+      line-height: 1;
+      margin-bottom: 2rem;
+      @include breakpoint(small only){
+        font-size: 6rem;
+      }
+
+    }
+    p{
+      font:{
+        family: $font-neuton;
+        size: 2.8rem; 
+        weight: 300;       
+      }
+      line-height: 1.2;
+      padding: 0 4rem;
+    }    
+    @include breakpoint(medium down){
+      padding: 3rem 1.5rem;
+    }
+  }
+  &__contact{
+    display: inline-block;
+    font:{
+      family: $font-neuton;
+      size: 1.6rem;
+      weight: 700;
+    }
+    color: $white;
+    border-bottom: 2px solid #ffbe32;
+    padding: 0.4rem 0.4rem;
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+    z-index: 5;
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 0px;
+      background: rgba(255, 190, 50, 1);
+      transition: all 0.6s ease;      
+    }
+    &:hover,
+    &:focus{
+      padding: 0.4rem 0.8rem;
+      color: $secondary-color;
+    }
+    &:hover{
+      &:before{        
+        height: 100%;
+        z-index: -1;         
+      }
+    }
+  }
+  &__overlay{
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    & > .row {
+      position: relative;
+    }
+    
+  }
+}

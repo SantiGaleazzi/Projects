@@ -1,0 +1,63 @@
+$block-state:'.articles-state';
+
+#{$block-state}{
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #dddddd;
+    height: 64%;
+    width: 1px;
+    @include breakpoint(medium down){
+      content: '';
+      position: absolute;
+      left: 1.5rem;
+      bottom: 0rem;
+      background: #dddddd;
+      height: 1px;
+      width: 5%;
+    }
+  }
+  &:nth-child(even){
+    padding-left: 4rem;
+    &:after{
+      width: 0;
+    }
+    @include breakpoint(medium down){
+      padding-left: 1.5rem;
+      &:after{
+        content: '';
+        position: absolute;
+        left: 1.5rem;
+        bottom: 0rem;
+        background: #dddddd;
+        height: 1px;
+        width: 5%;
+      }
+    }
+  }
+  .articles__item{
+    padding-left: 0;
+    padding-bottom: 1rem;
+    &:nth-child(odd){
+      
+    }
+    &:after{
+      width: 0;
+    }
+  }
+  &.articles__section{
+    &:first-child{
+      padding-top: 2rem;
+    }
+  }      
+}
+
+#response-states{
+  padding-bottom: 4rem;
+  .destacada{
+    padding-bottom: 4rem;
+  }
+}

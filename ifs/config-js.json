@@ -1,0 +1,23 @@
+{
+	"scripts": [
+		"./node_modules/jquery/dist/jquery.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.core.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.util.*.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.accordion.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.accordionMenu.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.drilldown.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.dropdown.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.dropdownMenu.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.equalizer.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.responsiveToggle.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.reveal.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.sticky.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.tabs.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.js",
+		"./node_modules/slick-carousel/slick/slick.js",
+		"./node_modules/jscroll/jquery.jscroll.js",
+		"./src/js/advance-search.js",
+		"./src/js/app.js"
+	]
+}

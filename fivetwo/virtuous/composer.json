@@ -1,0 +1,19 @@
+{
+    "name": "digizent/virtuous",
+    "description": "Virtuous Integration",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adriana Zepeda",
+            "email": "azepeda@digizent.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "VirtuousConnector": "src/"
+        }
+    }
+}

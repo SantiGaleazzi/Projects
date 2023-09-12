@@ -1,0 +1,105 @@
+.year-end-lightbox {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  &.is-closed {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .lightbox-container {
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+    position: relative;
+
+    @include breakpoint(small down) {
+      flex-direction: column;
+    }
+
+    .close-lightbox {
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 20px;
+      color: #00a7e1;
+      font-weight: bold;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+
+      @include breakpoint(small down) {
+        color: #ffffff;
+      }
+    }
+
+    .lightbox-content {
+      width: 50%;
+      padding: 50px 25px;
+      background-color: #00a7e1;
+      border-radius: 60px 0px 0px 0px;
+
+      @include breakpoint(small down) {
+        width: 100%;
+        border-radius: 40px 0px 40px 0px;
+      }
+
+      .lightbox-logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .lightbox-text {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: bold;
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-family: 'PT Sans', sans-serif;
+
+        span {
+          color: #001a38;
+        }
+      }
+
+      .lightbox-button a {
+        display: block;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 24px;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #da10c9;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    }
+
+    .lightbox-background {
+      width: 50%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0px 0px 60px 0px;
+      background-image: url('../img/ye-lightbox-bg.jpg');
+
+      @include breakpoint(small down) {
+        display: none;
+      }
+    }
+  }
+}

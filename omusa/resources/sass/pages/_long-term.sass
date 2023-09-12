@@ -1,0 +1,131 @@
+// Filtering
+#filters
+
+    .filter
+        @apply bg-page border border-separator shadow rounded-md relative
+
+        .filter-terms
+            max-height: 0px
+            @apply w-full opacity-0 invisible overflow-hidden relative transition-all duration-150 ease-in-out z-20 overflow-y-scroll
+
+            &.active
+                max-height: 1000px
+                @apply opacity-100 visible py-2
+
+.long-term-values
+
+    .the-value
+
+        &:hover
+            
+            .value-info
+                margin-top: 11rem
+                @apply opacity-100 visible
+
+        .value-info
+            left: 50%
+            width: 280px
+            @apply p-6 opacity-0 mt-40 invisible transition-all duration-150 ease-in-out z-10 transform -translate-x-1/2
+
+            &::before
+                width: 25px
+                height: 12px
+                content: ''
+                left: 50%
+                border-style: solid
+                border-width: 0 12.5px 12px 12.5px
+                border-color: transparent transparent #2ad2c9 transparent
+                @apply -mt-3 absolute top-0 transform -translate-x-1/2
+
+input[type='checkbox']
+    appearance: checkbox
+    -webkit-appearance: checkbox
+
+table.table-sortable
+    @apply w-full table-fixed
+
+    thead
+        @apply w-full bg-gray-150-new
+
+        tr
+            @apply w-full
+
+            th
+                @apply text-xs text-left font-bold leading-none p-3 uppercase cursor-pointer
+                
+                &.job-id
+                    @apply w-24
+
+                &.country
+                    @apply w-32
+                
+                &.position
+                    @apply w-64
+
+                &.category
+                    @apply w-40
+
+                &.date
+                    @apply w-24
+
+                &.th-sort-asc,
+                &.th-sort-desc
+                    background: rgba(0, 0, 0, 0.1)
+
+                    &::after
+                        @apply text-red-500 ml-2
+
+                &.th-sort-asc
+
+                    &::after
+                        content: '\25b4'
+
+                &.th-sort-desc
+                    
+                    &::after
+                        content: '\25be'
+
+    tbody
+        @apply w-full
+
+        tr
+
+            td
+                @apply text-default px-2 py-1
+
+                &.job-id
+                    @apply text-xs font-bold underline
+
+                &.country
+                    @apply text-xs font-bold text-orange-500 uppercase
+                
+                &.position
+                    @apply font-black whitespace-no-wrap truncate
+
+                &.category
+                    @apply truncate
+
+                &.no-jobs-found
+                    @apply text-center text-red-500 py-4
+
+@screen md
+
+    // Filtering
+    #filters
+
+        .filter
+
+            .filter-terms
+                @apply mt-12 py-2 bg-page absolute top-0 left-0 border border-separator shadow rounded-md
+
+                &.active
+                    max-height: 315px
+                    @apply opacity-100 visible py-2
+
+    .long-term-values
+
+        .the-value
+
+            .value-info
+                width: 400px
+                @apply p-8

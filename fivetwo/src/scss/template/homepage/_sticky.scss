@@ -1,0 +1,52 @@
+.blue-sticky-top{
+    background: #00a7e1;
+    font-family: "Roboto Condensed";
+    color: #001a38;
+    font-weight: 700;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+
+    @include breakpoint(small down) {
+        height: 95px;
+        padding: 10px 10px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h3{
+        font-size: 18px;
+
+        @include breakpoint(small down) {
+            font-size: 16px;
+        }
+    }
+
+    a{
+        background: #da10c9;
+        border-radius: 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        display: block;
+        width: 200px;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 15px 5px;
+        margin: 10px 15px;
+
+        @include breakpoint(small down) {
+            width: 177px;
+            font-size: 16px;
+            padding: 9px 5px;
+        }
+    }
+
+}

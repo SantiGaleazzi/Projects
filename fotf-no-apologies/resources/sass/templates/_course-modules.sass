@@ -1,0 +1,1250 @@
+.group-management
+	.ldgr-group-courses
+		@apply hidden #{!important}
+	.wdm-select-wrapper
+		@apply w-full mb-0 #{!important}
+		h6
+			@apply hidden
+		#wdm_ldgr_course_id
+			@apply hidden
+		#wdm_ldgr_show_report
+			height: 52px !important
+			@apply w-52 bg-blue-500 text-white font-noto-cond-bold text-xl py-3 ml-0 rounded-none #{!important}
+	#tab-2
+		@apply px-0 #{!important}
+		.email
+			span
+				@apply font-noto-sans-cond text-xs text-gray-200 #{!important}
+		.details-control
+			@apply hidden
+	#tab-2
+		.no-footer
+			@apply border-none #{!important}
+	#wdm_ldgr_group_report
+		thead
+			tr
+				th
+					&:nth-child(3)
+						border-top-left-radius: 4px
+						border-bottom-left-radius: 4px
+		td
+			border-bottom: 1px solid #e6e6e6 !important
+			padding: 12px 26px !important
+		tr
+			@apply bg-yellow-100 leading-normal #{!important}
+	.course-progress
+		.ldgr-group-report-item
+			height: 12px !important
+			max-width: 40px
+			@apply bg-gray-100 #{!important}
+			.ldgr-course-progress-bar
+				height: 12px !important
+				@apply bg-blue-400 #{!important}
+		.ldgr-course-lesson-progress
+			@apply font-noto-sans-cond text-xs text-gray-200 font-normal #{!important}
+	.ldgr-search
+		max-width: 300px !important
+		height: 48px !important
+		@apply w-full border border-gray-400 bg-white rounded-none text-gray-500 font-noto-sans-cond text-sm text-left opacity-100 px-4 #{!important}
+		&::placeholder
+			@apply text-gray-500 font-noto-sans-cond text-sm opacity-100 #{!important}
+	.ldgr-icon-Search
+		@apply hidden
+	.ldgr-group-item
+		max-width: 825px
+		@apply bg-blue-400 border-b border-2 border-white px-4 py-12 #{!important}
+		.gr-title
+			@apply text-white font-noto-extra-cond-bold text-3xl font-normal
+		.gr-left
+			@apply hidden
+	.tab-content
+		@apply bg-yellow-100 #{!important}
+	.ldgr-group-single
+		max-width: 825px
+		@apply bg-blue-400 rounded px-4 pt-5 pb-8 #{!important}
+		.ldgr-gr-title-info
+			@apply pt-5
+			h1
+				@apply font-noto-extra-cond-bold text-white text-3xl #{!important}
+		.ldgr-top-banner
+			min-height: auto !important
+			@apply px-0 py-0 bg-transparent items-start #{!important}
+		.ldgr-u-left
+			@apply hidden #{!important}
+		.ldgr-group-image
+			@apply hidden
+		.ldgr-btn
+			width: 234px !important
+			padding: 12px 35px !important
+			@apply w-full bg-blue-600 rounded-none border-none font-noto-cond-bold text-white text-xl #{!important}
+		.ldgr-icon-Edit
+			@apply hidden
+		.ldgr-edit-group
+			margin-top: 20px !important
+			@apply text-center font-noto-cond-bold text-teal-300 text-sm underline justify-center #{!important}
+		.ldgrs-right
+			@apply mt-1.5
+	.wdm-tabs-wrapper
+		max-width: 825px
+		@apply mt-24 relative #{!important}
+		.tabs
+			@apply border-b border-blue-500 pl-0 mb-7 #{!important}
+		.tab-link
+			a
+				@apply font-noto-extra-cond-bold text-base font-normal text-blue-400 relative pb-5 #{!important}
+		.tab-link.current
+			a
+				@apply border-none text-blue-500 #{!important}
+				&::after
+					content: ""
+					height: 8px
+					border-top-left-radius: 8px
+					border-top-right-radius: 8px
+					bottom: -3px
+					@apply w-full absolute left-0 bg-blue-500
+		.dataTables_filter
+			max-width: 300px !important
+			@apply w-full
+			input
+				height: 48px !important
+				@apply w-full bg-white rounded border border-gray-100 font-noto-sans-cond text-sm text-gray-500 #{!important}
+				&::placeholder
+					@apply font-noto-sans-cond text-sm text-gray-500 opacity-100 #{!important}
+			label
+				&::before
+		.dataTables_length
+			label
+				@apply text-base text-blue-400 font-noto-cond-bold #{!important}
+			select
+				min-width: 50px
+				max-width: 125px
+				padding: 8px 15px 8px 8px !important
+				padding-right: 10px !important
+				@apply pl-5 bg-transparent border-none text-base text-blue-400 font-noto-cond-bold py-0 #{!important}
+		#bulk_remove
+			height: 51px !important
+			@apply w-52 bg-orange-500 text-white font-noto-cond-bold text-xl font-normal #{!important}
+		.dataTable
+			top: 12px
+			@apply relative
+			thead
+				@apply bg-yellow-100 #{!important}
+			th
+				&:first-child
+					width: 12px !important
+					border-top-left-radius: 4px
+					border-bottom-left-radius: 4px
+					@apply px-0 #{!important}
+				&:nth-child(2)
+					@apply hidden
+				&:nth-child(4)
+					border-top-right-radius: 4px
+					border-bottom-right-radius: 4px
+				@apply bg-blue-400 text-white font-helvetica-neue-bold border-none text-base font-normal text-left leading-none py-3.5 px-4 mb-4 #{!important}
+				tr
+					@apply bg-transparent #{!important}
+			td
+				@apply border-none px-4 #{!important}
+			td[data-title="Name"]
+				@apply hidden
+			td[data-title="Email"]
+				@apply text-left font-noto-sans-cond text-gray-500 text-sm #{!important}
+			.ldgr-actions
+				@apply justify-start #{!important}
+				a
+					&::before
+						@apply hidden #{!important}
+					@apply font-noto-cond-bold text-left text-orange-500 text-sm underline #{!important}
+			.wdm_remove.button
+				@apply font-noto-cond-bold text-left text-orange-500 text-sm underline #{!important}
+			.select_action
+				@apply px-3 #{!important}
+				input
+					appearance: checkbox
+					width: 12px
+					height: 12px
+					@apply cursor-pointer
+			tbody
+				tr
+					@apply border-b border-gray-100
+					&:hover
+						border-left: none !important
+						border-right: none !important
+						@apply bg-inherit #{!important}
+		#wdm_group_info, #wdm_ldgr_group_report_info
+			@apply mt-14 font-noto-sans-cond text-base text-gray-500 #{!important}
+		#wdm_group_paginate, #wdm_ldgr_group_report_paginate
+			@apply mt-14 font-noto-extra-cond-bold text-base text-gray-400 #{!important}
+			.current
+				@apply bg-transparent text-orange-500 border-none #{!important}
+			.next
+				@apply text-orange-500 #{!important}
+.button-enroll-user
+	top: -15px
+	max-width: 208px
+	@apply w-60 bg-yellow-500 text-center text-white font-noto-cond-bold text-xl leading-none px-3 py-4 cursor-pointer absolute right-0 z-10
+
+.enroll-new-user.ldgr-mobile
+	z-index: -1
+	@apply hidden w-0 h-0 relative opacity-0 #{!important}
+
+.enroll-new-user
+	z-index: -1
+	@apply hidden w-0 h-0 relative opacity-0 px-0 py-0 #{!important}
+
+#wdm_group tr.odd, #wdm_group tr.even
+	@apply bg-transparent #{!important}
+
+#wdm_group
+	tr
+		&:hover
+			@apply border-none #{!important}
+	p
+		@apply text-2xbase 
+
+.max-w-825
+	max-width: 825px
+
+.course-container
+	.learndash-wrapper
+		@apply bg-blue-500 #{!important}
+	.ld-progress
+		@apply flex flex-col-reverse justify-end text-left #{!important}
+	.ld-item-list-item-expanded
+		@apply bg-blue-400 	#{!important}
+	.ld-course-status
+		@apply bg-blue-500 px-0 py-0 text-left #{!important}
+		.ld-status
+			@apply hidden #{!important}
+		h3
+			@apply text-white text-xl font-noto-extra-cond-bold font-normal mr-6
+	.ld-item-list-item
+		@apply cursor-pointer #{!important}
+	.ld-tab-count-1
+		@apply hidden #{!important}
+	.ld-progress-bar
+		height: 12px !important
+		max-width: 230px !important
+		@apply bg-white w-full #{!important}
+	.ld-secondary-background
+		height: 12px !important
+		border-radius: 7px
+		@apply bg-yellow-500 #{!important}
+	.ld-progress-steps
+		@apply hidden
+	.ld-progress-heading
+		@apply ml-0 font-noto-extra-cond-bold text-blue-500 text-3xxl text-left font-normal #{!important}
+		.ld-secondary-color
+			@apply text-white #{!important}
+	.ld-item-list-item-preview
+		@apply flex-row #{!important}
+		.ld-text
+			@apply hidden
+	.ld-table-list-item
+		border-bottom: 1px solid #80A5D4 !important
+		&:last-child
+			@apply border-none #{!important}
+	.ld-section-heading
+		.ld-expand-button
+			@apply bg-blue-400 text-white text-xl rounded-none py-3 px-3 #{!important}
+			.ld-icon-arrow-down
+				@apply text-white text-sm #{!important}
+	.ld-table-list-item-quiz
+		.ld-item-title
+			@apply font-noto-cond-bold text-white text-base cursor-pointer #{!important}
+			&:hover
+				@apply text-current text-white #{!important}
+	.ld-item-lesson-item
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16)
+		border-radius: 10px !important
+		@apply border-none bg-blue-300 #{!important}
+		.ld-item-title
+			@apply font-noto-cond-bold text-white text-2xbase cursor-pointer
+			&:hover
+				@apply text-current text-white #{!important}
+		.ld-item-component
+			@apply font-noto-sans-cond text-sm font-normal text-white
+		.ld-topic-title
+			@apply text-white text-base font-noto-sans-cond #{!important}
+		.ld-table-list-item-preview
+			.ld-item-title
+				@apply text-white text-base font-noto-sans-cond #{!important}
+		.ld-table-list-header
+			@apply hidden #{!important}
+		a
+			@apply py-3 #{!important}
+		.ld-icon-quiz
+			@apply text-lg #{!important}
+		.ld-item-title
+			&:hover
+				@apply text-white cursor-pointer #{!important}
+		.ld-item-components
+			@apply cursor-pointer text-base #{!important}
+	.ld-sep
+		@apply text-gray-400 font-normal
+	.ld-item-list
+		@apply mt-14 #{!important}
+	.ld-item-list-item-expanded
+		&::before
+			width: 0px !important
+			height: 0px !important
+			@apply hidden #{!important}
+	.ld-expanded
+		.ld-item-list-item-preview
+			@apply rounded flex-row #{!important}
+		.ld-item-component, .ld-item-title, .ld-icon-arrow-down
+			@apply text-white #{!important}
+		.ld-sep
+			@apply text-white font-normal text-sm #{!important}
+	.learndash-complete
+		.ld-item-list-item-preview
+			@apply bg-yellow-700 flex-row rounded #{!important}
+			.ld-item-title
+				&:hover
+					@apply text-white cursor-pointer #{!important}
+			.ld-item-components
+				@apply cursor-pointer #{!important}
+		.ld-item-component, .ld-item-title
+			@apply text-white #{!important}
+		.ld-item-components
+			@apply mt-0 #{!important}
+			.ld-sep
+				@apply text-white font-normal text-sm #{!important}
+		.ld-icon-quiz
+			&::before
+				@apply text-white #{!important}
+	.ld-status-icon
+		width: 28px !important
+		height: 28px !important
+		flex-basis: 28px !important
+		@apply bg-yellow-500 rounded-full mr-6 #{!important}
+	.ld-icon-arrow-down
+		@apply bg-transparent text-white #{!important}
+	.ld-section-heading
+		@apply border-b border-gray-300 pb-7 mb-10 #{!important}
+		h2
+			@apply font-noto-extra-cond-bold text-3xxl text-white #{!important}
+	.ld-status-incomplete
+		border: solid 1px #b3b3b3 !important
+		flex-basis: 28px !important
+		@apply bg-white #{!important}
+	.ld-tabs
+		@apply hidden #{!important}
+	.learndash-incomplete
+		.ld-status-in-progress
+			border-color: #FAB216 #e2e7ed #e2e7ed #FAB216
+			@apply bg-white #{!important}
+
+.nt-note-tab
+	bottom: 80px !important
+	height: 60px
+	width: 64px !important
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16) !important
+	@apply bg-lms-mustard-500 rounded right-0 top-auto flex #{!important}
+	&:hover
+		@apply opacity-100 #{!important}
+	.nt-screen-reader-text
+		@apply font-noto-cond-bold text-base font-normal text-left tracking-normal leading-none pl-0 pr-2.5 hidden #{!important}
+	.nticon-doc
+		padding-left: 20px
+		padding-right: 19px
+		background-color: transparent !important
+		@apply border-none #{!important}
+		&::before
+			content: url(../images/notes-icon.png)
+			width: 25px !important
+			height: auto
+			@apply mx-0
+	.ldnt-has-note
+		i
+			@apply bg-transparent #{!important}
+
+.topic-single-page
+	.ld-expand-button
+		.ld-text
+			@apply hidden #{!important}
+	.course-sidebar
+		max-width: 393px
+		@apply w-full
+		.learndash-wrapper
+			@apply w-full #{!important}
+		.ld-section-heading
+			@apply hidden #{!important}
+		.ld-item-list-item-expanded
+			&::before
+				width: 0px !important
+				height: 0px !important
+				@apply hidden #{!important}
+		.ld-expanded
+			.ld-item-list-item-preview
+				@apply bg-blue-500 rounded #{!important}
+			.ld-item-component, .ld-item-title, .ld-icon-arrow-down
+				@apply text-white #{!important}
+			.ld-sep
+				@apply text-white font-normal text-sm #{!important}
+			.ld-table-list-items
+				.ld-item-title
+					@apply text-gray-500 #{!important}
+		.learndash-complete
+			.ld-item-list-item-preview
+				@apply rounded #{!important}
+			.ld-item-components
+				@apply mt-0 #{!important}
+				.ld-sep
+					@apply text-gray-500 font-normal text-sm #{!important}
+			.ld-icon-quiz
+				&::before
+					@apply text-white #{!important}
+		.ld-table-list-header
+			@apply hidden #{!important}
+		.ld-item-list-actions
+			@apply hidden #{!important}
+		.ld-status-icon
+			width: 28px !important
+			height: 28px !important
+			flex-basis: 28px !important
+			@apply bg-teal-400 rounded-full mr-6 #{!important}
+		.ld-icon-arrow-down
+			@apply bg-transparent text-gray-500 #{!important}
+		.ld-section-heading
+			@apply border-b border-gray-300 pb-7 mb-10 #{!important}
+			h2
+				@apply font-noto-extra-cond-bold text-3xxl text-blue-500 #{!important}
+		.ld-status-incomplete
+			border: solid 1px #b3b3b3 !important
+			flex-basis: 28px !important
+			@apply bg-white #{!important}
+		.ld-item-list-item-preview
+			@apply flex-row #{!important}
+		.learndash-incomplete
+			.ld-status-in-progress
+				@apply bg-white #{!important}
+	.course-progress-bar
+		.ld-progress-steps
+			@apply hidden #{!important}
+		.ld-progress-bar
+			height: 12px !important
+			max-width: 230px !important
+			@apply bg-yellow-700 w-full mr-9 #{!important}
+		.ld-progress-bar-percentage
+			height: 12px !important
+			border-radius: 7px
+			@apply bg-yellow-500 #{!important}
+		.ld-progress-percentage
+			@apply ml-0 font-noto-extra-cond-bold text-blue-500 text-3xxl text-left font-normal #{!important}
+		.ld-progress
+			@apply flex-row #{!important}
+		h3
+			@apply text-blue-500 font-noto-extra-cond-bold text-xl font-normal mr-6 #{!important}
+		.ld-progress-heading
+			@apply mt-4 #{!important}
+	.course-content
+		max-width: 720px
+		.ld-tabs
+			@apply block #{!important}
+		.ld-progress
+			@apply hidden #{!important}
+		.ld-topic-status
+			@apply hidden #{!important}
+		.wp-caption-text, figcaption
+			@apply font-noto-extra-cond-bold text-left text-base text-orange-500 mt-5 mb-4 px-0 #{!important}
+		.wp-caption
+			@apply border-none px-0 mx-0 #{!important}
+		.topic-title
+			@apply text-blue-500 font-noto-extra-cond-bold text-4xxl mb-5 #{!important}
+		.back-to-course
+			@apply text-blue-400 text-base font-noto-cond-bold font-normal no-underline #{!important}
+		.ld-content-actions
+			@apply bg-gray-250 border-b border-t border-gray-400
+		.ld-content-action
+			@apply px-2 #{!important}
+			.ld-button
+				@apply bg-orange-500 font-noto-cond-bold text-xl font-normal text-center rounded-none px-0 py-4 leading-none #{!important}
+				.ld-icon
+					@apply hidden #{!important}
+			.learndash_mark_complete_button
+				@apply bg-yellow-500 font-noto-cond-bold text-xl font-normal text-center rounded-none px-0 py-4 mb-4 leading-none #{!important}
+			.sfwd-mark-complete
+				&::after
+					content: ''
+					@apply hidden #{!important}
+			.ld-course-step-back
+				@apply bg-blue-600 text-white font-noto-cond-bold text-xl font-normal text-center rounded-none px-0 py-4 leading-none #{!important}
+
+.quiz-single-content
+
+	.ld-breadcrumbs
+		@apply bg-white pt-0 px-0 mb-6 #{!important}
+		a, span
+			@apply font-noto-sans-cond text-blue-400 text-base font-normal #{!important}
+	.wpProQuiz_button
+		max-width: 199px !important
+		height: 51px !important
+		@apply bg-yellow-500 text-white font-noto-cond-bold text-lg font-normal w-full py-0 rounded-none #{!important}
+	.wpProQuiz_list
+		li
+			&::before
+				content: '' !important
+				@apply hidden #{!important}
+	.wpProQuiz_questionListItem
+		label
+			border-radius: 10px !important
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16) !important
+			@apply font-noto-cond-bold text-blue-500 text-sm font-normal border-none cursor-pointer #{!important}
+
+.nt-note-wrapper
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important
+	right: 10px !important
+	#nt-note-title-bar
+		@apply bg-blue-400 text-white font-noto-cond-bold relative rounded-none #{!important}
+	.nt-close-icon
+		@apply text-blue-400 bg-gray-250 #{!important}
+		&::before
+			content: "\2039"
+			top: 14px
+			@apply text-white text-2xl font-normal rotate-90 absolute hidden #{!important}
+		&::after
+			content: "\203A"
+			top: 10px
+			@apply text-white text-2xl font-normal rotate-90 absolute hidden #{!important}
+	#nt-note-title-field
+		@apply pt-3 bg-gray-250 #{!important}
+		.nt-note-title
+			@apply text-blue-500 text-base font-normal font-noto-sans-cond #{!important}
+		input[type="text"].nt-note-title
+			@apply border-b border-gray-300 border-solid font-noto-sans-cond #{!important}
+	.nt-note-editor-body
+		@apply pb-5 #{!important}
+	.nt-note-submit
+		height: 50px !important
+		@apply bg-yellow-500 text-white font-noto-cond-bold text-xl capitalize #{!important}
+		&:hover
+			@apply bg-orange-300 text-white #{!important}
+	#nt-note-actions
+		li
+			height: 50px !important
+			a
+				height: 50px !important
+	#nt-utility-links
+		@apply bg-white rounded-none #{!important}
+		.nt-reset-dimensions
+			@apply py-3 text-blue-400 text-base underline #{!important}
+	#nt-course-note
+		@apply mb-0 #{!important}
+
+.ldgr-lightbox
+	background-color: rgba(25, 76, 117, 0.95) !important
+	.ldgr-popup
+		max-width: 614px !important
+		@apply px-0 py-0 #{!important}
+	.ldgr-popup-title
+		@apply bg-yellow-500 text-white text-base font-noto-cond-bold font-normal py-4 px-5 mb-0 #{!important}
+	.ldgr-icon-Close
+		@apply text-white font-bold text-xxs #{!important}
+	.ldgr-popup-content
+		@apply px-5 py-5 #{!important}
+		label
+			@apply text-gray-500 text-base capitalize #{!important}
+		input[type="text"]
+			@apply border border-gray-100 text-gray-500 text-sm w-full rounded-none px-5 mt-1 #{!important}
+			&::placeholder
+				@apply text-gray-500 text-sm #{!important}
+		.ldgr-edit-gicon
+			@apply hidden #{!important}
+		.ldgr-ch-icon
+			@apply text-blue-400 font-normal leading-none text-base #{!important}
+		.ldgr-group-image
+			width: 89px !important
+		.ldgr-curr-icon
+			@apply mr-2 #{!important}
+		.ldgr-rm-icon
+			@apply text-gray-700 leading-none text-base #{!important}
+		.ldgr-note
+			@apply text-gray-500 leading-tight text-base mt-4 #{!important}
+		.ldgr-eg-actions
+			@apply text-center #{!important}
+			.edit-group-cancel
+				@apply bg-yellow-500 font-noto-cond-bold text-white text-xl font-normal text-center rounded-none w-40 px-4 py-2.5 mr-0 #{!important}
+			.update-group-details
+				@apply bg-blue-500 font-noto-cond-bold text-white text-xl font-normal text-center rounded-none w-40 px-4 py-2.5 mr-0 #{!important}
+
+.enroll-users-lightbox
+	background-color: rgba(25, 76, 117, 0.95)
+	.enroll-users-container
+		max-width: 522px
+
+.login-lightbox
+	background-color: rgba(67, 135, 195, 0.9)
+	opacity: 0
+	transition: opacity 0.4s linear
+	.enroll-users-container
+		max-width: 522px
+
+.close-lightbox
+	@apply text-orange-300 #{!important}
+	&::before
+		content: "\2039"
+		top: 14px
+		@apply text-white text-2xl font-normal rotate-90 absolute #{!important}
+	&::after
+		content: "\203A"
+		top: 10px
+		@apply text-white text-2xl font-normal rotate-90 absolute #{!important}
+
+.show-lightbox
+	opacity: 1
+	z-index: 50
+
+.lightbox-styles
+	.gfield_label
+		@apply text-gray-500 font-normal text-base mb-4 #{!important}
+	select, input
+		height: 50px !important
+		@apply border border-gray-300 text-gray-500 text-sm bg-white w-full mb-2 px-5 #{!important}
+	.gfield_select, .groups-select
+		background-image: url(../images/chevron-down.png)
+		background-size: 10px
+		background-position: 97%
+		@apply bg-no-repeat
+	.gform_footer
+		@apply text-right pb-3 #{!important}
+		input
+			height: 52px
+			@apply bg-blue-500 text-white w-auto font-noto-cond-bold ml-auto mb-0 border-none #{!important}
+	.cancel-enrollment
+		left: 24px
+		bottom: 37px
+		height: 51px
+		padding: 15px 15px
+		@apply leading-none #{!important}
+	.enroll-form-container
+		padding: 26px 24px
+
+.lesson-styles
+	.ld-secondary-background
+		height: auto !important
+	.ld-status-progress, .ld-status-complete
+		@apply bg-transparent text-blue-500 text-lg capitalize #{!important}
+	.ld-course-navigation-heading
+		@apply block #{!important}
+	.ld-table-list-header
+		@apply bg-blue-500 rounded-none #{!important}
+	.ld-topic-title
+		@apply text-blue-500
+	.ld-status-icon
+		height: 28px !important
+	.ld-table-list
+		border-radius: 2px !important
+
+.wpProQuiz_list
+	li
+		&::before
+			content: '' !important
+			@apply hidden #{!important}
+	textarea
+		height: 150px !important
+		padding: 5px 10px !important
+		@apply rounded border-none resize-none #{!important}
+	.wpProQuiz_clear
+		@apply mb-0 #{!important}
+.wpProQuiz_question_text
+	@apply text-blue-500
+	p
+		@apply text-blue-500 mb-2 #{!important}
+.wpProQuiz_question
+	@apply pb-0 #{!important}
+	.graded-disclaimer
+		@apply mb-0 hidden #{!important}
+
+.single-sfwd-topic, .single-sfwd-lessons, .single-sfwd-quiz
+	.wpProQuiz_button
+		max-width: 250px !important
+		@apply bg-yellow-500 w-full text-white text-xl py-3 px-2 rounded-none text-center #{!important}
+	.learndash-widget
+		@apply bg-blue-500 #{!important}
+	.course_progress
+		@apply bg-blue-400 #{!important}
+		.course_progress_blue
+			@apply bg-blue-500 #{!important}	
+	.ld-focus-sidebar
+		padding-top: 120px !important
+		top: 171px !important
+		padding-top: 40px !important
+		@apply bg-blue-500 border-none max-h-screen overflow-x-hidden overflow-y-scroll #{!important}
+		.ld-topic-list
+			@apply bg-blue-500 border-none #{!important}
+		.ld-course-navigation-heading
+			@apply bg-blue-500 #{!important}
+			.ld-icon-content
+				@apply text-gray-500 #{!important}
+			a
+				@apply text-gray-500 #{!important}		
+		.ld-focus-sidebar-trigger
+			@apply bg-transparent text-lg mr-5 #{!important}
+		.ld-lesson-item
+			margin: 0 0 6px !important
+			@apply bg-blue-400 border-none rounded #{!important}
+			&.ld-is-current-lesson
+				.ld-lesson-item-preview
+					@apply bg-lms-mustard-500 rounded #{!important}
+		.ld-focus-sidebar-wrapper
+			@apply overflow-y-visible #{!important}
+		.ld-course-navigation-heading
+			@apply hidden #{!important}
+		.ld-expand-button
+			@apply flex-row-reverse justify-between	#{!important}
+			.ld-icon
+				@apply bg-transparent text-white #{!important}
+		.ld-lesson-title
+			@apply text-base font-bold block #{!important}
+		.ld-text
+			@apply text-sm font-normal text-gray-100 #{!important}
+		.ld-topic-title
+			@apply text-sm font-normal text-white #{!important}
+		.ld-table-list
+			@apply text-sm font-normal text-white #{!important}
+			&::before
+				@apply hidden #{!important}
+		.ld-course-navigation-heading
+		.ld-is-current-lesson
+			.ld-lesson-item-preview
+				@apply bg-blue-500 text-white #{!important}
+				.ld-lesson-title
+					@apply text-white #{!important}
+				.ld-text, .ld-primary-background
+					@apply text-white #{!important}
+		.ld-course-navigation-heading
+			@apply block py-0 #{!important}
+		.ld-progress-steps
+			@apply hidden #{!important}
+		.ld-progress-bar
+			height: 12px !important
+			max-width: 230px !important
+			@apply bg-yellow-700 w-full mr-9 #{!important}
+		.ld-progress-bar-percentage
+			height: 12px !important
+			border-radius: 7px
+			@apply bg-yellow-500 #{!important}
+		.ld-progress-percentage
+			@apply ml-0 font-noto-extra-cond-bold text-white text-3xxl text-left font-normal #{!important}
+		.ld-progress
+			@apply flex-row my-0 #{!important}
+		h3
+			@apply text-white font-noto-extra-cond-bold text-xl pl-0 font-normal mr-6 mb-2 #{!important}
+		.ld-progress-heading
+			@apply mt-4 #{!important}
+		#ld-focus-mode-course-heading
+			@apply hidden #{!important}
+		.ld-lesson-navigation
+			.learndash-complete
+				.ld-lesson-item-preview
+					@apply bg-yellow-700 rounded #{!important}
+					.ld-lesson-title
+						@apply text-yellow-50
+					.ld-text
+						@apply text-yellow-50
+		.ld-lesson-navigation
+			@apply px-1 #{!important}
+		.ld-lesson-item-preview-heading
+			.ld-status-complete
+				@apply bg-yellow-500 #{!important}
+			.ld-status-icon
+				width: 25px !important
+				height: 25px !important
+				flex: 0 0 25px !important
+			.ld-lesson-item-preview-heading
+				@apply text-white #{!important}
+			.ld-status-incomplete
+				@apply bg-blue-300 border-blue-300 #{!important}
+			.ld-lesson-title
+				@apply text-white
+			.ld-expand-button
+				.ld-text
+					@apply text-gray-100 #{!important}
+			.ld-status-in-progress
+				border-color: #fab216 #e2e7ed #e2e7ed #fab216 !important
+		.ld-lesson-item-expanded
+			@apply bg-blue-500 #{!important}
+		.ld-topic-row, .ld-table-list-item-preview
+			padding: 5px 0px !important
+			margin: 0px 30px !important
+			border-bottom: 1px solid #4c87be47 !important
+			.ld-status-complete
+				width: 20px !important
+				height: 20px !important
+				flex: 0 0 20px !important
+				@apply bg-yellow-500
+		.ld-icon-arrow-down
+			@apply text-xs #{!important}
+		.ld-table-list-items
+			.ld-status-incomplete
+				width: 23px
+				height: 23px
+				flex: 0 0 23px
+				@apply bg-blue-500 border border-blue-700 mt-0 mb-1 mr-2 #{!important}
+			.ld-quiz-complete
+				width: 20px !important
+				height: 20px !important
+				flex: 0 0 20px !important
+				@apply bg-yellow-500 text-white
+			.ld-quiz-incomplete
+				width: 23px
+				height: 23px
+				flex: 0 0 23px
+				border: 1px solid #4c87be !important
+				@apply bg-blue-500 rounded-full text-blue-700 mt-0 mb-1 mr-2 #{!important}
+		.ld-table-list-item.learndash-complete
+			.ld-topic-title
+				@apply opacity-50 #{!important}
+		.ld-table-list-item.learndash-incomplete
+			.ld-topic-title
+				@apply opacity-100 #{!important}		
+	.ld-focus-main
+		padding-top: 120px
+		@apply min-h-screen
+		.ld-focus-content
+			@apply pt-0 #{!important}
+		.ld-button
+			@apply bg-orange-500 font-noto-cond-bold text-xl font-normal text-white text-center rounded-none px-0 py-4 leading-none no-underline #{!important}
+		.ld-icon
+			@apply hidden #{!important}
+		.learndash_mark_complete_button
+			@apply bg-yellow-500 font-noto-cond-bold text-xl font-normal text-center rounded-none px-0 py-4 mb-4 leading-none #{!important}
+		.sfwd-mark-complete
+			&::after
+				content: ''
+				@apply hidden #{!important}
+		.ld-course-step-back
+			@apply bg-blue-600 text-white font-noto-cond-bold text-xl font-normal text-center rounded-none px-0 py-4 leading-none #{!important}
+		.ld-status-progress, .ld-status-complete
+			@apply bg-transparent text-blue-500 text-lg capitalize #{!important}
+		.ld-alert-warning
+			background-color: rgba(250,178,22,0.3)
+			border-color: #fab216
+		.ld-progress
+			@apply hidden #{!important}
+		.wpProQuiz_content
+			@apply flex flex-col-reverse
+		.ld-item-lesson-item
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16)
+			border-radius: 10px !important
+			@apply border-none #{!important}
+			.ld-item-title
+				@apply font-noto-cond-bold text-base
+				&:hover
+					@apply text-current #{!important}
+			.ld-item-component
+				@apply font-noto-sans-cond text-sm font-normal text-gray-400
+			.ld-topic-title
+				@apply text-blue-500 text-base font-noto-sans-cond #{!important}
+			.ld-table-list-item-preview
+				.ld-item-title
+					@apply text-blue-500 text-base font-noto-sans-cond #{!important}
+			.ld-table-list-header
+				@apply hidden #{!important}
+			a
+				@apply py-3 #{!important}
+			.ld-icon-quiz
+				@apply text-lg #{!important}
+			.ld-item-title
+				&:hover
+					@apply text-gray-400 cursor-auto #{!important}
+			.ld-item-components
+				@apply cursor-pointer #{!important}
+		.ld-table-list-item
+			.ld-status-complete, .ld-quiz-complete
+				@apply bg-yellow-500 #{!important}
+				.ld-icon
+					@apply block text-white text-sm #{!important}
+			.ld-status-incomplete
+				@apply bg-transparent border-gray-350 border #{!important}
+			.ld-table-list-item-preview
+				@apply no-underline #{!important}
+				&:hover
+					@apply text-blue-400 #{!important}
+		.ld-focus-header
+			.ld-content-actions
+				@apply hidden #{!important}
+		.ld-focus-header
+			background: transparent !important
+			@apply border-none #{!important}
+		.ld-content-action
+			form
+				max-width: 250px
+				&::after
+					@apply hidden
+				input
+					height: 51px
+					@apply bg-blue-400 #{!important}
+			.ld-course-step-back
+				@apply hidden #{!important}
+		.ld-primary-color
+			@apply hidden #{!important}
+		.ld-breadcrumbs
+			a
+				@apply text-blue-500
+		.wpProQuiz_questionListItem
+			min-height: 48px
+			border: 1px solid #cec9bb !important
+			border-radius: 6px
+			@apply bg-white px-2 py-2 #{!important}
+			label
+				@apply text-gray-500 px-0 py-0 border-none #{!important}
+				img
+					@apply inline-block #{!important}
+		.wpProQuiz_cloze
+			@apply bg-white w-full h-full py-1 m-0 #{!important}
+			input
+				@apply w-full h-full #{!important}
+		.ld-quiz-actions
+			@apply flex-row-reverse #{!important}
+			.quiz_continue_link
+				@apply hidden #{!important}
+			input
+				@apply mx-1 #{!important}
+		.wpProQuiz_description
+			order: 1
+		h1
+			@apply font-noto-extra-cond-black-italic text-orange-500 text-5xl
+		h2
+			@apply font-noto-extra-cond-black-italic text-orange-500 text-4xxl mb-3
+		h3
+			@apply font-noto-extra-cond-black-italic text-orange-500 text-4xl mb-3
+		h4
+			@apply font-noto-sans-cond text-orange-500 text-xl mb-3
+		h5
+			@apply font-noto-sans-bold text-orange-500 text-base
+		a
+			overflow-wrap: break-word
+			word-wrap: break-word
+			@apply underline text-orange-500 font-bold
+		p
+			@apply mb-7 text-gray-500 text-2xbase
+			img
+				@apply inline-block
+		ol
+			counter-reset: item
+			@apply mb-7 text-gray-500 text-2xbase 
+			li
+				counter-increment: item 
+				@apply text-gray-500 
+				&::before
+					content: counter(item)
+					width: 18px
+					height: 18px
+					line-height: 18px !important
+					@apply text-white text-sm bg-blue-400 rounded-full inline-block text-center mr-4
+		ul
+			@apply list-disc mb-7 pl-3 text-gray-500 text-2xbase
+			li
+				&::marker
+					@apply text-orange-500 text-sm
+		em
+			img
+				@apply inline-block
+		blockquote
+			max-width: 450px
+			@apply font-noto-sans-cond text-base font-bold text-blue-500 bg-teal-300 border-none pt-3 pb-4 px-6 ml-8 relative #{!important}
+			@screen sm
+				@apply mx-auto #{!important}
+			cite
+				@apply font-noto-sans-cond text-blue-500 not-italic font-normal #{!important}
+			p
+				@apply mb-0 text-blue-500 #{!important}
+			&::before
+				content: ''
+				border-top: 10px solid transparent
+				border-bottom: 10px solid transparent
+				border-right: 26px solid #90d4da
+				clear: both
+				left: -26px
+				bottom: 12px
+				@apply absolute w-0 h-0
+		.has-background
+			@apply px-4 py-4
+		.wpProQuiz_header
+			@apply hidden #{!important}
+		.ld-tabs
+			.ld-text
+				@apply text-blue-500 #{!important}
+			.ld-active
+				&::after
+					@apply bg-blue-400 #{!important}
+				.ld-text
+					@apply text-blue-400 #{!important}
+			.imm-chat-content
+				@apply bg-blue-400 rounded-none #{!important}
+			.imm-chat-paper
+				@apply bg-white rounded #{!important}
+			.imm-chat__message__text__container
+				@apply bg-blue-400 rounded #{!important}
+			#ldpm-send-message
+				@apply bg-blue-500 #{!important}
+			#imm-chat-menu__title, .imm-group__title, .imm-group__item__name, .imm-chat__message_text, #ldpm-message-to-send
+				@apply font-noto-sans-cond #{!important}
+			#imm-chat-menu__title
+				@apply text-white #{!important}
+			#imm-chat-settings__button
+				path
+					@apply text-white #{!important}
+			#imm-chat-settings__previous, #imm-chat-settings__next
+				@apply text-white #{!important}
+			#imm-chat-menu__button
+				@apply text-white #{!important}
+	.ld-course-navigation-heading
+		@apply block #{!important}
+	.ld-table-list-header
+		@apply bg-yellow-500 rounded-none #{!important}
+	.ld-table-list-items
+		@apply border-gray-350 border #{!important}
+	.ld-table-list-item
+		@apply border-gray-350 #{!important}
+		.ld-is-current-item
+			.ld-topic-title
+				@apply font-bold text-yellow-500 #{!important}
+	.ld-table-list
+		@apply border-gray-350 border-b #{!important}
+	.ld-content-actions
+		.ld-primary-color
+			@apply bg-blue-600 text-white font-noto-cond-bold text-xl font-normal text-center rounded-none px-0 py-4 leading-none no-underline #{!important}
+	.wpProQuiz_list
+		@apply pl-0 #{!important}
+
+.single-sfwd-lessons
+	.ld-content-actions
+		@apply h-auto border-none #{!important}
+		.ld-empty
+			@apply w-0 h-0 hidden #{!important}
+		.sfwd-mark-complete
+			@apply relative left-0 #{!important}
+
+.single-sfwd-topic, .single-sfwd-lessons
+	.ld-content-actions
+		border-top: none !important
+		border-bottom: 1px solid #cec9bb !important
+		min-height: 95px
+		@apply relative justify-center flex flex-row #{!important}
+		div:nth-child(2)
+			order: inherit !important
+		.ld-content-action 
+			@apply px-1 text-base #{!important}
+			max-width: 140px
+			span
+				@apply px-1
+			.learndash_mark_complete_button
+				@apply h-auto
+			.ld-button 
+				min-height: 72px
+				.ld-text
+					@apply text-white #{!important}
+
+.accordion-title
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16)
+	transition: linear 0.1s all
+	&::before
+		content: "\203A"
+		top: 13px
+		right: 28px
+		@apply absolute text-xl rotate-90 cursor-pointer #{!important}
+	&:hover
+		transition: linear 0.1s all
+		@apply text-white
+
+	.accordion-panel
+	div
+		transition: linear 0.1s all
+		&:last-child
+			@apply border-none
+		&:hover
+			transition: linear 0.1s all
+			@apply rounded
+
+	.active-accordion
+		transition: linear 0.1s all
+	@apply bg-blue-400 text-white #{!important}
+
+	.single-sfwd-courses
+	.student-menu
+		.main-menu-item:first-child
+			transition: all .08s ease-in 0s
+			border-bottom: 4px solid #9ad2d9
+			@apply text-teal-300
+
+.focus-mode-nav
+	z-index: 100
+
+.learndash-wrapper
+	@apply bg-yellow-100 text-2xbase #{!important}
+	.ld-breadcrumbs, .ld-lesson-status, .ld-topic-status
+		background: transparent !important
+		@apply px-0 rounded-none #{!important}
+	.ld-breadcrumbs
+		@apply border-b border-gray-350 #{!important}
+		a
+			@apply no-underline text-base
+	.ld-breadcrumbs-segments
+		text-overflow: unset !important
+		white-space: inherit !important
+		@apply text-base #{!important}
+		span:last-child
+			a
+				@apply text-blue-400
+		span
+			&::after
+				@apply font-bold text-blue-500 #{!important}
+	.wpProQuiz_points
+		@apply bg-yellow-50 rounded border-none #{!important}
+	.wpProQuiz_catOverview
+		max-width: 350px
+		@apply mx-auto #{!important}
+
+		ol
+			@apply pl-0 #{!important}
+
+		span
+			@apply bg-transparent #{!important}
+	.wpProQuiz_results
+		.wpProQuiz_resultsList
+			@apply px-0 #{!important}
+	.ld-content-actions
+		@apply flex flex-row
+
+.single-sfwd-courses
+	.header-navigation 
+		.trp-ls-shortcode-current-language 
+			a
+				@apply text-blue-500 #{!important}
+		.trp-ls-shortcode-current-language
+			background-image: url(../images/chevron-down.png) !important
+
+@screen sm
+	.gr-left
+		@apply pl-4
+	#wdm_ldgr_group_report_length
+		top: -11px
+		@apply absolute top-0 right-0
+	.group-management
+		.wdm-select-wrapper
+			@apply mb-6 #{!important}
+		.course-progress
+			.ldgr-group-report-item
+				max-width: 120px
+		#wdm_ldgr_group_report
+			td
+				padding: 20px 6px !important
+		#tab-2
+			.email
+				span
+					@apply text-sm text-gray-500 #{!important}
+		.course-progress
+			.ldgr-course-lesson-progress
+				@apply text-sm text-gray-500 #{!important}
+	.ldgr-lightbox
+		.ldgr-popup-content
+			.ldgr-curr-icon
+				@apply mr-5 #{!important}
+			.ldgr-eg-actions
+				@apply text-right #{!important}
+				.edit-group-cancel
+					@apply mr-2 #{!important}
+	.course-content
+		.ld-content-action
+			flex-basis: 230px !important
+	.lightbox-styles
+		.gform_footer
+			input
+				@apply w-auto text-xl #{!important}
+		.cancel-enrollment
+			padding: 15px 6px
+	.nt-note-tab
+		width: 130px !important
+		.nt-screen-reader-text
+			@apply inline-block #{!important}
+	.course-container 
+		.ld-item-lesson-item 
+			.ld-item-title
+				@apply text-base
+			.ld-item-components
+				@apply text-sm
+	.learndash-wrapper 
+		.ld-breadcrumbs-segments
+			@apply text-xs #{!important}
+	.single-sfwd-topic, .single-sfwd-lessons, .single-sfwd-quiz
+		.ld-focus-main
+			p,ol,li, ul 
+				@apply text-base #{!important}
+	.learndash-wrapper
+		@apply text-base #{!important}
+	#wdm_group
+		p
+			@apply text-sm
+	.single-sfwd-topic
+		.ld-content-actions
+			@apply flex flex-row #{!important}
+
+@screen md
+	.course-container
+		.ld-progress
+			@apply flex flex-row-reverse #{!important}
+		.ld-progress-heading
+			@apply ml-6 #{!important}
+	.course-progress-bar
+		.ld-progress-heading
+			@apply mt-0 #{!important}
+	.nt-note-wrapper
+		.nt-close-icon
+			@apply text-blue-400 bg-transparent #{!important}
+			&::before
+				@apply block #{!important}
+			&::after
+				content: "\203A"
+				top: 10px
+				@apply block #{!important}
+	.close-lightbox
+		@apply text-orange-300 #{!important}
+		&::after
+			content: "\203A"
+			top: 10px
+	.single-sfwd-topic, .single-sfwd-lessons, .single-sfwd-quiz
+		.ld-focus-main
+			padding-top: 190px !important
+		h1
+			@apply font-noto-extra-cond-black-italic text-orange-500 text-6xl
+		h2
+			@apply font-noto-extra-cond-black-italic text-orange-500 text-4xxl
+		h3
+			@apply font-noto-extra-cond-black-italic text-orange-500 text-3xl
+		h4
+			@apply font-noto-sans-cond text-orange-500 text-xl
+		h5
+			@apply font-noto-sans-bold text-orange-500 text-base
+		.ld-focus-sidebar
+			padding-top: 160px !important
+			top: 0px !important
+	.nt-note-tab
+		bottom: calc(50vh - 105px) !important
+	.single-sfwd-topic, .single-sfwd-lessons
+		.ld-content-actions
+			.ld-content-action 
+				@apply px-1 text-xl #{!important}
+				max-width: 190px
+				span
+					@apply px-2
+				.learndash_mark_complete_button
+					@apply h-auto
+				.ld-button 
+					min-height: auto
+
+@screen lg
+	.gr-left
+		@apply pl-0
+	.group-management
+		.ldgr-group-single
+			@apply pl-4 pr-6 #{!important}
+	.dataTable
+		th
+			&:nth-child(4)
+				width: 64% !important
+	.ld-focus-sidebar
+		.ld-focus-sidebar-trigger
+			@apply hidden #{!important}

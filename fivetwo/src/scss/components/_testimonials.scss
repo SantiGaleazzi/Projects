@@ -1,0 +1,58 @@
+$block: '.testimonials';
+
+#{$block}{
+    background-color: $dark-blue;
+    padding: 2.1rem 0;
+    &__author {
+        &-picture {
+            border-radius: 6px;
+        }
+    }
+    &__quote {
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 1.4;
+        font-style: italic;
+        width: 64rem;
+        max-width: 100%;
+        cite {
+            margin-top: 1rem;
+        }
+    }
+    &__button {
+        @include breakpoint(medium down) {
+            margin-top: 1.5rem;
+        }
+    }
+    &__slider {
+        background-color: $dark-blue;
+        padding: 5.5rem 0;
+        &-quote {
+            color: $white;
+            width: 80%;
+            font-family: $body-font-family;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            font-style: italic;
+            padding-left: 3.2rem;
+            @include breakpoint(small only) {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+        &-author {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            font-size: 1.4rem;
+        }
+        .slick-initialized {
+            .slick-slide {
+                vertical-align: top;
+            }
+        }
+        .slick-prev:before, .slick-next:before {
+            color: $medium-green;
+        }
+    }
+}

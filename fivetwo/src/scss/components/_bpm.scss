@@ -1,0 +1,49 @@
+.title_bpm {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    color: $dark-blue;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.bpm__form {
+
+    .gfield {
+
+        p.description_bpm {
+            color: $medium-gray;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            margin-bottom: 3rem;
+        }
+
+        &:last-child {
+
+            .gfield_label {
+                display: block !important;
+            }
+
+        }
+        
+        .gfield_label {
+            display: none !important;
+            color: $dark-blue;
+        }
+    }
+
+    input[type="text"] {
+        margin: 0 !important;
+    }
+
+    .gform_footer {
+
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center;
+
+        input[type="submit"] {
+            margin: 0 !important;
+            border-radius: 5px;
+        }
+    }
+}

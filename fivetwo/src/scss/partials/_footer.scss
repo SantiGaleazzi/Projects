@@ -1,0 +1,85 @@
+$block: '.footer';
+
+#{$block}{
+    background-color: #0c0c0c; 
+    padding: 45px 0 65px;
+    &__left {
+        width: 400px;
+        max-width: 100%;
+    }
+    &__logo {
+        max-width: 185px;
+    }
+    &__statement {
+        color: $white;
+        font-family: $body-font-family;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+        padding: 1rem 0;
+        @include breakpoint(large up) {
+            text-align: left;
+        }
+    }
+    &__contact {
+        width: 50rem;
+        max-width: 100%;
+        margin-top: 1.8rem;
+        a,
+        span {
+            color: $white;
+            font-family: $header-font-family;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .fab {
+            font-weight: normal;
+        }
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+    }
+    &__customurl{
+        text-transform: uppercase;
+        @include breakpoint(small only) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__store {
+        padding-top: .4rem ;
+        padding-bottom: .4rem;
+        @include breakpoint(small only) {
+            margin-bottom: 1rem;
+            font-size: 1.8rem !important;
+        }
+    }
+    &__social {
+        width: 4.7rem;
+        .fab {
+            @include breakpoint(small only) {
+                font-size: 2rem;
+            }
+        }
+        @include breakpoint(small only) {
+            margin-bottom: 1rem;
+        }
+    }
+    &__faq {
+        margin: 1rem 0;
+    }
+    @include breakpoint(medium down) {
+        padding: 1.5rem 0;
+    }
+}
+.link-login-footer{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 0;
+    line-height: 22px;
+}
+.link-login-footer a{
+    text-decoration: underline;
+}

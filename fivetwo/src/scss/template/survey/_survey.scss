@@ -1,0 +1,246 @@
+#gform_wrapper_29 .disabled{
+	display: none;
+}
+
+#gform_wrapper_29 .gform_footer{
+	display: none;
+}
+
+.content-survey{
+	padding: 10px 0px 10px;
+	text-align: center;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px; 
+	color: #03a8e1;
+}
+
+.flex-survey{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.survey{
+	position: relative;
+	width: 800px; 
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: 40px;
+	animation-name: fadeIn;
+  	animation-duration: 2s;
+  	animation-fill-mode: forwards;
+  	opacity: 0;
+  	transition: all 0.3s linear;
+}
+
+@keyframes fadeIn{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+.survey-c{
+	width: 100%;
+}
+
+#gform_wrapper_29 span{
+	width: 100%;
+	padding: 0px;
+}
+
+#gform_wrapper_29 li{
+	width: 100%;
+	padding: 0px;
+	position: relative;
+}
+
+#gform_wrapper_29 input{
+	width: 100%;
+}
+
+#gform_wrapper_29 select{
+	width: 100%;
+}
+
+.gfield.disabled{
+	display: none !important;
+}
+
+.gfield.active{
+	display: block !important;
+}
+
+#gform_wrapper_29{
+	transition: all 0.3s linear;
+}
+
+.survey .quiz__start{
+	min-height: 50px;
+}
+
+#gform_confirmation_message_29{
+	font-weight: 600;
+	text-align: center;
+	padding: 40px 0px 20px;
+	font-size: 20px !important;
+}
+
+.title-survey{
+	font-size: 52px;
+	color: #27466c;
+	font-family: "Roboto Condensed", sans-serif;
+	text-align: center;
+}
+
+#gform_wrapper_29 .gfield_label{
+	font-family: "Roboto", sans-serif;
+	font-size: 24px; 
+	line-height: 32px;
+	color: #27466c; 
+	margin-bottom: 25px;
+}
+
+#gform_wrapper_29 .gfield_description{
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	line-height: 30px; 
+	color: #000000 !important;
+}
+
+#gform_wrapper_29 .ginput_container_radio{
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 22px; 
+}
+
+#gform_wrapper_29 .ginput_container_checkbox{
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 22px; 	
+}
+
+#gform_wrapper_29 .ginput_container_checkbox label{
+	color: #000000 !important;
+	font-size: 18px;
+}
+
+#gform_wrapper_29 .ginput_container_radio label{
+	color: #000000 !important;
+	font-size: 18px;
+}
+
+#gform_wrapper_29 .ginput_container_checkbox input{
+	vertical-align: top;
+	margin-top: 7px;
+}
+
+#gform_wrapper_29 .gfield_required {
+	color: #27466c;
+	font-size: 16px;
+}
+
+#gform_wrapper_29 .ginput_container{
+	width: 100% !important;
+}
+
+#gform_wrapper_29 span label{
+	font-family: "Roboto", sans-serif;
+	font-size: 16px !important; 
+	line-height: 32px;
+	color: #27466c; 
+	font-weight: 700 !important;
+}
+
+#gform_wrapper_29{
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+#gform_wrapper_29 span label::after{
+	content: '*';
+	font-family: "Roboto", sans-serif;
+	font-size: 15px; 
+	line-height: 32px;
+	color: #27466c; 
+	font-weight: 700 !important;
+	margin-left: 4px;
+}
+
+#input_29_4 label{
+	font-size: 14px !important;
+}
+
+#field_29_5 label{
+	font-size: 16px !important;
+	margin-bottom: 1px !important;
+}
+
+#input_29_4 input, #field_29_5 input{
+	margin-top: 0px !important;
+} 
+
+#field_29_5 .ginput_container{
+	margin-top: 0px !important;
+}
+
+#gform_wrapper_29 .gform_footer{
+	text-align: center;
+}
+
+#gform_wrapper_29 #gform_submit_button_29{
+	position: relative;
+	font-size: 24px;
+	width: 200px;
+	margin: auto;
+	border-radius: 4px;
+	padding: 0px;
+	height: 48px;
+}
+
+.page-template-template-survey footer{
+	display: none !important;
+	position: relative;
+}
+
+.page-template-template-survey header{
+	display: none !important;
+}
+
+.desc-survery{
+	color: #000000;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.survey-button{
+	position: relative;
+	font-size: 24px;
+	min-width: 200px;
+	margin-top: 15px;
+	transition: all 0.2s linear;
+}
+
+.survey-button:hover{
+	transition: all 0.2s linear;
+	transform: scale(1.04);
+}
+
+@media screen and (min-width: 767px){
+	.flex-survey{
+		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.survey{
+		width: 90%;
+	}
+}
+
+.button-s .disabled{
+	pointer-events: none;
+}

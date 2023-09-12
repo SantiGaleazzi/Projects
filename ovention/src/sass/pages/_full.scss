@@ -1,0 +1,308 @@
+
+
+.full-page {
+  .mauticform-label {
+    color: #ff8a2c;
+    font-size: 2rem !important;
+    font-weight: 700;
+  }
+  button{
+    background: #fbae43;
+    background: -moz-linear-gradient(left, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+    background: -webkit-linear-gradient(left, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+    background: linear-gradient(to right, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbae43', endColorstr='#c02732',GradientType=1 );
+    border-radius: 0.5rem;
+    color: #fefefe;
+    font-weight: 400;
+    border: none;
+    width: 30rem !important;
+    padding: 3rem 0;
+    font-size: 2rem !important;
+    display: block;
+    margin: 0 auto;
+  }
+	.gfield_label {
+		color: $orange;
+		font-size: 2rem !important;
+		text-align: center;
+	}
+
+	.mauticform-message{
+		color: #ff8a2c;
+		font-size: 2.2rem;
+		font-weight: bold;
+		padding-bottom: 30px;
+		padding-top: 10px;
+		line-height: 1;
+		text-align: center;
+	}
+
+	.gfield_required {
+		color: $red !important;
+	}
+
+	.gfield_radio li[class*="gchoice"] {
+			display: inline-block;
+			width: 38rem;
+			vertical-align: top;
+
+
+			label{
+				border-radius: 5px;
+				background-color: #f5f5f5;
+				padding: 2rem 2rem 2rem 5rem !important;
+				margin-right: 2rem !important;
+				margin-bottom: 2rem;
+				background-image: url(../img/radio.png);
+				background-repeat: no-repeat;
+				background-position: 20px;
+				width: 100%;
+				font-size: 1.6rem;
+				font-weight: 600;
+				max-width: 36rem;
+
+			}
+
+	}
+	li.siblings {
+	    clear: none !important;
+	    display: inline-block;
+	    width: 50%;
+	    select{
+	    	width:100% !important;
+	    }
+	    @include breakpoint(small down){
+			width: 100%;
+			padding: 0rem;
+		}
+	}
+	.ginput_container_radio{
+		width: 80%;
+		margin: 0 auto;
+		padding: 2rem 1.5rem;
+		margin-bottom: 3rem !important;
+		border-bottom: 1px solid #e5e5e5;
+		overflow: hidden;
+
+		@include breakpoint(small down){
+			width: 100%;
+			padding: 0rem;
+		}
+
+	}
+
+	#gform_page_1_2 .gfield_radio li[class*="gchoice"] {
+		label{
+			line-height: 6rem;
+		}
+
+		input[value="Gourmet style appetizers"] + label {
+			line-height: 3rem;
+		}
+	}
+
+	.gfield_radio li[class*="gchoice"] input{
+		position: absolute;
+		left: -9999px;
+	}
+
+
+	ul.gfield_radio {
+
+			li input[type=radio]:checked+label{
+			background-color: $orange;
+			color: $white;
+			background-image: url(../img/radio-checked.png);
+			background-repeat: no-repeat;
+			background-position: 20px;
+		}
+
+	}
+
+	input[type="text"], input[type="email"], input[type="tel"]{
+		border-radius: 5px;
+		border:none;
+		background-color: #f5f5f5;
+		box-shadow: none;
+		width: 100% !important;
+		padding: 0 2rem !important;
+
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  font-size:1.6rem;
+		  color: $light-gray;
+		  font-weight: 700;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  font-size:1.6rem;
+		  color: $light-gray;
+		  font-weight: 700;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  font-size:1.6rem;
+		  color: $light-gray;
+		  font-weight: 700;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  font-size:1.6rem;
+		  color: $light-gray;
+		  font-weight: 700;
+		}
+
+	}
+
+	.name_first, .name_last {
+		label {
+			display: none !important;
+
+		}
+	}
+
+	#field_1_62, #field_1_64{
+		width: 50%;
+		float: left;
+		clear: none !important;
+
+		@include breakpoint(small down){
+			width: 100%;
+			float: none;
+		}
+
+	}
+
+	.instruction {
+		color: $dark-gray;
+		font-weight: 700;
+	}
+
+	.required_answer{
+		font-size: 1.6rem;
+		color: #c6c6c6;
+		font-weight: 700;
+	}
+
+	.gform_page_footer {
+		border-top:none !important;
+
+		.button.gform_button, .button.gform_next_button, .gform_previous_button {
+			background: #fbae43;
+			background: -moz-linear-gradient(left, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+			background: -webkit-linear-gradient(left, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+			background: linear-gradient(to right, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbae43', endColorstr='#c02732',GradientType=1 );
+			border-radius: 0.5rem;
+			color: #fefefe;
+			font-weight: 400;
+			border: none;
+			width: 30rem !important;
+			padding: 3rem 0;
+			font-size:  2rem !important;
+		}
+	}
+	.gform_footer{
+		border-top:none !important;
+		.button.gform_button, .button.gform_next_button, .gform_previous_button {
+			background: #fbae43;
+			background: -moz-linear-gradient(left, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+			background: -webkit-linear-gradient(left, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+			background: linear-gradient(to right, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbae43', endColorstr='#c02732',GradientType=1 );
+			border-radius: 0.5rem;
+			color: #fefefe;
+			font-weight: 400;
+			border: none;
+			width: 30rem !important;
+			padding: 3rem 0;
+			font-size:  2rem !important;
+			display:block;
+			margin:0 auto;
+		}
+	}
+
+	.step_container {
+		a
+		{
+			background-color: $orange;
+		}
+	}
+}
+
+.white-box{
+	overflow: hidden;
+	background-color: $white;
+	margin: 4rem 0;
+	border-radius: 2rem;
+	padding:4rem 0;
+	-webkit-box-shadow: 2px 2px 15px 0px rgba(179,179,179,1);
+	-moz-box-shadow: 2px 2px 15px 0px rgba(179,179,179,1);
+	box-shadow: 2px 2px 15px 0px rgba(179,179,179,1);
+	h2{
+		color:$orange;
+	}
+	h3{
+color:$orange;
+	}
+	li{
+		font-weight:300;
+			color: $dark-gray;
+			font-size:1.6rem;
+			line-height:2.8rem;
+			a{
+				color: $dark-gray;
+				text-decoration:underline;
+				&:hover{
+					color: $orange;
+				}
+
+	}
+}
+	p{
+		font-weight:300;
+			color: $dark-gray;
+			font-size:1.6rem;
+			line-height:2.8rem;
+			a{
+				color: $dark-gray;
+				text-decoration:underline;
+				&:hover{
+					color: $orange;
+				}
+			}
+	}
+	img{
+		margin-top:1rem;
+		margin-bottom:1rem;
+		display:block;
+	}
+}
+
+.culinary-icons{
+	text-align:center;
+	border-bottom:1px solid #e5e5e5;
+	padding: 2.5rem 0;
+	h3{
+		margin-bottom: 3rem;
+	}
+	&__single{
+		display:inline-block;
+		width: 49%;
+		text-align:left;
+		margin:2rem 0;
+		img{
+			display:inline-block;
+			vertical-align:middle;
+			margin:0 0.5rem 0;
+		}
+		p{
+			display:inline-block;
+			max-width:60%;
+			line-height:2.1rem;
+			margin:0;
+			font-weight:300;
+			vertical-align:middle;
+		}
+		@include breakpoint(medium down){
+			width: 100%;
+		}
+	}
+}

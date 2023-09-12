@@ -1,0 +1,182 @@
+$block-filter:'.filter';
+$filterspan-color: #1e3764;
+
+#{$block-filter}{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family:$font-neuton;
+  &__container{
+    text-align: center;
+    position: relative;
+    h2{
+      font-size: 5rem;
+      display: inline-block;
+      color: $secondary-color;
+      @include breakpoint(small only){
+        display: block;
+      }
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      right: 1.5rem;
+      left: 1.5rem;
+      bottom: -2rem;
+      background: #efefef;
+      height: 1px;
+      width: 100%;
+      @include breakpoint(medium down){
+        width: auto;
+        bottom: -2rem;
+      }
+    }
+    .more-home{
+      margin-right: 3rem;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+      @include breakpoint(small only){
+        margin-left: 0;
+      }
+    }
+    &.filter-home{
+      text-align: left;      
+      span{
+        font-size: 2.8rem;
+      }
+      &:after{
+        height: 0;
+      }
+      .filter__select{        
+        @include breakpoint(large down){
+          width: 18rem;
+        }
+        @include breakpoint(medium down){
+          width: 100%;
+        }
+      }
+
+    }
+    .last-filter{
+      display: inline-block;
+      @include breakpoint(medium down){
+        display: block;
+      }
+    }
+    @include breakpoint(small only){
+      text-align: left;
+    }
+  }
+  span{
+    font-family:$font-neuton;
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: $filterspan-color;
+    @include breakpoint(small only){
+      display: block;
+    }
+  }
+  &__label{
+    display: inline-block;
+    font:{
+      family:$font-neuton;
+      size:1.6rem;
+      weight: 700;
+    }
+    
+    color: $blue-neuton;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    @include breakpoint(medium only){
+      display: block;
+      text-align: left;
+      line-height: 1.5;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    @include breakpoint(small only){
+      margin-left: 0; 
+      float: left;    
+      // line-height: 2.8;
+      vertical-align: middle;
+    }
+  }
+  &__select{
+    font:{
+      family:$font-neuton;
+      size:1.6rem;
+      weight: 400;
+    }
+    color: $filterspan-color;
+
+    width: 23rem;
+    border-bottom: 2px solid $blue-neuton;
+    // border-width: 0 0 2px 0;
+    // border-color: $blue-neuton;
+    background:{
+      image: url('../img/home/arrow-down.png');
+      repeat: no-repeat;
+      position: top 10px right -22px;
+      size: 12px 8px;
+    }
+    margin-bottom: 1.5rem;
+    &:focus{
+      border: none;
+      box-shadow: none;
+      border-bottom: 2px solid $blue-neuton;
+      // box-shadow: 0 0 5px $blue-neuton;
+    }
+
+    @include breakpoint(medium down){
+      // display: inline-block;      
+      width: 100%;
+    }
+    @include breakpoint(small only){
+      // width: auto;
+      width: 100%;  
+      // float: right;
+      margin-bottom: 1rem;   
+    }
+  }
+  &__left{
+    :nth-child(3){
+      clear: both;
+    }
+  }
+  &--cases{
+    .filter__select,
+    .filter__search{
+      width: 18rem;
+      @include breakpoint(large down){
+
+      }
+      @include breakpoint(medium down){
+        width: 100%;
+      }
+    }
+    .filter__label{
+      margin-right: 1.4rem;
+    }
+  }
+  &.filter-issue.home{
+    & + #response-issues{
+      .destacada{
+        padding-top: 0rem;
+      }        
+    }
+  }
+  @include breakpoint(medium down){
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+}
+
+@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+  select{
+    background-image: none;
+    padding: 0.8rem !important;
+  }
+}
+
+.pagination{
+  padding: 4rem;
+}

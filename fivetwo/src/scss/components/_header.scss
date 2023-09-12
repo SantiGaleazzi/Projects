@@ -1,0 +1,10 @@
+$block: 'h2';
+
+#{$block}{
+    &.bigger {
+        font-size: 4.2rem;
+        @include breakpoint(medium down) {
+            font-size: 2.4rem;
+        }
+    }
+}

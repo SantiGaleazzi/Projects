@@ -1,0 +1,31 @@
+@tailwind base
+
+@import base
+
+@tailwind components
+
+@import vendors
+
+@import components
+
+@import pages
+
+@import partials
+
+@import templates
+
+@import helpers
+
+@import woocommerce
+
+// Since TailwindCSS is has a JIT there is no need to safelist classes via purgeCss.
+// safelist: [/\btw-[a-z0-9-$]*(\[([0-9]*\w*)?(#(?:[0-9a-f]{3}){1,2})?\])?/g].
+// Tailwind injects the code in this two imports.
+
+/* purgecss start ignore */
+
+@tailwind utilities
+
+@tailwind screens
+
+/* purgecss end ignore */

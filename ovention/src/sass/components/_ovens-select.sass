@@ -1,0 +1,24 @@
+.ovens-list
+  @apply tw-relative
+
+  .js-ovens-options
+    @apply tw-w-full tw-opacity-0 tw-invisible tw-transition-all tw-duration-200 tw-ease-in-out tw-transform tw-translate-y-10 tw-absolute tw-top-full tw-left-0 tw-z-10 tw-mt-6
+    @screen md
+      @apply tw-opacity-100 tw-visible tw-w-auto tw-translate-y-0 tw-relative tw-mt-0
+
+    &.is-open
+      @apply tw-opacity-100 tw-visible tw-translate-y-0
+
+  .js-ovens-dropdown
+    @apply tw-text-white tw-font-semibold tw-px-5 tw-py-3 tw-bg-orange-500 tw-flex tw-items-center tw-justify-between tw-relative tw-rounded-2xl tw-mb-10 tw-drop-shadow-lg
+
+    &.is-open
+
+      .fa-angle-down
+        @apply -tw-rotate-180
+
+    .fa-angle-down
+      @apply tw-transition-transform tw-duration-150 tw-ease-in-out tw-transform tw-rotate-0
+
+    @screen md
+      @apply tw-hidden

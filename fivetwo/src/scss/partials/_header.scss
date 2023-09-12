@@ -1,0 +1,217 @@
+$block: '.header';
+
+#{$block}{
+    &__script {
+        color: $white;
+        font-family: $header-font-family;
+        font-weight: bold;
+        padding-right: 2rem;
+        @include breakpoint(small only) {
+            padding-right: 0;
+        }
+    }
+    &__pre {
+        padding: .5rem 0;
+    }
+    &__pastor,
+    &__leader {
+        color: $white;
+        font-family: $header-font-family;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 2.5rem;
+        &:hover {
+            color: $white;
+        }
+        @include breakpoint(small only) {
+            margin: .5rem 1rem;
+            font-size: 1.4rem;
+            display: block
+        }
+    }
+    &__pastor {
+        span {
+            color: $yellow;
+        }
+    }
+    &__leader {
+        span {
+            color: $light-blue;
+        }
+    }
+    &__links {
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+    }
+    &__areYouA {
+        @include breakpoint(small only) {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__social {
+        a {
+            &:first-child {
+                margin-right: 2.5rem;
+            }
+        }
+        .fab {
+            color: #fff;
+            font-size: 1.6rem;
+            @include breakpoint(small only) {
+                font-size: 2rem;
+            }
+        }
+        @include breakpoint(small only) {
+            text-align: center;
+            margin: .5rem auto;
+            display: block;
+        }
+    }
+    &__store {
+        margin-left: 3rem;
+        .button {
+            font-weight: 700;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+        @include breakpoint(small only) {
+            display: block;
+            margin: .5rem auto;
+            text-align: center;
+        }
+    }
+    &__menu {
+        ul.menu{
+            display: flex;
+            list-style: none;
+
+            li.main-menu-item {
+                padding-left: 10px;
+                padding-right: 10px;
+                
+                @include breakpoint(large) {
+                    margin-left: 1px;
+                    margin-right: 1px;
+                    padding: 14px 0px;
+
+                    &:hover {
+                        color: #00A7E1;
+                        box-shadow: 0px 4px #00a7e1;
+                    }
+                }
+
+                &.current-menu-item {
+                    .main-menu-link {
+                        color: #00a7e1;
+                    }
+                }
+
+                &.menu-item-has-children {
+                    position: relative;
+
+                    &:hover {
+                        ul.dropdown {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    @include breakpoint(small down) {
+
+                        ul.dropdown {
+                            padding-left: 5px;
+                            border-left: 2px solid #00a7e1;
+                        }
+                    }
+
+                    ul.dropdown {
+                        list-style: none;
+                        margin: 4px 15px 0px;
+
+                        @include breakpoint(large) {
+                            left: 0;
+                            top: 100%;
+                            opacity: 0;
+                            z-index: 10;
+                            width: 262px;
+                            display: block;
+                            overflow: hidden;
+                            visibility: hidden;
+                            position: absolute;
+                            margin: 4px 0px 0px;
+                            background-color: #FFFFFF;
+                            transition: all .2s ease-in-out;
+                            border-bottom-right-radius: 10px;
+                            box-shadow: 0px 0px 33px #00000029;
+                        }
+
+                        li {
+                            margin: 0;
+
+                            .sub-menu-link {
+                                display: block;
+                                color: #ffffff;
+                                font-size: 16px;
+                                line-height: 21px;
+                                padding: 10px 15px;
+                                box-sizing: border-box;
+                                font-family: "Roboto Condensed";
+                                transition: color 0.2s ease-in-out;
+
+                                &:hover {
+                                    background-color: #00A7E1;
+                                }
+
+                                @include breakpoint(large) {
+                                    color: #001A38;
+                                    background-color: #ffffff;
+                                    border-top: 1px solid #E5E5E5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-training {
+            margin: 0 1rem;
+        }
+        .button {
+            @include breakpoint(large only) {
+                padding: 1.4rem 1.5rem;
+                font-size: 1.4rem;
+            }
+            @include breakpoint(medium only) {
+                padding: 1.4rem .5rem;
+                font-size: 1.3rem;
+            }
+            @include breakpoint(small only) {
+                margin: 1rem 0;
+            }
+        }
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+    }
+    &__logo {
+       @include breakpoint(small only) {
+           width: 13rem;
+       }
+    }
+
+}
+
+.top-bar {
+    // .button {
+    //     font-weight: bold;
+    // }
+    ul {
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+    }
+}

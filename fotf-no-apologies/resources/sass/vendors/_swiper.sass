@@ -1,0 +1,17 @@
+@import ~swiper/scss
+@import ~swiper/scss/pagination
+@import ~swiper/scss/parallax
+@import ~swiper/scss/effect-fade
+@import ~swiper/scss/thumbs
+
+.testimonial-swipper
+	max-width: 615px
+	.swiper-pagination 
+		@apply bottom-0 w-full #{!important}
+		.swiper-pagination-bullet
+			background: rgba(255,255,255,0.8)
+			width: 46px
+			margin: 0px 10px
+			@apply h-0.5 rounded-none #{!important}
+		.swiper-pagination-bullet-active
+			@apply bg-white #{!important}

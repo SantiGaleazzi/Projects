@@ -1,0 +1,107 @@
+@mixin blueGradient() {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eff1f2+0,dceaef+100 */
+  background: #eff1f2; /* Old browsers */
+  background: -moz-linear-gradient(top, #eff1f2 0%, #dceaef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #eff1f2 0%,#dceaef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #eff1f2 0%,#dceaef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff1f2', endColorstr='#dceaef',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin radioCustom($checkedColor, $bgColor, $size) {
+	input[type="radio"] {
+	    -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: inline-block;
+        position: relative;
+        height: $size;
+		width: $size !important;
+		visibility: hidden;
+		+ label {
+			color: $light-blue;
+			font-family: $header-font-family;
+			font-size: 1.8rem;
+			font-weight: bold;
+	        &:before { 
+				content: "";
+				height: $size;
+				width: $size !important;
+				border: 3px solid $bgColor;
+				border-radius: 100%;
+				background-color: $bgColor;
+				//@include absolute-center;
+				position: absolute;
+			    top: 30%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+	        }
+		}
+        &:checked {
+        	+ label {
+		        &:before { 
+					content: "";
+					height: $size;
+					width: $size !important;
+					border-radius: 100%;
+					background-color: $checkedColor;
+					//@include absolute-center;
+					position: absolute;
+				    top: 30%;
+				    left: 50%;
+				    transform: translate(-50%, -50%);
+		        }
+	        	&:after {
+	        		color: $white;
+	        		content: '\f00c';
+	        		font-family: "Font Awesome 5 Free";
+	        		font-weight: 900;
+	        		font-size: 1.5rem;
+	        		line-height: 1;
+	        		//@include absolute-center;
+        			position: absolute;
+        		    top: 30%;
+        		    left: 50%;
+        		    transform: translate(-50%, -50%);	
+	        	}
+        	}	
+        }  
+	}
+	
+}
+
+@mixin message($type) {
+	font-family: $header-font-family;
+	font-size: 1.6rem;
+	padding: 1rem 1rem 1rem 3.5rem;
+	border-radius: 5px;
+	position: relative;
+	&:before {
+	   font-family: "Font Awesome 5 Free";
+	   font-weight: 900;
+	   font-size: 1.7rem;
+	   position: absolute;
+	   left: 1rem;
+	   @include vertical-center; 
+	}
+	@if $type == info {
+		background-color: scale-color($warning-color, $lightness: 50%);
+		&:before {
+		   color: $warning-color;
+		   content: '\f071';
+		}
+	}
+	@if $type == error {
+		background-color: scale-color($alert-color, $lightness: 50%);
+		&:before {
+		   color: $alert-color;
+		   content: '\f00d';
+		}
+	}
+	@if $type == success {
+		background-color: scale-color($success-color, $lightness: 50%);
+		&:before {
+		   color: $success-color;
+		   content: '\f058';
+		}
+	}
+}

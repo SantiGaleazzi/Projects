@@ -1,0 +1,535 @@
+
+header
+
+	.navigation-overlay
+		@apply opacity-0 bg-black-700-new absolute inset-0 z-10 transition duration-150 ease-in-out
+
+		&.is-active
+			@apply opacity-75
+
+.navigation
+	height: calc(100vh - 80px)
+	@apply w-full bg-submenu overflow-y-auto transition duration-150 ease-in-out transform -translate-x-full absolute z-40
+
+	&.is-active
+		@apply translate-x-0
+
+.bottom-12
+	bottom: 12px
+
+.z-2
+	z-index: 2
+
+.searcher
+	@apply w-full text-black-700-new px-5 py-1 bg-default-reverse rounded-full transition-all duration-200 ease-in-out
+
+// Header Upper Menu
+ul.list-menu
+	@apply w-full
+
+	li.main-menu-item
+		@apply text-sm leading-none mb-3 relative
+
+		&.current_page_item
+
+			span.nav-indicator
+
+				&::before,
+				&::after
+					@apply bg-white-pure #{!important}
+
+			a.main-menu-link
+				@apply text-white-pure bg-red-500 rounded-t-md
+
+		// class that hiddes navigation section
+		&.has_main_links
+			@apply block
+
+		// class that hiddes navigation section
+		&.not_for_mobile
+			@apply hidden
+
+		&:last-child
+
+			a.main-menu-link
+
+				&::after
+					@apply hidden
+
+		a.main-menu-link
+			@apply text-xs leading-none text-menu-heading font-bold p-3 bg-data rounded uppercase relative block
+
+		&.menu-item-has-children
+			@apply relative
+
+			span.nav-indicator
+				top: 2px
+				@apply w-12 h-8 flex items-center justify-center right-0 absolute
+
+				&::before,
+				&::after
+					content: ''
+					width: 12px
+					height: 3px
+					@apply bg-menu-heading rounded-full absolute transition-all duration-150 ease-in-out
+
+				&::before
+					@apply transform translate-x-1 -rotate-45
+
+				&::after
+					@apply transform -translate-x-1 rotate-45
+
+				&.is-open::before
+					@apply transform -rotate-45
+
+				&.is-open::after
+					@apply transform rotate-45
+
+			ul.dropdown-content
+				@apply w-full h-0 hidden text-left bg-submenu-menu rounded-md relative transition-all duration-100 ease-in-out
+
+				&.is-active
+					@apply h-auto block
+
+				li.sub-menu-item
+					@apply px-2
+
+					&.current_page_item
+
+						a.sub-menu-link
+							@apply text-white-pure border-transparent bg-red-500 rounded-md
+
+					&:last-of-type
+						@apply mb-0
+
+						a.sub-menu-link
+							@apply border-none
+
+					a.sub-menu-link
+						@apply text-sm text-default-reverse font-bold border-b border-separator-reversed p-3 leading-none block
+
+						&:hover
+							@apply text-white-pure border-transparent bg-red-500 rounded-md
+
+// Header Main Menu
+ul.sub-menu
+	@apply w-full
+
+	li.main-menu-item
+		@apply	text-sm leading-none relative mb-3
+
+		&.current_page_item
+
+			a.main-menu-link
+				@apply text-white-pure bg-red-500 rounded-md
+
+		a.main-menu-link
+			@apply text-menu-heading leading-none font-semibold p-3 bg-data rounded block relative
+
+			&::after
+				@apply w-full h-auto text-left pl-4 font-lato text-sm text-menu-subheading font-bold absolute bottom-0 left-0 mb-3
+
+		&.menu-item-has-children
+			@apply relative
+
+			span.nav-indicator
+				top: 2px
+				@apply w-12 h-8 flex items-center justify-center right-0 absolute
+
+				&::before,
+				&::after
+					content: ''
+					width: 12px
+					height: 3px
+					@apply bg-menu-heading rounded-full absolute transition-all duration-150 ease-in-out
+
+				&::before
+					@apply transform translate-x-1 -rotate-45
+
+				&::after
+					@apply transform -translate-x-1 rotate-45
+
+				&.is-open::before
+					@apply transform -rotate-45
+
+				&.is-open::after
+					@apply transform rotate-45
+
+			ul.dropdown-content
+				@apply w-full h-0 hidden text-left bg-default-reverse block transition-all duration-150 ease-in-out
+
+				&.is-active
+					@apply h-auto block
+
+				li.sub-menu-item
+					@apply border-b border-separator transition duration-150 ease-in-out
+
+					&.current_page_item
+
+						a.sub-menu-link
+							@apply text-white-pure bg-red-500 rounded-md
+
+					&:last-of-type
+						@apply mb-0
+
+					a.sub-menu-link
+						@apply text-sm text-default font-bold p-3 leading-none block
+
+// Footer Menu
+ul.menu-footer
+
+	li.main-menu-item
+		@apply text-center mr-0 mt-10
+
+		a.main-menu-link
+			@apply text-xs font-bold uppercase
+
+		&.menu-item-has-children
+
+			ul.dropdown-content
+				@apply mt-4
+
+				li.sub-menu-item
+					@apply mb-3
+
+					&:last-of-type
+						@apply mb-0
+
+					a.sub-menu-link
+						@apply leading-none
+
+// Stories Menu
+ul.stories-menu
+
+	li.main-menu-item
+		@apply text-center mt-10
+
+		a.main-menu-link
+			@apply text-xs font-bold uppercase
+
+		&.menu-item-has-children
+
+			ul.dropdown-content
+				@apply mt-4
+
+				li.sub-menu-item
+					@apply mb-3
+
+					&:last-of-type
+						@apply mb-0
+
+					a.sub-menu-link
+						@apply leading-none
+
+@screen sm
+
+	.navigation
+		@apply w-3/4
+
+	// Footer Menu
+	ul.menu-footer
+
+		li.main-menu-item
+			@apply text-left mr-20 mt-0
+
+	// Stories Menu
+	ul.stories-menu
+
+		li.main-menu-item
+			@apply text-left mt-0
+
+@screen md
+	body.logged-in
+
+		header
+			@apply mt-8
+
+	header
+
+		.navigation-overlay
+			@apply hidden
+
+	.navigation
+		width: auto
+		@apply h-auto bg-transparent translate-x-0 overflow-visible relative
+
+	.container-searcher
+		@apply w-5 h-5
+
+	.searcher
+		top: -2px
+		@apply w-0 bg-submenu absolute p-0 right-0 mr-8
+
+	.searcher-full
+		width: 175px !important
+		@apply text-sm leading-none pl-3 pr-8 py-1 border border-separator bg-default-reverse
+
+	// Header Upper Menu
+	ul.list-menu
+		width: auto
+
+		li.main-menu-item
+			@apply text-center px-4 pt-1 pb-3 mx-2 mb-0 relative
+
+			&:last-of-type
+				@apply mr-0
+
+			&.current_page_item
+				@apply bg-red-500
+
+				a.main-menu-link
+					@apply bg-transparent
+
+			// class that hiddes navigation section
+			&.has_main_links
+				@apply hidden
+
+			&.not_for_mobile
+				@apply block
+
+			&.current-menu-ancestor
+				@apply bg-red-500 rounded-t-md
+
+			&:hover
+				@apply bg-red-500 rounded-t-md
+
+			a.main-menu-link
+				@apply inline-block p-0 text-white-pure rounded-none bg-transparent
+
+				&::after
+					content: ''
+					@apply w-1 h-1 bg-orange-500 absolute rounded-full top-0 right-0 mt-1 -mr-6
+
+			&.menu-item-has-children
+
+				span.nav-indicator
+					@apply hidden
+
+				&:hover
+
+					ul.dropdown-content
+						@apply block
+
+				ul.dropdown-content
+					left: 50%
+					@apply w-40 py-2 h-auto absolute top-0 mt-7 z-10 hidden shadow-big transform -translate-x-1/2
+
+					&::before
+						content: ''
+						@apply w-3 h-3 bg-submenu-menu absolute top-0 left-0 right-0 mx-auto rounded transform rotate-45 -mt-1
+
+					li.sub-menu-item
+						@apply relative z-10
+
+						a.sub-menu-link
+							@apply text-xs uppercase
+
+	// Header Main Menu
+	ul.sub-menu
+		width: auto
+
+		li.main-menu-item
+			@apply text-center p-3 mb-0
+
+			&.current_page_item
+
+				a.main-menu-link
+					@apply text-default bg-nav-item
+
+			&.current-menu-ancestor
+
+				a.main-menu-link
+					@apply bg-nav-item
+
+			&:first-child
+
+				a.main-menu-link
+
+					&::after
+						content: 'Why OM Is Different'
+						@apply text-default
+
+			&:nth-child(2)
+
+				a.main-menu-link
+
+					&::after
+						content: 'Explore Your Options'
+						@apply text-default
+
+			&:nth-child(3)
+
+				a.main-menu-link
+
+					&::after
+						content: 'Ways You Can Give'
+						@apply text-default
+
+			a.main-menu-link
+				@apply text-xl text-menu-heading font-roboto pl-4 pr-10 pt-2 pb-9 bg-transparent rounded-xl inline-block relative transition-colors duration-150 ease-in-out
+
+				&::before
+					content: '\f078'
+					font-family: 'Font Awesome 6 Free'
+					@apply text-base font-bold absolute top-0 right-0 mt-4 mr-3
+
+				&:hover
+					@apply text-default bg-nav-item
+
+					&::before
+						@apply text-default
+
+			&.menu-item-has-children
+
+				span.nav-indicator
+					@apply hidden
+
+				&:hover
+
+					ul.dropdown-content
+						@apply block
+
+				ul.dropdown-content
+					@apply py-2 h-auto top-0 left-0 rounded-md absolute z-10 mt-20 shadow-big hidden
+
+					&::before
+						content: ''
+						@apply w-5 h-5 bg-default-reverse absolute top-0 left-0 right-0 mx-auto rounded transform rotate-45 -mt-2
+
+					li.sub-menu-item
+						@apply px-3 border-none relative z-10
+
+						&:last-of-type
+
+							a.sub-menu-link
+								@apply border-none
+
+						a.sub-menu-link
+							@apply border-b border-separator
+
+							&:hover
+								@apply text-white-pure border-transparent rounded-md bg-red-500
+
+	// Footer Menu
+	ul.menu-footer
+
+		li.main-menu-item
+			@apply mr-12
+
+@screen lg
+
+	// Header Main Menu
+	ul.sub-menu
+
+		li.main-menu-item
+
+			a.main-menu-link
+				@apply text-2xl
+
+			&.menu-item-has-children
+
+				ul.dropdown-content
+					@apply mt-24
+
+@screen xl
+
+	// Header Main Menu
+	ul.sub-menu
+
+		li.main-menu-item
+
+			a.main-menu-link
+				@apply text-3xl
+
+	// Footer Menu
+	ul.menu-footer
+
+		li.main-menu-item
+			@apply mr-20
+
+.resize-social
+	@media screen and (min-width: 1023px)
+		width: 23px
+		transition: all 0.3s linear
+
+.resize-searcher
+	@media screen and (min-width: 1023px)
+		width: 25px
+		height: 25px
+		transition: all 0.3s linear
+
+.resize-font-14
+	@media screen and (min-width: 1023px)
+		font-size: 14px !important
+		transition: all 0.3s linear !important
+
+.resize-font-26
+	@media screen and (min-width: 1023px)
+		font-size: 26px !important
+		transition: all 0.3s linear !important
+		padding-right: 10px
+
+.resize-hidden
+	@media screen and (min-width: 1023px)
+		display: none
+		transition: all 0.3s linear
+
+.resize-logo-bg
+	@media screen and (min-width: 1023px)
+		height: 120px
+		transition: all 0.3s linear
+
+.resize-logo-bg img
+	@media screen and (min-width: 1023px)
+		max-width: 95px
+
+.resize-line
+	@media screen and (min-width: 1023px)
+		bottom: 0px
+
+.resize-margin
+	@media screen and (min-width: 1023px)
+		margin: 0px 10px 0px 0px !important
+		transition: all 0.3s linear
+
+.resize-flex
+	@media screen and (min-width: 1023px)
+		justify-content: center !important
+		transition: all 0.3s linear
+
+.resize-pt-10
+	@media screen and (min-width: 1023px)
+		padding-top: 10px !important
+
+.resize-pt-15
+	@media screen and (min-width: 1023px)
+		padding-top: 15px !important
+		transition: all 0.3s linear
+
+.resize-mt-15
+	@media screen and (min-width: 1023px)
+		margin-top: 10px !important
+		transition: all 0.3s linear
+		font-size: 24px !important
+		padding: 4px 0px !important
+		margin-bottom: 0px !important
+
+.resize-menu-h
+	@media screen and (min-width: 1023px)
+		max-height: 120px
+
+.padding-button-give
+	padding-top: 4px
+	padding-bottom: 4px
+
+.max-w-135
+	max-width: 135px
+
+.max-930
+	max-width: 930px
+
+.max-410
+	max-width: 410px
+
+.max-670
+	max-width: 670px

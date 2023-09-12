@@ -1,0 +1,907 @@
+#gform_confirmation_wrapper_4,
+#gform_confirmation_wrapper_14
+    @apply w-full h-full flex items-center justify-center p-6 bg-white-pure rounded-md
+
+// Request Pray
+#gform_wrapper_4,
+#gform_wrapper_14
+    @apply p-6 bg-white-pure m-0 shadow-lg
+
+    .validation_error
+        @apply hidden
+
+    form
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply w-full mt-0 pr-0 mb-2
+
+                    &:first-of-type
+
+                        label.gfield_label_before_complex
+                            @apply hidden
+
+                        .ginput_complex
+                            @apply w-full
+
+                            span
+                                @apply pt-0
+
+                                &:last-of-type
+                                    @apply pr-0
+
+                                label
+                                    @apply text-xs mt-0 font-bold
+
+                    &.gfield_error
+                        @apply max-w-full bg-transparent py-0 mb-0 border-t-0 border-b-0 #{!important}
+
+                    &.show-in-wall
+
+                        .gfield_checkbox
+                            @apply w-full my-0
+
+                            li
+                                @apply font-bold mb-0
+
+                            input[type='checkbox']
+                                appearance: auto
+                                @apply w-4 h-4 mt-0 mr-2
+
+                        .gfield_description
+                            @apply text-xs pl-6 py-0 pr-0
+
+                    label.gfield_label
+                        @apply text-xs font-bold
+
+                    .ginput_container
+
+                        &.ginput_container_fileupload
+
+                            .gform_drop_area
+                                @apply py-5
+
+                                button
+                                    @apply bg-orange-500
+
+                        input,
+                        textarea
+                            @apply w-full leading-none px-4 py-2 border border-separator rounded-md shadow-lg
+
+                        textarea
+                            @apply h-24 max-h-full
+
+        .gform_footer
+            @apply py-0
+
+            input[type="submit"]
+                @apply text-xl text-white-pure text-center font-black leading-none bg-green-500 mr-0
+
+// For Churches
+#gform_wrapper_2
+    @apply my-0
+
+    form
+
+        .validation_error
+            @apply hidden
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply mt-3 pr-0
+
+                    &.gfield_error
+                        @apply my-0 #{!important}
+                        @apply bg-transparent border-none
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply m-0
+
+                        .validation_message
+                            @apply pt-2 #{!important}
+                            @apply text-red-400 pr-0
+
+                    label.gfield_label
+                        @apply text-xs mt-0 uppercase
+
+                    .ginput_container
+
+                        &.ginput_container_multiselect
+
+                            select
+                                height: 120px #{!important}
+                                @apply border border-separator #{!important}
+                                @apply w-full text-xs text-red-500 font-black leading-none px-4 py-3 rounded-md shadow-xl uppercase bg-auto bg-no-repeat m-0
+
+                        &.ginput_container_address
+
+                            span
+                                @apply pr-0 mt-3 mr-0
+
+                                select
+                                    background-image: url(../images/arrow-down.png)
+                                    background-position: 98%
+                                    @apply border border-separator #{!important}
+                                    @apply w-full text-xs text-red-500 font-black leading-none px-4 py-3 rounded-md shadow-xl uppercase bg-auto bg-no-repeat
+
+                                label
+                                    @apply text-xs font-bold mt-0 uppercase
+
+                                input
+                                    @apply mb-0 mt-1
+
+                        input,
+                        textarea
+                            @apply border border-separator #{!important}
+                            @apply w-full px-4 rounded-md shadow-xl
+
+                        textarea
+                            @apply h-16
+
+        .gform_footer
+            width: fit-content
+            @apply py-0 mt-6 relative
+
+            // Loading Image transparency is being handled through the functions.php
+            img.gform_ajax_spinner
+                border: 2px solid rgba(255, 255, 255, 0.2)
+                border-left: 2px solid rgba(255, 255, 255, 1)
+                animation: spinner 0.75s infinite linear
+                @apply w-4 h-4 pl-0 rounded-full top-0 right-0 mt-3 mr-3 absolute #{!important}
+
+            @keyframes spinner
+                0%
+                    transform: rotate(0deg)
+                    -webkit-transform: rotate(0deg)
+                100%
+                    transform: rotate(360deg)
+                    -webkit-transform: rotate(360deg)
+
+            input[type='submit']
+                @apply text-lg text-white-pure font-black leading-none px-12 bg-red-500 cursor-pointer m-0
+
+// Contact Form
+#gform_wrapper_3
+    @apply my-0
+
+    .gform_validation_errors
+        @apply hidden
+
+    form
+        @apply p-4
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply mt-0 pr-0 mb-4
+
+                    &.gfield_error
+                        @apply py-0 my-0 #{!important}
+                        @apply max-w-full bg-transparent border-none
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply m-0
+
+                        label
+                            @apply text-black-700-new
+
+                        .validation_message
+                            @apply pt-2 #{!important}
+                            @apply text-red-400 pr-0
+
+                    &.has-recaptcha
+                        @apply mb-4
+
+                        label
+                            @apply hidden
+
+                        .ginput_recaptcha
+                            @apply mt-0
+
+                    .ginput_container
+
+                        input,
+                        textarea
+                            @apply w-full leading-none px-4 py-2 border border-gray-300 rounded shadow-lg
+
+        .gform_footer
+            @apply mt-0 py-0 relative
+
+            input[type="submit"]
+                @apply text-white-pure bg-red-500
+
+// Ways To Give
+#gform_wrapper_6
+    @apply my-0
+
+    form
+
+        .validation_error
+            @apply hidden
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply mt-3 pr-0
+
+                    &.gfield_error
+                        @apply my-0 #{!important}
+                        @apply bg-transparent border-none
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply m-0
+
+                        .validation_message
+                            @apply pt-2 #{!important}
+                            @apply text-red-400 pr-0
+
+                    label.gfield_label
+                        @apply text-xs mt-0 uppercase
+
+                    .ginput_container
+
+                        &.ginput_container_select
+
+                            select
+                                background-image: url(../images/arrow-down.png)
+                                background-position: 98%
+                                @apply border border-separator #{!important}
+                                @apply w-full text-xs text-red-500 font-black leading-none px-4 py-3 rounded-md shadow-xl uppercase bg-auto bg-no-repeat
+
+                        &.ginput_container_address
+
+                            span
+                                @apply pr-0 mt-3 mr-0
+
+                                select
+                                    background-image: url(../images/arrow-down.png)
+                                    background-position: 98%
+                                    @apply border border-separator #{!important}
+                                    @apply w-full text-xs text-red-500 font-black leading-none px-4 py-3 rounded-md shadow-xl uppercase bg-auto bg-no-repeat
+
+                                label
+                                    @apply text-xs font-bold mt-0 uppercase
+
+                                input
+                                    @apply mb-0 mt-1
+
+                        input,
+                        textarea
+                            @apply border border-separator #{!important}
+                            @apply w-full px-4 rounded-md shadow-xl
+
+                        textarea
+                            @apply h-24
+
+        .gform_footer
+            width: fit-content
+            @apply py-0 mt-6 relative
+
+            // Loading Image transparency is being handled through the functions.php
+            img.gform_ajax_spinner
+                border: 2px solid rgba(255, 255, 255, 0.2)
+                border-left: 2px solid rgba(255, 255, 255, 1)
+                animation: spinner 0.75s infinite linear
+                @apply w-4 h-4 pl-0 rounded-full top-0 right-0 mt-3 mr-3 absolute #{!important}
+
+            @keyframes spinner
+                0%
+                    transform: rotate(0deg)
+                    -webkit-transform: rotate(0deg)
+                100%
+                    transform: rotate(360deg)
+                    -webkit-transform: rotate(360deg)
+
+            input[type='submit']
+                @apply text-lg text-white-pure font-black leading-none px-12 bg-red-500 cursor-pointer m-0
+
+// Quiz
+#gform_wrapper_9
+    @apply my-0
+
+    .validation_error,
+    .gform_validation_errors
+        @apply hidden
+
+    form
+
+        .gform_body
+
+            // General styles
+            .gform_page_fields
+
+                ul.gform_fields
+
+                    li.gfield
+                        @apply pr-0 my-0
+
+                        &.gfield_error
+                            width: 100% #{!important}
+                            max-width: 100% #{!important}
+                            @apply m-0 #{!important}
+                            @apply p-0 bg-transparent border-none
+
+                            .gfield_description
+                                @apply text-red-400 pt-3 pr-0 #{!important}
+
+                        &.has-ratio-options
+
+                            label.gfield_label
+                                @apply hidden
+
+                            .ginput_container_radio
+                                @apply px-4 py-3 bg-gray-150-new rounded
+
+                                ul.gfield_radio
+                                    @apply w-full flex flex-wrap items-center justify-between my-0
+
+                                    li
+                                        @apply mx-0 mb-0
+
+                                        input[type='radio']
+                                            appearance: radio
+                                            -webkit-appearance: radio
+                                            @apply mt-0 mr-2
+
+                                    label
+                                        @apply m-0
+
+            // Quiz Intro
+            #gform_page_9_1
+
+                //  Footer
+                .gform_page_footer
+                    @apply py-6 flex justify-center border-t border-b border-solid border-gray-300 mt-6 mb-0 relative
+
+                    // Loading Image transparency is being handled through the functions.php
+                    img.gform_ajax_spinner
+                        border: 2px solid rgba(152, 95, 7, 0.5)
+                        border-left: 2px solid rgba(255, 255, 255, 1)
+                        animation: spinner 0.75s infinite linear
+                        @apply w-4 h-4 pl-0 rounded-full top-0 right-0 mt-10 mr-2 absolute #{!important}
+
+                    @keyframes spinner
+                        0%
+                            transform: rotate(0deg)
+                            -webkit-transform: rotate(0deg)
+                        100%
+                            transform: rotate(360deg)
+                            -webkit-transform: rotate(360deg)
+
+                    input[type='button']
+                        @apply text-white-pure text-xl font-bold leading-none px-10 py-3 bg-orange-500 inline-block m-0
+
+            //Question 1, 2, 3, 4, 5
+            #gform_page_9_2,
+            #gform_page_9_3,
+            #gform_page_9_4,
+            #gform_page_9_5,
+            #gform_page_9_6,
+            #gform_page_9_7,
+            #gform_page_9_8,
+            #gform_page_9_9,
+            #gform_page_9_10 // <- Form Page
+
+                //  Footer
+                .gform_page_footer
+                    @apply py-6 flex flex-col border-t border-b border-solid border-gray-300 mt-6 mb-0 relative
+
+                    // Loading Image transparency is being handled through the functions.php
+                    img.gform_ajax_spinner
+                        border: 2px solid rgba(152, 95, 7, 0.5)
+                        border-left: 2px solid rgba(255, 255, 255, 1)
+                        animation: spinner 0.75s infinite linear
+                        @apply w-4 h-4 pl-0 rounded-full top-0 right-0 mt-10 mr-2 absolute #{!important}
+
+                    @keyframes spinner
+                        0%
+                            transform: rotate(0deg)
+                            -webkit-transform: rotate(0deg)
+                        100%
+                            transform: rotate(360deg)
+                            -webkit-transform: rotate(360deg)
+
+                    input[type='button']
+                        @apply mb-6
+
+                    input[type='button'],
+                    input[type='submit']
+                        @apply text-white-pure text-xl font-bold leading-none px-8 py-3 bg-orange-500 inline-block mt-0 mx-0
+
+            #gform_page_9_10
+
+                .gform_page_fields
+
+                    ul.gform_fields
+
+                        li.gfield
+                            @apply mb-4
+
+                            &.gfield_error
+                                @apply my-0 #{!important}
+                                @apply bg-transparent border-none
+
+                                &.gf_left_half,
+                                &.gf_right_half
+                                    @apply m-0
+
+                                .validation_message
+                                    @apply pt-2 #{!important}
+                                    @apply text-red-400 pr-0
+
+                            &.is-currently
+
+                                label.gfield_label
+                                    @apply text-xs mt-0 uppercase
+
+                                .ginput_container.ginput_container_radio
+
+                                    ul.gfield_radio
+                                        @apply pl-6 my-0
+
+                                        li
+                                            @apply flex items-center
+
+                                            input[type='radio']
+                                                appearance: radio
+                                                -webkit-appearance: radio
+                                                width: auto
+                                                @apply mr-2 mt-0
+
+                                            label
+                                                @apply font-medium
+
+                            label.gfield_label
+                                @apply text-xs mt-0 uppercase
+
+                            .ginput_container
+
+                                &.ginput_container_select
+
+                                    select
+                                        background-image: url(../images/arrow-down.png)
+                                        background-position: 98%
+                                        @apply border border-separator #{!important}
+                                        @apply w-full text-xs text-red-500 font-black leading-none px-4 py-3 rounded-md shadow-xl uppercase bg-auto bg-no-repeat
+
+                                input
+                                    @apply border border-separator #{!important}
+                                    @apply w-full px-4 rounded-md shadow-xl
+
+// Ask a Question
+#gform_wrapper_7,
+#gform_wrapper_8,
+#gform_wrapper_11
+
+    form
+
+        .validation_error
+            @apply hidden
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply mt-3 pr-0
+
+                    &.gfield_error
+                        @apply my-0 #{!important}
+                        @apply bg-transparent border-none
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply m-0
+
+                        .validation_message
+                            @apply pt-2 #{!important}
+                            @apply text-red-400 pr-0
+
+                    label.gfield_label
+                        @apply text-xs mt-0 uppercase
+
+                    .ginput_container
+
+                        &.ginput_container_select
+
+                            select
+                                background-image: url(../images/arrow-down.png)
+                                background-position: 98%
+                                @apply border border-separator #{!important}
+                                @apply w-full text-xs text-red-500 font-black leading-none px-4 py-3 rounded-md shadow-xl uppercase bg-auto bg-no-repeat
+
+                        &.ginput_container_address
+
+                            span
+                                @apply pr-0 mt-3 mr-0
+
+                                select
+                                    background-image: url(../images/arrow-down.png)
+                                    background-position: 98%
+                                    @apply border border-separator #{!important}
+                                    @apply w-full text-xs text-red-500 font-black leading-none px-4 py-3 rounded-md shadow-xl uppercase bg-auto bg-no-repeat
+
+                                label
+                                    @apply text-xs font-bold mt-0 uppercase
+
+                                input
+                                    @apply mb-0 mt-1
+
+                        input,
+                        textarea
+                            @apply border border-separator #{!important}
+                            @apply w-full px-4 rounded-md shadow-xl
+
+                        textarea
+                            @apply h-24
+
+        .gform_footer
+            width: fit-content
+            @apply py-0 mt-6 relative
+
+            // Loading Image transparency is being handled through the functions.php
+            img.gform_ajax_spinner
+                border: 2px solid rgba(255, 255, 255, 0.2)
+                border-left: 2px solid rgba(255, 255, 255, 1)
+                animation: spinner 0.75s infinite linear
+                @apply w-4 h-4 pl-0 rounded-full top-0 right-0 mt-3 mr-3 absolute #{!important}
+
+            @keyframes spinner
+                0%
+                    transform: rotate(0deg)
+                    -webkit-transform: rotate(0deg)
+                100%
+                    transform: rotate(360deg)
+                    -webkit-transform: rotate(360deg)
+
+            input[type='submit']
+                @apply text-lg text-white-pure font-black leading-none px-12 bg-red-500 cursor-pointer m-0
+
+// Subscribe (For Curches)
+#gform_wrapper_10
+    @apply p-6 bg-white-pure m-0 shadow-lg
+
+    .validation_error
+        @apply hidden
+
+    form
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply w-full mt-0 pr-0 mb-2
+
+                    &.gfield_error
+                        @apply max-w-full bg-transparent py-0 mb-0 border-t-0 border-b-0 #{!important}
+
+                        .validation_message
+                            @apply pt-2 #{!important}
+                            @apply text-red-400 pr-0
+
+                    label.gfield_label
+                        @apply text-xs font-bold
+
+                    .ginput_container
+
+                        input,
+                        textarea
+                            @apply w-full leading-none px-4 py-2 border border-separator rounded-md shadow-lg
+
+        .gform_footer
+            @apply py-0
+
+            input[type="submit"]
+                @apply w-full text-xl text-white-pure text-center font-black leading-none bg-red-500 mr-0
+
+// Internships Contact Form
+#gform_wrapper_12
+    @apply my-0
+
+    .gform_validation_errors
+        @apply hidden
+
+    form
+        @apply p-4
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply mt-0 pr-0 mb-4
+
+                    &.gfield_error
+                        @apply py-0 my-0 #{!important}
+                        @apply max-w-full bg-transparent border-none
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply m-0
+
+                        label
+                            @apply text-black-700-new
+
+                        .validation_message
+                            @apply pt-2 #{!important}
+                            @apply text-red-400 pr-0
+
+                    &.has-recaptcha
+                        @apply mb-4
+
+                        label
+                            @apply hidden
+
+                        .ginput_recaptcha
+                            @apply mt-0
+
+                    .ginput_container
+
+                        input,
+                        textarea
+                            @apply w-full leading-none px-4 py-2 border border-gray-300 rounded shadow-lg
+
+                        textarea
+                            @apply h-32
+
+        .gform_footer
+            @apply mt-0 py-0 relative
+
+            input[type="submit"]
+                @apply text-white-pure bg-orange-500
+
+@screen sm
+
+    // For Churches
+    #gform_wrapper_2
+
+        form
+
+            .gform_body
+
+                ul.gform_fields
+
+                    li.gfield
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply w-1/2 max-w-full #{!important}
+
+                        &.gf_left_half
+                            @apply pr-2
+
+                        &.gf_right_half
+                            @apply pl-2
+
+                        .ginput_container
+
+                            &.ginput_container_address
+
+                                span
+
+                                    &.address_line_1
+                                        @apply w-1/2 pr-2 inline-block
+
+                                    &.address_zip
+                                        @apply pr-0 #{!important}
+
+                                    &.ginput_left
+                                        @apply pl-2
+
+                                    &.ginput_right
+                                        @apply pr-2
+
+    // Contact Form
+    #gform_wrapper_3
+
+        form
+            @apply p-8
+
+            .gform_body
+
+                ul.gform_fields
+
+                    li.gfield
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply w-1/2 max-w-full #{!important}
+
+                        &.gf_left_half
+                            @apply pr-2
+
+                        &.gf_right_half
+                            @apply pl-2
+
+    // Ways To Give
+    #gform_wrapper_6
+
+        form
+
+            .gform_body
+
+                ul.gform_fields
+
+                    li.gfield
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply w-1/2 max-w-full #{!important}
+
+                        &.gf_left_half
+                            @apply pr-2
+
+                        &.gf_right_half
+                            @apply pl-2
+
+                        .ginput_container
+
+                            &.ginput_container_address
+
+                                span
+
+                                    &.address_line_1
+                                        @apply w-1/2 pr-2 inline-block
+
+                                    &.address_zip
+                                        @apply pr-0 #{!important}
+
+                                    &.ginput_left
+                                        @apply pl-2
+
+                                    &.ginput_right
+                                        @apply pr-2
+
+    // Ask a Question
+    #gform_wrapper_7,
+    #gform_wrapper_8,
+    #gform_wrapper_11
+
+        form
+
+            .gform_body
+
+                ul.gform_fields
+
+                    li.gfield
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply w-1/2 max-w-full #{!important}
+
+                        &.gf_left_half
+                            @apply pr-2
+
+                        &.gf_right_half
+                            @apply pl-2
+
+                        .ginput_container
+
+                            &.ginput_container_address
+
+                                span
+
+                                    &.address_line_1
+                                        @apply w-1/2 pr-2 inline-block
+
+                                    &.address_zip
+                                        @apply pr-0 #{!important}
+
+                                    &.ginput_left
+                                        @apply pl-2
+
+                                    &.ginput_right
+                                        @apply pr-2
+
+    // Quiz
+    #gform_wrapper_9
+
+        form
+
+            .gform_body
+
+                #gform_page_9_2,
+                #gform_page_9_3,
+                #gform_page_9_4,
+                #gform_page_9_5,
+                #gform_page_9_6,
+                #gform_page_9_7,
+                #gform_page_9_8,
+                #gform_page_9_9,
+                #gform_page_9_10
+
+                    //  Footer
+                    .gform_page_footer
+                        @apply flex flex-row justify-between
+
+                        input[type='button']
+                            @apply mb-0
+
+                // Quiz Form
+                #gform_page_9_10
+
+                    .gform_page_fields
+
+                        ul.gform_fields
+
+                            li.gfield
+
+                                &.gf_left_half,
+                                &.gf_right_half
+                                    @apply w-1/2 max-w-full #{!important}
+
+                                &.gf_left_half
+                                    @apply pr-2
+
+                                &.gf_right_half
+                                    @apply pl-2
+
+                                .ginput_container_radio
+
+                                    ul.gfield_radio
+                                        @apply flex flex-wrap
+
+                                        li.gchoice
+                                            @apply w-1/3
+
+    // Internships Contact Form
+    #gform_wrapper_12
+
+        form
+            @apply p-8
+
+            .gform_body
+
+                ul.gform_fields
+
+                    li.gfield
+
+                        &.gf_left_half,
+                        &.gf_right_half
+                            @apply w-1/2 max-w-full #{!important}
+
+                        &.gf_left_half
+                            @apply pr-2
+
+                        &.gf_right_half
+                            @apply pl-2
+
+@screen lg
+
+    // Request Pray
+    #gform_wrapper_4
+        @apply p-8
+
+        form
+
+            .gform_body
+
+                ul.gform_fields
+
+                    li.gfield
+
+                        &:first-of-type
+
+                            .ginput_complex
+
+                                span
+
+                                    &:first-of-type
+                                        @apply pr-2
+
+                                    &:last-of-type
+                                        @apply pl-2

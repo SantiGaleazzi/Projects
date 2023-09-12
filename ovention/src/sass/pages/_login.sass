@@ -1,0 +1,41 @@
+.tml-login
+
+  .tml-alerts
+    @apply tw-font-semibold
+
+    ul.tml-messages
+
+      li.tml-message
+        @apply tw-text-center tw-text-white tw-bg-green-500 tw-border-none tw-rounded-2xl tw-shadow-none
+
+    ul.tml-errors
+
+      li.tml-error
+        @apply tw-text-center tw-text-white tw-bg-red-500 tw-border-none tw-rounded-2xl tw-shadow-none
+
+  form
+
+    .tml-field-wrap
+
+      label
+        @apply tw-font-semibold
+
+      input
+        @apply tw-h-auto tw-font-semibold tw-px-6 tw-py-4 tw-bg-gray-100 tw-rounded-2xl tw-border-2 tw-border-solid tw-border-gray-100 tw-shadow-none tw-transition-colors tw-duration-100 tw-ease-in-out
+
+        &:focus
+          @apply tw-border-orange-600
+
+      &.tml-submit-wrap
+        @apply tw-text-center
+
+        button
+          @apply tw-text-white tw-text-[20px] tw-font-semibold tw-px-12 tw-py-6 tw-bg-gradient-to-r tw-from-orange-600 tw-to-orange-900 tw-rounded-2xl tw-cursor-pointer
+
+  ul.tml-links
+    @apply tw-text-center tw-list-none tw-m-0
+
+    li.tml-lostpassword-link
+
+      a
+        @apply tw-text-gray-400

@@ -1,0 +1,33 @@
+{
+	"scripts": [
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.core.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.util.*.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.accordion.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.accordionMenu.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.drilldown.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.dropdown.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.dropdownMenu.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.responsiveToggle.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.reveal.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.tabs.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.toggler.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.js",
+		"./node_modules/foundation-sites/dist/js/plugins/foundation.slider.js",
+		"./node_modules/slick-carousel/slick/slick.js",
+		"./node_modules/@vimeo/player/dist/player.js",
+		"./src/js/filter-resources.js",
+		"./src/js/get-full-biography.js",
+		"./src/js/cookie.js",
+		"./src/js/donor-acq.js",
+		"./src/js/golf-invite.js",
+		"./src/js/hamburger.js",
+		"./src/js/training-interests.js",
+		"./src/js/ye-lightboxes.js",
+		"./src/js/frequently-asked-questions.js",
+		"./src/js/block-lightboxes.js",
+		"./src/js/signup-form.js",
+		"./src/js/app.js"
+	]
+}

@@ -1,0 +1,7 @@
+.loading-spinner
+    border: 2px solid rgba(255, 255, 255, 0.2)
+    border-left: 2px solid rgba(255, 255, 255, 1)
+    @apply w-4 h-4 opacity-0 invisible rounded-full mr-3 transition-opacity duration-75 ease-in-out
+
+    &.is-loading
+        @apply opacity-100 visible animate-spin

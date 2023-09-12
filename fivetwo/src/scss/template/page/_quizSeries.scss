@@ -1,0 +1,444 @@
+$block: '.Testimonial-video';
+
+#{$block}{
+	.secondaryBanner {
+		background-color: #2d2d2d;
+		height: 28rem;
+		background-size: cover;
+		.title {
+			color: $yellow;
+			margin-bottom: 0;
+			padding-bottom: 3rem;
+			background-image: url(../img/internal/quizSeries/quizLPTestimonial/highlighter.png);
+			background-position: center bottom;
+			background-repeat: no-repeat;
+		}
+		@include breakpoint(medium down) {
+		    background-size: auto 20rem;
+		    background-position-x: 70%;
+		}
+	}
+	&__content {
+		padding-top: 3.2rem;
+		padding-bottom: 4.8rem;
+	}
+	&__campaign {
+		padding: 0 1.5rem;
+	}
+	&__container {
+	    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); 
+	    border-radius: .5rem; 
+	    width: 37.8rem; 
+	    position: relative;
+	    background-color: #cee0e7;
+	    @include breakpoint(medium down) {
+	        margin: 2rem auto;
+	    }
+	    @include breakpoint(small only) {
+	        width: 95%; 
+	    }
+	}
+	&__note {
+	    &-up {
+	        background-color: #26466c;
+	        text-align: center;
+	        position: relative;
+	        padding: 3.5rem 3rem 0 3rem;
+	        border-radius: .5rem; 
+	        @include breakpoint(medium down) {
+	            margin: 0 auto;
+	        }
+	        @include breakpoint(small only) {
+	            width: 100%;
+	        }
+	        h6 {
+	            line-height: 1.1;
+	            &.big {
+					font-size: 2.4rem;
+					color: $white;
+					margin-bottom: 1.8rem;
+	            }
+	            &.small {
+					font-size: 2.2rem;
+					color: $light-blue;
+	            }
+	        }
+	    }
+	    &-down {
+	        display: flex;
+	        background-color: #cee0e7;
+	        overflow: hidden;
+	        padding: 6rem 4rem 2.3rem;
+	        border-bottom-left-radius: .5rem; 
+	        border-bottom-right-radius: .5rem; 
+	        h6 {
+	        	font-size: 2.5rem;
+	        	color: #26466c;
+	        	font-style: italic;
+	        	line-height: 1;
+	        	margin-bottom: 2rem;
+	        }
+	    }
+	}
+	&__sign-up {
+		background-color: #26466c;
+		border-radius: .4rem;
+		padding: 2.3rem .9rem 2.3rem 2.5rem;
+		margin-top: 3.2rem;
+	    h6 {
+	        color: $light-blue;
+	        font-size: 2.4rem;
+	        font-weight: bold;
+	        margin-bottom: 1rem;
+	    }
+	    p {
+	    	color: $white;
+	    }
+	    &-form {
+	    	color: $white;
+	    	.gform_wrapper div.validation_error {
+	    		color: #fec15a;
+	    		border-bottom: 2px solid #fec15a;
+	    		border-top: 2px solid #fec15a;
+	    	}
+	    	.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+	    		background-color: rgba(248,215,159,.25);
+	    		border-top: 1px solid #f8d79f;
+	    		border-bottom: 1px solid #f8d79f;
+	    	}
+	    	.gform_wrapper .validation_message {
+	    		color: #fec15a;
+	    	}
+	        input[type="text"] {
+	            height: 3rem;
+	            margin: 1.6rem 0 0 0 !important;
+	        }
+	        ul {
+	            li {
+	                background-image: none;
+	                background-repeat: no-repeat;
+	                background-position: left top;
+	                margin-bottom: 0rem;
+	                margin-top: 0rem !important;
+	                padding: 0;
+	            }
+	        }
+	    }
+	    @include breakpoint(medium down) {
+	       text-align: center;
+	       margin-bottom: 5rem;
+	       padding: 2.3rem 2.5rem;
+	    }
+	} 
+}
+
+$block: '.Series-video';
+
+#{$block}{
+	.secondaryBanner {
+		background-color: #2d2d2d;
+		height: 28rem;
+		background-size: cover;
+		color: $white;
+		.title {
+			color: $yellow;
+			margin-bottom: 0;
+			margin-bottom: 2rem;
+		}
+		@include breakpoint(medium down) {
+		    background-size: auto 20rem;
+		    background-position-x: 70%;
+		}
+	}
+	&__share {
+		font-size: 1.4rem;
+		font-weight: bold;
+		margin-top: 1.3rem;
+	}
+	&__info {
+		padding: 0 3.5rem;
+		&-brief {
+			text-align: left;
+			background-image: url(../img/internal/quizSeries/videoAndQuiz/bg-info.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+			color: $dark-blue;
+			padding: 3rem;
+			line-height: 1.6;
+			margin-top: 3rem;
+			a {
+				color: #01a8e2;
+				text-decoration: none;
+				font-weight: 500;
+			}
+			@include breakpoint(medium down) {
+			    background-size: cover;
+			}
+		}
+	}
+	&__campaign {
+		padding: 0 1.5rem;
+	}
+	&__quiz {
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); 
+		border-radius: .5rem;
+		margin-top: 2rem;
+		&-start {
+			color: $white;
+			font-family: $header-font-family;
+			font-weight: bold;
+			font-size: 1.8rem;
+		}
+		&-section {
+			padding: 1.7rem 2.4rem;
+			font-size: 1.6rem;
+		}
+		&-left {
+			width: 70%;
+			color: $dark-blue;
+			border-top-left-radius: .5rem;
+			border-bottom-left-radius: .5rem;
+			@include breakpoint(small down) {
+				width: 100%;
+				border-top-right-radius: .5rem;
+			    border-top-left-radius: .5rem;
+			    border-bottom-left-radius: 0;
+			}
+		}
+		&-right {
+			width: 30%;
+			background-color: $dark-red; 
+			border-top-right-radius: .5rem;
+			border-bottom-right-radius: .5rem;
+			cursor: pointer;
+			@include breakpoint(small down) {
+				width: 100%;
+				padding: 1.5rem;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: .5rem;
+				border-bottom-left-radius: .5rem;
+			}
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	&__content {
+		padding-top: 3.4rem;
+		padding-bottom: 4rem;
+	}
+	&__container {
+	    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); 
+	    border-radius: .5rem; 
+	    width: 37.8rem; 
+	    position: relative;
+	    background-color: $dark-blue;
+	    padding: 2.8rem 2.6rem;
+	    color: $white;
+	    h6 {
+	    	color: $light-blue;
+	    	font-size: 2.4rem;
+	    }
+	    &-training {
+	    	padding: 6rem 3.8rem;
+	    }
+	    @include breakpoint(medium down) {
+	        margin: 4rem auto 2rem;
+	    }
+	    @include breakpoint(small only) {
+	        width: 95%; 
+	    }
+	}
+}
+
+$block: '.Schedule-call';
+
+#{$block}{
+	.secondaryBanner {
+		background-color: #2d2d2d;
+		height: 28rem;
+		background-size: cover;
+		color: $white;
+		.title {
+			color: $yellow;
+			margin-bottom: 0;
+			margin-bottom: 2rem;
+		}
+		@include breakpoint(medium down) {
+		    background-size: auto 20rem;
+		    background-position-x: 70%;
+		}
+	}
+	&__content {
+		padding-top: 3.3rem;
+		padding-bottom: 6rem;
+		h6 {
+			color: $green;
+			font-size: 2.4rem;
+			font-weight: bold;
+			margin-bottom: .8rem;
+		}
+	}
+	&__campaign {
+		padding: 0 1.5rem;
+	}
+	&__container {
+	    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); 
+	    border-radius: .5rem; 
+	    width: 37.8rem; 
+	    position: relative;
+	    background-color: $dark-blue;
+	    @include breakpoint(medium down) {
+	        margin: 4rem auto 2rem;
+	    }
+	    @include breakpoint(small only) {
+	        width: 95%; 
+	    }
+	}
+	&__note {
+		color: $white;
+        text-align: center;
+        position: relative;
+        padding: 2.8rem 3rem 2.4rem 3rem;
+        border-radius: .5rem; 
+        @include breakpoint(medium down) {
+            margin: 0 auto;
+        }
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+        h6 {
+            line-height: 1.1;
+            &.big {
+				font-size: 2.4rem;
+				color: $light-blue;
+				margin-bottom: 1.8rem;
+            }
+            &.small {
+				font-size: 2rem;
+				color: $yellow;
+            }
+            &.book-title {
+            	color: $yellow;
+            	font-size: 1.4rem;
+            	font-style: italic;
+            	font-family: $body-font-family;
+            	margin-bottom: 1.5rem;
+            	line-height: 1.3;
+            }
+        }
+	    &-down {
+	        display: flex;
+	        background-color: #cee0e7;
+	        overflow: hidden;
+	        padding: 6rem 4rem 2.3rem;
+	        border-bottom-left-radius: .5rem; 
+	        border-bottom-right-radius: .5rem; 
+	        h6 {
+	        	font-size: 2.5rem;
+	        	color: #26466c;
+	        	font-style: italic;
+	        	line-height: 1;
+	        	margin-bottom: 2rem;
+	        }
+	    }
+	}
+	&__sign-up {
+	    h6 {
+	        color: $dark-red;
+	        font-size: 2.4rem;
+	        font-weight: bold;
+	        margin-bottom: 1rem;
+	    }
+	    &-form {
+	        input[type="text"] {
+	            height: 3rem;
+	            margin: 1.6rem 0 0 0 !important;
+	        }
+	        ul {
+	            li {
+	                background-image: none;
+	                background-repeat: no-repeat;
+	                background-position: left top;
+	                margin-bottom: 0rem;
+	                margin-top: 0rem !important;
+	                padding: 0;
+	            }
+	        }
+	        p {
+	        	em {
+	        		font-size: 1.2rem;
+	        	}
+	        }
+	    }
+	} 
+}
+
+#field_13_2,
+#field_13_3,
+#field_13_4,
+#field_13_5,
+#field_14_2,
+#field_14_3,
+#field_14_4,
+#field_14_5, {
+    display: inline-block;
+    width: 50%;
+    @include breakpoint(medium down) {
+        width: 100%;
+    }
+}
+
+#input_13_1_3,
+#input_13_1_6,
+#input_14_1_3,
+#input_14_1_6, {
+	margin-top: 0 !important;
+}
+
+#gform_13 {
+    .gform_footer {
+    	text-align: center;
+        padding: 0;
+    }
+}
+
+#gform_14 {
+	.gform_footer {
+	    padding: 0;
+	}
+}
+
+#input_13_2,
+#input_14_2 {
+	@include breakpoint(medium down) {
+	   margin-top: 0 !important;
+	}
+}
+
+#gform_submit_button_13 {
+	font-family: $body-font-family;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    border-radius: 3px;
+    background-color: #ea2b2c;
+    width: 37.8rem;
+    max-width: 100%;
+}
+
+#gform_submit_button_14 {
+	background-image: url(../img/internal/quizSeries/scheduleCall/Schedule-button.png);
+	background-repeat: no-repeat;
+	background-position: 20% center;
+	font-family: $body-font-family;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    border-radius: 3px;
+    background-color: #ea2b2c;
+    width: 48%;
+    max-width: 100%;
+    @include breakpoint(small only) {
+       width: 100%;
+    }
+}

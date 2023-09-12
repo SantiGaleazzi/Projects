@@ -1,0 +1,21 @@
+
+// Theme Switcher
+#theme-switcher
+	@apply w-10 h-6 p-1 rounded-full relative ml-3
+
+	&.active
+
+		.toggle-bg
+			@apply bg-gradient-to-tr from-red-400 to-red-500
+			
+		.toggle-switch
+			@apply translate-x-full
+
+	.switcher-input
+		@apply w-full h-full opacity-0 absolute top-0 left-0
+
+	.toggle-bg 
+		@apply w-full h-full bg-gray-400 absolute rounded-full inset-0 transition duration-150 ease-in-out
+	
+	.toggle-switch
+		@apply w-4 h-full flex items-center justify-center bg-white-pure rounded-full relative transition transform duration-150 ease-in-out cursor-pointer z-10

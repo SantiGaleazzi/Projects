@@ -1,0 +1,72 @@
+#internship-form-nav
+
+    .internship-menu-option
+        @apply text-sm text-default text-center font-roboto leading-none px-5 py-3 my-2 relative cursor-pointer relative border-r inline-block
+
+        @screen md
+            @apply px-8
+
+        @screen xl
+            @apply my-0
+
+        &:last-of-type
+            @apply border-r-0
+
+        &.active
+            @apply font-bold
+
+            &::after
+                content: ''
+                border-style: inset
+                border-width: 0 8px 10px 8px
+                border-color: transparent transparent #d22630 transparent
+                @apply w-0 h-0 bottom-0 left-0 right-0 mx-auto -mb-4 absolute
+
+// Filtering
+#internships-filters
+
+    .filter
+        @apply bg-page border border-separator shadow rounded-md relative
+
+        .filter-terms
+            max-height: 0px
+            @apply w-full opacity-0 invisible overflow-hidden relative transition-all duration-150 ease-in-out z-20 overflow-y-scroll
+
+            &.active
+                max-height: 1000px
+                @apply opacity-100 visible py-2
+
+@screen sm
+
+    // Filtering
+    #internships-filters
+
+        .filter
+
+            .filter-terms
+                @apply mt-12 py-2 bg-page absolute top-0 left-0 border border-separator shadow rounded-md
+
+                &.active
+                    max-height: 315px
+                    @apply opacity-100 visible py-2
+                
+@screen lg
+
+    .application-process
+
+        .process
+
+            &:last-of-type
+
+                .step-time
+                    
+                    &::after
+                        @apply hidden
+                
+            .step-time
+                
+                &::after
+                    content: ''
+                    margin-left: 12%
+                    @apply w-1 h-full bg-card absolute top-0 left-0 z-0
+                

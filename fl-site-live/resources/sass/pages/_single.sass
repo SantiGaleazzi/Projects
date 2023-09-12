@@ -1,0 +1,40 @@
+.mx-150
+	max-width: 150px
+
+.single-content
+	h2
+		@apply font-pt-serif text-2xxl text-yellow-300 leading-tight mb-5
+
+	h3
+		@apply font-pt-serif text-xl text-yellow-300 leading-tight mb-5
+
+	h4
+		@apply font-pt-serif text-lg text-white leading-tight mb-5
+
+	p
+		@apply text-lg pb-4
+
+	a
+		@apply text-yellow-300
+
+	quote
+		@apply pl-6
+
+	li
+		@apply ml-8 list-disc
+
+.thumb-single .wp-post-image
+	@apply mx-auto w-full
+
+.video-single
+	position: relative
+	&::before
+		content: ""
+		display: block
+		padding-bottom: calc(100% / (16/9))
+	> :first-child
+		width: 100%
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%

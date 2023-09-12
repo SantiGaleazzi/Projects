@@ -1,0 +1,528 @@
+
+.top-bar {
+  display: none;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include breakpoint(small only) {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.75);
+  }
+
+  .dropdown{
+    .is-dropdown-submenu {
+      a{
+        padding-top: 1.4rem;
+        padding-right: 1.8rem;
+        padding-bottom: 1.4rem;
+        padding-left: 1.8rem;
+        text-align: left;
+        color: $secondary-color;
+        line-height: 1.2;
+        position: relative;
+        &:hover,
+        &:active{
+          background-color: $white;
+
+        }
+        &:first-child{
+
+        }
+      }
+      &:first-child{
+        a{
+          padding-top: 2rem;
+        }
+      }
+      .is-submenu-item {
+        & + .caption-menu{
+          display: none;
+          position:absolute;
+          right: 0;
+          top: 0;
+        }
+        &:hover{
+          & + .caption-menu{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include breakpoint(small only){
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown.menu {
+
+    & > li.is-dropdown-submenu-parent > a {
+      color: #383838;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding-top: 3.8rem;
+      padding-right: 2rem;
+      padding-bottom: 3.8rem;
+      padding-left: 2rem;
+
+      + .is-dropdown-submenu {
+          .sub-menu-item {
+            &:first-child + .caption-menu{
+              display: block;
+              z-index: 10 !important;
+
+              @include breakpoint(small only){
+                display: none;
+              }
+            }
+          }
+        }
+      &:hover,
+      &:active{
+        background-color: #efefef;
+        border-bottom: 2px solid #ffbe32;
+
+        @include breakpoint(small only) {
+          border-bottom: none;
+        }
+      }
+
+      @include breakpoint(small only){
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    + div + li{
+      a{
+        padding-top: 2rem;
+      }
+    }
+    li {
+      line-height: 1.2;
+      display: inline-block;
+      
+      a {
+
+        color: #383838;
+        font-weight: 600;
+        font-size: 1.6rem;
+        padding-left: 2rem;
+        padding-top: 3.8rem;
+        padding-right: 2rem;
+        padding-bottom: 3.8rem;
+        border-bottom: 2px solid transparent;
+
+        @include breakpoint(small only){
+          width: 100%;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        &:hover,
+        &:active{
+          background-color: #efefef;
+          border-bottom: 2px solid #ffbe32;
+
+          @include breakpoint(small only){
+            border-bottom: none;
+          }
+        }
+
+      }
+
+      &.involved__social {
+
+        a.social-icon {
+          padding-left: 1.1rem;
+          padding-right: 1.1rem;
+
+          &:hover,
+          &:active {
+            border-bottom: none;
+          }
+        }
+
+      }
+
+      &.icon-item {
+        a {
+
+          margin-top: 2.5rem;
+          margin-bottom: 2.5rem;
+          @include breakpoint(small only){
+            margin-top: 0;
+
+          }
+        }
+        @include breakpoint(small only){
+          text-align: center;
+        }
+      }
+      &.is-dropdown-submenu-parent + .caption-menu
+      + .is-dropdown-submenu-parent{
+        .is-dropdown-submenu{
+          left: auto;
+        }
+      }
+      &:first-child{
+        .is-dropdown-submenu{
+          > li:fisrt-child{
+            padding-top: 2rem;
+          }
+        }
+      }
+      @include breakpoint(small only){
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    .btn--icon{
+      padding-top: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1rem;
+      padding-left: 6rem;
+      background: #009be1;
+    }
+  }
+
+  .is-dropdown-submenu > li {
+    width: 30rem;
+    padding-right: 12rem;
+    &:first-child .sub-menu-link {
+      padding-top: 2rem;
+    }
+
+    @include breakpoint(small only) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  .is-dropdown-submenu {
+
+    & > li {
+      .sub-menu-link {
+        paddig-top: 2rem;
+      }
+    }
+  }
+
+  .is-dropdown-submenu > div + li > .sub-menu-link{
+    padding-top: 2rem;
+  }
+
+  .menu.dropdown {
+    .is-dropdown-submenu-parent{
+      & + .caption-menu{
+        display: none;
+        z-index: 15;
+      }
+    }
+  }
+
+  .menu.medium-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+  }
+}
+
+.title-bar{
+  background: $white;
+  padding: 0.6rem 1.5rem;
+  text-align: left;
+  .menu-icon{
+    margin-left: auto;
+  }
+  .logosvg{
+    width: 17.6rem;
+    height: 4.8rem;
+  }
+}
+.menu-btn{
+  width: 4rem;
+  height: 3rem;
+  margin-left: auto;
+  cursor: pointer;
+  float: right;
+  &.active{
+    .menu-hamburger{
+      background: transparent;
+      &:before{
+        transform: rotate(-45deg);
+        top: 0px;
+      }
+      &:after{
+        transform: rotate(45deg);
+        bottom: 0px;
+      }
+    }
+  }
+}
+.menu-hamburger{
+  margin-left: auto;
+  position: relative;
+  top: 0;
+  left: 0px;
+  background-color: #303030;
+  height: 2px;
+  width: 40px;
+  display: block;
+  transition: all .3s;
+
+  &:before,
+  &:after {
+    background-color: #303030;
+    height: 2px;
+    width: 40px;
+    display: block;
+    transition: all .3s;
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: -6px;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+  }
+
+}
+
+.dropdown.menu.medium-horizontal {
+
+  & > li {
+
+    & > .is-dropdown-submenu {
+      top: 100%;
+      border: none;
+      right: 0;
+      left: 0;
+      z-index: 12;
+      background: #efefef;
+      width: 52rem !important;
+      margin-left: 0;
+      float: right;
+      list-style-type: none;
+      overflow: hidden;
+      height: 43rem;
+      text-align: left;
+
+      .caption-menu {
+        height: 100%;
+        width: 34rem;
+        float: right;
+        padding: 2rem 2rem 1rem;
+        text-align: left;
+        border-left: 1px solid $white;
+        background: #efefef;
+        z-index: 12;
+
+        h4 {
+          color: $secondary-color;
+          font-size: 2.4rem;
+          font-weight: 300;
+          line-height: 1;
+          margin-bottom: 1.5rem;
+        }
+
+        img {
+          margin-bottom: 1rem;
+        }
+
+        p {
+          color: $secondary-color;
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+
+        & li {
+          a {
+            padding-top: 2rem;
+          }
+        }
+
+        @include breakpoint(small only) {
+          display: none;
+        }
+      }
+
+      div {
+        @include breakpoint(small only) {
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+
+.dropdown.menu.medium-horizontal {
+
+  & > li.is-dropdown-submenu-parent > a::after {
+    border-color: transparent;
+
+    @include breakpoint(small only){
+      // border-color: $blue-neuton;
+      background-image: url('../img/home/arrow-menu.png');
+      background-repeat: no-repeat;
+      background-position: left -3px top -1px;
+      background-size: 8px 12px;
+      margin-top: -8px;
+      width: 10px;
+      height: 18px;
+    }
+  }
+
+  & > li:last-child.opens-left > .is-dropdown-submenu {
+    left: auto;
+  }
+}
+
+.is-drilldown {
+  max-width: 100%;
+  li{
+    width: 100%;
+    text-align: left;
+    &.is-drilldown-submenu-parent{
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        left: 1.5rem;
+        bottom: 0;
+        background: #dddddd;
+        height: 1px;
+        width: 3%;
+      }
+    }
+  }
+}
+
+.drilldown {
+  a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #fbfbfb;
+    &:hover,
+    &:active{
+      background-color: #efefef;
+    }
+
+  }
+
+  li {
+
+    &.involved__social {
+      a {
+        display: inline-block;
+      }
+    }
+
+    &.icon-item {
+
+      a {
+        line-height: 1;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+
+      }
+
+      @include breakpoint(small only) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+    }
+
+    &:first-child {
+      a {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .is-drilldown-submenu-parent > a::after  {
+    background-image: url('../img/home/arrow-menu.png');
+    background-repeat: no-repeat;
+    background-position: left -3px top -1px;
+    background-size: 8px 12px;
+    margin-top: -8px;
+    width: 10px;
+    height: 18px;
+    border-color: transparent;
+  }
+
+  .is-drilldown-submenu {
+    border: none;
+    margin-left: 0;
+    background: #fbfbfb;
+
+    div {
+      img{
+        @include breakpoint(small only){
+          width: 15rem;
+          height: 15rem;
+        }
+      }
+      @include breakpoint(small only){
+        // padding-left: 1.5rem;
+        display: none;
+      }
+    }
+    li:last-child{
+      a{
+        margin-bottom: 0rem;
+      }
+    }
+    a{
+      padding: 1rem 1.5rem;
+      margin-top: 0 !important;
+      @include breakpoint(small only){
+        padding: 1.5rem;
+      }
+    }
+  }
+  .js-drilldown-back > a::before{
+    border-color: transparent;
+    background-image: url('../img/home/arrow-left.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 8px 12px;
+    margin-top: -8px;
+    width: 10px;
+    height: 18px;
+  }
+}
+
+.is-drilldown li.is-drilldown-submenu-parent{
+  // &:first-child{
+    & + div{
+      @include breakpoint(small only){
+        display: none;
+      }
+    }
+  // }
+}

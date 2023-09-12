@@ -1,0 +1,32 @@
+.hamburger
+  @apply tw-w-6 tw-h-6 tw-leading-6 tw-p-0 tw-bg-transparent tw-relative tw-flex tw-items-center tw-justify-end tw-cursor-pointer tw-ml-4
+  @screen md
+    @apply tw-hidden
+
+  &:hover
+    @apply tw-bg-transparent
+
+  .hamburger-box
+    @apply tw-w-3/4 tw-h-1 tw-bg-orange-500 tw-rounded-full tw-transition-all tw-duration-200 tw-ease-in-out
+
+    &::before,
+    &::after
+      content: ''
+      @apply tw-h-1 tw-bg-orange-500 tw-rounded-full tw-absolute tw-right-0 tw-transition-all tw-transform tw-duration-200 tw-ease-in-out
+
+    &::before
+      @apply tw-w-full -tw-translate-y-2
+
+    &::after
+      @apply tw-w-1/2 tw-translate-y-2
+
+  &.open
+
+    .hamburger-box
+      @apply tw-w-0 tw-bg-transparent
+
+      &::before
+        @apply tw-translate-y-0 -tw-rotate-45
+
+      &::after
+        @apply tw-w-full tw-translate-y-0 tw-rotate-45

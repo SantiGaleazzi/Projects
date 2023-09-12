@@ -1,0 +1,18 @@
+$block: '.woocommerce';
+
+#{$block}{
+    &__billing {
+        padding-top: 2rem;
+    }
+    &-checkout {
+        padding-bottom: 4rem;
+    }
+}
+
+#order_review {
+    .product-name,
+    .cart-subtotal,
+    .order-total {
+        text-align: left;
+    }
+}

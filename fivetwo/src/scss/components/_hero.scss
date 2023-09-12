@@ -1,0 +1,25 @@
+$block: '.hero';
+
+#{$block}{
+    background-color: #f6f8ed;
+    height: 60.4rem;
+    border-bottom: .3rem solid $dark-blue;
+    &__title {
+        color: $light-blue;
+        line-height: 1;
+    }
+    &__subtitle {
+        color: $dark-blue;
+    }
+    /*&__button {
+        margin: 1.4rem 2.1rem 2.5rem 0;
+        @include breakpoint(medium down) {
+            margin: 1.4rem 0;
+        }
+    }*/
+    &__video {
+        img {
+            cursor: pointer;
+        }
+    }
+}

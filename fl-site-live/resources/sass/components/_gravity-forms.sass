@@ -1,0 +1,112 @@
+// Subscribe Form
+#gform_wrapper_1
+
+    &.gform_legacy_markup_wrapper
+        @apply m-0
+
+    .gform_validation_errors
+        @apply hidden
+
+    form
+
+        .gform_body
+
+            ul.gform_fields
+
+                li.gfield
+                    @apply mt-0 mb-0 pr-0
+
+                    &.gfield_error
+                        max-width: 100% #{!important}
+                        @apply mb-4 #{!important}
+                        @apply mt-0 py-0 bg-transparent border-none
+
+                        .ginput_container
+
+                            &.ginput_container_checkbox
+
+                                ul.gfield_checkbox
+                                    @apply text-white
+
+                            span
+
+                                input[type="text"]
+                                    @apply border-2 border-red-500
+
+                        .gfield_description
+                            @apply text-white font-normal pt-0 pr-0 #{!important}
+
+                    .gfield_description
+                        @apply p-0
+
+                    &.gfield_html
+                        @apply pr-0 mt-0 mb-6 
+                        
+                        h3
+                            @apply font-pt-serif text-2xxl leading-none mb-6 text-center
+                            
+                        p
+                            @apply text-lg text-center mb-6 leading-relaxed
+
+                            &:last-of-type
+                                @apply mb-0
+
+                    .ginput_container
+                        width: 100% #{!important}
+                        @apply mt-0
+
+                        // Recaptcha
+                        &.ginput_recaptcha
+                            @apply mt-4
+
+                        // Full Name
+                        &.ginput_container_name
+                            
+                            .name_first
+                                @apply pr-0
+
+                                @screen sm
+                                    @apply pr-4
+
+                            .name_last
+                                @apply pr-0
+
+                        // Email
+                        &.ginput_container_email
+
+                            .ginput_left
+                                @apply pr-0
+                                
+                                @screen sm
+                                    @apply pr-4
+
+                            .ginput_right
+                                @apply pr-0
+                        
+                        // Address
+                        &.ginput_container_address
+
+                            .address_zip
+                                @apply w-full pr-0
+
+                        &.ginput_container_checkbox
+
+                            ul.gfield_checkbox
+
+                                li.gchoice
+
+                                    input[type="checkbox"]
+                                        appearance: checkbox
+                                        @apply w-4 h-4 ml-0 mt-0
+
+                        span
+                            @apply pt-0 mb-4
+
+                            input[type="text"]
+                                @apply w-full text-gray-800 leading-none px-4 py-3 my-0 rounded-md
+
+        .gform_footer
+            @apply text-center py-0 relative
+
+            input[type="submit"]
+                @apply text-white text-lg leading-none px-12 py-3 bg-blue-300 cursor-pointer rounded mr-0

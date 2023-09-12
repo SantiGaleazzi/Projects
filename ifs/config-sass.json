@@ -1,0 +1,7 @@
+{
+  "styling": [
+    "./node_modules/foundation-sites/scss",
+    "./node_modules/slick-carousel/slick",
+    "./node_modules/@fortawesome/fontawesome-free/scss"
+  ]
+}

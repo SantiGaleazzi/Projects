@@ -1,0 +1,32 @@
+@import ~swiper/swiper
+@import ~swiper/components/navigation/navigation
+
+.swiper-button-prev,
+.swiper-button-next
+    @apply w-12 h-12 text-red-500 transition-all duration-150 ease-in-out
+
+    &:focus
+        @apply outline-none
+
+    &::after
+        @apply text-4xl leading-none font-bold absolute
+
+.swiper-button-prev
+
+    &::after
+        content: '\f100'
+        font-family: 'Font Awesome 6 Free'
+
+.swiper-button-next
+
+    &::after
+        content: '\f101'
+        font-family: 'Font Awesome 6 Free'
+
+@screen md
+
+    .swiper-button-prev,
+    .swiper-button-next
+
+        &::after
+            @apply text-5xl

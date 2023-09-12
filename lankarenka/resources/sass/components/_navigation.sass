@@ -1,0 +1,146 @@
+header
+    @apply h-14
+
+// Desktop Navigation
+.desktop-nav
+    @apply hidden
+
+// Mobile Navigation
+.mobile-header
+    @apply w-full h-screen border-t border-gray-300 fixed top-0  overflow-hidden transform translate-x-full transition duration-300 ease-in-out mt-14 z-110
+
+    // Is Open
+    &.open
+        @apply translate-x-0
+
+    .mobile-nav
+        @apply  w-full h-full bg-white absolute overflow-y-scroll z-100
+
+        ul
+            
+            li
+                @apply relative
+
+                // When the current page is inside of a parent
+                &.current-menu-parent
+
+                    a.main-menu-link
+                       @apply pl-8 relative
+
+                       &::before
+                            content: ''
+                            @apply w-2 h-2 bg-gray-400 rounded-full top-4 left-4 absolute
+                
+                // When the current page is active
+                &.current_page_item
+
+                    a.main-menu-link
+                       @apply pl-8 relative
+
+                        &::before
+                            @apply bg-purple-700
+
+                &.menu-item-has-children
+
+                    span.nav-indicator
+                        @apply w-12 h-10 flex items-center justify-center border-l border-gray-300 top-0 right-0 absolute
+
+
+                        &::before,
+                        &::after
+                            content: ''
+                            width: 12px
+                            height: 3px
+                            @apply bg-gray-400 rounded-full absolute transition-all duration-200 ease-in-out
+
+                        &::before
+                            @apply transform translate-x-1 -rotate-45
+
+                        &::after
+                            @apply transform -translate-x-1 rotate-45
+
+                        &.is-open::before,
+                        &.is-open::after
+                            @apply bg-red-400
+
+                        &.is-open::before
+                            @apply transform -rotate-45
+
+                        &.is-open::after
+                            @apply transform rotate-45
+
+                a
+                    @apply px-4 py-2 border-b border-gray-300 block relative z-10
+                
+                // Submenus
+                ul.dropdown-content
+                    @apply h-0 hidden overflow-hidden transition-all duration-200 ease-in-out
+
+                    &.is-active
+                        @apply h-auto bg-purple-500 block
+
+                    li.sub-menu-item
+
+                        &.current_page_item
+
+                            a.sub-menu-link
+                                @apply border-purple-400
+
+                                &::before
+                                    content: ''
+                                    @apply w-2 h-2 bg-purple-700 rounded-full top-4 left-4 absolute
+
+                        a.sub-menu-link
+                            @apply pl-8 text-white border-purple-400 relative
+              
+@screen sm
+    header
+        @apply w-auto py-10
+
+    // Mobile Navigation
+    .mobile-header
+        @apply hidden
+
+    // Desktop Navigation
+    .desktop-nav
+        @apply w-full block
+
+        ul.walker-nav
+            @apply text-center
+
+            li.main-menu-item
+                @apply text-sm text-left inline-block relative px-5 py-6
+
+                a.main-menu-link
+                    @apply transition duration-300 ease-in-out
+
+                    &:hover
+                        @apply text-purple-500
+
+                &.current_page_item
+                    @apply text-purple-500
+
+                &.menu-item-has-children
+                            
+                    &:hover
+
+                        ul.dropdown-content
+                            @apply opacity-100 visible
+                    
+                    &::after
+                        content: '\f078'
+                        font-family: 'Font Awesome 5 Free'
+                        @apply text-xs top-6 right-0 font-bold absolute
+
+                // Submenus
+                ul.dropdown-content
+                    @apply w-40 bg-purple-500 rounded top-14 left-4 absolute opacity-0 overflow-hidden invisible transition duration-200 ease-in-out
+
+                    li.sub-menu-item
+                        @apply block
+
+                        a.sub-menu-link
+                            @apply text-sm text-white px-4 py-2 border-b border-purple-400 block transition duration-200 ease-in-out
+
+                            &:hover
+                                @apply bg-purple-600

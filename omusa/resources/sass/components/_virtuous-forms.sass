@@ -1,0 +1,107 @@
+// Form Name: Newsletter
+// Location: Footer Newsletter
+// Comments: This Form is using Virtuous Native Forms
+#C5CD0214-06CE-4140-B797-83663CF6CCCF
+
+    .v_fw
+        @apply w-full flex flex-col
+        @screen lg
+            @apply flex-row
+
+        .v_fr
+            @apply w-full mt-0 m-0
+            @screen lg
+                width: auto
+
+            &:first-of-type
+                @apply flex flex-col
+                @screen lg
+                    @apply flex-row
+
+            label
+                @apply text-white-pure mb-1
+
+            input
+                @apply bg-white-pure #{!important}
+                @apply font-lato font-semibold leading-none px-4 py-3 m-0 border border-gray-100-new rounded
+
+            button[type="submit"]
+                @apply w-full text-center text-white-pure font-bold border border-solid border-white-pure bg-red-500 rounded-none
+                @screen lg
+                    @apply mt-6 ml-4
+
+            .v_fc
+                @apply p-0 mb-4
+                @screen lg
+                    @apply mb-0
+
+                &.v_fc__2
+                    @apply w-full
+                    @screen lg
+                        @apply pr-4 w-1/2
+
+                .v_ig
+
+                    &.v_error
+                    
+                        .v_em
+                        
+                            span.v_m
+                                @apply text-xs leading-none text-white-pure
+
+// Form Name: Pray With Us
+// Location: Pray
+// Comments: This Form is the same used on the newsletter with a small tweak.
+.virtuous-form-newsletter
+
+    #D27A5421-CEFC-41E1-8D5A-F511DA81BFBE
+
+        .v_fw
+            @apply w-full flex flex-col
+
+            .v_fr
+                @apply w-full mt-0 m-0 mb-4
+                @screen lg
+                    width: auto
+
+                &:first-of-type
+                    @apply flex flex-col mb-0
+                    @screen lg
+                        @apply flex-row
+
+                    .v_fc
+                        @apply mb-4
+
+                        &:first-of-type
+                            @screen lg
+                                @apply pr-4
+
+                &:last-of-type
+                    @apply mb-0
+
+                label
+                    @apply text-black-700-new mb-1
+
+                input
+                    @apply bg-white-pure #{!important}
+                    @apply font-lato font-semibold leading-none px-4 py-3 m-0 border border-gray-100-new rounded
+
+                button[type="submit"]
+                    @apply w-full text-center text-white-pure font-bold border border-solid border-white-pure bg-red-500 rounded-none ml-0 mt-0
+
+                .v_fc
+                    @apply p-0 my-0
+
+                    &.v_fc__2
+                        @apply w-full
+                        @screen lg
+                            @apply w-1/2
+
+                    .v_ig
+
+                        &.v_error
+                        
+                            .v_em
+                            
+                                span.v_m
+                                    @apply text-xs leading-none text-red-500

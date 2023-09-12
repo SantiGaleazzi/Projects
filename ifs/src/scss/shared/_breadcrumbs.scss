@@ -1,0 +1,75 @@
+$block:'.breadcrumbs';
+
+#{$block}{
+  background-color: #757575;
+  &__list{
+    list-style: none;
+    margin: 0;
+    .separator{
+      color: $white;
+      font:{
+        family: $font-sanspro;
+        weight: 400;
+        size: 1.2rem;          
+      }
+      line-height: 1;
+      vertical-align: 2px;
+    }
+    li{
+      display: inline-block;
+      a,      
+      strong{
+        color: $white;
+        font:{
+          family: $font-sanspro;
+          weight: 400;
+          size: 1.2rem;          
+        }
+        line-height: 1;           
+      }
+      a{
+        vertical-align: 2px;
+      }
+      &.bctabs{
+        strong{
+          padding: 0.5rem 1rem;
+          display: inline-block;
+          vertical-align: 2px;
+        }
+      }
+
+    }
+    li[class^="item"]{
+      a,
+      .bread-current{
+        padding: 0.5rem 1rem;
+      }
+      
+      &.item-current{
+        .bread-current{
+          // padding: 0.5rem 1rem;
+          // vertical-align: 2px;
+        }
+      }
+      &:first-child{
+        a{
+          padding-left: 0;
+        }
+      }
+      &:nth-child(3){
+        strong{
+          &.bread-current{
+            padding-left: 0;
+            padding-right: 0;  
+          }
+        }  
+      }
+      &:nth-child(5){
+        .bread-current{
+          padding: 0.5rem 1rem;
+          vertical-align: 2px;
+        }
+      }
+    }
+  }
+}

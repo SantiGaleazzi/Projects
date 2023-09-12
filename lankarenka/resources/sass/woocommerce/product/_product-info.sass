@@ -1,0 +1,25 @@
+// Title
+// Used on single-product
+h1.product_title
+    @apply text-2xl font-medium
+
+// Price
+// Used on single-product
+p.price
+    @apply text-gray-500 font-medium mb-3
+
+span.woocommerce-Price-amount
+    @apply font-medium text-sm text-purple-500
+
+// If Discounts
+del
+    span.woocommerce-Price-amount
+        @apply font-normal text-gray-400 mr-1
+                    
+ins
+    @apply no-underline
+
+@screen sm
+    // Title
+    h1.product_title
+        @apply text-3xl

@@ -1,0 +1,20 @@
+$block: '.workshops';
+
+#{$block}{
+    background-color: $light-yellow;
+    background-image: url(../img/internal/Workshops-Bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 32rem;
+    &__title {
+        margin-bottom: 1rem;
+        margin-top: .5rem;
+    }
+    p {
+        margin-bottom: 2.5rem;
+    }
+    @include breakpoint(medium down) {
+        height: auto;
+        padding: 2rem 0;
+    }
+}

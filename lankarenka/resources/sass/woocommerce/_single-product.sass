@@ -1,0 +1,285 @@
+.single-product
+
+    .product
+
+        // Product Information. This div has been manually added to the woocommerce/content-single-product
+        .product-info
+            @apply flex flex-col
+
+            // Product Imagery
+            .product-imagery
+                @apply w-full relative mb-4
+
+                // Product On Sale Badge
+                span.onsale
+                    @apply text-xs text-purple-100 font-medium tracking-wider px-3 py-1 bg-purple-500 rounded flex items-center justify-center transition-all duration-200 ease-in-out absolute top-5 left-9 z-10
+
+                    &:hover
+                        @apply bg-purple-600
+
+                // Gallery
+                .woocommerce-product-gallery
+                    @apply flex flex-col relative
+
+                    // Zoom Trigger
+                    a.woocommerce-product-gallery__trigger
+                        @apply w-10 h-10 bg-purple-500 text-transparent rounded-full absolute top-4 right-5 z-10 inline-block
+
+                        &::before
+                            content: '\f065'
+                            font-family: 'Font Awesome 5 Free'
+                            top: 50%
+                            left: 50%
+                            @apply text-base text-purple-100 font-bold transform -translate-y-1/2 -translate-x-1/2 absolute
+
+                    figure.woocommerce-product-gallery__wrapper
+                        @apply w-full
+                            margin-block-start: 0rem
+                            margin-block-end: 0rem
+                            margin-inline-start: 0rem
+                            margin-inline-end: 0rem
+
+                        .woocommerce-product-gallery__image
+
+                            a
+                                img
+                                    @apply w-full h-auto mr-0 #{!important}
+
+                                    &.wp-post-image
+                                        @apply w-full h-auto
+
+                    // Viewport
+                    .flex-viewport
+                        @apply flex-1 mb-4 overflow-hidden
+
+                    // Thumbnails
+                    ol.flex-control-thumbs
+                        @apply w-full text-center px-4 my-0 overflow-x-auto whitespace-no-wrap
+
+                        li
+                            @apply inline-block mb-0 mr-2 overflow-hidden
+
+                            img
+                                @apply w-20 h-auto border-2 border-transparent rounded transition duration-300 ease-in-out
+
+                                // Selected Thumb
+                                &.flex-active
+                                    @apply border-purple-400
+
+            // Product Summary
+            .summary
+                @apply w-full px-6
+                
+
+                // Price
+                p.price
+
+                    del
+
+                        span.woocommerce-Price-amount
+                            @apply font-normal
+
+                    span.woocommerce-Price-amount
+                        @apply text-base font-medium
+
+                // Product Description
+                .woocommerce-product-details__short-description
+                    @apply text-sm text-gray-500 mb-3
+
+                // If product has variations
+                form.variations_form
+
+                    table.variations
+                        @apply w-full
+
+                        tbody
+
+                            tr
+
+                                &:last-of-type
+
+                                    td.value
+
+                                        select
+                                            @apply mb-3
+
+                                td.label
+                                    @apply text-sm mb-1 block
+
+                                td.value
+                                    @apply mb-3 block relative
+
+                                    select
+                                        @apply w-full text-sm text-gray-500 px-4 py-2 bg-gray-100 rounded appearance-none
+
+                                    a.reset_variations
+                                        @apply text-sm text-purple-500 inline-block #{!important}
+
+                                    .fas.fa-chevron-down
+                                        @apply text-sm text-gray-500 leading-none absolute top-3 right-4
+
+                    // Variation Description
+                    .single_variation_wrap
+
+                        .woocommerce-variation
+
+                            .woocommerce-variation-description
+                                @apply text-sm text-gray-400 mb-2
+
+                            .woocommerce-variation-price
+                                @apply text-green-500
+
+                            .woocommerce-variation-availability
+                                @apply text-sm text-purple-500
+
+                // Grouped Products
+                form.grouped_form
+                    @apply w-full
+
+                    table.woocommerce-grouped-product-list
+                        @apply w-full mb-5
+
+                        tbody
+
+                            tr.woocommerce-grouped-product-list-item
+                                @apply flex items-center flex-wrap mb-3
+
+                                &:last-of-type
+                                    @apply mb-0
+
+                                td
+                                    &.woocommerce-grouped-product-list-item__price:last-of-type
+                                        @apply mb-0
+
+                                    .quantity
+                                        @apply mb-0
+
+                                td.woocommerce-grouped-product-list-item__quantity
+
+                                    .product-qty
+                                        @apply mb-0
+
+                                        span
+                                            @apply hidden
+
+                                        .woo-quantity
+                                            @apply ml-0
+
+                                td.woocommerce-grouped-product-list-item__label
+                                    @apply flex-1 text-sm text-purple-500 px-4 truncate
+
+                                td.woocommerce-grouped-product-list-item__price
+                                    @apply text-sm
+
+                                    del
+                                        @apply hidden
+
+                // Add to Cart
+                form.cart
+                    @apply my-6
+
+                    .product-qty
+                        @apply flex items-center mb-4
+
+                        span
+                            @apply text-sm
+
+                        // Custom Hook added to the quantity field
+                        .woo-quantity
+                            @apply flex items-center bg-gray-200 rounded-full relative ml-3
+
+                            // Substract
+                            .cart-minus,
+                            .cart-plus
+                                background-color: rgba(#b9c2d0, 0.4)
+                                @apply w-8 h-8 text-xs text-white rounded-full flex items-center justify-center transition duration-200 ease-in-out cursor-pointer
+
+                                &:active
+                                    @apply bg-purple-500
+
+                            // Quantity
+                            .quantity
+                                @apply flex items-center relative
+
+                                label
+                                    @apply w-0 h-0 text-transparent absolute overflow-hidden
+
+                                input.qty
+                                    @apply w-6 text-sm text-center text-purple-500 bg-transparent py-1 rounded
+
+                                    &::-webkit-outer-spin-button,
+                                    &::-webkit-inner-spin-button
+                                        -webkit-appearance: none
+                                        @apply m-0
+
+                                    &[type=number]
+                                        -moz-appearance: textfield
+
+        // Related Product
+        .related.products
+            @apply mt-8
+
+            h2
+                @apply text-center text-2xl text-purple-600 font-medium capitalize
+
+            ul.products
+
+                li.product
+
+                    a.woocommerce-LoopProduct-link
+
+                        h2.woocommerce-loop-product__title
+                            @apply text-base text-default font-medium transition duration-200 ease-in-out truncate block #{!important}
+
+                            &:hover
+                                @apply text-purple-600
+
+                        span.price
+
+                            del
+
+                                span.woocommerce-Price-amount
+                                    @apply text-sm text-gray-400 font-normal line-through mr-1 #{!important}
+
+                            span.woocommerce-Price-amount
+                                @apply text-sm text-default font-medium #{!important}
+
+@screen sm
+    .single-product
+
+        .product
+
+            // Product Information. This div has been manually added to the woocommerce/content-single-product
+            .product-info
+                @apply flex-row pt-20
+
+                // Product Imagery
+                .product-imagery
+                    @apply w-1/2 px-4 mb-0
+
+                    &:hover
+
+                        // Product On Sale Badge
+                        span.onsale
+                            @apply left-10
+
+                    // Gallery
+                    .woocommerce-product-gallery
+
+                        // Thumbnails
+                        ol.flex-control-thumbs
+                            @apply h-full px-0
+
+                // Product Summary
+                .summary
+                    @apply w-1/2
+
+                    // If product has variations
+                    form.variations_form
+
+                        table.variations
+                            @apply w-auto
+
+            // Related Product
+            .related.products
+                @apply mt-16 mb-8

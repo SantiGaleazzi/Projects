@@ -1,0 +1,55 @@
+/* purgecss start ignore */
+
+@layer utilities
+
+  .lightbox
+    z-index: 10001
+    @apply tw-p-5 tw-fixed tw-inset-0 tw-flex tw-items-center tw-justify-center tw-opacity-0 tw-invisible tw-transition-all tw-duration-200 tw-ease-in-out
+
+    &.is-open
+      @apply tw-opacity-100 tw-visible
+
+      .content
+        @apply tw-translate-y-0
+
+    .overlay
+      @apply tw-bg-gradient-to-b tw-from-blue-500/80 tw-to-orange-500 tw-absolute tw-inset-0
+
+    .content
+      @apply tw-transition-transform -tw-translate-y-6 tw-duration-300 tw-ease-in-out
+
+  .has-wysiwyg
+
+    h1
+      @apply tw-text-5xl
+
+    h2
+      @apply tw-text-4xl
+
+    h3
+      @apply tw-text-3xl
+
+    b,
+    strong
+      @apply tw-font-bold
+
+    p
+      @apply tw-mb-6
+
+      &:last-of-type
+        @apply tw-mb-0
+
+    ul
+      @apply tw-list-none tw-pl-4
+
+      li
+        @apply tw-relative
+
+        &::before
+          content: '•'
+          @apply tw-absolute tw-top-0 -tw-left-4
+
+    ol
+      @apply tw-pl-4
+
+/* purgecss end ignore */

@@ -1,0 +1,67 @@
+.form-styles
+
+	h3
+		@apply font-pt-serif text-2xxl text-left
+
+	p
+		@apply text-lg text-left mb-6 leading-relaxed
+
+	input
+		color: #333333
+		height: 50px
+		@apply w-full text-lg mb-3 rounded px-4 #{!important}
+
+	.gfield
+		@apply px-0 my-0 w-full #{!important}
+			span
+				@apply w-full #{!important}
+
+	.gfield_contains_required
+		@apply w-full px-0 #{!important}
+
+	.gform_footer
+		@apply my-0 text-left
+
+		input
+			background: #79a5ba
+			max-width: 200px
+			@apply text-white text-lg cursor-pointer rounded text-center mx-auto
+
+	#field_3_6, #field_3_7
+		@apply text-left
+
+	#input_3_3_5_container
+		@apply pr-0
+
+	#gform_fields_3
+		@apply text-left
+
+	.ginput_container
+		@apply my-0 py-0 #{!important}
+
+	.gfield_description
+		@apply mt-0 pt-0 pb-4 #{!important}
+
+	#field_1_3
+		@apply w-full #{!important}
+
+	.gfield-choice-input
+		appearance: checkbox
+		width: 17px !important
+		height: 17px
+		@apply cursor-pointer my-0 #{!important}
+
+	.gform_confirmation_message
+		background: none !important
+
+.subscribe-banner
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	@apply w-full
+
+@screen lg
+	.form-styles
+		#field_3_3
+			max-width: 200px !important
+			@apply mx-auto

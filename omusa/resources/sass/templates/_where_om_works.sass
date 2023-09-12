@@ -1,0 +1,148 @@
+.arrow-down-red::after
+	content: ''
+	border-left: 8px solid transparent
+	border-right: 8px solid transparent
+	border-top: 8px solid #d22630
+	clear: both
+	bottom: -11px
+	@apply w-0 h-0 absolute
+	@media screen and (max-width: 1000px)
+		display: none
+
+.north-america::after
+	right: 14px
+
+.north-america
+	left: calc(13% - 96px)
+	top: calc(32% - 28.5px)
+	transition: all 1s linear
+	@media screen and (max-width: 1100px)
+		left: calc(14% - 96px)
+
+.latin-america::after,
+.latin-america-2::after
+	left: 14px
+
+.latin-america
+	left: calc(31% - 96px)
+	top: calc(49% - 28.5px)
+	transition: all 1s linear
+	@media screen and (max-width: 1100px)
+		left: calc(32% - 96px)
+
+.ships::after,
+.ships-2::after
+	left: 14px
+
+.ships
+	left: calc(41% - 96px)
+	top: calc(62% - 28.5px)
+	transition: all 1s linear
+	@media screen and (max-width: 1100px)
+		left: calc(43% - 96px)
+
+.africa::after,
+.africa-2::after
+	left: 14px
+
+.africa
+	left: calc(59% - 92px)
+	top: calc(61% - 28.5px)
+	transition: all 1s linear
+	@media screen and (max-width: 1100px)
+		left: calc(61% - 92px)
+
+.middle-east::after,
+.middle-east-2::after
+	right: 14px
+
+.middle-east
+	left: calc(53% - 96px)
+	top: calc(42% - 28.5px)
+	transition: all 1s linear
+
+.europe::after,
+.europe-2::after
+	left: 14px
+
+.europe
+	left: calc(55% - 96px)
+	top: calc(24% - 28.5px)
+	transition: all 1s linear
+	@media screen and (max-width: 1100px)
+		left: calc(57% - 96px)
+
+.india
+	left: calc(74% - 96px)
+	top: calc(42% - 28.5px)
+	transition: all 1s linear
+	@media screen and (max-width: 1100px)
+		left: calc(75% - 96px)
+
+.india::after,
+.india-2::after
+	left: 14px
+
+.central-asia
+	left: calc(74% - 96px)
+	top: calc(30% - 28.5px)
+	transition: all 1s linear
+	@media screen and (max-width: 1100px)
+		left: calc(75% - 96px)
+
+.central-asia::after,
+.central-asia-2::after
+	left: 14px
+
+.east-asia::after,
+.east-asia-2::after
+	left: 14px
+
+.east-asia
+	left: calc(87% - 96px)
+	top: calc(53% - 28.5px)
+	transition: all 1s linear
+
+.pacific::after
+	left: 14px
+
+.pacific
+	left: calc(100% - 96px)
+	top: calc(38% - 28.5px)
+	transition: all 1s linear
+
+.visible-map
+	display: flex !important
+	animation-name: fadeIn
+	animation-duration: 0.3s
+	animation-fill-mode: forwards
+	z-index: 1
+
+@keyframes fadeIn
+	from
+		opacity: 0
+		width: 0px
+	to
+		opacity: 1
+		width: 192px
+
+.w-210
+	width: 210px
+	@media screen and (max-width: 600px)
+		width: 100%
+
+.w-115
+	width: 115px
+	@media screen and (max-width: 600px)
+		width: 100%
+
+#trigger-map
+	position: absolute
+	left: 0px
+	bottom: 100px
+	width: 100%
+	height: 1px
+
+.disabled-button
+	pointer-events: none
+	opacity: 0.7

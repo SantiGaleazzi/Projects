@@ -1,0 +1,77 @@
+@layer utilities
+  .button
+    min-width: 193px
+    min-height: 48px
+    max-height: 48px
+    @apply inline-flex items-center justify-center text-white text-center font-helvetica font-bold px-8 bg-red-500 rounded-full transition-all duration-150 ease-in-out relative
+
+    &::after
+      content: '\f054'
+      font-family: 'Font Awesome 6 Free'
+      @apply text-xl font-bold absolute top-1/2 right-7 -translate-y-1/2 opacity-0 transition-all duration-150 ease-in-out
+
+    &:hover
+
+      &::after
+        @apply opacity-100 right-5
+
+    &.squared
+      @apply w-full rounded-none
+
+    &.inverted
+      @apply text-red-500 bg-white
+
+    &.gold
+      @apply text-blue-500 bg-gold-500
+
+    &.outline
+      @apply text-blue-500 bg-transparent border border-blue-500
+
+      &:hover
+        @apply text-white bg-blue-500
+
+    &.blue
+      @apply bg-blue-500
+
+  .has-video
+    padding-bottom: 56.25%
+    @apply max-w-full h-0 relative overflow-hidden
+
+    iframe,
+    embed
+      @apply w-full h-full top-0 left-0 absolute rounded-xl
+
+  .has-white-content
+    @apply text-white
+
+    p
+      @apply text-white
+
+  .has-links
+
+    a
+      @apply text-blue-500 underline
+
+  .poligon-small-down
+    clip-path: polygon(50% 100%, 0 0%, 100% 0%)
+    @apply h-12 absolute top-0 left-0 right-0 bg-blue-500 z-20
+    @screen md
+      @apply h-20
+
+  .poligon-small-up
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+    @apply h-12 absolute bottom-0 left-0 right-0 bg-blue-500 z-20
+    @screen md
+      @apply h-20
+
+  .poligon-big-down
+    clip-path: polygon(50% 62%, -13% 0%, 112% 0%)
+    @apply h-16 absolute top-[1px] left-0 right-0 bg-gold-500 z-10
+    @screen md
+      @apply h-32 top-0
+
+  .poligon-big-up
+    clip-path: polygon(50% 37%, -14% 100%, 115% 100%)
+    @apply h-16 absolute bottom-[1px] left-0 right-0 bg-gold-500 z-10
+    @screen md
+      @apply h-32 bottom-0

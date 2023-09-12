@@ -1,0 +1,118 @@
+/* purgecss start ignore */
+.font-26
+	font-size: 26px
+
+.max-1045
+	max-width: 1045px
+
+.profile-text p
+	padding-bottom: 0px
+
+.max-205
+	width: 205px
+
+.max-150
+	max-width: 150px
+
+.font-32
+	font-size: 32px
+
+ul.submenu-navigation
+
+	li
+
+		&:last-child
+
+			a
+				@apply border-r-0
+
+		&.current_page_item
+			@apply relative
+
+			&::after
+				content: ''
+				bottom: calc(50% - 9px)
+				border-top: 9px solid transparent
+				border-right: 9px solid #d22630
+				border-bottom: 9px solid transparent
+				@apply absolute right-0
+
+			a
+				@apply font-bold
+
+		a
+			@apply text-sm font-roboto px-4 py-3 border-b-2 border-gray-200 cursor-pointer relative block
+
+.max-w-founders
+	p
+		@apply mb-5
+
+.max-w-founder-photo
+	max-width: 150px
+
+
+.founder-full-bio
+	p
+		@apply mb-5
+	a
+		@apply text-red-200-new no-underline italic
+	@media screen and (max-height: 1155px)
+		max-height: 400px
+	@media screen and (max-height: 955px)
+		max-height: 250px
+	@media screen and (max-width: 768px)
+		max-height: 200px
+	@media screen and (max-width: 640px)
+		max-height: 70px
+
+@screen md
+
+	ul.submenu-navigation
+
+		li
+			@apply py-4
+
+			&.current_page_item
+
+				&::after
+					right: unset
+					left: calc(50% - 9px)
+					border-left: 9px solid transparent
+					border-right: 9px solid transparent
+					border-bottom: 9px solid #d22630
+					@apply bottom-0
+
+			a
+				@apply py-1 border-b-0 inline-block
+	.max-w-founder-intro
+		max-width: 325px
+
+	.max-w-founder-photo
+		max-width: 206px
+
+	.max-w-founders
+		max-width: 318px
+
+	.max-w-founders-copy
+		max-width: 397px
+
+@screen lg
+
+	ul.submenu-navigation
+
+		li
+			@apply py-6
+
+			a
+				@apply px-4 py-2 border-r-2
+
+@screen xl
+
+	ul.submenu-navigation
+
+		li
+
+			a
+				@apply px-6
+
+/* purgecss end ignore */

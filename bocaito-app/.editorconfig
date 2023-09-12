@@ -1,0 +1,15 @@
+# https://editorconfig.org/
+# Plugin for vscode -> https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+# Plugin for sublime -> https://github.com/sindresorhus/editorconfig-sublime#readme
+root = true
+
+[*.php]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false

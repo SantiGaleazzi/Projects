@@ -1,0 +1,115 @@
+$content-block: '.scase-content';
+
+#{$content-block}{
+  .tabs-content{
+    .tabs-panel{
+      padding-top: 3.2rem;
+      padding-bottom: 5rem;
+      &__videos{
+        overflow: hidden;
+        padding-top: 2.5rem;
+        padding-right: 0;
+        padding-bottom: 5rem;
+        padding-left: 0;      
+      }
+      &__block{
+        text-align: center;
+      }
+      .wp-caption{
+        border: none;
+      }
+      .extras__single__image__overlay{
+        a{
+          color: $white;
+          text-decoration: none;
+        }
+      }
+      @include breakpoint(small only){
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }  
+    a{
+      font-size: 1.6rem;
+      color: $blue-neuton;
+      text-decoration: underline;
+    }
+    h1{
+      color: $secondary-color;
+      font-size: 4rem;
+      font-weight: 300;
+    }
+    h2{
+      color: $secondary-color;
+      font-size: 2.8rem;
+      font-weight: 300;
+    }
+    h5{
+      font-family: $font-sanspro;
+      color: $secondary-color;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 1.8rem;
+    }
+    h6{
+      font-family: $font-sanspro;
+      color: $secondary-color;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    p{
+      color: black;
+    }
+    i, em{
+      font:{
+        weight: 400;
+        style: italic;
+      }
+    }
+    ul{
+      margin-left: 5rem;
+    }
+    .tabs-panel{
+      color: $secondary-color;
+      font-size: 4rem;
+    }
+  }
+  .scase-banner__info{
+    margin-top: 1.5rem;
+    margin-bottom: 1.6rem;
+  }
+  .wp-caption{
+    img[class^="wp-image"]{
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    p{
+      font-size: 1.6rem;
+      line-height: 24px;
+      text-align: left;      
+    }
+  }
+}
+
+
+$related-block: '.related';
+
+#{$related-block}{
+  .extras__single__content{
+    .related__title{
+      color: $secondary-color;
+      font-size: 2.8rem;
+      font-weight: 300;
+      line-height: 30px;
+      text-decoration: none;
+    }
+  }
+  .articles__info{
+    a{
+      color: $secondary-color;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+$block: '.internal';
+
+#{$block}{
+    &__banner {
+        p {
+            padding-right: 2rem;
+            margin: 0;
+            @include breakpoint(medium down) {
+                padding-right: 0;
+            }
+        }
+    }
+    &__title {
+        @include title;
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+    &__subtitle {
+        @include subtitle;
+    }
+    &__banner {
+        padding-bottom: 2rem;
+    }
+    &__incubators {
+        border-left: 1px solid $light-gray;
+        padding: .7rem 0;
+        margin-top: 3rem;
+        .button {
+            margin-top: .6rem;
+        }
+        @include breakpoint(medium down) {
+            border-left: none;
+            margin-top: 1rem;
+        }
+    }
+}

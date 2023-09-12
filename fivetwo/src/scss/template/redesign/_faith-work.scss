@@ -1,0 +1,501 @@
+.copy-button-slider-section{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 90px 0px 120px;
+	border-bottom-right-radius: 70px;
+	text-align: center;
+}
+
+.faith-work-container{
+	max-width: 1220px;
+	margin: auto;
+	padding: 0px 20px;
+}
+
+.copy-button-slider-logo{
+	margin: 0px auto 77px;
+	display: flex;
+	justify-content: center;
+}
+
+.copy-button-slider-section h1{
+	margin: 0px auto 15px;
+	max-width: 1110px;
+	font-size: 60px;
+	color: #03a8e1;
+	font-family: "Roboto";
+	font-weight: bold;
+	line-height: normal;
+}
+
+.copy-button-slide-text{
+	margin: 0px auto 55px;
+	max-width: 1100px;
+	font-family: "Roboto Condensed";
+  	font-size: 30px;
+  	color: #fff;
+  	line-height: 1.5;
+}
+
+.copy-button-slider-pink-button{
+	background: #da10c9;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	border-radius: 10px;
+	padding: 14px 30px;
+	font-size: 18px;
+	display: inline-block;
+	font-family: "Roboto Condensed";
+	font-weight: bold;
+	transition: all 0.1s linear;
+	max-width: 296px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	margin: auto;
+}
+
+.copy-button-slider-container{
+	margin: 65px auto 0px;
+}
+
+.copy-button-slider-container .slick-slide{
+	margin: 0px 40px;
+}
+
+.left-copy-right-image-section{
+	padding: 120px 0px 57px;
+	position: relative;
+}
+
+.left-copy-right-image-section h1{
+	font-size: 60px;
+	font-weight: bold;
+	line-height: normal;
+	color: #001a38;
+	margin-bottom: 20px;
+}
+
+.left-copy-right-image-section span{
+	color: #03a8e1;
+}
+
+.left-copy-right-image-container{
+	max-width: 795px;
+}
+
+.left-copy-right-image-text{
+	font-family: "Roboto Condensed";
+	font-size: 30px;
+	color: #000;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.left-copy-right-image-right-image{
+	position: absolute;
+	max-width: 705px;
+	top: 120px;
+	right: 0px;
+	width: calc(100% - 1120px);
+}
+
+.shape-copy-image-section{
+	width: 100%;
+	padding: 57px 0px 120px;
+}
+
+.shape-copy-image-container{
+	width: 874px;
+	background-color: #03a8e1;
+	border-top-left-radius: 70px;
+	border-bottom-right-radius: 70px;
+	padding: 47px 43px 0px;
+	font-size: 20px;
+	color: #fff;
+	font-family: "Roboto Condensed";
+	line-height: 1.25;
+	margin: auto;
+}
+
+.shape-copy-image-container h2{
+	text-align: center;
+	font-size: 60px;
+	font-family: "Roboto";
+	color: #fff;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.shape-copy-image-container p{
+	line-height: 1.25;
+}
+
+.shape-copy-image-container .copy-button-slider-pink-button{
+	margin: 30px 0px;
+}
+
+.shape-copy-image-flex{
+	display: flex;
+	align-items: flex-start;
+}
+
+.shape-copy-image-flex img{
+	max-width: 640px;
+	margin-right: 60px;
+	margin-left: -335px;
+}
+
+.shape-copy-image-margin{
+	margin-left: 300px !important;
+}
+
+.readers-slider-section{
+	width: 100%;
+	background-color: #eef0f1;
+	padding: 120px 0px 130px;
+}
+
+.readers-slider-section h2{
+	font-size: 65px;
+	line-height: 1.02;
+	color: #001a38;
+	text-align: center;
+	font-family: "Festus";
+	max-width: 800px;
+	margin: 0px auto 60px;
+}
+
+.readers-slider .slick-slide{
+	max-width: 374px;
+	background-color: #FFFFFF;
+	border-bottom-right-radius: 70px;
+	border-top-left-radius: 70px;
+	font-size: 20px;
+	font-family: "Roboto Condensed";
+	line-height: 1.25;
+	color: #000000;
+	padding: 40px 35px 33px;
+	margin: 0px 12px;
+
+}
+
+.readers-item{
+	min-height: 280px;
+	display: flex !important;
+	height: 100%;
+	align-items: center;
+	text-align: left;
+}
+
+.pink-hightlight{
+	color: #da10c9;
+	margin-top: 16px;
+}
+
+.copy-slider{
+	margin: 60px auto 0px;
+}
+
+.copy-slider .slick-slide{
+	max-width: 1060px;
+}
+
+.bio-section{
+	padding: 120px 0px 120px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bio-section-container{
+	max-width: 974px;
+	padding: 74px 100px 57px 200px;
+	margin: auto;
+	padding: 75px 100px 57px;
+	font-size: 20px;
+	color: #fff;
+	font-family: "Roboto Condensed";
+	background-color: #001a38;
+	border-top-left-radius: 70px;
+	border-bottom-right-radius: 70px;
+}
+
+.bio-title-text{
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.25;
+	font-family: "Roboto";
+}
+
+.bio-highlighted-text{
+	font-size: 30px;
+	color: #03a8e1;
+}
+
+.bio-subtitle-text{
+	font-size: 30px;	
+}
+
+.bio-copy-text{
+	margin-top: 27px;
+}
+
+.bio-section-flex{
+	display: flex;
+	align-items: flex-start;
+}
+
+.bio-section-flex img{
+	margin-right: 55px;
+	margin-left: -300px;
+	max-width: 340px;
+}
+
+.shape-image-margin{
+	margin-left: 200px !important;
+}
+
+.faith-work-nav{
+	background: #001a38;
+}
+
+.faith-work-form .container-virtuous-form{
+	top: 0px;
+}
+
+#overlay{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8) none 50% / contain no-repeat;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  visibility: hidden;
+  opacity: 0;
+}
+#overlay.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+#overlay:after { /* X button icon */
+  content: "\2715";
+  position: absolute;
+  color:#fff;
+  top: 10px;
+  right:20px;
+  font-size: 2em;
+}
+
+.slider-mobile-images{
+	display: none;
+}
+
+.shape-button-lb{
+	padding-top: 30px;
+}
+
+.readers-slider-button{
+	text-align: center;
+	padding-top: 40px;
+}
+
+@media screen and (max-width: 1600px){
+	.left-copy-right-image-right-image{
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 1420px){
+	.left-copy-right-image-container {
+	  max-width: calc(100% - 500px);
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.copy-slider{
+		padding: 0px 20px;
+	}
+
+	.faith-work-container{
+		padding: 0px 40px;
+	}
+
+	.readers-slider{
+		padding: 0px 20px;
+	}
+
+	.bio-section-container{
+		padding: 75px 80px 57px;
+	}
+
+	.shape-copy-image-flex img{
+		display: none;
+	}
+
+	.shape-copy-image-container{
+		margin: auto !important;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.copy-button-slider-container .slick-slide{
+		margin: 0px 10px;
+	}
+
+	.shape-copy-image-flex{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.shape-copy-image-flex img{
+		margin: auto;
+	}
+
+	.left-copy-right-image-right-image{
+		display: none;
+	}
+
+	.left-copy-right-image-container{
+		max-width: 100%;
+	}
+
+	.shape-copy-image-container{
+		width: 100%;
+	}
+
+	.bio-section-flex img{
+		display: none;
+	}
+
+	.bio-section-container {
+	  padding: 57px 43px 57px;
+	  margin: auto !important;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.copy-button-slider-section h1{
+		font-size: 40px;
+	}
+
+	.faith-work-container{
+		padding: 0px 20px;
+	}
+
+	.copy-button-slide-text{
+		font-size: 22px;
+	}
+
+	.copy-button-slider-pink-button{
+		padding: 14px 15px;
+		font-size: 16px;
+	}
+
+	.copy-button-slider-section{
+		padding: 90px 20px 90px;		
+	}
+
+	.left-copy-right-image-section{
+		padding: 90px 0px 57px;
+	}
+
+	.left-copy-right-image-section h1{
+		font-size: 40px;
+	}
+
+	.left-copy-right-image-text{
+		font-size: 24px;
+	}
+
+	.shape-copy-image-container h2{
+		text-align: left;
+		font-size: 40px;
+	}
+
+	.shape-copy-image-container{
+		padding: 47px 23px 0px;
+	}
+
+	.readers-slider-section{
+		padding: 90px 0px 100px;
+	}
+
+	.readers-slider-section h2{
+		font-size: 45px;
+	}
+
+	.readers-slider-section{
+		padding: 90px 20px 100px;
+	}
+
+	.bio-section{
+		padding: 90px 0px;
+	}
+
+	.bio-title-text{
+		font-size: 30px;
+	}
+
+	.bio-highlighted-text{
+		font-size: 26px;
+	}
+
+	.bio-subtitle-text{
+		font-size: 26px;
+	}
+
+	.bio-section-container{
+		padding: 57px 23px 57px;
+		font-size: 17px;
+	}
+
+	.shape-copy-image-section{
+		padding: 57px 0px 90px;
+	}
+
+	.readers-slider .slick-slide{
+		padding: 35px 20px 33px;
+		margin: 0px 15px;
+		max-width: 200px;
+		font-size: 16px;
+	}
+
+	.copy-button-slider-section .copy-button-slider-pink-button{
+		margin-bottom: 30px;
+	}
+
+	.slider-mobile-images{
+		display: block;
+		margin-top: 30px;
+	}
+
+	.mobile-slider{
+		display: none;
+	}
+
+	.faith-work-form .container-virtuous-form{
+		padding: 23px 36px 13px 26px;
+	}
+
+	.faith-work-form .v_fc{
+		margin-bottom: 3px !important;
+	}
+
+	.faith-work-form .btn{
+		margin-top: 0px !important;
+	}
+}
+
+@media screen and (max-height: 700px){
+	.faith-work-form .container-virtuous-form form{
+		max-height: 480px;
+		overflow-y: scroll;
+	}
+}

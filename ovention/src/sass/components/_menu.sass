@@ -1,0 +1,224 @@
+// Header
+header
+
+  .navigation-overlay
+    height: calc( 100vh - 163px )
+    @apply tw-w-full tw-bg-gradient-to-b tw-from-gray-800/50 tw-to-orange-900/50 tw-backdrop-blur-sm tw-absolute tw-top-full tw-left-0 tw-opacity-0 tw-invisible tw-transition-opacity tw-duration-150 tw-ease-in-out tw-z-40
+
+    &.is-active
+      @apply tw-opacity-100 tw-visible
+
+  .navigation
+    height: calc( 100vh - 163px )
+    @apply tw-w-4/5 tw-overflow-y-scroll tw-flex tw-flex-col-reverse tw-border-t tw-border-solid tw-border-gray-100/10 tw-p-6 tw-bg-gray-800 tw-absolute tw-top-full tw-left-0 tw-z-40 tw-transition-transform tw-duration-150 tw-ease-in-out -tw-translate-x-full
+
+    @screen sm
+      @apply tw-w-3/5 tw-overflow-y-visible
+
+    @screen md
+      @apply tw-w-full tw-max-w-full tw-border-none tw-flex-col tw-items-center tw-p-0 tw-h-auto tw-top-0 tw-translate-x-0 tw-relative
+    @screen lg
+      @apply tw-flex-row tw-justify-center
+
+    &.is-active
+      @apply tw-translate-x-0
+
+  .menu
+    @apply tw-flex-1 tw-w-full tw-flex tw-flex-col tw-m-0 tw-gap-y-4
+    @screen md
+      @apply tw-flex-row tw-justify-between tw-gap-y-0
+    @screen xl
+      @apply tw-justify-end
+
+    li.main-menu-item
+      @apply tw-pt-4
+      @screen md
+        @apply tw-px-6 tw-pb-4
+
+      &.menu-item-has-children
+        @apply tw-relative tw-bg-gray-100/10 tw-rounded-2xl tw-transition-colors tw-duration-150 tw-ease-in-out
+        @screen md
+          @apply tw-bg-transparent
+
+        &.current-menu-ancestor
+          @apply tw-bg-gray-100/10
+
+        &:hover
+          @apply tw-bg-gray-100/10
+
+          a.main-menu-link
+            &::before
+              @apply tw-rotate-180
+
+          ul.dropdown
+            @apply tw-opacity-100 tw-visible
+
+            @screen md
+              top: calc( 100% + 10px )
+
+        a.main-menu-link
+          @apply tw-pl-5 tw-pt-2 tw-pr-14 tw-pb-9 tw-relative
+          @screen md
+            @apply tw-pl-0
+
+          &::before
+            content: '\f0d7'
+            font-family: 'Font Awesome 6 Free'
+            @apply tw-text-2xl tw-text-orange-500 tw-absolute tw-font-bold tw-top-2 tw-right-4 tw-rotate-0 tw-transition-transform tw-duration-150 tw-ease-in-out
+
+      &.oven-list
+        &::after
+          content: 'Catalog and Documentation'
+          @apply tw-text-white tw-text-[11px] tw-font-medium tw-absolute tw-top-12 tw-left-6 tw-block
+          @screen md
+            top: inherit
+            @apply tw-bottom-4
+
+        @screen md
+          @apply tw-w-[190px]
+
+      &.cooking-list
+
+        &::after
+          content: 'Recipes and Tools'
+          @apply tw-text-white tw-text-[11px] tw-font-medium tw-absolute tw-top-12 tw-left-6 tw-block
+          @screen md
+            top: inherit
+            @apply tw-bottom-4
+
+        @screen md
+          @apply tw-mr-6
+        @screen xl
+          @apply tw-mr-8
+
+      &.tools-list
+
+        &::after
+          content: 'Learn More'
+          @apply tw-text-white tw-text-[11px] tw-font-medium tw-absolute tw-top-12 tw-left-6 tw-block
+          @screen md
+            top: inherit
+            @apply tw-bottom-4
+
+        @screen md
+          @apply tw-mr-6
+        @screen xl
+          @apply tw-mr-8
+
+      &.about-list
+
+        &::after
+          content: 'Contact, Support and More'
+          @apply tw-text-white tw-text-[11px] tw-font-medium tw-absolute tw-top-12 tw-left-6 tw-block
+          @screen md
+            top: inherit
+            @apply tw-bottom-4
+
+        @screen md
+          @apply tw-w-[190px] tw-mr-6
+        @screen xl
+          @apply tw-mr-8
+
+      &.xoo-wsc-cart-trigger
+        @apply tw-hidden
+
+      a.main-menu-link
+        @apply tw-text-white tw-font-semibold tw-leading-none tw-pl-0 tw-pr-4 tw-py-2 tw-rounded-md tw-block tw-transition-colors tw-duration-150 tw-ease-in-out
+        @screen md
+          @apply tw-text-[18px] tw-inline-block tw-bg-transparent
+        @screen lg
+          @apply tw-text-[20px]
+
+        &:hover
+          @apply tw-text-white
+
+      ul.dropdown
+        @apply tw-w-full tw-h-0 tw-hidden tw-bg-white tw-rounded-bl-2xl tw-rounded-br-2xl tw-transition-all tw-duration-150 tw-ease-in-out tw-m-0 tw-z-10 tw-overflow-hidden tw-relative
+        @screen md
+          @apply tw-w-[200px] tw-h-auto tw-p-5 tw-rounded-2xl tw-opacity-0 tw-invisible tw-divide-y tw-divide-solid tw-divide-gray-100 tw-absolute tw-drop-shadow-lg tw-top-full tw-left-0 tw-right-0 tw-m-auto tw-block
+
+        &.is-active
+          @apply tw-h-auto tw-block
+
+        li.sub-menu-item
+          @apply tw-w-full tw-block
+
+          &.current-menu-item
+
+            a.sub-menu-link
+              @apply tw-text-white tw-bg-orange-500
+
+          a.sub-menu-link
+            @apply tw-text-gray-900 tw-text-[14px] tw-font-semibold tw-px-4 tw-py-4 tw-transition-colors tw-duration-150 tw-ease-in-out tw-block
+            @screen md
+              @apply tw-rounded-lg
+
+            &:hover
+              @apply tw-text-white tw-bg-orange-500
+
+// Footer
+footer
+
+  .footer-menu
+    @apply tw-w-full tw-flex tw-flex-col tw-justify-around tw-ml-0 tw-mb-0
+    @screen md
+      @apply tw-flex-row
+
+    li.main-menu-item
+      @apply tw-mb-6
+
+      &:last-of-type
+        @apply tw-mb-0
+
+      @screen md
+        @apply tw-mb-0
+
+      &.menu-item-has-children
+
+        &.is-active
+
+          a.main-menu-link
+
+            &::after
+              @apply tw-rotate-45
+
+          ul.dropdown
+            max-height: 1000px
+            @apply tw-px-6 tw-py-4
+
+      a.main-menu-link
+        @apply tw-text-[14px] tw-text-orange-400 tw-border-2 tw-border-white/10 tw-font-black tw-px-5 tw-py-3 tw-rounded-2xl tw-bg-gray-900 tw-uppercase tw-block tw-relative
+
+        &::after
+          content: '\2b'
+          font-family: 'Font Awesome 6 Free'
+          @apply tw-font-bold tw-absolute tw-top-3 tw-right-4 tw-rotate-0 tw-transition-transform tw-duration-150 tw-ease-in-out
+
+        @screen md
+          @apply tw-p-0 tw-bg-transparent tw-mb-9 tw-inline-flex tw-border-none
+
+          &::after
+            @apply tw-hidden
+
+      ul.dropdown
+        max-height: 0px
+        @apply tw-overflow-hidden tw-transition-all tw-duration-200 tw-ease-in-out tw-ml-0
+        @screen md
+          @apply tw-max-h-max tw-p-0 tw-overflow-visible
+
+        li.sub-menu-item
+          @apply tw-mb-5 tw-leading-none
+          @screen lg
+            @apply tw-mb-7
+
+          &:last-of-type
+            @apply tw-mb-0
+
+          a.sub-menu-link
+            @apply tw-text-[14px] tw-text-white tw-transition-colors tw-duration-100 tw-ease-in-out
+
+            &:hover
+              @apply tw-text-orange-400
+
+.xoo-wsc-basket
+  @apply tw-hidden #{!important}

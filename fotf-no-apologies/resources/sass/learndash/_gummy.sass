@@ -1,0 +1,290 @@
+.learndash-wrapper
+
+  &.gummy
+    background-image: url(../images/grainy-background.png) !important
+    background-repeat: repeat
+    background-size: cover
+    @apply bg-lms-gummy-500 #{!important}
+
+    nav.nav-shape
+
+      &::after
+        @apply border-l-lms-tangerine-500
+
+    .ld-focus
+
+      .ld-focus-sidebar
+
+        .ld-course-navigation-heading
+
+          .ld-progress-bar
+            @apply bg-lms-gummy-700 #{!important}
+
+            .ld-progress-bar-percentage
+              @apply bg-lms-gummy-500 #{!important}
+
+        .ld-focus-sidebar-wrapper
+
+          .ld-lesson-items
+
+            .ld-lesson-item
+
+              &.learndash-complete
+
+                .ld-lesson-item-preview
+                  @apply bg-lms-gummy-700 #{!important}
+
+                  .ld-lesson-item-preview-heading
+
+                    .ld-status-icon
+                      @apply bg-lms-gummy-500 #{!important}
+
+                    .ld-lesson-title
+                      @apply text-lms-gummy-500 #{!important}
+
+                  .ld-expand-button
+
+                    .ld-icon-arrow-down
+                      @apply text-lms-mustard-500 #{!important}
+
+                    .ld-text
+                      @apply text-lms-gummy-500 #{!important}
+
+              &.ld-is-not-current-lesson
+
+                &.learndash-complete
+
+                  .ld-lesson-item-preview
+                    @apply bg-lms-gummy-500 #{!important}
+
+                    .ld-lesson-item-preview-heading
+
+                      .ld-status-icon
+                        @apply bg-lms-gummy-300 #{!important}
+
+                      .ld-lesson-title
+                        @apply text-white #{!important}
+
+                    .ld-expand-button
+
+                      .ld-icon-arrow-down
+                        @apply text-white #{!important}
+
+                      .ld-text
+                        @apply text-white #{!important}
+
+              &.ld-is-current-lesson
+
+                &.learndash-complete
+
+                  .ld-lesson-item-preview
+                    @apply bg-lms-gummy-500 #{!important}
+
+                    .ld-lesson-item-preview-heading
+
+                      .ld-status-icon
+                        @apply bg-lms-gummy-300 #{!important}
+
+                      .ld-lesson-title
+                        @apply text-white #{!important}
+
+                    .ld-expand-button
+
+                      .ld-icon-arrow-down
+                        @apply text-white #{!important}
+
+                      .ld-text
+                        @apply text-white #{!important}
+
+                .ld-lesson-item-preview
+                  @apply bg-lms-gummy-500 rounded #{!important}
+
+                .ld-lesson-item-expanded
+
+                  .ld-table-list-item
+
+                    &.learndash-complete
+
+                      .ld-table-list-item-preview
+
+                        &.ld-is-current-item
+
+                          .ld-topic-title
+                            @apply opacity-100
+
+              .ld-lesson-item-expanded
+
+                .ld-table-list-item
+
+                  &.learndash-complete
+
+                    .ld-table-list-item-preview
+
+                      &.ld-is-current-item
+
+                        .ld-topic-title
+                          @apply text-lms-gummy-500 #{!important}
+
+                      .ld-status-icon
+                        @apply bg-lms-gummy-500 #{!important}
+
+                      .ld-topic-title
+                        @apply opacity-50
+
+      .ld-focus-main
+        .ld-tabs
+          .ld-text
+            @apply text-white #{!important}
+          .ld-active
+            &::after
+              @apply bg-blue-400 #{!important}
+            .ld-text
+              @apply text-blue-400 #{!important}
+
+        .ld-focus-content
+
+          h1
+            @apply text-white #{!important}
+
+          .learndash-wrapper
+            background-image: none !important
+            @apply bg-transparent #{!important}
+
+          .learndash.learndash_post_sfwd-topic
+
+            .learndash-wrapper
+
+              .ld-topic-status
+
+                .ld-breadcrumbs
+                  @apply border-b-lms-gummy-300 #{!important}
+
+                  .ld-breadcrumbs-segments
+
+                    span
+
+                      &:last-of-type
+
+                        a
+                          @apply text-lms-gummy-700
+
+                      &::after
+                        @apply text-lms-gummy-700 #{!important}
+
+                      a
+                        @apply text-white
+
+                  .ld-status
+                    @apply text-white mb-0 #{!important}
+
+              .ld-tabs
+
+                .ld-tabs-content
+                  @apply text-white #{!important}
+
+                  h1,
+                  h2,
+                  h3,
+                  h4
+                    @apply text-white
+
+                  .callout,
+                  p.callout
+                    max-width: 550px
+                    @apply w-full text-center text-sm text-[#4D4D4D] bg-[#FCF3D0] p-4 mx-auto #{!important}
+
+                    p
+                      @apply text-sm text-[#4D4D4D] mb-0 #{!important}
+
+                  .ld-tab-content > p
+                    @apply text-white
+
+                  a
+                    @apply text-lms-gummy-700 #{!important}
+
+                  ul.comment-box
+                    @apply bg-lms-gummy-700 #{!important}
+
+                    li
+                      @apply text-white #{!important}
+
+                      &::marker
+                        @apply text-lms-gummy-700 #{!important}
+
+                  .has-inner-text
+
+                    p
+                      @apply text-white #{!important}
+
+                  .wpProQuiz_content
+
+                    .wpProQuiz_description
+
+                      p
+                        @apply text-white #{!important}
+
+                    .wpProQuiz_quiz
+
+                      ol.wpProQuiz_list
+
+                        li.wpProQuiz_listItem
+
+                          p
+                            @apply text-white #{!important}
+
+                          .wpProQuiz_response
+                            min-height: auto !important
+                            @apply p-0 bg-transparent border-none my-1 #{!important}
+
+                            .wpProQuiz_incorrect
+                              @apply text-white py-2 bg-red-400 border-red-600 rounded #{!important}
+
+                              p
+                                @apply text-white #{!important}
+
+                            .wpProQuiz_correct
+                              @apply text-white py-2 bg-green-400 border-green-600 rounded #{!important}
+
+                              p
+                                @apply text-white #{!important}
+
+                          ul.wpProQuiz_questionList
+
+                            li.wpProQuiz_questionListItem
+
+                              &.wpProQuiz_answerIncorrect
+
+                                label
+
+                                  &.is-selected
+                                    @apply bg-red-400 border-red-600 #{!important}
+
+                              &.wpProQuiz_answerCorrect
+
+                                label
+
+                                  &.is-selected
+                                    @apply bg-green-400 border-green-600 #{!important}
+
+                              .wpProQuiz_cloze
+                                @apply p-0 m-0 #{!important}
+
+                                input
+                                  @apply px-4 py-2 #{!important}
+
+                              label
+
+                                &.is-selected
+                                  @apply bg-lms-gummy-700/70 border-lms-gummy-700 #{!important}
+
+                              textarea,
+                              input[type="text"],
+                              input[type="number"]
+                                @apply text-white font-bold border-2 border-solid border-transparent bg-lms-gummy-300 placeholder:text-white #{!important}
+                                @apply transition-colors duration-150 ease-in-out
+
+                                &:focus
+                                  @apply border-lms-gummy-700/50 #{!important}
+
+              .ld-content-actions
+                @apply border-b-lms-gummy-300 #{!important}

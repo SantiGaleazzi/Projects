@@ -1,0 +1,17 @@
+$block: '.woocommerce';
+
+#{$block} {
+    &__thankyou {
+        padding: 2rem 0 4rem;
+    }
+}
+
+.woocommerce-thankyou-order-details {
+    margin-left: 2.25rem;
+}
+
+.woocommerce-order-downloads__title,
+.woocommerce-order-details__title {
+    color: $dark-blue;
+    font-family: $header-font-family;
+}

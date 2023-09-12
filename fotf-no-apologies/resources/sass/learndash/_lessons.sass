@@ -1,0 +1,170 @@
+.ld-tab-content
+
+  .wpProQuiz_content
+
+    input.wpProQuiz_button
+      @apply mx-auto
+
+    .wpProQuiz_reviewDiv,
+    .wpProQuiz_reviewSummary
+      @apply pb-4
+
+      .wpProQuiz_reviewQuestion
+        max-height: initial
+
+        ol
+          @apply flex flex-wrap gap-1 #{!important}
+
+          li
+            @apply w-8 m-0
+
+            &:hover
+              @apply bg-gray-50
+
+            &::before
+              @apply hidden
+
+            &.wpProQuiz_reviewQuestionSolvedCorrect
+              @apply text-white bg-green-400
+
+            &.wpProQuiz_reviewQuestionSolvedIncorrect
+              @apply text-white bg-red-400
+
+            &.wpProQuiz_reviewQuestionSolved
+              @apply bg-green-400
+
+            &.wpProQuiz_reviewColor_Review
+              @apply bg-lms-mustard-500
+
+            &.wpProQuiz_reviewQuestionTarget
+              @apply bg-sky-500
+
+      .wpProQuiz_reviewLegend
+        @apply mb-0
+
+        ol
+          @apply pl-0 mt-4 mb-0 #{!important}
+
+          li
+            @apply flex items-center mr-4
+
+            &:last-of-type
+              @apply mr-0
+
+            &::before
+              @apply hidden #{!important}
+
+            span
+
+              &.wpProQuiz_reviewQuestion_Target
+                @apply bg-sky-500
+
+              &.wpProQuiz_reviewColor_Review
+                @apply bg-lms-mustard-500
+
+              &.wpProQuiz_reviewColor_Answer
+                @apply bg-green-400
+
+              &.wpProQuiz_reviewColor_AnswerCorrect
+                @apply bg-green-400
+
+              &.wpProQuiz_reviewColor_AnswerIncorrect
+                @apply bg-red-400
+
+      .wpProQuiz_reviewButtons
+        @apply hidden #{!important}
+
+    .wpProQuiz_quiz
+
+      ol.wpProQuiz_list
+
+        li.wpProQuiz_listItem
+
+          ul.wpProQuiz_questionList
+
+            li.wpProQuiz_questionListItem
+              min-height: auto
+              @apply p-0 bg-transparent border-none #{!important}
+              @apply mb-0 relative
+
+              &.wpProQuiz_answerCorrect
+
+                label
+                  @apply text-white bg-green-400
+
+              &.wpProQuiz_answerIncorrect
+
+                label
+                  @apply text-white bg-red-400
+
+              label
+                @apply px-4 py-2 border-solid #{!important}
+                @apply font-noto-extra-cond-black-italic bg-white border border-zinc-200 inline-block transition-all duration-150 ease-in-out cursor-pointer mb-4
+
+                &:hover
+                  @apply bg-gray-50
+
+                &.is-selected
+                  @apply text-white #{!important}
+                  @apply bg-blue-400 border-blue-800
+
+                input[type="radio"],
+                input[type="checkbox"]
+                  @apply min-w-0 w-0 h-0 opacity-0 cursor-pointer mr-0
+
+  &.has-numbers
+
+    .wpProQuiz_content
+
+      .wpProQuiz_quiz
+
+        ol.wpProQuiz_list
+
+          li.wpProQuiz_listItem
+
+            ul.wpProQuiz_questionList
+
+              li.wpProQuiz_questionListItem
+
+                label
+                  @apply px-12 py-2 #{!important}
+
+  &.has-emojis
+
+    .wpProQuiz_content
+
+      .wpProQuiz_quiz
+
+        ol.wpProQuiz_list
+
+          li.wpProQuiz_listItem
+
+            ul.wpProQuiz_questionList
+              @apply flex gap-4
+
+              li.wpProQuiz_questionListItem
+
+                label
+                  @apply w-20 h-12 flex items-center justify-center text-4xl leading-none
+
+  &.has-checkboxes
+
+    .wpProQuiz_content
+
+      .wpProQuiz_quiz
+
+        ol.wpProQuiz_list
+
+          li.wpProQuiz_listItem
+
+            ul.wpProQuiz_questionList
+              @apply flex flex-wrap gap-4
+
+  &.has-essay
+
+    .wpProQuiz_content
+
+      .wpProQuiz_quiz
+
+        input[value="Finish Quiz"]
+          @apply hidden #{!important}

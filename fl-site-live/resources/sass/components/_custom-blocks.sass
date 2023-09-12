@@ -1,0 +1,209 @@
+
+.cb-fullvid
+	min-height: 100vh
+	min-width: 177.77vh
+	width: 100vw !important
+	height: 56.25vw !important
+	position: absolute
+	bottom: 50%
+	left: 50%
+	z-index: 0
+	-webkit-transform: translate(-50%, 50%)
+	-moz-transform: translate(-50%, 50%)
+	-ms-transform: translate(-50%, 50%)
+	transform: translate(-50%, 50%)
+
+.cb-videoWrap
+	@apply relative overflow-hidden
+
+.cb-padding-x
+	@apply px-6
+
+.cb-video-container
+	height: 100%
+	margin: 0 auto
+	max-width: 1200px
+	z-index: 1
+	@apply relative
+
+	.cb-margin-x
+		@apply my-0 -mx-6
+
+	.align-top
+		@apply items-start
+
+	.align-middle
+		@apply items-center
+
+	.align-bottom
+		@apply items-end
+
+	.cb-flex-container-y
+		@apply flex h-full justify-center
+
+		p
+			@apply text-base mb-4
+
+			&:last-of-type
+				@apply mb-0
+
+		img
+			@apply max-w-full h-auto
+
+	.cb-flex-container-x
+		@apply flex flex-wrap justify-center
+
+	.cb-w-50
+		width: 50%
+		flex: 0 0 auto
+		@media screen and (max-width: 640px)
+			flex: 0 0 auto
+			min-height: 0px
+			min-width: 0px
+			width: 100%
+			padding: 0px 1.5rem
+
+		iframe
+			@apply w-full
+
+		p
+			@apply mb-4
+
+			&:last-of-type
+				@apply mb-0
+
+	.cb-w-33
+		width: 33.33333%
+		flex: 0 0 auto
+		@media screen and (max-width: 640px)
+			flex: 0 0 auto
+			min-height: 0px
+			min-width: 0px
+			width: 100%
+			padding: 0px 1.5rem
+
+		img
+			max-width: 100%
+			@apply h-auto
+
+		p
+			@apply mb-4
+
+		h4
+			@apply mb-2
+
+		a
+			@apply cursor-pointer
+
+.custom_blocks_two_columns_with_numeration .custom_blocks_two_columns_content_right_box_with_numeration
+	p
+		margin: 0
+
+	strong, span strong, strong span
+		font-family: "whitney-semibold"
+
+.custom_blocks_quotes
+	@media screen and (max-width: 800px)
+		@apply py-0 px-6
+
+.custom_blocks_quotes .box-quote,
+.custom_blocks_archive .custom_blocks_archive_post
+	max-width: 840px
+
+.custom_blocks_quotes .custom_blocks_quotes_title
+	border-top: 3px solid
+	border-bottom: 3px solid
+
+.custom_blocks_quotes .custom_blocks_quotes_description
+
+	p
+		@apply font-thin
+
+.custom_blocks_quotes .custom_blocks_quotes_quote_image
+	max-width: 158px
+
+.custom_blocks_quotes .custom_blocks_quotes_quote_body_copy
+
+	@media screen and (max-width: 640px)
+		font-size: 15px
+
+	p
+		margin-top: 23px
+
+.custom_blocks_archive
+	@media screen and (max-width: 800px)
+		padding: 0 1.5rem
+
+.custom_blocks_archive .custom_blocks_archive-image
+	max-width: 226px
+
+	@media screen and (max-width: 800px)
+		padding: 0 20px
+
+	@media screen and (max-width: 640px)
+		@apply p-0
+
+.simple_content_column_content
+	p
+		margin-bottom: 13px
+
+.custom_blocks_two_columns_content_left,
+.custom_blocks_two_columns_content_right
+	p
+		margin: 15px 0
+
+.custom_blocks_video
+	max-width: 904px
+
+.video-embed
+	height: 500px
+
+	@media screen and (max-width: 640px)
+		height: 300px
+
+.video-embed div,
+.post-video div
+	background-color: rgba(0,0,0,.6)
+
+.custom_blocks_video iframe
+	@apply w-full h-full absolute inset-0
+
+.coup-title
+	letter-spacing: 43px
+	margin-left: 40px
+	line-height: 68px
+	margin-top: 20px
+
+.custom_blocks_images_width_link
+	width: 31%
+
+	@media screen and (max-width: 640px)
+		@apply w-full
+
+.custom-blocks
+	hr
+		border-top: 1px solid #cacaca
+
+.card-quote
+	max-width: 362px
+	background-color: #efefef
+
+	p
+		margin-top: 15px
+
+	@media screen and (max-width: 800px)
+		@apply w-1/2
+
+	@media screen and (max-width: 640px)
+		@apply w-full
+
+.image-quote
+	height: 222px
+
+.custom_blocks_cards_quotes_cards_content
+
+	&:before
+		content: ''
+		height: 20px
+		background-image: url('../images/home-images/quote-icon.png')
+		@apply w-4 float-left bg-contain bg-center bg-no-repeat mr-3

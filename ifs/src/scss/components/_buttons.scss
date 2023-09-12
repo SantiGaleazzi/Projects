@@ -1,0 +1,42 @@
+$button:'.btn';
+$yellow: #ffbe32;
+
+%btn{
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0.7rem 1.8rem 0.8rem;
+}
+
+#{$button}{
+  &--blue{
+    @extend %btn;
+    color: $white;
+    background: $blue-neuton;
+  }
+  &--yellow{
+    @extend %btn;
+    color: $secondary-color !important;
+    background: $yellow !important;
+  }
+  &--icon{
+    padding-left: 5.8rem;
+    font-weight: 700;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 3px solid #1e3764;
+      height: 4rem;
+      width: 4rem;
+      background:{
+        color: $white;
+        image: url(../img/home/ifs-icon.png);
+        size: 15px 29px;
+        repeat: no-repeat;
+        position: bottom center;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@media print {
+
+  .breadcrumbs,
+  .data-sticky-container,
+  .social_share,  
+  .footer,
+  .involved,
+  body a,
+  .main-banner img,
+  .single img,
+  .navmenu__secondary,
+  .single-sidebar .articles__more,
+  .single-sidebar,
+  .sticky-nav {
+    display: none;
+  }
+  
+  @page {
+    size: 210mm 297mm; 
+    /* Chrome sets own margins, we change these printer settings */
+    margin: 27mm 16mm 27mm 16mm; 
+  }
+
+  .header-bar__logo .logosvg{
+    display: block;
+  }
+
+  .single-content, .main-banner__description{
+    width: 100%;
+    padding: 0;
+
+    a{
+      display: inline;
+      text-decoration: none;
+    }
+
+    a[href]:after {
+      content: none !important;
+    }
+  }
+ 
+  p{
+    font-family: $font-neuton;
+  }
+
+}

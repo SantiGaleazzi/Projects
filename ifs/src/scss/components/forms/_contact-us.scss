@@ -1,0 +1,244 @@
+$block-form: '.contact';
+.gform_confirmation_message{
+    h1{
+        background-image: url('../img/contact/green-check.png');
+        background-repeat: no-repeat;
+        background-position: bottom 26% left;
+        padding-left: 4rem;
+        font-size: 4.6rem;
+        color: #1e3764;
+        margin-top: 5rem;
+        @include breakpoint(medium down){
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    }
+}
+#{$block-form}
+{
+    .gform_wrapper{
+        ul.gform_fields{
+            li.gfield{
+                display: inline-block;
+                width: 33%;
+                margin-top: 0.2rem;
+                vertical-align: middle;
+                &.gfield_error.gfield_contains_required{
+                    .gfield_description{
+                        display: none !important;
+                    }
+                }
+                select{
+                    background-image: url('../img/home/arrow-down.png');
+                    background-repeat: no-repeat;
+                    background-position: center left 95%;
+                }
+                input.medium, select.medium{
+                    width:90%;
+                    border: 1px solid #1e3764;
+                    color: #009be1;
+                    margin-bottom: 1rem;
+                    padding-left:0.5rem;
+                    @include breakpoint(medium down){
+                        width:100%;
+                    }
+                }
+                ::placeholder {
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                ::-webkit-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+
+                :-ms-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                
+                ::-ms-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                textarea{
+                    border: 1px solid #1e3764;
+                    color: #009be1;
+                    height: 8rem;
+                    padding-left:0.5rem;
+                }
+                .gfield_label {
+                    display: none !important;
+                }
+                &[id^="field_"][id$="_6"] {
+                    display: block;
+                    width: 100%;
+                }
+                &[id^="field_"][id$="_9"]{
+                    display: block;
+                    width: 100%;
+                    h1{
+                        font-size: 4.6rem;
+                        color: #1e3764;
+                        margin-top: 5rem;
+                        @include breakpoint(medium down){
+                            font-size: 3rem;
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+                &[id^="field_"][id$="_8"]{
+                    display: block;
+                    width: 100%;
+                    border-top: 1px solid #dddddd;
+                    border-bottom: 1px solid #dddddd;
+                    padding-top: 1rem;
+                    margin-top:2rem;
+                    .gfield_label {
+                        display: inline-block !important;
+                        font-family: "Neuton", serif;
+                        color: #1e3764;
+                        font-size: 1.6rem;
+                        font-weight: normal;
+                    } 
+                    .gfield_checkbox{
+                        li{
+                            display: inline-block;
+                            label{
+                                font-size: 1.6rem;
+                                color: #1e3764;
+                                display: inline;
+                                padding-right: 3rem;
+                                font-family: "Neuton", serif;
+                            }
+                            input[type=checkbox]{
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-left: 1px;
+                                margin: 0 !important;
+                            }
+                            &.gchoice_select_all{
+                                display:block;
+                                width: 100%;
+                            }
+                            @include breakpoint(medium down){
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                        
+                    }
+
+                }
+                &:last-child{
+                    width: 100%;
+                    .ginput_complex {
+                       input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]){                      
+                            width: 86%;
+                            border: 1px solid #1e3764;
+                            color: #009be1;
+                            margin-bottom: 1rem;
+                            padding-left:0.5rem;
+                            margin-right: 0;
+                            @include breakpoint(medium down){
+                                width:100%;
+                            }      
+                        }
+                        span[class^="ginput_"]{
+                            display: inline-block;
+                            width: 33%;
+                            margin-right: 0;
+
+                            label{
+                                display: none;
+                            }
+                            &:nth-child(3){
+                                padding-right: 0;
+                            }
+                            &:nth-child(4),
+                            &:nth-child(5){
+                                input[type='text']{
+                                    width: 88.5% !important;
+                                    @include breakpoint(medium down){
+                                        width:100% !important;
+                                    } 
+                                }                                 
+                            }
+                            @include breakpoint(medium down){
+                                padding-right: 0 !important;
+                                width:100%;
+                            }                        
+                        }
+                    }
+
+                }
+                @include breakpoint(medium down){
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    .gform_footer{
+        text-align: right;
+        .gform_button{
+            background-color: #009be1;
+            width: 28rem !important;
+            font-size: 2rem;
+            font-weight: 600;
+            margin:0;
+        }
+        @include breakpoint(medium down){
+            text-align: center;
+        }
+    }
+}
+
+$block-information: '.information';
+
+#{$block-information}
+{
+    background-color: #009be1;
+    padding: 3rem 0;
+    i{
+        color: #fff;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        @include breakpoint(medium down){
+            margin-top: 1rem;
+        }
+    }
+    h3{
+        font-size: 2.8rem;
+        line-height: 3rem;
+        color:$white;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.6rem;
+        color:$white;
+        line-height: 2.4rem;
+        margin-bottom: 0;
+        font-family: "Source Sans Pro", sans-serif;
+    }
+    a{
+        font-size: 1.6rem;
+        color:$white;
+        line-height: 2.4rem;
+        margin-bottom: 0;
+        font-family: "Source Sans Pro", sans-serif;
+    }
+    @include breakpoint(medium down){
+        text-align: center;
+    }
+}

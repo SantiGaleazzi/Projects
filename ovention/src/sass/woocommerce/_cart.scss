@@ -1,0 +1,63 @@
+.menu-cart {
+    cursor: pointer;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce .added_to_cart,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce ul.products li.product .button,
+.woocommerce button.button:focus,
+.woocommerce button.button.alt:focus,
+.woocommerce a.button.alt,
+.xoo-wsc-empty-cart .button {
+    background-color: $orange !important;
+    opacity: 1;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 0;
+    color: white;
+
+    &:hover,
+    &:focus {
+        background-color: $dark-gray !important;
+        color: #fff;
+    }
+}
+
+.woocommerce button.button.alt.disabled {
+    background-color: $light-gray;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+    display: none;
+}
+
+.woocommerce a.added_to_cart {
+    padding: .618em 1em;
+    line-height: 1;
+    margin-left: 3px;
+}
+.xoo-wsc-basket .xoo-wsc-icon-basket1:before {
+	content: "\e90f";
+}
+
+.xoo-wsc-cart-active .xoo-wsc-cart-trigger .xoo-wsc-basket {
+    display: none !important;
+}
+
+.main-menu-item.xoo-wsc-cart-trigger .xoo-wsc-basket {
+    float: right;
+
+    @include breakpoint(large up) {
+        float: none;
+    }
+
+}
+
+.woocommerce-cart-form #coupon_code {
+    width: auto !important;
+}

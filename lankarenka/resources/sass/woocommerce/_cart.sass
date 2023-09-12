@@ -1,0 +1,327 @@
+body.woocommerce-cart
+    @apply bg-gray-100
+
+    .woocommerce
+        @apply relative
+
+        h1.cart-has-products
+            @apply text-xl font-normal
+
+        button.update-cart
+            @apply text-gray-500 px-0 py-0 bg-transparent transition duration-200 ease-in-out
+
+            &:hover
+                @apply text-purple-400
+
+        // Cart is empty
+        .empty-cart
+            height: calc( 100vh - 3.5rem )
+            @apply w-full flex flex-col items-center justify-center relative bg-cover bg-no-repeat overflow-hidden
+
+            p.cart-empty.woocommerce-info
+                @apply hidden
+
+            .empty-cart-info
+                @apply text-center relative z-10
+
+                p.empty-cart-title
+                    @apply text-3xl leading-none font-normal mb-6
+            
+                .return-to-shop
+
+                    a
+                        @apply text-xs leading-none font-bold text-white tracking-widest px-8 py-4 bg-purple-400 uppercase inline-block transition duration-200 ease-in-out cursor-pointer
+
+                        &:hover
+                            @apply bg-purple-500
+
+        // Shopping Cart
+        form.woocommerce-cart-form
+            @apply w-full
+
+            table.shop_table
+                @apply w-full bg-white rounded-tl rounded-tr overflow-hidden border-collapse border-none mb-8
+            
+                thead
+                    @apply border-b-2 border-gray-300
+
+                    tr
+                        @apply text-left text-xs text-gray-400 tracking-widest font-normal flex uppercase #{!important}
+
+                        th
+                            @apply px-2 py-3
+                        
+                        th.product-thumbnail
+                            @apply w-10
+
+                        th.product-name
+                            @apply flex-1 hidden
+
+                        th.product-price
+                            @apply flex-1 text-center
+
+                        th.product-quantity
+                            @apply flex-1 text-center
+
+                        th.product-subtotal
+                            @apply flex-1 text-center
+
+                        th.product-remove
+                            @apply w-8
+
+                tbody
+
+                    tr
+                        @apply text-xs text-left flex items-center px-3 py-4 transition duration-300 ease-in-out
+
+                        &:hover
+                            @apply bg-transparent
+            
+                        &:nth-child(odd)
+                            @apply bg-transparent
+
+                            &::hover
+                                @apply bg-transparent
+
+                        &:last-of-type
+                            @apply bg-transparent
+
+                            &:hover
+                                @apply border-transparent bg-transparent
+
+                        &.cart_item
+                            @apply  border border-gray-300
+
+                        td.product-remove
+                            @apply w-8 text-xl text-center text-red-400
+                        
+                        td.product-thumbnail
+                            @apply w-12 mr-4
+
+                            a
+                                @apply inline-block
+                                
+                                img
+                                    min-width: 3rem
+                                    @apply w-full h-auto rounded shadow-lg block
+
+                        td.product-name
+                            @apply flex-1 flex-grow mr-4
+
+                            a
+                                @apply w-full text-base text-default inline-block
+
+                            p.category
+                                @apply mb-0
+
+                                a
+                                    @apply leading-none text-sm text-gray-400
+
+                            .product-price
+                                
+                                span.woocommerce-Price-amount
+                                    @apply text-purple-400
+
+                        td.product-subtotal
+                            @apply hidden
+
+                        td.product-quantity
+                            @apply text-left
+
+                            .quantity
+                                @apply flex
+
+                                label
+                                    @apply hidden
+
+                                input
+                                    width: 50px
+                                    @apply  px-3 py-2 text-gray-500 bg-transparent 
+            
+            // Discounts
+            .actions
+                @apply mb-8
+
+                h1.cart-has-coupon
+                    @apply text-xl font-normal mb-5
+
+                .coupons
+                    @apply w-full p-6 bg-white flex flex-col
+
+                    .coupon
+                        @apply flex-1 flex items-center
+
+                        label
+                            @apply hidden
+
+                        input.input-text
+                            @apply flex-1 w-1/2 text-purple-500 leading-none text-sm px-4 py-3 border-2 border-gray-200 transition duration-300 ease-in-out mr-2
+                            
+                            &:focus
+                                @apply border-purple-400
+
+        h1.payment-summary
+            @apply text-xl font-normal mb-5
+
+        // Collaterals
+        .cart-collaterals
+            @apply pb-0 bg-white
+
+            .cart_totals
+                @apply px-5 py-8
+                        
+                table.shop_table
+                    @apply w-full bg-white mr-0 mb-4 ml-auto
+
+                    tbody
+
+                        tr.cart-subtotal
+                            @apply text-sm flex items-center justify-between pb-3 border-b border-gray-200
+
+                            th
+                                @apply text-gray-500 font-normal
+
+                        tr.woocommerce-shipping-totals
+                            @apply text-sm flex items-center justify-between py-3 border-b border-gray-200
+
+                            th
+                                @apply  text-gray-500
+
+                            td
+                                @apply text-default pl-4
+                                
+                                p.woocommerce-shipping-destination
+                                    @apply hidden
+
+                                form.woocommerce-shipping-calculator
+
+                                    a.shipping-calculator-button
+                                        @apply text-white text-xs px-5 py-3 bg-purple-500 inline-block
+
+
+                        tr.order-total
+                            @apply text-sm flex items-center justify-between py-3
+
+                            th
+                                @apply font-normal text-gray-500
+
+                            td
+                                @apply font-normal text-default
+
+                // Proceed to checkout button
+                .wc-proceed-to-checkout
+                    @apply text-center
+                    
+                    a
+                        @apply w-full text-xs leading-none font-bold text-white tracking-widest py-4 bg-purple-400 uppercase inline-block transition duration-200 ease-in-out cursor-pointer #{!important}
+
+                        &:hover
+                            @apply bg-purple-500
+
+                    // Payment Gateways
+                    .wcppec-checkout-buttons
+                        @apply my-8
+
+                        .wcppec-checkout-buttons__separator
+                            @apply text-sm text-gray-500
+
+                        // PayPal Express Checkout
+                        a.wcppec-checkout-buttons__button
+                            @apply text-default bg-yellow-400
+
+@screen sm
+
+    body.woocommerce-cart
+
+        .woocommerce
+
+            // Cart is empty
+            .empty-cart
+                height: calc( 100vh - 81px )
+
+            // Shopping Cart
+            form.woocommerce-cart-form
+
+                table.shop_table
+                    
+                    thead
+
+                        tr
+                            @apply text-sm
+
+                            th.product-thumbnail
+                                @apply w-12
+
+                            th.product-name
+                                @apply inline-block
+
+                            th.product-price
+                                @apply w-32
+
+                            th.product-subtotal
+                                @apply w-32
+
+                            th.product-remove
+                                @apply w-12
+
+                    tbody
+
+                        tr
+                            @apply text-sm px-6
+
+                            td.product-thumbnail
+                                @apply w-12
+
+                            td.product-name
+                                @apply opacity-100
+
+                            td.product-subtotal
+                                @apply w-20 inline-block
+
+                            td.product-quantity
+                                @apply w-16
+
+                                .quantity
+
+                                    input
+                                        @apply w-full
+
+                            td.product-remove
+                                @apply w-12
+
+
+@screen md
+
+    body.woocommerce-cart
+
+        .woocommerce
+
+            // Cart is empty
+            .empty-cart
+
+                .empty-cart-info
+                    @apply text-left
+
+                    p.empty-cart-title
+                        @apply text-5xl mb-6
+
+            // Shopping Cart
+            form.woocommerce-cart-form
+
+                .actions
+                    @apply mb-0
+
+                    .coupons
+                        @apply flex-row items-center justify-between
+
+            // Collaterals
+            .cart-collaterals
+                @apply px-0
+
+                .cart_totals
+
+                    // Proceed to checkout button
+                    .wc-proceed-to-checkout
+                        
+                        a
+                            @apply  w-11/12 text-base py-3

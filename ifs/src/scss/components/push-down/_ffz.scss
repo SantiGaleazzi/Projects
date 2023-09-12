@@ -1,0 +1,23 @@
+$pushDown: '.push-down';
+
+#{$pushDown}{
+  background-image: url('../img/pushDown/bg-push-down-ffz.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__ffz {
+    color: $white;
+    h3 {
+      font-size: 3.6rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+    .ffz-shortcodes {
+      margin: 0 auto;
+    }
+    &--logo {
+      margin-bottom: 23px;
+    }
+  }
+}

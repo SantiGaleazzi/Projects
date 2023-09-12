@@ -1,0 +1,96 @@
+[class*='ffz-']
+
+	input
+		@apply text-gray-800
+
+body .ffz-font-sans,
+body .ffzty-tcell,
+body .ffzty-tcell span,
+body .ffzty-tcell di,
+body .ffzty-tcell.ffzty-tdescription span,
+body .ffzty__comment p,
+body .ffzty__comment button,
+body textarea.ffzty__comment
+	@apply font-roboto-condensed
+
+.ffz-inline-form
+	@apply w-full
+
+	.ffz-mini-form
+
+		& > div
+			@apply px-0 #{!important}
+
+	.ffz-mini-form
+		@apply my-0
+
+	.ffz-py-4
+		@apply py-0
+
+	.ffz-px-2
+		@apply py-0
+
+	.ffz-my-3
+		@apply my-0
+
+	input
+		@apply text-red-500 text-lg rounded mt-0 #{!important}
+
+	.ffz-container-amount
+		@apply flex-col
+
+	.ffz-container-field
+		height: 50px #{!important}
+		@apply w-full mr-0 overflow-hidden #{!important}
+
+		.ffz-input-line
+			@apply bg-red-500 #{!important}
+
+		&::before
+			@apply text-gray-450 #{!important}
+
+		input
+			height: 50px #{!important}
+
+	button
+		@apply w-full mt-4 px-4 py-3 text-lg leading-none border rounded border-white font-bold bg-red-500 #{!important}
+
+	.lock-closed
+		@apply text-white inline-block align-middle
+
+	.ffz-secure-transaction
+		@apply text-white inline-block align-middle text-xs
+
+	.ffz-px-9
+		@apply px-0 text-center mt-2 #{!important}
+
+	.ffz-px-4
+		@apply px-0 text-center mt-2 #{!important}
+
+	p
+		@apply my-0 h-0
+
+@screen sm
+
+	.ffz-inline-form
+		@apply pl-6
+
+		.ffz-container-amount
+			@apply flex-row justify-center
+
+		.ffz-container-field
+			@apply w-auto mr-3 #{!important}
+
+		button
+			@apply w-auto mt-0 px-12 #{!important}
+
+@screen lg
+
+	.ffz-inline-form
+		@apply w-auto flex-none
+
+		.ffz-px-9
+			@apply text-left #{!important}
+
+		.ffz-px-4
+			@apply text-left #{!important}

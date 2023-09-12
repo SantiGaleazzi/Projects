@@ -1,0 +1,43 @@
+{
+	"name": "digizent-custom-theme",
+	"version": "2.0.0",
+	"description": "Custom compiler for Digizent using Tailwindcss, ESlint, husky and laravel mix.",
+	"main": "index.js",
+	"scripts": {
+		"development": "mix",
+		"watch": "mix watch",
+		"watch-poll": "mix watch -- --watch-options-poll=1000",
+		"hot": "mix watch --hot",
+		"production": "mix --production",
+		"lint": "eslint --fix . --ext .js",
+		"prepare": "cd ../../../ && husky install && npx husky set .husky/pre-commit 'cd wp-content/themes/* && npx lint-staged' && npx husky set .husky/post-merge 'cd wp-content/themes/* && npm install'"
+	},
+	"author": "digizent",
+	"license": "ISC",
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "6.2.0",
+		"autoprefixer": "10.4.7",
+		"browser-sync": "2.27.10",
+		"browser-sync-webpack-plugin": "2.3.0",
+		"eslint": "8.19.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-config-standard": "17.0.0",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-n": "15.2.4",
+		"eslint-plugin-promise": "6.0.0",
+		"husky": "8.0.1",
+		"laravel-mix": "6.0.49",
+		"laravel-mix-polyfill": "3.0.1",
+		"laravel-mix-purgecss": "6.0.0",
+		"lint-staged": "13.0.3",
+		"postcss": "8.4.14",
+		"prettier": "2.7.1",
+		"sass": "1.53.0",
+		"sass-loader": "13.0.2",
+		"tailwindcss": "3.1.4"
+	},
+	"lint-staged": {
+		"*.js": "eslint --cache --fix",
+		"*.{js,md}": "prettier --write"
+	}
+}

@@ -1,0 +1,87 @@
+$block: '.why-ovention';
+#{$block}{
+	padding: 4rem 0;
+	&__button{
+		    display: inline-block;
+   	 		width: 45%;
+   			font-weight: 700 !important;
+    		line-height: 5rem !important;
+    		margin-bottom: 1rem;
+   			margin-right: 1rem;
+   			@include breakpoint(small down){
+				width:100%;
+				display:block;
+				margin:0 auto 1rem;
+			}
+	}
+	&__button-content{
+		padding: 6rem 0;
+		text-align:center;
+		@include breakpoint(medium down){
+				
+				padding:3rem 0;
+		}
+	}
+	&__text{
+		overflow:hidden;
+		h2{
+			color: $orange;
+			font-size:5.2rem;
+			@include breakpoint(large down){
+				font-size:4.2rem;
+			}
+			@include breakpoint(medium down){
+				font-size:3.5rem;
+			}
+			@include breakpoint(small down){
+				font-size:3rem;
+			}
+		}
+		p{
+			color: $dark-gray;
+			line-height:2.8rem;
+			font-weight:300;
+			@include breakpoint(medium down){
+				font-size: 1.5rem;
+			}
+		}
+		a{
+			color: $dark-gray;
+			line-height:2.8rem;
+			font-weight:300;
+			text-decoration: underline;
+		}
+		li{
+			color: $dark-gray;
+			line-height:2.8rem;
+			font-weight:300;
+
+			@include breakpoint(medium down){
+				font-size: 1.5rem;
+			}
+		}
+	}
+	&__image{
+		position:relative;
+		img{
+			position: absolute;
+    		bottom: -12rem;
+    		max-width: inherit;
+    		left:-2.5rem;
+    		@include breakpoint(medium down){
+			  max-width: 100%;
+			  position: static;
+			  display: block;
+			  margin: 0 auto;
+    		}
+		}
+	}
+	@include breakpoint(medium down){
+		padding: 4rem 0 3rem;
+	}
+}
+
+$block: '.complementary';
+#{$block}{
+	padding: 9rem 0 6rem;
+}

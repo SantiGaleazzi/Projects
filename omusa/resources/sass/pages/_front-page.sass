@@ -1,0 +1,57 @@
+.bg-gradient-ways-to-help
+    background: linear-gradient(177deg, rgba(0,0,0,0.6), transparent)
+.section-quoted
+    @apply relative px-6
+
+    .headline
+        width: fit-content
+        @apply font-roboto px-4 font-light text-3xl text-center relative mb-8
+
+        &::before,
+        &::after
+            content: ''
+            @apply w-6 h-6 absolute block border-red-500
+
+        &::before
+            @apply border-t-4 border-l-4 top-0 left-0 -mt-3 -ml-3
+
+        &::after
+            @apply border-b-4 border-r-4 bottom-0 right-0 -mb-3 -mr-3
+
+        &.small
+            @apply text-2xl text-left
+
+        &.text-left
+            @apply text-left #{!important}
+
+        &.white-arrows
+            &::before,
+            &::after
+                @apply border-white-pure
+@screen sm
+
+    .section-quoted
+
+        .headline
+            @apply text-4xl
+
+            &::before,
+            &::after
+                @apply w-8 h-8
+
+            &::before
+                @apply border-t-8 border-l-8
+
+            &::after
+                @apply border-b-8 border-r-8
+
+@screen md
+    .remove-bg-image
+        @apply bg-none #{!important}
+
+@screen lg
+
+    .section-quoted
+
+        .headline
+            @apply text-5xl

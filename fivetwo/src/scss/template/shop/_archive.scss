@@ -1,0 +1,177 @@
+$block: '.woocommerce';
+
+#{$block}{
+    &-breadcrumb,
+    &-products-header {
+        display: none;
+    }
+    .product-image-wrap {
+        height: 20rem;
+        border-radius: 5px;
+    }
+
+    .woocommerce-loop-product__title {
+        color: $medium-gray;
+        font-family: $body-font-family;
+        font-size: 1.4rem;
+        line-height: 20px;
+        font-weight: 500;
+        margin-top: .7rem;
+    }
+
+    div.product {
+        margin-bottom: 4.7rem;
+        span.price {
+            color: $light-blue;
+            font-family: $header-font-family;
+            font-size: 1.6rem;
+            display: block;
+            margin-top: 1.3rem;
+            margin-bottom: 1.9rem;
+        }
+        .added_to_cart {
+            display: none;
+        }
+    }
+
+    .quantity {
+        display: inline-block;
+        vertical-align: top;
+        .screen-reader-text {
+            display: none;
+        }
+        .qty {
+            margin-bottom: 0;
+            height: 43px;
+            width: 6.4rem;
+        }
+    }
+
+    &__header {
+        margin-bottom: 4.5rem;
+        margin-top: 3rem;
+    }
+
+    &__products {
+        a.button {
+            color: $light-blue;
+            font-family: $header-font-family;
+            font-weight: bold;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 2px solid $light-blue;
+            border-radius: 5px;
+            position: relative;
+            padding: 1.2rem 1.7rem .9rem 3.6rem;
+            &.added {
+                font-size:0;
+                &:after {
+                    content: 'IN CART';
+                    font-size: 1.8rem;
+                }
+            }
+            &:before {
+               content: '\f07a';
+               font-family: "Font Awesome 5 Free";
+               font-weight: 900;
+               font-size: 1.7rem;
+               position: absolute;
+               left: 1rem;
+               @include vertical-center;
+            }
+            &:hover,
+            &.added {
+               color: $white;
+               background-color: $light-blue;
+            }
+        }
+    }
+
+    &__description {
+        position: relative;
+        padding-right: 4%;
+        p {
+            margin: 0 0 0.5rem;
+        }
+        &:before {
+            content: '';
+            @include vertical-center;
+            right: 2.5rem;
+            border-left: 2px solid $light-gray;
+            height: 100%;
+        }
+        @include breakpoint(medium down) {
+            padding-right: 0;
+            // text-align: center;
+            padding-bottom: 3rem;
+            &:before {
+                content: '';
+                @include vertical-center;
+                right: 2.5rem;
+                border-left: none;
+                height: 100%;
+            }
+        }
+    }
+
+    &__cart {
+        .button {
+            color: $white;
+            font-family: $header-font-family;
+            font-weight: 700;
+            font-size: 1.6rem;
+            width: 16rem;
+            position: relative;
+            padding-left: 4.2rem;
+            border: 2px solid $light-blue;
+            margin-bottom: 1.5rem;
+            &:before {
+               content: '\f07a';
+               font-family: "Font Awesome 5 Free";
+               font-weight: 900;
+               font-size: 1.7rem;
+               position: absolute;
+               left: 1.8rem;
+               @include vertical-center;
+            }
+            &.my-account {
+                &:before {
+                   content: '\f007';
+                   font-family: "Font Awesome 5 Free";
+                   font-weight: 900;
+                   font-size: 1.7rem;
+                   position: absolute;
+                   left: 1.8rem;
+                   @include vertical-center;
+                }
+            }
+            &:hover {
+                color: $light-blue;
+                background-color: transparent;
+                border: 2px solid $light-blue;
+            }
+        }
+        &-count {
+            color: $dark-blue;
+            font-size: 1.6rem;
+            line-height: 1.9;
+            font-family: $header-font-family;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: $yellow;
+            @include box(30px, 30px, true);
+        }
+    }
+
+    &__title {
+       color: $dark-blue;
+       line-height: 1;
+       margin-bottom: 0rem;
+    }
+
+    &__subtitle {
+        color: $light-blue;
+    }
+}

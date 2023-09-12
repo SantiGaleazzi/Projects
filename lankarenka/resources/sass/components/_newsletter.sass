@@ -1,0 +1,11 @@
+.lightbox
+    @apply opacity-0 invisible transition-all duration-500 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+    &__container
+        @apply opacity-0 invisible transform -translate-y-10 transition-all duration-500 ease-in-out 
+
+        &.active
+            @apply opacity-100 visible translate-y-0

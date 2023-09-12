@@ -1,0 +1,105 @@
+#customer_login
+    @apply w-full flex flex-col items-center justify-center
+
+    // Login Panel
+    .u-column1
+        height: calc(  100vh - 3.5rem )
+        @apply w-full px-6 py-8 flex flex-col items-center justify-center
+
+        h2
+            @apply text-4xl text-purple-600 font-medium mb-8
+
+        form.woocommerce-form-login
+            @apply w-full max-w-sm
+
+            p.woocommerce-form-row
+                @apply flex flex-col mb-3
+
+                label
+                    @apply text-left text-sm text-gray-500 mb-1
+                
+                input.input-text
+                    @apply w-full text-sm text-purple-500 px-4 py-2 border-2 border-gray-300 rounded transition duration-200 ease-in-out
+
+                    &:focus
+                        @apply border-purple-500
+
+            // Class added to the woocommerce/myaccount/form-login.php
+            .login-actions
+                @apply flex items-center justify-between mb-3
+
+                // Remember Me
+                label.woocommerce-form-login__rememberme
+                    @apply flex items-center
+
+                    span
+                        @apply text-sm text-gray-500
+
+                // Login Button
+                button[type="submit"]
+                    @apply text-sm leading-none text-purple-100 px-5 py-3 bg-purple-500 rounded transition duration-200 ease-in-out
+                    
+                    &:hover
+                        @apply bg-purple-600
+
+            // Lost Password
+            .lost_password
+                @apply text-sm text-purple-500 text-center
+
+    // Resgister Panel
+    .u-column2
+        @apply w-full
+
+        h2
+            @apply text-4xl text-purple-700 font-medium mb-8
+
+        .background-image
+            @apply w-full overflow-hidden
+
+            img
+                @apply w-full h-screen object-cover transition duration-300 ease-in-out
+
+            &:hover
+
+                img
+                    transform: scale(1.1)
+                    -webkit-transform: scale(1.1)
+
+
+        form.woocommerce-form-register
+            @apply w-full max-w-sm
+
+            p.form-row-wide
+                @apply text-left flex flex-col mb-3
+
+                label
+                    @apply text-sm text-white mb-2
+                
+                input.input-text
+                    @apply w-full text-purple-500 px-4 py-2 border-2 border-gray-300 rounded transition duration-200 ease-in-out
+
+                    &:focus
+                        @apply border-purple-500
+
+            p
+                @apply text-xs text-white text-center mb-3
+
+            //Register Button
+            button[type="submit"]
+                @apply text-sm leading-none text-purple-100 px-5 py-3 bg-purple-500 rounded transition duration-200 ease-in-out
+                    
+                &:hover
+                    @apply bg-purple-600
+
+@screen sm
+    #customer_login
+        @apply px-0 flex-row
+
+        // Login Panel
+        .u-column1
+            @apply w-1/2
+
+        // Register Panel
+        .u-column2
+            height: calc(  100vh - 3.5rem )
+            @apply w-1/2 bg-purple-300 flex flex-col items-center justify-center

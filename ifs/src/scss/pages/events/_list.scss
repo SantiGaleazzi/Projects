@@ -1,0 +1,88 @@
+$content-list: '.eventspage';
+
+#{$content-list}{
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  &__title{
+      font:{
+        family: $font-neuton;
+        size: 4.6rem;      
+      }
+      color: $secondary-color;  
+    
+  }
+  &__location{
+    color: #757575;
+    .location-address{
+      font-style: italic;
+    }
+    a{
+      color: $blue-neuton;
+      text-decoration: none;
+    }
+  }
+  .tribe-events-loop{
+    max-width: none;
+    .tribe-events-event-image{
+      width: 37%;
+      @include breakpoint(small only){
+        margin: 0 0 3rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .tribe-events-list-separator-month{
+      margin-top: 0;
+    }
+  }
+  .tribe-events-event-image+div.tribe-events-content{
+    float: left;
+    width: 56%;
+    @include breakpoint(small only){
+      width: 100%;
+      float: none;
+    }
+  }
+  .tribe-events-list-event-description{
+    padding-right: 0;
+    .tribe-events-read-more{
+      font:{
+        family: $font-neuton;
+        weight: 700;
+      }
+      color: $secondary-color;
+    }
+
+  }
+  .tribe-bar-submit{
+    margin-left: 2rem;
+  }
+  .tribe-events-event-meta{
+    margin-bottom:0;
+    padding-bottom: 1rem;
+  }
+  #tribe-events-bar{
+    display: none;
+  }
+  @include breakpoint(large down){
+    padding: 0 1.5rem;
+  }
+  @include breakpoint(medium down){
+    padding-top: 3rem;
+  }
+}
+
+#tribe-events .tribe-events-button{
+  color: $white;
+  background: $blue-neuton;
+  // height: 4rem;
+}
+#tribe-bar-form
+  .tribe-bar-submit input[type=submit]{
+    color: $white;
+    background: #009be1;
+    height: 4rem;
+    margin-right: 0;
+    padding: 0.9rem 1.7rem 0.9rem !important;
+    vertical-align: middle;
+}

@@ -1,0 +1,431 @@
+/**
+ * BASE RULES :
+ * Is applied to an element using an element selector, a descendent selector, or a child selector,
+ * along with any pseudo-classes. It doesn’t include any class or ID selectors. It is defining the
+ * default styling for how that element should look in all occurrences on the page.
+ */
+ .main-container,
+ .main-container > .grid-y {
+     height: 100vh;
+ }
+
+ body {
+    font-size: 1.4rem;
+ }
+.page-2mm-meet-up-interest .container-virtuous-form{
+    @include breakpoint(medium down) {
+        top: 0px
+    }
+}
+*:focus {outline:0;}
+.ginput_container_select {
+    position: relative;
+    &:before {
+        content: '\f0d7';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 1;
+        color: $dark-blue;
+        position: absolute;
+        bottom: 23px;
+        right: 8px;
+    }
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    border-radius: 5px;
+}
+
+html.is-reveal-open body {
+    overflow-y: visible;
+}
+
+blockquote {
+
+    p {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: -45px;
+            height: 40%;
+            border-left: 5px solid $light-blue;
+
+            @include breakpoint(medium down) {
+                left: -20px;
+            }
+        }
+    }
+}
+
+cite {
+    font-style: normal;
+}
+
+table.unstriped tbody,
+table.unstriped tfoot {
+    border: none;
+}
+
+table.unstriped tbody tr,
+table.unstriped tbody {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+}
+
+address {
+    line-height: 1.7;
+}
+
+button.button {
+    border-radius: 5px;
+}
+
+/**
+ * LAYOUT RULES :
+ * are traditionally styled using ID selectors or Class selectors
+ */
+#gform_1 {
+    .validation_error {
+        display: none;
+    }
+}
+
+#gform_fields_3 {
+    //overflow-y: hidden;
+    width: 100%;
+}
+
+.m-0-auto {
+    margin: 0 auto;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.phone {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.underline {
+    display: inline-block;
+    background-image: url('../img/underline.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: .5rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.md-w100{
+    @include breakpoint(medium down) {
+       width: 100%;
+    }
+}
+
+.h100 {
+    height: 100%;
+}
+
+.subtitle {
+    color: $light-blue;
+    font-weight: 400;
+}
+
+.title {
+    color: $dark-blue;
+}
+
+h6.big {
+    font-size: 1.8rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.block {
+    display: block;
+}
+
+.wait-overlay {
+    flex-grow: 1;
+    @include reveal-modal-base;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(233, 223, 239, .7);
+}
+
+.fa-spinner {
+    @include absolute-center;
+    color: #495057;
+    font-size: 6rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.wp-block-image img {
+    border-radius: 5px;
+}
+
+.wp-block-button__link {
+    @include button();
+}
+
+.reveal__container {
+    overflow-y: hidden;
+}
+
+.woocommerce-Button {
+    border-radius: 5px !important;
+}
+
+.woocommerce {
+    &__message {
+        &-success {
+            @include message('success');
+        }
+        &-info {
+            @include message('info');
+        }
+        &-error {
+             @include message('error');
+        }
+    }
+}
+
+.woocommerce-form-coupon {
+    margin-top: 2rem;
+}
+
+.woocommerce-form-login {
+    margin-top: 2rem;
+    @include breakpoint(medium only) {
+       margin-right: 2rem;
+    }
+    @include breakpoint(small only) {
+       margin-right: 0;
+       margin-bottom: 5rem;
+    }
+}
+
+.woocommerce-checkout {
+    h3 {
+        color: $dark-blue;
+    }
+}
+
+.woocommerce-Address {
+    padding-bottom: 3rem;
+}
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+    content: '+';
+    @include vertical-center;
+    right: 1rem;
+}
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a {
+    color: $white;
+    font-family: $header-font-family;
+    position: relative;
+}
+
+.about_paypal {
+    margin-left: 1rem;
+}
+
+.button.green,
+.button.green:hover {
+    color: $white;
+}
+
+label[for="payment_method_stripe"] {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+    @include breakpoint(medium down) {
+       vertical-align: top;
+    }
+}
+
+label[for="payment_method_paypal"] {
+    display: inline-block;
+    width: 85%;
+    vertical-align: middle;
+    @include breakpoint(small only) {
+       vertical-align: top;
+    }
+}
+
+/*
+* FLEX ALIGNMENT
+* */
+.medium-align-middle {
+    @include breakpoint(medium up) {
+        @include flex-align(null,'middle');
+    }
+}
+
+.medium-align-justify {
+    @include breakpoint(medium up) {
+        @include flex-align('justify');
+    }
+}
+
+.large-align-center {
+    @include breakpoint(large up) {
+        @include flex-align('center');
+    }
+}
+
+.large-align-left {
+    @include breakpoint(large up) {
+        @include flex-align('left');
+    }
+}
+
+.large-align-right {
+    @include breakpoint(large up) {
+        @include flex-align('right');
+    }
+}
+
+.large-align-justify {
+    @include breakpoint(large up) {
+        @include flex-align('justify');
+    }
+}
+
+.large-align-bottom {
+    @include breakpoint(large up) {
+        @include flex-align('center','bottom');
+    }
+}
+
+.xlarge-align-center {
+    @include breakpoint(xlarge up) {
+        @include flex-align('center');
+    }
+}
+
+.xlarge-align-right {
+    @include breakpoint(xlarge up) {
+        @include flex-align('right');
+    }
+}
+
+.xlarge-align-justify {
+    @include breakpoint(xlarge up) {
+        @include flex-align('justify');
+    }
+}
+
+.xlarge-align-bottom {
+    @include breakpoint(xlarge up) {
+        @include flex-align('center','bottom');
+    }
+}
+
+/*
+* COLOUR
+*/
+.blue-gradient {
+    @include blueGradient;
+}
+
+body {
+  .ffz-font-sans,
+  .ffzty-tcell,
+  .ffzty-tcell span, .ffzty-tcell div,
+  .ffzty-tcell.ffzty-tdescription span,
+  .ffzty__comment p,
+  .ffzty__comment button,
+  textarea.ffzty__comment {
+     font-family: "Roboto",sans-serif;
+  }
+  .ffz-headline1.ffz-font-sans,
+  .ffz-custom-title-bar-bg.ffz-font-sans{
+      font-family: 'Roboto Condensed', sans-serif !important;
+  }
+}
+
+.wp-block-embed.aligncenter{
+    text-align: center;
+    .wp-block-embed__wrapper{
+        display: inline-block;
+    }
+}
+
+.wp-block-embed.alignright{
+    max-width: inherit;
+    width: inherit;
+    float: right;
+    margin-left: 40px;
+    @include breakpoint(medium down) {
+        float: none;
+        margin-left: 0;
+    }
+    .wp-block-embed__wrapper{
+        text-align: right;
+        @include breakpoint(medium down) {
+            text-align: center;
+        }
+    }
+
+
+}
+
+.wp-block-embed.alignleft{
+    max-width: inherit;
+    width: inherit;
+    float: left;
+    margin-right: 40px;
+    @include breakpoint(medium down) {
+        float: none;
+        margin-left: 0;
+    }
+    .wp-block-embed__wrapper{
+        text-align: left;
+        @include breakpoint(medium down) {
+            text-align: center;
+        }
+    }
+}

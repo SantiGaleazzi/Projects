@@ -1,0 +1,321 @@
+$block-form: '.get-involved';
+$template: '.page-template-template-get-involved';
+$blue-line: '.donation-line';
+$extras: '.extras';
+
+#{$template}
+{
+    .banner {
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: bottom right;
+    }
+}
+.gform_confirmation_message{
+    h1{
+        background-image: url('../img/contact/green-check.png');
+        background-repeat: no-repeat;
+        background-position: bottom 26% left;
+        padding-left: 4rem;
+        font-size: 4.6rem;
+        color: #1e3764;
+        margin-top: 5rem;
+        @include breakpoint(medium down){
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    }
+}
+#{$block-form}
+{
+    .gform_wrapper{
+        ul.gform_fields{
+            li.gfield{
+                display: inline-block;
+                width: 33%;
+                margin-top: 0.2rem;
+                vertical-align: middle;
+                &.gfield_error.gfield_contains_required{
+                    .gfield_description{
+                        display: none !important;
+                    }
+                }
+                select{
+                    background-image: url('../img/home/arrow-down.png');
+                    background-repeat: no-repeat;
+                    background-position: center left 95%;
+                }
+                input.medium, select.medium{
+                    width:90%;
+                    border: 1px solid #1e3764;
+                    color: #009be1;
+                    margin-bottom: 1rem;
+                    padding-left:0.5rem;
+                    @include breakpoint(medium down){
+                        width:100%;
+                    }
+                }
+                ::placeholder {
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                ::-webkit-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+
+                :-ms-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                
+                ::-ms-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                textarea{
+                    border: 1px solid #1e3764;
+                    color: #009be1;
+                    height: 8rem;
+                    padding-left:0.5rem;
+                }
+                .gfield_label {
+                    display: none !important;
+                }
+                &[id^="field_"][id$="_6"]{
+                    display: block;
+                    width: 100%;
+                }
+                &[id^="field_"][id$="_9"]{
+                    display: block;
+                    width: 100%;
+                    h1{
+                        font-size: 4.6rem;
+                        color: #1e3764;
+                        margin-top: 5rem;
+                        @include breakpoint(medium down){
+                            font-size: 3rem;
+                            margin-top: 2rem;
+                        }
+                    }
+                    h3{
+                        font-size: 2.8rem;
+                        color: #1e3764;
+                        line-height: 3rem;
+                        @include breakpoint(medium down){
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+                &[id^="field_"][id$="_8"]{
+                    display: block;
+                    width: 100%;
+                    border-top: 1px solid #dddddd;
+                    border-bottom: 1px solid #dddddd;
+                    padding-top: 1rem;
+                    margin-top:2rem;
+                    .gfield_label {
+                        display: inline-block !important;
+                        font-family: "Neuton", serif;
+                        color: #1e3764;
+                        font-size: 1.6rem;
+                        font-weight: normal;
+                    } 
+                    .gfield_checkbox{
+                        li{
+                            display: inline-block;
+                            label{
+                                font-size: 1.6rem;
+                                color: #1e3764;
+                                display: inline;
+                                padding-right: 3rem;
+                                font-family: "Neuton", serif;
+                            }
+                            input[type=checkbox]{
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-left: 1px;
+                                margin: 0 !important;
+                            }
+                            &.gchoice_select_all{
+                                display:block;
+                                width: 100%;
+                            }
+                            @include breakpoint(medium down){
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                        
+                    }
+
+                }
+                &:last-child{
+                    width: 100%;
+                    .ginput_complex {
+                       input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]){                      
+                            width: 86%;
+                            border: 1px solid #1e3764;
+                            color: #009be1;
+                            margin-bottom: 1rem;
+                            padding-left:0.5rem;
+                            margin-right: 0;
+                            @include breakpoint(medium down){
+                                width:100%;
+                            }      
+                        }
+                        span[class^="ginput_"]{
+                            display: inline-block;
+                            width: 33%;
+                            margin-right: 0;
+
+                            label{
+                                display: none;
+                            }
+                            &:nth-child(3){
+                                padding-right: 0;
+                            }
+                            &:nth-child(4),
+                            &:nth-child(5){
+                                input[type='text']{
+                                    width: 88.5% !important;
+                                    @include breakpoint(medium down){
+                                        width:100% !important;
+                                    } 
+                                }                                 
+                            }
+                            @include breakpoint(medium down){
+                                padding-right: 0 !important;
+                                width:100%;
+                            }                        
+                        }
+                    }
+
+                }
+                @include breakpoint(medium down){
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    .gform_footer{
+        text-align: right;
+        .gform_button{
+            background-color: #009be1;
+            width: 28rem !important;
+            font-size: 2rem;
+            font-weight: 600;
+            margin:0;
+        }
+        @include breakpoint(medium down){
+            text-align: center;
+        }
+    }
+}
+#{$blue-line}
+{
+  background-color: #009be1;
+  padding: 2rem 0;
+  &__title{
+    h3{
+      font-size: 4.6rem;
+      line-height: 3rem;
+      color: #fff;
+      margin: 0;
+      @include breakpoint(medium down){
+        font-size: 3em;
+        text-align: center;
+        line-height: 4.5rem;
+        margin: 0 0 1rem;
+      }
+    } 
+  }
+  &__button{
+      .ffz-anywhere-button {
+        display: block;
+        width: 30rem;
+        font-size: 2rem;
+        color: #1e3764 !important;
+        font-weight: 600;
+        line-height: 4rem;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 0;
+        &:hover{
+            font-size: 2rem;
+            color: #1e3764;
+            font-weight: 600;
+        }
+    }
+  }
+}
+
+#{$extras}
+{
+    padding: 7rem 0;
+    &__single{
+        max-width: 38rem;
+        margin: 1rem auto;
+        background-color: #efefef;
+        &__title{
+            min-height: 14rem;
+            padding: 1rem 2.5rem 1rem 1.5rem;
+            a{
+                font-family: "Neuton", serif;
+                font-size:4.6rem;
+                line-height: 4.6rem;
+                color: #1e3764;
+            }
+        }
+        &__image{
+            position: relative;
+            &:hover .extras__single__image__overlay {
+                opacity: 1;
+            }
+           &__overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(31,156,215, 0.7);
+            a{
+                color: white;
+                font-size: 1.6rem;
+                font-weight: 700;
+                position: absolute;
+                font-family: "Neuton", serif;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+                border-bottom: 2px solid #ffbe32;
+            }
+           }
+        }
+        &__content{
+            padding: 2rem 2.5rem 2rem 1.5rem;
+            h5{
+                font-family: "Neuton", serif;
+                font-size:2.8rem;
+                line-height: 3rem;
+                color: #1e3764; 
+            }
+        }
+    }
+}

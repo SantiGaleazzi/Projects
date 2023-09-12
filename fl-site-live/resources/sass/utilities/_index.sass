@@ -1,0 +1,96 @@
+/* purgecss start ignore */
+
+.has-wysiwyg
+
+    h2
+        @apply font-pt-serif text-2xxl text-yellow-300 leading-tight mb-5
+
+    h3
+        @apply font-pt-serif text-xl text-yellow-300 leading-tight mb-5
+
+    h4
+        @apply font-pt-serif text-lg text-white leading-tight mb-5
+
+    p
+        @apply text-lg pb-4
+
+    a
+        @apply text-yellow-300
+
+    quote
+        @apply pl-6
+
+    ul
+        @apply ml-8 list-disc
+
+    a
+        &.btn
+            @apply text-white leading-none px-4 py-2 inline-block rounded mb-4
+
+            b,
+            strong
+                @apply font-bold
+
+            e,
+            i
+                @apply italic
+
+            &.gold
+                @apply bg-gold
+
+            &.blue
+                @apply bg-blue-300
+
+            &.red
+                @apply bg-red-500
+
+.episode-has-wysiwyg
+
+    p
+        @apply text-xl mb-4
+
+        @screen lg
+            @apply text-2xl
+
+        &:last-of-type
+            @apply mb-0
+
+.blurry
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+
+.blurry-2
+    backdrop-filter: blur(2px)
+    -webkit-backdrop-filter: blur(2px)
+
+.blurry-10
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
+
+.has-video
+    padding-bottom: 56.25%
+    @apply max-w-full h-0 relative overflow-hidden
+
+    iframe,
+    object,
+    embed
+        @apply w-full h-full top-0 left-0 absolute
+
+.has-player
+
+    .jwplayer
+        @apply w-full h-full absolute #{!important}
+
+        &.jw-flag-aspect-mode
+            @apply h-full #{!important}
+
+@layer utilities
+
+    @responsive
+
+        .shadow-3xl
+            box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.51)
+            -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.51)
+            -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.51)
+
+/* purgecss end ignore */

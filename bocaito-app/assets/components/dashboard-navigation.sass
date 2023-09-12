@@ -1,0 +1,27 @@
+nav .menu-item
+  @apply mb-2
+
+  &:last-of-type
+    @apply mb-0
+
+  &:not(.active)
+    a
+      &:hover
+        @apply bg-slate-100 dark:bg-zinc-800
+
+  &.active
+    a
+      @apply text-white bg-indigo-500
+
+    svg
+      @apply text-indigo-300
+
+  a
+    @apply w-full text-slate-600 dark:text-zinc-200 font-semibold leading-none flex items-center justify-between px-4 py-2 rounded-lg transition-colors duration-150 ease-in-out
+
+  .submenu-item
+    a
+      @apply text-slate-400 dark:text-zinc-400 text-sm pl-14 py-2 bg-transparent
+
+      &:hover
+        @apply text-slate-300 dark:text-zinc-500 bg-transparent

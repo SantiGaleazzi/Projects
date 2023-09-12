@@ -1,0 +1,25 @@
+.woocommerce-checkout {
+	.woocommerce-form-login-toggle {
+		.woocommerce-info {
+			color: #ff8a2c;
+			font-weight: 700;
+			font-size: 3.1rem;
+			padding: 15px;
+			margin: 0 0 15px;
+
+			&:before {
+				content: "";
+			}
+
+			.showlogin {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.woocommerce-checkout #payment ul.payment_methods .payment_method_chase_paymentech img {
+		display: inline-block;
+		margin: 0 0.5em 0 0;
+	}
+
+}

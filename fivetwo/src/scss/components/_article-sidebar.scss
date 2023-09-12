@@ -1,0 +1,91 @@
+// Article Sidebar
+.sidebar-form {
+    width: 100%;
+    border-radius: 6px;
+    background: #08aae2;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+
+    @include breakpoint(medium down) {
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+
+    // Title
+    &__title {
+        color: $white;
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    // Description
+    &__description {
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        margin-bottom: 0rem;
+    }
+
+    &__form {
+        margin-top: 2rem;
+
+        // Sign up form reformat
+        .gform_wrapper {
+
+            form {
+
+                .gform_body {
+
+                    ul.gform_fields {
+
+                        li.gfield {
+                            padding-right: 0rem !important;
+
+                            .ginput_container {
+                                max-width: 100% !important;
+                                margin-top: 0rem;
+
+                                input {
+                                    margin-top: 1.2rem;
+                                    margin-bottom: 0px;
+                                }
+
+                                span.name_first {
+                                    width: 100%;
+                                    display: block;
+                                    padding-top: 0rem;
+                                    padding-right: 0rem;
+
+                                    input {
+                                        margin-bottom: 0rem;
+                                    }
+                                }
+
+                                span.name_last {
+                                    width: 100%;
+                                    display: block;
+                                    padding-top: 0rem;
+                                    padding-right: 0rem;
+
+                                    input {
+                                        margin-bottom: 0rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .gform_footer {
+                    margin-top: 1.2rem !important;
+                    text-align: center !important;
+
+                    input[type="submit"] {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

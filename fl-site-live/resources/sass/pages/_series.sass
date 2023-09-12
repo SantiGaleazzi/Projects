@@ -1,0 +1,77 @@
+
+// Series
+.series-info
+    height: 400px
+
+    &.is-animating
+
+        .series-name,
+        .series-description,
+        .series-cover
+            @apply opacity-100 translate-x-0
+
+    .series-name
+        @apply opacity-0 transition-all transform -translate-x-16 duration-500 delay-200 ease-in-out
+
+    .series-description
+        @apply opacity-0 transition-all transform -translate-x-12 duration-700 delay-500 ease-in-out
+
+    .series-cover
+        @apply opacity-0 transition-all transform translate-x-16 duration-500 ease-in-out
+
+// Episode
+.episode
+    @apply opacity-0 invisible transition-all transform -translate-y-5 duration-300 ease-in-out
+
+    &.animating
+        @apply opacity-100 visible translate-y-0
+
+    &.now-playing
+
+        .episode-cover
+            @apply border-gold-light
+
+            &:hover
+                @apply border-gold-light
+
+                .episode-thumb
+                    @apply scale-105
+
+                .episode-data
+                    @apply bg-gray-850
+
+            .is-playing-text
+                @apply opacity-100
+
+            .episode-thumb
+                @apply scale-105
+
+            .episode-data
+                @apply bg-gray-850
+
+    .episode-cover
+
+        .is-playing-text
+            @apply w-full h-full blurry-2 bg-gray-850 bg-opacity-25 flex items-end justify-end text-lg text-white font-bold absolute bottom-0 right-0 pb-3 pr-4 z-10 uppercase opacity-0 transition-opacity duration-200 ease-in-out
+
+// Hidden player in series info
+.video-player-container
+    @apply w-full h-full absolute blurry bg-gray-850 opacity-0 invisible bg-opacity-50 top-0 z-10 transition-all duration-300 ease-in-out
+
+    #video-element, #video-element iframe
+        @apply w-full h-full
+
+    &.is-playing
+        @apply opacity-100 visible
+
+        .close-video
+            @apply opacity-100 visible
+
+    .close-video
+        @apply opacity-0 invisible transition-all delay-300 duration-200 ease-in-out
+
+@screen sm
+
+    // Series
+    .series-info
+        height: 470px

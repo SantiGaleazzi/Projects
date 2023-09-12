@@ -1,0 +1,43 @@
+$block-destacada: '.destacada';
+$info-color: #757575;
+
+#{$block-destacada}{
+  padding-top: 3rem;
+  // padding-bottom: 4rem;
+  &__title{
+    color: $secondary-color;
+    font:{
+      family: $font-neuton;
+      size: 4rem;
+      weight: 300;
+    }
+    line-height:1;
+  }
+  &__info{
+    color: $info-color;
+    font:{
+      size: 1.2rem;
+      weight: 300;
+    }
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+    a{
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $secondary-color;
+    }
+  }
+  .wp-post-image{
+    @include breakpoint(medium down){
+      margin-bottom: 3rem;
+    }
+    
+  }
+  .articles & img{
+    @include breakpoint(medium down){
+      margin: 0 auto 2rem;
+      display: block;
+      float: none;
+    }
+  }
+}

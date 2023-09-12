@@ -1,0 +1,45 @@
+.simple-video-template {
+    
+    // Iframe
+    &__iframe {
+        padding-bottom: 56.25%;
+        position: relative;  
+        padding-top: 30px; 
+        overflow: hidden;
+        height: 0;
+        margin-bottom: 2rem;
+
+        iframe,
+        object,
+        embed {
+            position: absolute;
+            height: 100%;  
+            width: 100%;  
+            left: 0;  
+            top: 0;
+        }
+    }
+
+    // Buttons
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint(small down) {
+            flex-direction: column;
+        }
+
+        a.video-btn {
+            color: $white;
+            font-size: 1.8rem;
+            text-align: center;
+            background:#ea2c2c;
+            padding: 1.2rem 2rem;
+            border-radius: 5px;
+            margin: 0.75rem;
+            display: inline-block;
+        }
+    }
+}

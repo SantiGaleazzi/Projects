@@ -1,0 +1,90 @@
+/***********************
+* GLOBAL STYLES
+***********************/
+$blue-neuton: #009be1;
+$yellow : #ffbe32;
+$font-neuton: 'Neuton', serif;
+$font-sanspro: 'Source Sans Pro', sans-serif;
+
+select{-webkit-appearance: none; -moz-appearance: none; appearance: none; color: #6b6b6b; border: none;
+  &:focus{
+    border: none;
+  }
+}
+
+body{font-size: 160%; color: $primary-color; font-weight: inherit; min-width: 320px;}
+
+h1,h2,h3,h4,h5,h6{font-family: $font-neuton;}
+
+*{outline: none;}
+.row .row{margin-left: 0; margin-right: 0;}
+
+.wrap-relative{position: relative;}
+.wrap-absolute{position: absolute;}
+.table{display: table;}
+.table-cell{display: table-cell;}
+.vAmiddle{vertical-align: middle;}
+.content-absolute{position: absolute;}
+.content-absolute-left{ position: absolute; left: 0; top:0;}
+.content-absolute-right{ position: absolute; right: 0;}
+.w100{width: 100%;}
+.h100{height: 100%;}
+.ovhidden{overflow: hidden;}
+.no-margin {margin:0 !important;;}
+.no-margin-left { margin-left: 0 !important;}
+.no-margin-right {margin-right: 0 !important;;}
+
+/* -----------------------------------------
+    WordPress Core
+-------------------------------------------- */
+.alignnone {margin: 5px 20px 20px 0;}
+.aligncenter,
+div.aligncenter {display: block; margin: 5px auto 5px auto;}
+.alignright {float:right; margin: 5px 0 20px 20px;}
+.alignleft {float: left; margin: 5px 20px 20px 0;}
+a img.alignright {float: right; margin: 5px 0 20px 20px;}
+a img.alignnone {margin: 5px 20px 20px 0;}
+a img.alignleft {float: left; margin: 5px 20px 20px 0;}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+.wp-caption {background: #fff; border: 1px solid #f0f0f0; max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px; text-align: center;}
+.wp-caption.alignnone {margin: 5px 20px 20px 0;}
+.wp-caption.alignleft {margin: 5px 20px 20px 0;}
+.wp-caption.alignright {margin: 5px 0 20px 20px;}
+.wp-caption img {border: 0 none; height: auto; margin: 0; max-width: 98.5%; padding: 0; width: auto;}
+.wp-caption p.wp-caption-text {font-size: 11px; line-height: 17px; margin: 0; padding: 0 4px 5px;}
+
+p, div, li, span, a{font-size: 1.6rem; font-weight: 400;}
+
+%half-block{position: absolute; bottom: 0;}
+
+.caption-thumbnail{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    padding-left:10px;
+    color:#fff;
+    font-weight:400;
+    font-size:16px;
+    font-family:Neuton, serif;
+    width:100%;
+    z-index:2;
+    background-color: rgba(30, 55, 100, 0.85);
+}
+
+//Gravity forms
+
+.gform_wrapper .gfield_required{
+    display: inline-block !important;
+}
+
+//FFz
+.ffz-popup .ffz-text-gray-500 p{
+    font-size: 14px;
+    color: #606060;
+    line-height: 22px;
+}
+
+.ffz-popup .ffz-text-center{
+    display: block !important;
+}

@@ -1,0 +1,139 @@
+// Template
+.new-ligthbox
+  @apply tw-p-6 tw-flex tw-justify-center tw-fixed tw-inset-0 tw-z-50 tw-opacity-0 tw-invisible tw-transition-all tw-duration-200 tw-ease-in-out
+
+  &.is-active
+    @apply tw-opacity-100 tw-visible
+
+  .lightbox-content
+    @apply tw-w-full tw-opacity-0 tw-invisible tw-relative tw-z-10 tw-transition-all tw-duration-150 tw-ease-in-out tw-transform -tw-translate-y-9
+
+    &.is-active
+      @apply tw-opacity-100 tw-visible tw-translate-y-0
+
+.search-ligthbox
+  @apply tw-pt-24
+
+.contact-ligthbox
+  @apply tw-items-center
+
+  .lightbox-content
+
+    .contact-form
+      @apply tw-h-[400px] tw-overflow-y-scroll
+      @screen md
+        @apply tw-h-auto tw-overflow-visible
+
+      form
+
+        .mauticform-message
+          @apply tw-text-center tw-text-green-500 tw-py-4 tw-rounded-2xl
+
+        .mauticform-page-wrapper
+          @apply tw-gap-x-8 tw-gap-y-5 tw-grid-cols-1
+          @apply tw-grid #{!important}
+          @screen sm
+            @apply tw-grid-cols-2
+
+          .mauticform-row
+            @apply tw-mb-0
+
+            &.mauticform-has-error
+
+              input,
+              textarea
+                @apply tw-border-red-400
+
+              .mauticform-errormsg
+                @apply tw-text-[12px] tw-mt-1
+
+            input,
+            textarea
+              @apply tw-h-auto tw-font-medium tw-px-6 tw-py-3 tw-bg-gray-100 tw-border-2 tw-border-gray-100 tw-shadow-none tw-rounded-2xl tw-mb-0
+
+              &:focus
+                @apply tw-border-orange-600
+
+              &::placeholder
+                @apply tw-placeholder-gray-100
+
+            textarea
+              @apply tw-resize-none
+
+          #mauticform_websitecontactus_first_name,
+          #mauticform_websitecontactus_last_name,
+          #mauticform_websitecontactus_email_address,
+          #mauticform_websitecontactus_phone_number
+            @apply tw-col-span-2
+            @screen sm
+              @apply tw-col-span-1
+
+          #mauticform_websitecontactus_postal_code,
+          #mauticform_websitecontactus_f_message,
+          #mauticform_websitecontactus_consent,
+          #mauticform_websitecontactus_email_optin,
+          #mauticform_websitecontactus_request_demo
+            @apply tw-col-span-2
+
+          #mauticform_websitecontactus_request_demo
+            @apply tw-text-center
+
+            .mauticform-button
+              @apply tw-text-[20px] tw-text-white tw-font-semibold tw-leading-none tw-px-8 tw-py-5 tw-bg-orange-500 tw-rounded-2xl tw-mt-0 tw-cursor-pointer
+
+.quiz-lightbox
+  @apply tw-items-center
+
+  .lightbox-content
+
+    .quiz-form
+      @apply tw-max-h-[500px] tw-bg-cover tw-bg-no-repeat tw-overflow-y-scroll
+      @screen sm
+        @apply tw-max-h-full tw-overflow-visible
+
+.request-demo-ligthbox
+  @apply tw-items-center
+
+  .lightbox-content
+
+    .demo-form
+      @apply tw-h-[400px] tw-overflow-y-scroll
+      @screen sm
+        @apply tw-h-auto tw-overflow-y-visible
+
+      .mauticform-page-wrapper
+        @apply tw-grid-cols-2 tw-gap-6
+        @apply tw-grid #{!important}
+
+        .mauticform-row
+          @apply tw-col-span-2 tw-mb-0
+          @screen sm
+            @apply tw-col-span-1
+
+          label,
+          input,
+          select
+            @apply tw-font-medium
+
+          input
+            @apply tw-border-2 tw-border-solid tw-border-gray-200 tw-px-6 tw-py-4 tw-bg-gray-100 tw-rounded-2xl tw-shadow-none tw-transition-colors tw-duration-100 tw-ease-in-out
+            &:focus
+              @apply tw-border-orange-500
+
+          select
+            @apply tw-border-2 tw-border-solid tw-border-gray-200
+            &:focus
+              @apply tw-border-orange-500
+
+          .mauticform-errormsg
+            @apply tw-text-[14px] tw-text-hatco
+
+        #mauticform_websiterequestademo_consent,
+        #mauticform_websiterequestademo_request_demo
+          @apply tw-col-span-2
+
+        #mauticform_websiterequestademo_request_demo
+          @apply tw-text-center tw-mb-0
+
+          button.mauticform-button
+            @apply tw-text-white tw-font-semibold tw-bg-orange-500 tw-rounded-2xl tw-mt-0 tw-cursor-pointer

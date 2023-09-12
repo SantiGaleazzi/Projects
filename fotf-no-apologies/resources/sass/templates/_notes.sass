@@ -1,0 +1,212 @@
+.notes-template
+	#ldnt-shortcode
+		max-width: 1285px
+		padding: 0px 20px
+		@apply mx-auto mb-52
+
+	h1
+		max-width: 1285px
+		padding: 0px 20px
+		@apply text-left mx-auto text-orange-500 font-noto-extra-cond-black-italic text-3xl mb-6
+
+	.ldnt-select-wrap
+		@apply border-none bg-yellow-100 #{!important}
+
+	#ldnt-posts-per-page
+		@apply font-noto-cond-bold text-blue-500 text-base
+
+	#ldnt-shortcode
+		.ldnt-note-filters
+			form
+				.ldnt-select-wrap
+					min-width: 50px
+					max-width: 125px
+					&::after
+						content: ""
+						width: 8px
+						height: 8px
+						border-bottom: 2px solid
+						border-right: 2px solid
+						transform: rotate(45deg)
+						top: 40%
+						@apply text-blue-500
+					@apply pl-5
+					select
+						padding: 8px 15px 8px 8px
+
+	#ldnt-shortcode
+		.ldnt-note-filters
+			form
+				.ldnt-search-field
+					@apply bg-transparent
+					.nt-live-search
+						height: 52px
+						border: 1px solid #b3b3b3 !important
+						@apply w-48 bg-white font-noto-sans-cond text-sm text-gray-500
+						&::placeholder
+							@apply opacity-100 font-noto-sans-cond text-sm text-gray-500
+				#ldnt-search-btn
+					height: 52px
+					transition: all .08s ease-in 0s
+					@apply w-40 bg-orange-500 font-noto-cond-bold text-white cursor-pointer text-xl text-center ml-2.5
+					&:hover
+						transition: all .08s ease-in 0s
+						@apply bg-purple-400
+
+	.notes-listing
+		thead
+
+			input.js-toggle-all-notes
+				border-radius: 30px
+				@apply cursor-pointer
+
+				&::after
+					display: block
+					left: 0px
+					top: 0px
+					width: 28px
+					height: 28px
+					border-width: 1px
+					border-style: solid
+					border-color: #b3b3b3
+					content: ""
+					background-repeat: no-repeat
+					background-position: center
+					border-radius: 30px
+
+			input[type="checkbox"]
+				&:checked
+					background: #53C3CD
+					background: radial-gradient(circle, #53C3CD 50%, #FFFFFF 50%)
+
+		th
+			@apply bg-blue-400 text-white font-helvetica-neue-bold text-base font-normal text-left leading-none py-3.5 mb-4 #{!important}
+			&:nth-child(3)
+				@apply hidden
+			&:nth-child(5)
+				@apply hidden
+			&:nth-child(1)
+				border-top-left-radius: 4px
+				border-bottom-left-radius: 4px
+			&:nth-child(4)
+				border-top-right-radius: 4px
+				border-bottom-right-radius: 4px
+				width: 20%
+		td
+			@apply text-left bg-white
+
+		tr
+			&:nth-child(2n)
+				background: #f3f3f3 !important
+				td
+					background: #f3f3f3
+			@apply bg-white #{!important}
+		.nl-user
+			@apply hidden
+
+		.nl-select
+			input
+				border-radius: 30px
+				@apply cursor-pointer
+
+				&::after
+					display: block
+					left: 0px
+					top: 0px
+					width: 28px
+					height: 28px
+					border-width: 1px
+					border-style: solid
+					border-color: #b3b3b3
+					content: ""
+					background-repeat: no-repeat
+					background-position: center
+					border-radius: 30px
+
+			input[type="checkbox"]
+				&:checked
+					background: #53C3CD
+					background: radial-gradient(circle, #53C3CD 50%, #FFFFFF 50%)
+		.nl-actions
+			@apply hidden #{!important}
+
+		tbody
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16)
+			border-radius: 4px
+			top: 16px
+			@apply mt-4 relative
+
+		.nl-note-title, .nl-date
+			@apply text-base font-noto-cond-bold text-gray-500 font-normal mb-0 #{!important}
+
+		.nl-location
+			@apply text-sm font-noto-sans-cond text-gray-400
+
+			a
+				@apply text-sm font-noto-sans-cond text-gray-400
+
+		tfoot
+			top: 46px
+			@apply relative
+
+			td
+				@apply py-0 text-center #{!important}
+
+			tr
+				@apply bg-yellow-100 #{!important}
+
+				td
+					@apply bg-yellow-100 #{!important}
+			.lds-bulk-actions
+				height: 52px
+				border: 1px solid #b3b3b3 !important
+				background-image: url(../images/chevron-down.png)
+				background-position: 94%
+				@apply bg-white w-60 font-noto-sans-cond text-sm text-gray-500 px-5 relative bg-no-repeat
+
+			.lds-bulk-download
+				height: 52px
+				transition: all .08s ease-in 0s
+				@apply w-40 bg-orange-500 font-noto-cond-bold font-normal text-white capitalize text-xl text-center block mx-auto mt-3 align-bottom #{!important}
+
+				&:hover
+					transition: all .08s ease-in 0s !important
+					@apply bg-purple-400 #{!important}
+	.ldnt-select-wrap
+		span
+			@apply text-base text-blue-500 font-noto-cond-bold
+
+input.nt-note-submit
+	@apply bg-yellow-500 font-noto-cond-bold text-xl text-white font-normal #{!important}
+
+#ldnt-shortcode table.notes-listing tbody tr td,
+#ldnt-shortcode table.nt-course-list-table tbody tr td
+	@apply bg-white
+
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset
+	@apply whitespace-normal #{!important}
+
+.platform-hover
+	transition: all .08s ease-in 0s
+	&:hover
+		transition: all .08s ease-in 0s
+		@apply bg-purple-400
+
+@screen md
+	.notes-template
+		h1
+			@apply mb-16 pt-0 text-6xl
+
+		.notes-listing
+
+			tfoot
+
+				.lds-bulk-download
+					@apply ml-2.5 mr-0 mt-0 inline-block	#{!important}
+
+	.mce-container,
+	.mce-container *,
+	.mce-widget,
+	.mce-widget *,
+	.mce-reset
+		@apply whitespace-nowrap #{!important}

@@ -1,0 +1,64 @@
+
+.ovention-button
+	display: block
+	text-align: center
+	max-width: 40rem
+	text-decoration: none !important
+	&:hover
+		text-decoration: none
+
+	sup
+		top: -0.8em
+
+	&--white
+		color: $white
+		font-weight: 600
+		border: 1px solid $white
+		width: 85%
+		border-radius: 0.5rem
+		&:hover,
+		&:active,
+		&:link,
+		&:visited
+			color: $white !important
+
+	&--orange
+		background-color: $orange
+		color: $white
+		border-radius: 0.5rem
+		&:hover,
+		&:active,
+		&:link,
+		&:visited
+			color: $white !important
+
+	&--gray
+		color: #313131
+		font-weight: 300
+		border: 1px solid #323132
+		width: 85%
+		border-radius: 0.5rem
+		&:hover,
+		&:active,
+		&:link,
+		&:visited
+			color: #313131 !important
+
+	&--colors
+		background: #fbae43
+		background: -moz-linear-gradient(left, #fbae43 0%, #fbae43 0%, #e9863e 31%, #da6339 52%, #cf4a36 76%, #c02732 99%)
+		background: -webkit-linear-gradient(left, #fbae43 0%,#fbae43 0%,#e9863e 31%,#da6339 52%,#cf4a36 76%,#c02732 99%)
+		background: linear-gradient(to right, #fbae43 0%,#fbae43 0%,#e9863e 31%,#da6339 52%,#cf4a36 76%,#c02732 99%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbae43', endColorstr='#c02732',GradientType=1 )
+		border-radius: 0.5rem
+		color: $white
+		font-weight: 600
+		line-height: 5rem
+		&:hover,
+		&:active,
+		&:link,
+		&:visited
+			color: $white !important
+
+	@include breakpoint(small down)
+		font-size: 1.5rem !important

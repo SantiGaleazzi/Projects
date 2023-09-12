@@ -1,0 +1,114 @@
+.long-featured-jobs
+
+    .long-featured-swiper-container
+        @apply overflow-x-hidden
+
+        .long-job
+
+            &:hover
+                
+                .job-description
+                    @apply bottom-0
+
+            .job-description
+                bottom: -60px
+                @apply transition-all duration-150 ease-in-out
+
+        .swiper-button-prev
+            @apply left-0 -ml-8
+
+        .swiper-button-next
+            @apply right-0 -mr-8
+    
+.testimonials
+    @apply overflow-x-hidden
+
+    .swiper-container
+        @apply overflow-visible
+
+        .testimonial
+            @apply w-full #{!important}
+
+            &.swiper-slide-active
+
+                .testimonial-box
+                    @apply hidden
+
+            &.swiper-slide-next
+
+                .testimonial-box
+                    @apply bg-gradient-to-r from-transparent via-page to-page left-0 #{!important}
+            
+            &.swiper-slide-prev
+
+                .testimonial-box
+                    @apply bg-gradient-to-l from-transparent via-page to-page right-0 #{!important}
+
+        .swiper-button-prev
+            @apply left-0 ml-2
+
+        .swiper-button-next
+            @apply right-0 mr-2
+
+.internships-testimonials
+    @apply overflow-x-hidden
+
+    .internships-testimonials-swiper
+        @apply overflow-visible relative mx-auto
+
+        .testimonial
+            @apply w-full #{!important}
+
+            &.swiper-slide-active
+
+                .testimonial-box
+                    @apply hidden
+
+            &.swiper-slide-next
+
+                .testimonial-box
+                    @apply bg-gradient-to-r from-transparent via-page to-page left-0 #{!important}
+            
+            &.swiper-slide-prev
+
+                .testimonial-box
+                    @apply bg-gradient-to-l from-transparent via-page to-page right-0 #{!important}
+
+        .swiper-button-prev
+            @apply left-0 ml-2 z-10
+
+        .swiper-button-next
+            @apply right-0 mr-2 z-10
+
+
+@screen md
+
+    .long-featured-jobs
+
+        .long-featured-swiper-container
+
+            .swiper-button-prev
+                @apply left-0 -ml-12
+
+            .swiper-button-next
+                @apply right-0 -mr-12
+
+    .testimonials
+
+        .swiper-container
+
+            .swiper-button-prev
+                @apply -ml-6
+
+            .swiper-button-next
+                @apply -mr-6
+
+    .internships-testimonials
+        
+        .internships-testimonials-swiper
+
+            .swiper-button-prev
+                @apply -ml-6
+
+            .swiper-button-next
+                @apply -mr-6

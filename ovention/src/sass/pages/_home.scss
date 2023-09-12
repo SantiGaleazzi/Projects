@@ -1,0 +1,143 @@
+
+.home-sticky {
+	display: none !important;
+	max-width: 26.5rem;
+    background-image: url(../img/sticky.png);
+    background-repeat: no-repeat;
+    padding: 4.5rem 5rem 2rem 1rem;
+    position: fixed;
+    top: 50%;
+    min-height: 70.5rem;
+    z-index: 99;
+    transform: translateY( -50% );
+    @include breakpoint(xlarge down){
+    	max-width: 20rem;
+    	padding: 3.5rem 3rem 5rem 1rem;
+    	background-size: contain;
+    	min-height: 54rem;
+    }
+    @include breakpoint(medium down){
+    	transform: translateY( 0 );
+    	top: auto;
+	    bottom: 0;
+	    background-image: none;
+	    background-color: #2fb1c0;
+	    max-width: 100%;
+	    width: 100%;
+	    min-height: 20rem;
+	    padding: 0 1rem;
+    }
+	h3{
+		color: #fff;
+		font-size:2.5rem;
+		line-height: 2.6rem;
+		text-align: center;
+		@include breakpoint(xlarge down){
+			font-size: 2rem;
+    		line-height: 2.2rem;
+		}
+		br{
+			@include breakpoint(medium down){
+				display: none;
+			}
+		}
+
+	}
+	p{
+		color: #fff;
+		line-height: 2.4rem;
+		text-align: center;
+		@include breakpoint(xlarge down){
+			font-size:1.4rem;
+			line-height: 2rem;
+		}
+	}
+	.ovention-button--white{
+		margin: 0 auto;
+    	border-width: 2px;
+    	font-size: 2rem;
+    	margin-bottom: 2rem;
+    	width: 93%;
+    	line-height: 4rem;
+    	@include breakpoint(xlarge down){
+    		line-height: 3.5rem;
+    		font-size: 1.5rem;
+    		width: 85%;
+    	}
+	}
+	&__ribbon{
+		margin-left: 1rem;
+		@include breakpoint(xlarge down){
+			max-width: 80%;
+			margin-left: 0.5rem;
+		}
+		@include breakpoint(medium down){
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	&__close{
+		cursor: pointer;
+		position: absolute;
+    	right: 20px;
+    	top: 15px;
+    	@include breakpoint(xlarge down){
+    		right: 15px;
+    		top: 10px;
+    	}
+    	img{
+    		@include breakpoint(medium down){
+				width: 80%;
+    		}
+    	}
+	}
+	&__phone{
+		position: absolute;
+    	bottom: 33px;
+    	@include breakpoint(xlarge down){
+    		max-width: 65%;
+    		bottom: 31px;
+    		left: 20px;
+    	}
+    	@include breakpoint(medium down){
+    		display: none;
+    	}
+	}
+}
+
+//Thank you section
+.thankyou_section {
+    background-image: url('../img/thankyou_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 30px 10px;
+    @include breakpoint(small down){
+        background-image: url('../img/mobile-hearths-bk.png');
+        background-color: #fbf7de;
+        padding: 50px 10px;
+    }
+    &__container{
+        max-width: 830px;
+        margin: auto;
+    }
+    &__title{
+        font-size: 36px;
+        line-height: 24px;
+        color: #c12932;
+        margin: 0;
+        font-family: 'YummyRegular';
+    }
+    &__description{
+        font-size: 17px;
+        line-height: 25px;
+        color: #4c4c4c;
+        margin: 15px 0 0;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        @include breakpoint(medium down){
+            font-size: 14px;
+        }
+    }
+}

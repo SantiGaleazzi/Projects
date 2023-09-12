@@ -1,0 +1,120 @@
+html, body
+    @apply text-base font-lato leading-normal bg-page antialiased relative transition duration-75 ease-in-out
+
+html
+    scroll-padding-top: 90px
+
+    @screen md
+        scroll-padding-top: 140px
+    @screen lg
+        scroll-padding-top: 160px
+    @screen xl
+        scroll-padding-top: 170px
+
+.has-red-links
+
+    a
+        @apply text-red-500 underline font-black
+
+.has-black-links
+
+    a
+        @apply text-default underline
+
+.has-gray-bg
+
+    a
+        @apply text-wysiwyg font-black underline #{!important}
+
+.has-video
+    padding-bottom: 56.25%
+    @apply max-w-full h-0 relative overflow-hidden
+
+    iframe,
+    object,
+    embed
+        @apply w-full h-full top-0 left-0 absolute
+
+.has-wysiwyg
+
+    &.light-headings
+
+        h2, h3, h4
+            @apply text-white-pure
+
+    &.light-links
+
+        a
+            @apply text-white-pure underline
+
+    h2
+        @apply text-red-500 text-3xl font-roboto font-light mb-8
+
+    h3
+        @apply text-red-500 text-2xl font-roboto font-light mb-8
+
+    h4
+        @apply text-default text-2xl font-bold mb-8
+
+    p
+        @apply font-lato mb-4
+
+        &:last-of-type
+            @apply mb-0
+
+    hr
+        @apply border-t mb-6
+
+    .quote
+        @apply font-roboto text-3xl text-default
+
+    a
+        @apply text-red-500 underline
+
+    ul
+        @apply ml-8 list-disc mb-6
+
+    ol
+        @apply ml-8 list-decimal mb-6
+
+    .button
+        @apply text-center text-white-pure leading-none font-black px-10 py-3 no-underline inline-block #{!important}
+
+        &.teal
+            @apply bg-teal-500 #{!important}
+
+        &.orange
+            @apply bg-orange-500 #{!important}
+
+        &.red
+            @apply bg-red-500 #{!important}
+
+.bg-lightbox
+    background: -moz-linear-gradient(45deg, rgba(0,0,0,0.8) 0%, rgba(210,38,48,0.8) 100%)
+    background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.8) 0%,rgba(210,38,48,0.8) 100%)
+    background: linear-gradient(45deg, rgba(0,0,0,0.8) 0%,rgba(210,38,48,0.8) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#ccd22630',GradientType=1 )
+
+.bg-lightbox-gray
+    background: -moz-linear-gradient(45deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)
+    background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%)
+    background: linear-gradient(45deg, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#ccd22630',GradientType=1 )
+
+iframe.mobile-iframe
+    height: 2484px #{!important}
+
+    @screen sm
+        height: 2310px #{!important}
+    @screeb md
+        height: 2488px #{!important}
+    @screen lg
+        height: 2313px #{!important}
+    @screen xl
+        height: 2045px #{!important}
+
+@screen sm
+
+    .has-form
+        padding-bottom: 56.25%
+        @apply max-w-full h-0 relative

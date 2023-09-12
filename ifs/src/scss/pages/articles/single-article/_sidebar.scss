@@ -1,0 +1,101 @@
+$block-sidebar: '.single-sidebar';
+
+#{$block-sidebar}{
+  padding-top: 5rem;
+  position: relative;
+  .articles{
+    &__header{
+      font-size: inherit;
+      padding-bottom: 3rem;
+    }
+    &__more{
+      margin-left: 0;
+    }
+    &__title{
+      color: #757575;
+      display: block;
+      font:{
+        size: 2.4rem;
+        weight: 700;
+      }
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+    &__section{
+      padding-top: 2rem;
+    }
+    &__item{
+      padding-left: 0;
+      padding-bottom: 1.5rem;
+      &:nth-child(even){
+        padding-left: 0 !important;
+      }
+      &:nth-child(odd){
+        &:after{
+          width: 0;
+        }
+      }
+      img{
+        margin-bottom: 1.4rem;
+      }
+      &:after{
+        width: 0;
+      }
+    }
+    &__info{
+      color: $secondary-color;
+      font-weight: 300;
+      a{
+        font-weight: 400;
+        color: $secondary-color;
+      }
+    }
+    &__description{
+      float: none;
+      width: 100%;
+      padding: 0;
+      h3{
+        color: $secondary-color;
+        font:{
+          size: 2.4rem;
+          weight: 300;
+        }
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    left: -15%;
+    top: 6rem;
+    background: #dddddd;
+    height: 95%;
+    width: 1px;
+    @include breakpoint(medium down){
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: #dddddd;
+      height: 1px;
+      width: 100%;
+    }
+  }
+}
+
+.single-author{
+  .avatar{
+    margin-bottom: 1.5rem;
+  }
+  .author-title{
+    color: $secondary-color;
+    font:{
+      size: 2.4rem;
+      weight: 300;
+    }
+    line-height: 1.2;
+  }
+}

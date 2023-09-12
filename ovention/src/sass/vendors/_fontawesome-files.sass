@@ -1,0 +1,42 @@
+$fa-font-path: "../fonts" !default
+$fa-font-display: swap !default
+@import ~@fortawesome/fontawesome-free/scss/fontawesome
+@import ~@fortawesome/fontawesome-free/scss/brands
+@import ~@fortawesome/fontawesome-free/scss/solid
+@import ~@fortawesome/fontawesome-free/scss/regular
+
+/* purgecss start ignore */
+
+.fa-brands
+  font-family: 'Font Awesome 6 Brands'
+  @apply tw-font-normal tw-not-italic
+
+  &.fa-facebook-f
+    &::before
+      content: '\f39e'
+
+  &.fa-twitter
+    &::before
+      content: '\f099'
+
+  &.fa-youtube
+    &::before
+      content: '\f167'
+
+  &.fa-linkedin-in
+    &::before
+      content: '\f0e1'
+
+  &.fa-instagram
+    &::before
+      content: '\f16d'
+
+  &.fa-vimeo-v
+    &::before
+      content: '\f27d'
+
+.fa-square-rss
+  &::before
+    content: '\f143'
+
+/* purgecss end ignore */

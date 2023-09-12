@@ -1,0 +1,38 @@
+{
+	"name": "ovention-ovens",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"scripts": {
+		"dev": "npm run development",
+		"development": "mix",
+		"watch": "mix watch",
+		"watch-poll": "mix watch -- --watch-options-poll=1000",
+		"hot": "mix watch --hot",
+		"prod": "npm run production",
+		"production": "mix --production"
+	},
+	"author": "Digizent",
+	"license": "MIT",
+    "browserslist": [
+        "last 2 major versions, not dead, >0.2%"
+    ],
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "6.1.1",
+		"@vimeo/player": "2.17.0",
+		"browser-sync": "2.27.10",
+		"browser-sync-webpack-plugin": "2.3.0",
+		"foundation-sites": "6.4.4-rc1",
+		"jquery": "3.6.0",
+		"laravel-mix": "6.0.48",
+		"laravel-mix-polyfill": "3.0.1",
+		"laravel-mix-purgecss": "6.0.0",
+		"node-sass": "7.0.1",
+		"sass": "1.52.2",
+		"sass-loader": "12.6.0",
+		"slick-carousel": "1.8.1",
+		"swiper": "8.2.4",
+		"tailwindcss": "3.1.0",
+		"what-input": "5.2.12"
+	}
+}

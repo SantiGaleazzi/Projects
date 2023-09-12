@@ -1,0 +1,226 @@
+$block-form: '.your-case-form';
+.gform_confirmation_message{
+    h1{
+        background-image: url('../img/contact/green-check.png');
+        background-repeat: no-repeat;
+        background-position: bottom 26% left;
+        padding-left: 4rem;
+        font-size: 4.6rem;
+        color: #1e3764;
+        margin-top: 5rem;
+        @include breakpoint(medium down){
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    }
+}
+#{$block-form}
+{   .gform_confirmation_message{
+        padding-bottom: 6rem;
+        h1{
+            background-image: url('../img/contact/green-check.png');
+            background-repeat: no-repeat;
+            background-position: bottom 26% left;
+            padding-left: 4rem;
+            font-size: 4.6rem;
+            color: #1e3764;
+            margin-top: 5rem;
+            @include breakpoint(medium down){
+                font-size: 3rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .gform_wrapper{
+        ul.gform_fields{
+            li.gfield{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                &.gfield_error.gfield_contains_required{
+                    .gfield_description{
+                        display: none !important;
+                    }
+                }
+                select{
+                    background-image: url('../img/home/arrow-down.png');
+                    background-repeat: no-repeat;
+                    background-position: center left 95%;
+                    margin: 0 !important;
+                }
+                input[type="text"], select{
+                    width:100%;
+                    border: 1px solid #1e3764;
+                    color: #009be1;
+                    margin-bottom: 2rem;
+                    padding-left:0.5rem;
+                    @include breakpoint(medium down){
+                        width:100%;
+                    }
+                }
+
+                input[type="radio"]{
+                    margin: 0 !important;
+                }
+
+                ::placeholder {
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                ::-webkit-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+
+                :-ms-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                
+                ::-ms-input-placeholder{
+                    color: #009be1;
+                    opacity: 1;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                }
+                textarea{
+                    border: 1px solid #1e3764;
+                    color: #009be1;
+                    height: 8rem;
+                    padding-left:0.5rem;
+                }
+                .gfield_label {
+                    display: none !important;
+                }
+                
+                &[id^="field_"][id$="_1"]{
+                    display: block;
+                    width: 100%;
+                    h1{
+                        font-size: 4.6rem;
+                        color: #1e3764;
+                        margin-top: 5rem;
+                        @include breakpoint(medium down){
+                            font-size: 3rem;
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+
+                &[id^="field_"][id$="_9"]{
+                    display: inline-block;
+                    width: 70%;
+                    label {
+                        display: none;
+                    }
+                    @include breakpoint(small down){
+                        width: 100%;
+                    }
+
+                }
+
+                &[id^="field_"][id$="_3"]{
+                    display: inline-block;
+                    width: 30%;
+
+                    @include breakpoint(small down){
+                        width: 100%;
+                    }
+                }
+
+                &[id^="field_"][id$="_4"]{
+                    display: inline-block;
+                    width: 100%;
+
+                    label{
+                        display: none;
+                    }
+
+                    input, select{
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                &[id^="field_"][id$="_5"]{
+                    width: 100%;
+                    label{
+                        display: inline-block !important;
+                    }
+                }
+
+                &[id^="field_"][id$="_6"]{
+                    width: 100%;
+                    label{
+                        display: inline-block !important;
+                    }
+                }
+
+                &[id^="field_"][id$="_7"]{
+                    width: 100%;
+                    label{
+                        display: inline-block !important;
+                    }
+                }
+
+                &[id^="field_"][id$="_8"]{
+                    width: 100%;
+                    label{
+                        display: inline-block !important;
+                    }
+
+                    textarea {
+                        height: 12rem;
+                    }
+                }
+            }
+        }
+
+        #input_4_3{
+            width:100%;
+            border: 1px solid #1e3764;
+            color: #009be1;
+            margin-bottom: 2rem;
+            padding-left:0.5rem;
+            @include breakpoint(medium down){
+                width:100%;
+            }
+        }
+
+        
+    }
+    .gform_footer{
+        text-align: left;
+        .gform_button{
+            background-color: #009be1;
+            width: 28rem !important;
+            font-size: 2rem;
+            font-weight: 600;
+            margin:0;
+        }
+    }
+}
+
+.gform_wrapper.gf_browser_ie #gform_4 .gform_footer input.button {
+    padding: 14px 16px;
+}
+
+#gform_4 .gfield_consent_label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 0;
+}
+
+#gform_4 .ginput_container_consent input[type="checkbox"] {
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+#gform_4 .ginput_container_consent .gfield_required {
+    display: none !important;
+}

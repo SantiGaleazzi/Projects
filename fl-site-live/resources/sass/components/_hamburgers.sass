@@ -1,0 +1,33 @@
+.hamburger
+    @apply w-6 h-6 relative flex items-center justify-end cursor-pointer ml-4
+
+    .hamburger-box
+        @apply w-3/4 h-1 bg-gold-light rounded-full transition-all duration-200 ease-in-out
+
+        &::before,
+        &::after
+            content: ''
+            @apply h-1 bg-gold-light rounded-full absolute right-0 transition-all duration-200 ease-in-out
+
+        &::before
+            @apply w-full transform -translate-y-2
+
+        &::after
+            @apply w-1/2 transform translate-y-2
+
+    // Open Menu
+    &.open
+
+        .hamburger-box
+            @apply w-0 bg-transparent
+
+            &::before
+                @apply transform -rotate-45
+
+            &::after
+                @apply w-full transform rotate-45
+
+@screen md
+
+    .hamburger
+        @apply hidden

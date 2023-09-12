@@ -1,0 +1,12 @@
+.ovens-list
+
+  .oven
+    @apply tw-transition-colors tw-duration-150 tw-ease-in-out
+
+    &.is-selected
+      @apply tw-bg-orange-500
+      @screen md
+        &::after
+          content: '\f04b'
+          font-family: 'Font Awesome 6 Free'
+          @apply tw-h-full tw-flex tw-items-center tw-text-orange-500 tw-text-5xl tw-font-bold tw-absolute tw-top-0 -tw-right-8 tw-z-10

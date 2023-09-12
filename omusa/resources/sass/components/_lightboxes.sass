@@ -1,0 +1,142 @@
+// Page: /ways-to-give
+.ways-to-give-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Page: /pray
+.pray-with-us-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Page: /for-churches
+.interest-church-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Page: /short-term-opportunities/
+.ask-a-question-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Page: all pages
+.quiz-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Page: /for-churches (Subscribe)
+.for-churches-subscribe-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Page: /for-george (Subscribe)
+.george-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Page: /internships - Stories section
+.internship-video-lightbox
+    @apply opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+// Platform: GTM
+.earthquake-turkey-lightbox
+    @apply w-full h-full px-4 py-10 inset-0 fixed flex items-center justify-center z-50 opacity-0 invisible overflow-hidden transition-all duration-150 ease-in-out
+
+    &.active
+        @apply opacity-100 visible
+
+    .close-ligtbox
+        @apply w-full h-full bg-lightbox-gray absolute
+
+    .lightbox-container
+        background-image: url('https://www.omusa.org/wp-content/uploads/2023/02/earthquake-turkey.jpg')
+        @apply w-full max-w-3xl bg-cover bg-right-top bg-no-repeat flex flex-col items-start justify-end border-8 border-red-500 rounded relative z-50
+
+        @screen sm
+            @apply flex-row bg-center
+
+        .close-ligtbox
+            background: transparent
+            @apply w-8 h-8 flex items-center justify-center bg-black-700-new rounded-full absolute top-0 right-0 -mt-4 -mr-4 cursor-pointer z-40
+
+        .lightbox-copy
+            @apply w-full relative z-30
+
+            &::after
+                content: ''
+                @apply w-full h-full opacity-50 bg-gradient-to-r from-black-700-new to-black-700-new absolute inset-0
+
+                @screen sm
+                    @apply opacity-100 to-transparent
+
+            .lightbox-text
+                @apply h-full px-6 py-16 relative z-30
+
+                @screen sm
+                    @apply flex pt-40 pb-24 px-8
+
+                .heading-text
+                    @apply text-white-pure leading-tight relative z-10
+
+                    @screen sm
+                        @apply w-3/4
+
+                    @screen md
+                        @apply w-3/5
+
+                    .title-heading
+                        @apply text-4xl font-bold mb-3
+
+                    .copy-text
+                        @apply text-lg font-bold leading-7 mb-4
+
+                        @screen sm
+                            @apply mb-6
+
+                        @screen md
+                            @apply pr-8
+
+                    .call-to-action
+
+                        .give-now-btn
+                            @apply text-xl text-white-pure font-lato font-bold leading-none px-8 py-4 bg-red-500 rounded-lg inline-block
+
+        .lightbox-logo
+            @apply w-16 h-16 bg-red-500 absolute top-0 left-0 z-40 cursor-pointer
+
+            a
+                @apply w-full h-full flex items-center justify-center
+
+                img
+                    @apply w-8 inline-block
+
+            @screen md
+                @apply w-24 h-24 -ml-8 -mt-8
+
+                a
+
+                    img
+                        @apply w-14
+
+            @screen lg
+                @apply w-32 h-32 -ml-16 -mt-16
+
+                a
+                    img
+                        @apply w-20

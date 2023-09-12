@@ -1,0 +1,289 @@
+.learndash-wrapper
+
+  &.blueberry
+    background-image: url(../images/grainy-background.png) !important
+    background-repeat: repeat
+    background-size: cover
+    @apply bg-lms-blueberry-700 #{!important}
+
+    nav.nav-shape
+
+      &::after
+        @apply border-l-lms-mustard-500
+
+    .ld-focus
+
+      .ld-focus-sidebar
+        @apply bg-lms-eggplant-700 #{!important}
+
+        .ld-course-navigation-heading
+          @apply bg-lms-eggplant-700 #{!important}
+
+          .learndash-wrapper
+            @apply bg-lms-eggplant-700 #{!important}
+
+        .ld-focus-sidebar-wrapper
+
+          .ld-lesson-items
+
+            .ld-lesson-item
+
+              &.ld-is-not-current-lesson
+
+                &.learndash-complete
+
+                  .ld-lesson-item-preview
+                    @apply bg-lms-mustard-500 #{!important}
+
+                    .ld-lesson-item-preview-heading
+
+                      .ld-status-icon
+                        @apply bg-lms-mustard-300 #{!important}
+
+                      .ld-lesson-title
+                        @apply text-white #{!important}
+
+                    .ld-expand-button
+
+                      .ld-icon-arrow-down
+                        @apply text-white #{!important}
+
+                      .ld-text
+                        @apply text-white #{!important}
+
+              &.ld-is-current-lesson
+                @apply bg-lms-eggplant-700 #{!important}
+
+                &.learndash-complete
+
+                  .ld-lesson-item-preview
+                    @apply bg-lms-mustard-500 #{!important}
+
+                    .ld-lesson-item-preview-heading
+
+                      .ld-status-icon
+                        @apply bg-lms-mustard-300 #{!important}
+
+                      .ld-lesson-title
+                        @apply text-white #{!important}
+
+                    .ld-expand-button
+
+                      .ld-icon-arrow-down
+                        @apply text-white #{!important}
+
+                      .ld-text
+                        @apply text-white #{!important}
+
+                .ld-lesson-item-preview
+                  @apply bg-lms-mustard-500 rounded  #{!important}
+
+                .ld-lesson-item-expanded
+
+                  .ld-table-list-item
+
+                    &.learndash-complete
+
+                      .ld-table-list-item-preview
+
+                        &.ld-is-current-item
+
+                          .ld-topic-title
+                            @apply opacity-100
+
+              .ld-lesson-item-expanded
+                @apply bg-lms-eggplant-700 #{!important}
+
+                .ld-table-list
+                  @apply bg-lms-eggplant-700 #{!important}
+
+                .ld-table-list-item
+
+                  &.learndash-complete
+
+                    .ld-table-list-item-preview
+
+                      .ld-topic-title
+                        @apply opacity-50
+
+                  &.learndash-incomplete
+
+                    .ld-status-icon
+                      @apply bg-lms-eggplant-500 border-lms-eggplant-300 #{!important}
+
+      .ld-focus-main
+        .wpProQuiz_reviewText
+          @apply text-white
+        .wpProQuiz_checkPage
+          p
+            @apply text-white
+        .wpProQuiz_resultsList
+          li
+            @apply text-white #{!important}
+        .wpProQuiz_catOverview
+          li
+            span
+              @apply text-white bg-blue-500 #{!important}
+        .wpProQuiz_question_text
+          p
+            @apply text-white #{!important}
+          .has-text-color
+            strong
+              @apply text-yellow-500 #{!important}
+
+        .ld-tabs
+          .ld-text
+            @apply text-white #{!important}
+          .ld-active
+            &::after
+              @apply bg-blue-400 #{!important}
+            .ld-text
+              @apply text-blue-400 #{!important}
+
+        .ld-focus-content
+
+          h1
+            @apply text-white #{!important}
+
+          .learndash-wrapper
+            background-image: none !important
+            @apply bg-transparent #{!important}
+
+          .learndash.learndash_post_sfwd-topic
+
+            .learndash-wrapper
+
+              .ld-topic-status
+
+                .ld-breadcrumbs
+                  @apply border-b-lms-blueberry-500 #{!important}
+
+                  .ld-breadcrumbs-segments
+
+                    span
+
+                      &:last-of-type
+
+                        a
+                          @apply text-lms-mustard-500
+
+                      &::after
+                        @apply text-lms-blueberry-300 #{!important}
+
+                      a
+                        @apply text-white
+
+                  .ld-status
+                    @apply text-white mb-0 #{!important}
+
+              .ld-tabs
+
+                .ld-tabs-content
+                  @apply text-white #{!important}
+
+                  h1,
+                  h2,
+                  h3,
+                  h4
+                    @apply text-white
+
+                  .callout,
+                  p.callout
+                    max-width: 550px
+                    @apply w-full text-center text-sm text-[#4D4D4D] bg-[#FCF3D0] p-4 mx-auto #{!important}
+
+                    p
+                      @apply text-sm text-[#4D4D4D] mb-0 #{!important}
+
+                  .ld-tab-content > p
+                    @apply text-white
+
+                  a
+                    @apply text-lms-mustard-500 #{!important}
+
+                  ul.comment-box
+                    @apply bg-lms-blueberry-500 #{!important}
+
+                    li
+                      @apply text-white #{!important}
+
+                      &::marker
+                        @apply text-lms-blueberry-700 #{!important}
+
+                  .has-inner-text
+
+                    p
+                      @apply text-white #{!important}
+
+                  .wpProQuiz_content
+
+                    .wpProQuiz_description
+
+                      p
+                        @apply text-white #{!important}
+
+                    .wpProQuiz_quiz
+
+                      ol.wpProQuiz_list
+
+                        li.wpProQuiz_listItem
+
+                          p
+                            @apply text-white #{!important}
+
+                          .wpProQuiz_response
+                            min-height: auto !important
+                            @apply p-0 bg-transparent border-none my-1 #{!important}
+
+                            .wpProQuiz_incorrect
+                              @apply text-white py-2 bg-red-400 border-red-600 rounded #{!important}
+
+                              p
+                                @apply text-white #{!important}
+
+                            .wpProQuiz_correct
+                              @apply text-white py-2 bg-green-400 border-green-600 rounded #{!important}
+
+                              p
+                                @apply text-white #{!important}
+
+                          ul.wpProQuiz_questionList
+
+                            li.wpProQuiz_questionListItem
+
+                              &.wpProQuiz_answerIncorrect
+
+                                label
+
+                                  &.is-selected
+                                    @apply bg-red-400 border-red-600 #{!important}
+
+                              &.wpProQuiz_answerCorrect
+
+                                label
+
+                                  &.is-selected
+                                    @apply bg-green-400 border-green-600 #{!important}
+
+                              .wpProQuiz_cloze
+                                @apply p-0 m-0 #{!important}
+
+                                input
+                                  @apply px-4 py-2 #{!important}
+
+                              label
+
+                                &.is-selected
+                                  @apply bg-lms-blueberry-500 border-lms-blueberry-300 #{!important}
+
+                              textarea,
+                              input[type="text"],
+                              input[type="number"]
+                                @apply text-white font-bold border-2 border-solid border-transparent bg-lms-blueberry-500/40 placeholder:text-white #{!important}
+                                @apply transition-colors duration-150 ease-in-out
+
+                                &:focus
+                                  @apply border-lms-blueberry-300 #{!important}
+
+              .ld-content-actions
+                @apply border-b-lms-blueberry-500 #{!important}

@@ -1,0 +1,26 @@
+.search-for-product
+    @apply w-full h-screen px-4 py-20 absolute z-50 top-0 left-0 opacity-0 invisible transition-all duration-300 ease-in-out overflow-x-hidden
+
+    &.open
+        @apply py-24 opacity-100 visible overflow-hidden
+
+
+    .search-container
+        @apply w-full h-auto max-w-md bg-white p-3 relative z-40 rounded shadow-md transition-all duration-500 ease-in-out mx-auto
+
+        .widget_product_search
+
+            form.woocommerce-product-search
+                @apply flex items-center
+
+                label
+                    @apply w-0 h-0 text-transparent absolute overflow-hidden
+
+                input[type='search']
+                    @apply flex-1 text-sm text-purple-500 px-3 py-2 border-2 border-transparent rounded mr-3 transition duration-300 ease-in-out
+
+                    &:focus
+                        @apply outline-none border-purple-500
+                
+                button
+                    @apply w-auto

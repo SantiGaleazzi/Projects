@@ -1,0 +1,230 @@
+$block-articles: '.articles';
+$gray-divisor-line: #dddddd;
+
+#{$block-articles}{
+  
+  &:last-child{
+    padding-bottom: 6rem;  
+  }
+  
+  &__section{
+    padding-top: 2rem;
+    &:first-child{
+      padding-top: 4rem;
+    }
+  }
+  &__item{
+    padding-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    &:nth-child(odd){
+      clear: both;
+      &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 3rem;
+        background: #dddddd;
+        height: 84%;
+        width: 1px;
+        @include breakpoint(medium down){
+          content: '';
+          position: absolute;
+          left: 1.5rem;
+          bottom: 0rem;
+          background: #dddddd;
+          height: 1px;
+          width: 5%;
+        }
+      }
+      &:last-child{
+        float: left;
+      }
+    }
+    &:nth-child(even){
+      padding-left: 4rem;
+      @include breakpoint(medium down){
+        padding-left: 1.5rem;
+      }
+    }    
+    &:after{
+      @include breakpoint(medium down){
+        content: '';
+        position: absolute;
+        left: 1.5rem;
+        bottom: 0rem;
+        background: #dddddd;
+        height: 1px;
+        width: 5%;
+      }  
+    } 
+    @include breakpoint(medium down){
+      margin-bottom: 3rem;
+    }   
+  }
+  &__header{
+    font-size: 5rem;
+    line-height: 1;
+    padding-bottom: 2rem;
+    @include breakpoint(small only){
+      padding-bottom: 1rem;
+    }
+  }
+  &__title{
+    color: $secondary-color;
+    display: inline-block;
+    font-size: 5rem;
+    line-height: 1;
+    @include breakpoint(small only){
+      display: block;
+    }
+  }
+  &__more{
+    background-color: #efefef;
+    color: #757575;
+    display: inline-block;
+    font:{
+      size: 1.5rem;
+    }
+    margin-left: 1rem;
+    padding: 0.6rem 0.9rem;
+    vertical-align: middle;
+  }
+  h3{
+    color: $secondary-color;
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 1.4rem;
+  }
+  &__info{
+    color: #757575;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    a{
+      font-size: 1.2rem;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+  img{
+    float: left;
+    @include breakpoint(large only){
+      margin-bottom: 1.5rem;
+    }
+    @include breakpoint(small only){
+      float: none;
+      margin-bottom: 2rem;
+    }
+  }
+  &__description{
+    float: left;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 60%;
+    @include breakpoint(large only){
+      float: none;
+      clear: both;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include breakpoint(small only){
+      float: none;
+      clear: both;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .destacada{
+    & + .articles__section{
+      padding-top: 2rem;
+    }
+  }
+
+  @include breakpoint(medium down){
+    padding-bottom: 0;
+  }
+}
+
+#response-articles{
+  padding-bottom: 6rem;
+  background: {
+    image: url('../img/research/ifs-watermark.jpg');
+    repeat: no-repeat;
+    position: right -12% top;
+    size: auto;
+    attachment: fixed;
+  }
+  .articles{
+    &:first-child{
+      padding-bottom: 0;
+    }
+  }
+  .load-more{
+    cursor: pointer;
+    display: block;
+    width: 14rem;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    transition: all .4s;
+  }
+  @include breakpoint(medium down){
+    padding-bottom: 3rem;
+  }
+}
+.tax-content{
+  padding-top: 3rem;
+  @include breakpoint(medium down){
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.matched-msg{
+  padding: 8rem 0;
+  p{
+    font-family: "Neuton", serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: #1e3764;
+  }
+}
+
+.page-template-template-home #response-issues{
+  padding-bottom: 2rem;
+  @include breakpoint(medium down){
+    padding-bottom: 2rem;
+  }
+}
+
+#loading-image{
+  display: block;
+  margin: 0 auto 3rem;
+}
+
+#loading-imagefilter{
+  display: block;
+  margin: 0 auto 3rem;
+  float: none;
+}
+
+#response-cases .load-more,
+#response-states .load-more,
+#response-tax .load-more
+{
+  cursor: pointer;
+  display: block;
+  width: 14rem;
+  margin: 1rem auto 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+#response-tax{
+  padding-bottom: 4rem;
+}

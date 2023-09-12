@@ -1,0 +1,101 @@
+$full-page: '.full-page';
+$tabs: '.tabs-full';
+
+$class-slug: tabs-size !default;
+$total-tabs: 8;
+
+
+#{$full-page}{
+  background:{
+    image: url(../img/research/ifs-watermark.jpg);
+    repeat: no-repeat;
+    position: right -5% top;
+    size: auto;
+  }  
+  padding-bottom: 4rem;
+  h1{
+    color: $secondary-color;
+    line-height: 1;
+    margin-bottom: 2rem;
+    font{      
+      size: 4rem;
+      weight: 300;
+    }
+  }
+  .wp-caption{
+    border: none;
+    img[class^="wp-image"]{
+      margin-bottom: 2.8rem;
+    }
+    p{
+      text-align: left;
+      font:{
+        family: $font-sanspro;;
+        size: 1.6rem;
+      }
+    }
+  }
+  p{
+    line-height: 24px;
+    margin-bottom: 2rem;
+  }
+  ul{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+  }
+  blockquote, blockquote p{
+    color: $black;
+  }
+  &__tabscontainer{
+    @include breakpoint(medium down){
+      padding-left: 0;
+      padding-right: 0;  
+    }
+  }
+  @include breakpoint(medium down){
+    padding-bottom: 0;
+  }
+}
+
+#{$tabs}{
+  &__container{    
+    
+  }
+  &__header{
+    height: 6rem;
+  }
+  .tabs-title{
+    height: 6rem;
+    & > a{
+      padding: 1rem;
+      br{
+        @include breakpoint(medium down){
+          display: none;
+        }
+      }
+      @include breakpoint(medium down){
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;  
+      }
+    }
+  }
+  .tabs-size{
+    @include width-class(8);
+
+    @for $i from 1 to $total-tabs {
+      @include width-class($i);
+    }
+  }
+  
+}
+
+$tabs-content: '.tabs-content';
+
+#{$tabs-content}{
+  .tabs-panel{
+    padding-top: 4rem;
+    a{
+      color: $blue-neuton;
+    }
+  }
+}

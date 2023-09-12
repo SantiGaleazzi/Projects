@@ -1,0 +1,10 @@
+$block: '.storyOfSuccess';
+
+#{$block}{
+    background-color: $dark-gray;
+    padding: 3rem 0 4rem;
+    &__title {
+        color: $dark-blue;
+        font-family: 'Festus', sans-serif;
+    }
+}

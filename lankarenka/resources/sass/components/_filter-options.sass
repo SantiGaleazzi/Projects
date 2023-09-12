@@ -1,0 +1,46 @@
+// WooCommerce Select
+form.woocommerce-ordering
+    
+    select
+        @apply hidden opacity-0
+
+// Custom Select
+.sancodes-select
+    @apply w-full relative mr-3
+
+    .selected-option
+        @apply text-xs font-medium tracking-wider pl-4 pr-10 py-2 bg-gray-300 uppercase rounded relative cursor-pointer
+
+        &::after
+            content: '\f078'
+            font-family: 'Font Awesome 5 Free'
+            @apply text-xs font-bold absolute right-4 top-2 transition duration-100 ease-in-out
+
+        &.open
+
+            &::after
+                content: '\f077'
+
+    ul.select-options
+        top: 100%
+        @apply w-full bg-white rounded shadow-xl absolute z-40 right-0  invisible opacity-0 transition-all duration-150 ease-in-out
+
+        &.open
+            @apply mt-4 visible opacity-100
+
+        .option
+            @apply text-sm px-4 py-3 cursor-pointer transition-all duration-100 ease-in-out
+
+            &:hover
+                @apply bg-gray-100 font-medium
+
+            &.selected
+                @apply font-medium bg-gray-100
+
+@screen sm
+    // Custom Select
+    .sancodes-select
+        @apply w-auto
+
+        ul.select-options
+            @apply w-48

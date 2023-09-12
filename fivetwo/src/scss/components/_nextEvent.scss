@@ -1,0 +1,26 @@
+$block: '.findNextEvent';
+
+#{$block} {
+	background-color: $green;
+	padding: .8rem 0;
+	&__link {
+		&-calendar {
+			color: $white;
+			font-family: $header-font-family;
+			font-weight: bold;
+			font-size: 1.8rem;
+			&:hover {
+				color: $white;
+			}
+			&:before {
+				color: $white;  
+				content: '\f073';
+				font-family: "Font Awesome 5 Free";
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 1;
+				margin-right: 1rem;
+			}
+		}
+	}
+}

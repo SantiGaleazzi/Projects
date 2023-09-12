@@ -1,0 +1,117 @@
+.training-program-banner {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #204287;
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    @include breakpoint(medium only) {
+        padding: 8rem 2rem;
+    }
+
+    @include breakpoint(small down) {
+        padding: 5rem 2rem;
+    }
+
+
+    .grid-container {
+
+        .grid-x {
+            display: flex;
+            align-items: center;
+        }
+        
+    }
+
+    // Title
+    &__title {
+        color: $white;
+        font-weight: bold;
+        font-size: 4.6rem;
+        line-height: 4.8rem;
+        padding-right: 10rem;
+        margin-bottom: 2rem;
+        font-family: 'PT Sans', sans-serif;
+
+        @include breakpoint(medium down) {
+            font-size: 3.5rem;
+            line-height: 3.7rem;
+            padding-right: 2rem;
+        }
+
+        @include breakpoint(small down) {
+            text-align: center;
+            padding-right: 0px;
+        }
+    }
+
+    // Description
+    &__description {
+        z-index: 2;
+        color: $white;
+        font-size: 2.6rem;
+        position: relative;
+        padding-right: 8rem;
+        line-height: 2.8rem;
+        margin-bottom: 30px;
+        font-family: 'PT Sans', sans-serif;
+
+        @include breakpoint(medium down) {
+            font-size: 2.2rem;
+            line-height: 2.4rem;
+            padding-right: 2rem;
+        }
+
+        @include breakpoint(small down) {
+            text-align: center;
+            padding-right: 0px;
+        }
+
+        a {
+            color: $white;
+            text-decoration: underline;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    // Link
+    &__link {
+        width: 100%;
+        color: $white;
+        max-width: 33rem;
+        padding: 1.7rem;
+        text-align: center;
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        display: inline-block;
+        text-transform: uppercase;
+        background-color: #ea2c2b;
+
+        @include breakpoint(small down) {
+            margin-bottom: 40px;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .cta-btn {
+        
+        @include breakpoint(medium down) {
+            padding-right: 2rem;
+            text-align: center;
+        }
+
+        @include breakpoint(small down) {
+            padding-right: 0px;
+        }
+    }
+
+}

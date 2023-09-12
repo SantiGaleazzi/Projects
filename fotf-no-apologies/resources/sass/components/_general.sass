@@ -1,0 +1,172 @@
+@font-face
+	font-family: "NotoSansCondensendBold"
+	src: url("../fonts/NotoSans-CondensedBold.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "NotoExtraCondensendBold"
+	src: url("../fonts/NotoSans-ExtraCondensedBold.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "NotoSansCondensend"
+	src: url("../fonts/NotoSans-Condensed.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "NotoSansCondensendItalic"
+	src: url("../fonts/NotoSans-CondensedItalic.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "NotoSansMedium"
+	src: url("../fonts/NotoSans-Medium.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "LodrinaSolidBlack"
+	src: url("../fonts/LondrinaSolid-Black.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "HelveticaNeue"
+	src: url("../fonts/Helvetica-Neue-LT-Std-55-Roman.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "HelveticaNeueBold"
+	src: url("../fonts/Helvetica-Neue-LT-Std-75-Bold.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "NotoSansRegular"
+	src: url("../fonts/NotoSans-Regular.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "NotoSansBold"
+	src: url("../fonts/NotoSans-Bold.woff") format("woff")
+	font-weight: normal
+
+@font-face
+	font-family: "NotoExtraCondBlackItalic"
+	src: url("../fonts/NotoSans-ExtraCondensedBlackItalic.woff") format("woff")
+	font-weight: normal
+
+.text-styles
+	h1,
+	h2,
+	h3,
+	h4
+		@apply font-noto-extra-cond-black-italic text-orange-500
+
+	h1
+		@apply text-6xl mt-3.5 mb-2.5
+	h2
+		@apply text-4xxl mt-3.5 mb-2.5
+	h3
+		@apply text-3xl mt-3.5 mb-2.5
+	h4
+		@apply text-xl mt-3.5 mb-2.5
+	h5
+		@apply font-noto-sans-cond text-gray-500 text-base mt-3.5 mb-2.5
+	h6
+		@apply font-noto-extra-cond-black-italic text-blue-400 mt-3.5 mb-2.5
+	a
+		overflow-wrap: break-word
+		word-wrap: break-word
+		word-break: break-word
+		@apply underline text-orange-500 font-bold
+	p
+		@apply mb-7 text-2xbase
+	ol
+		counter-reset: item
+		@apply mb-7 text-2xbase
+		li
+			counter-increment: item
+			display: -webkit-box !important
+			@apply pr-2 mb-2
+			&::before
+				content: counter(item) '.'
+				width: 18px
+				height: 18px
+				line-height: 18px !important
+				@apply text-base text-orange-500 font-bold block text-center mt-1
+
+		ol
+			@apply list-disc pl-4
+			li
+				@apply border-l-4 border-orange-500 my-0 pb-2 #{!important}
+				&::before
+					content: '' !important
+					width: 0px
+					height: 0px
+
+	ul
+		@apply list-disc mb-7 pl-3 text-2xbase
+		li
+			@apply border-l-4 border-orange-500 pl-2 pb-2
+			&::marker
+				@apply hidden
+				content: ''
+
+	blockquote
+		@apply font-noto-cond-bold-italic text-2xbase text-orange-500 text-center border-t border-b border-orange-500 py-3 my-3 mx-auto #{!important}
+		max-width: 350px
+		p
+			@apply my-0
+	table,tr,td
+		border: 1px solid transparent
+	td
+		@apply px-1 py-1
+	table
+		max-width: 100%
+	.wp-block-table 
+		.has-fixed-layout
+			table-layout: inherit
+	.is-layout-constrained
+		@apply w-full
+
+a
+	@apply underline
+
+.orange-stroke
+	-webkit-text-stroke-width: 2px
+	-webkit-text-stroke-color: #ee5235
+
+.white-stroke
+	-webkit-text-stroke-width: 2px
+	-webkit-text-stroke-color: #FFFFFF
+
+.blue-stroke
+	-webkit-text-stroke-width: 2px
+	-webkit-text-stroke-color: #214c72
+
+.blue-medium-stroke
+	-webkit-text-stroke-width: 3px
+	-webkit-text-stroke-color: #214c72
+
+.blue-bold-stroke
+	-webkit-text-stroke-width: 8px
+	-webkit-text-stroke-color: #214c72
+
+.blue-text-shadow
+	text-shadow: 8px 8px 0 #214c72, 4px 8px 0 #214c72, 8px 5px 0 #214c72
+
+.heading-transform
+	-webkit-transform: rotate(-12deg)
+	-moz-transform: rotate(-12deg)
+	-ms-transform: rotate(-12deg)
+	-o-transform: rotate(-12deg)
+
+@screen sm
+	.text-styles
+		p, ul, ol, quote
+			@apply text-base
+
+@screen md
+	ol
+		li
+			@apply pr-0 #{!important}
+			&::before
+				@apply mr-1 #{!important}

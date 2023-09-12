@@ -1,0 +1,81 @@
+/* purgecss start ignore */
+@import ~swiper/swiper
+@import ~swiper/components/navigation/navigation
+@import ~swiper/components/pagination/pagination
+@import ~swiper/components/effect-fade/effect-fade
+
+// Global Swiper options
+.swiper-pagination
+    @apply text-center absolute z-10 transition duration-300 ease-in-out
+
+    &.swiper-pagination-progressbar
+
+        .swiper-pagination-progressbar-fill
+            @apply bg-purple-500
+
+    // Swiper Bullet
+    .swiper-pagination-bullet
+        @apply transition-all duration-300 ease-in-out
+
+        &-active
+            @apply w-8 bg-purple-500 rounded-full
+
+// Home Swiper
+.home-swiper
+    height: 500px
+    @apply w-full mx-auto relative overflow-hidden list-none p-0
+
+    .container
+        @apply relative
+
+        // Swiper Slide
+        .swiper-slide
+            @apply bg-cover bg-center relative
+
+    .swiper-button-prev
+        @apply -top-12 left-10
+        
+    .swiper-button-next
+        @apply -top-12 left-22
+
+    .swiper-button-prev,
+    .swiper-button-next
+        @apply w-10 h-10 text-purple-500 border-2 border-white bg-white rounded-full shadow-md transition-all duration-300 ease-in-out
+
+        &:hover
+            @apply border-purple-500
+
+        &:active
+            @apply text-purple-100 bg-purple-500
+
+        &:focus
+            @apply outline-none
+
+    .swiper-button-prev
+        
+        &::after
+            content: '\f053'
+            font-family: 'Font Awesome 5 Free'
+            @apply text-sm leading-none font-semibold absolute
+
+    .swiper-button-next
+
+        &::after
+            content: '\f054'
+            font-family: 'Font Awesome 5 Free'
+            @apply text-sm leading-none font-semibold absolute
+
+@screen md
+
+    // Home Swiper
+    .home-swiper
+        height: 600px
+
+        // Navigation
+        .swiper-button-prev
+            @apply left-6
+
+        .swiper-button-next
+            @apply left-18
+            
+/* purgecss end ignore */

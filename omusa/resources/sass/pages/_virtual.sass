@@ -1,0 +1,27 @@
+// Filtering
+#virtual-filters
+
+    .filter
+        @apply bg-page border border-separator shadow rounded-md relative
+
+        .filter-terms
+            max-height: 0px
+            @apply w-full opacity-0 invisible overflow-hidden relative transition-all duration-150 ease-in-out z-20 overflow-y-scroll
+
+            &.active
+                max-height: 1000px
+                @apply opacity-100 visible py-2
+
+@screen md
+
+    // Filtering
+    #virtual-filters
+
+        .filter
+
+            .filter-terms
+                @apply mt-12 py-2 bg-page absolute top-0 left-0 border border-separator shadow rounded-md
+
+                &.active
+                    max-height: 315px
+                    @apply opacity-100 visible py-2

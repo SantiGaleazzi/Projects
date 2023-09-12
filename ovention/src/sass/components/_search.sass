@@ -1,0 +1,15 @@
+.search-pagination
+  @apply tw-flex tw-justify-center tw-gap-x-3 tw-py-16
+
+  .page-numbers
+    @apply tw-w-12 tw-h-12 tw-text-gray-900 tw-flex tw-items-center tw-justify-center tw-font-medium tw-rounded-full tw-transition-colors tw-duration-150 tw-ease-in-out
+
+    &:hover:not(.next, .prev)
+      @apply tw-text-white tw-bg-orange-500
+
+    &.current
+      @apply tw-text-white tw-bg-orange-500
+
+    &.next,
+    &.prev
+      @apply tw-w-auto tw-flex-none tw-inline-flex tw-items-center tw-text-orange-500

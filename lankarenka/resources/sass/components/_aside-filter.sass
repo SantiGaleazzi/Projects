@@ -1,0 +1,44 @@
+.sancodes-filter
+    @apply w-full h-full absolute inset-0 transition-all duration-200 ease-in-out opacity-0 invisible z-50
+
+    &.open
+        @apply visible opacity-100
+
+    // WooCommerce Product Count
+    p.woocommerce-result-count
+        @apply text-sm
+
+    .filters
+        width: 88%
+        @apply h-full p-6 bg-white relative transition-all duration-200 ease-in-out transform -translate-x-full z-50 
+
+        &.open
+            @apply translate-x-0
+
+        // Close button
+        button.close
+            @apply w-8 h-8 text-sm text-purple-100 bg-purple-500 rounded-full
+
+            &:active
+                @apply bg-purple-600
+
+    
+// Filter Button
+.sancodes-filter-button
+    @apply text-xs leading-none tracking-wider font-medium text-purple-100 px-5 py-3 bg-purple-500 uppercase rounded transition duration-200 ease-in-out
+
+    &:active
+        @apply bg-purple-600
+
+    i
+        @apply text-sm mr-1
+
+
+@screen sm
+
+    .sancodes-filter
+        @apply hidden
+
+    // Filter Button
+    .sancodes-filter-button
+        @apply hidden

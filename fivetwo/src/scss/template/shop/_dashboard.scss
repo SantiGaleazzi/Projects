@@ -1,0 +1,24 @@
+$block: '.woocommerce';
+
+#{$block}{
+	.secondaryNavigation {
+		.woocommerce-MyAccount-navigation-link {
+			a {
+				text-transform: uppercase;
+				font-family: $header-font-family;
+				color: $white;
+				padding: 1.8rem;
+			}
+		}
+	}
+}
+
+.woocommerce-account {
+	.full {
+		padding-top: 0;
+	}
+}
+
+.woocommerce-MyAccount-content {
+	padding-top: 3rem;
+}

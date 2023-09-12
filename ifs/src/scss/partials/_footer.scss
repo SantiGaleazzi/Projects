@@ -1,0 +1,267 @@
+$footer: '.footer';
+
+#{$footer}{
+  background-color: $secondary-color;
+
+  &__nav{
+    // border-top: 1px solid #dddddd;
+    padding-top: 2.6rem;
+    padding-bottom: 2.2rem;
+    @include breakpoint(medium down){
+      padding-top: 0;
+      padding-bottom: 0;
+      overflow: hidden;
+    }
+  }
+  &__logo{
+    padding-top: 0.4rem;
+    .svglogo{
+      width: 18.1rem;
+      height: 4.9rem;
+    }
+    @include breakpoint(medium down){
+      text-align: center;
+      padding-top: 3rem;
+    }
+  }
+  &__menu{
+    list-style: none;
+    margin-bottom: 2rem;    
+    li{
+      display: inline-block;
+      position: relative;
+      a{
+        color: $white;
+        font:{
+          weight: 600;
+        }
+        line-height: 1;
+        display: inline-block;
+        padding: 1rem 1.9rem;
+        @include breakpoint(medium down){
+          width: 100%;
+          padding: 2rem 1.9rem;
+        }
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        right: -1px;
+        bottom: 6px;
+        background: #ffffff;
+        height: 2rem;
+        width: 1px;        
+        @include breakpoint(medium down){
+          right: 0;
+          left: calc(50% - 1rem);
+          bottom: 0;
+          height: 1px;
+          width: 2rem;
+        }
+      }
+      &.social,
+      &.donate-item{
+        &:after{
+          width: 0;
+        }
+        
+      }
+      &.social{
+        padding: 0 0.9rem;
+        a{
+          @include breakpoint(medium down){
+            width: auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+          }  
+        }
+        @include breakpoint(medium down){
+          margin-bottom: 0.9rem;
+        }
+      }
+      &.donate-item{
+        a{
+          @include breakpoint(medium down){
+            width: auto;
+            padding: 1rem 1.9rem;
+            margin-bottom: 3.8rem;
+          }
+        }
+        
+      }
+      &.fsearch-container{
+        &:after{
+          @include breakpoint(medium down){
+            width: 0;
+          }
+        }
+      }
+      &:first-child{
+        &:before{
+          @include breakpoint(medium down){
+            content: '';
+            position: absolute;
+            right: 0;
+            left: calc(50% - 1rem);
+            top: 0;
+            background: #ffffff;
+            height: 1px;
+            width: 2rem;   
+          }           
+        }
+      }
+      @include breakpoint(medium down){
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .searchbox{
+      @include breakpoint(medium down){
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+    @include breakpoint(medium down){
+      margin: 0;
+    }
+  }
+  &__content{
+    text-align: right;
+    p{
+      font-size: 1.2rem;
+      color: $white;
+    }
+    padding-bottom: 4rem;
+    @include breakpoint(medium down){
+      text-align: center;
+    }
+  }
+  &__secmenu{
+    position: relative;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(large up){
+      justify-content: flex-end;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      right: 1.5rem;
+      bottom: 0;
+      background: #ffffff;
+      height: 1px;
+      width: 90%;
+      @include breakpoint(large down){
+        width: 94%;
+      }
+      @include breakpoint(medium down){
+        width: 0;
+      }
+    }
+    .searchbox-open{
+      width: 16rem;
+      @include breakpoint(xlarge down){
+        width: 14rem;
+      }
+      @include breakpoint(medium down){
+        width: 100%;
+      }
+    }
+    .container {
+      @include breakpoint(medium down){
+        width: 100%;
+      }
+    }
+    .searchbox {
+      margin: 0;
+      @include breakpoint(medium down){
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+    .navmenu__secondary {
+      li {
+        &.divider{
+          &:after{
+            @include breakpoint(medium down){
+              background: transparent;
+            }
+          }
+        }
+        @include breakpoint(medium down){
+          width: 100%;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+    input[type='search']{
+      &:focus,
+      &:active{
+        @include breakpoint(medium down){
+          width: 100%;
+          transition: unset;
+        }
+      }
+      &:focus{
+        @include breakpoint(medium down){
+          box-shadow: none;
+          border: none;
+          border-bottom: 1px solid $white;
+        }
+      }
+      @include breakpoint(medium down){
+        border-bottom: 1px solid $white;
+        box-shadow: none;
+        padding: 0.5rem 1rem;
+        height: auto;
+      }
+    }
+    &.overlay{
+      background-color: $secondary-color;
+      .navmenu__secondary li a{
+        color: #657390;
+      }
+      .navmenu__secondary li.divider:after{
+        background: #233f72;
+      }     
+    }
+  }
+  .gform_wrapper li.hidden_label input {
+    margin-top: 0;
+  }
+  .search__container {
+    @include breakpoint(medium down){
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 0 15px;
+    }
+  }
+  .searchbox-input{
+    background-color: $secondary-color;
+    @include breakpoint(medium down){
+      width: 100%;
+      display: block;
+      height: 3rem;
+      max-width: none;
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom: 1px solid $medium-gray;
+    }
+  }
+  .searchbox-icon,
+  .searchbox-submit{
+    background-color: $secondary-color;
+    @include breakpoint(medium down){
+      background-position: top 0px left 9px;
+    }
+  }
+  .social{
+    &__item{
+      padding:1rem 0.9rem;
+    }
+  }
+}

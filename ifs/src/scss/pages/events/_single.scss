@@ -1,0 +1,105 @@
+$events-single: '.tribe-events-single';
+
+#{$events-single}{
+  width: 100rem;
+  max-width: 100%;
+  margin: 0 auto;
+  
+  .tribe-events-back{
+    a{
+      color: $secondary-color;
+      font:{
+        family: $font-neuton;
+        size: 1.6rem;
+
+      }
+    }
+  }
+  .tribe-events-single-event-title{
+    font:{
+      family: $font-neuton;
+      size: 4.6rem;      
+    }
+    color: $secondary-color;  
+  }
+  .tribe-events-schedule{
+    h2{
+      span{
+        color: #757575;
+        margin-top: 0;
+      }
+      color: #757575;
+      margin-top: 0;
+    }
+  }
+  .tribe-events-event-image+div.tribe-events-single-event-description{
+    float: none;
+    width: 100%;
+  }
+  .tribe-events-meta-group{
+    float: none;
+    width: 100%;
+    .tribe-events-start-time-label,
+    .tribe-events-start-date-label,
+    .tribe-events-single-section-title,
+    .tribe-organizer-url-label,
+    .tribe-events-single-section-title
+    {
+        display: none;    
+    }
+    &:first-child{
+      margin-bottom: 0;
+      h2{
+        display: none;
+        font:{
+          size: 2.8rem;
+          weigth: 300;
+        }
+      }      
+    }    
+    &.tribe-events-meta-group-organizer{
+      margin-bottom: 0;
+    }
+    
+  }
+  .tribe-events-single-section{
+    margin-top: 0;
+    h2{
+      display: none;
+    }
+    &.primary{
+      border-bottom: 0;
+      padding-bottom: 0;
+      .tribe-events-meta-group-details{
+        .tribe-events-single-section-title{
+          display: block;
+        }  
+      }      
+    }
+    &.secondary{
+      border-top: 0;
+    }
+  }
+  
+}
+
+.single-tribe_events .tribe-events-meta-group + .tribe-events-meta-group + .tribe-events-meta-group-gmap{
+    display: none;
+  }
+
+  #tribe-events-pg-template {
+      .tribe-events-content{
+           h1 {
+              color: #1e3764;
+              font-size: 4rem;
+              font-weight: 300;
+
+              a{
+                color: #009be1;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.6rem;
+              }
+          }
+      }
+  }

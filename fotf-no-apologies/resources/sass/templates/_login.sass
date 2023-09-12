@@ -1,0 +1,25 @@
+.bg-login
+	background-image: url(../images/login-background.png)
+
+.girl-illustration
+	max-width: 446px
+	height: 885px
+	@apply overflow-hidden
+
+.wordpress-login-form
+	label
+		@apply block text-left text-sm text-white mb-4 font-noto-sans-bold
+
+	input
+		height: 48px
+		@apply border border-gray-400 w-full mb-4 px-4
+
+	.login-remember
+		@apply hidden
+
+	.login-password
+		@apply mb-8
+
+	.login-submit
+		input
+			@apply text-center text-white border-yellow-500 bg-yellow-500 font-noto-cond-bold text-xl cursor-pointer #{!important}

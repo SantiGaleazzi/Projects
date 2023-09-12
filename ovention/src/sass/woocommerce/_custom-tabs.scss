@@ -1,0 +1,42 @@
+.custom-tabs-ovention {
+
+  .custom-tab {
+
+    &:last-of-type {
+      .custom-tab-title {
+        border-bottom: none;
+      }
+    }
+
+    &.active {
+
+      .tab-content  {
+        display: block;
+      }
+    }
+
+    .custom-tab-title {
+      width: 100%;
+      display: flex;
+      padding: 16px;
+      color: #3f4449;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 35px;
+      align-items: center;
+      cursor: pointer;
+      background-color: #ebe9eb;
+      justify-content: space-between;
+      border-bottom: 1px solid #d5d4cf;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      color: #3f4449;
+      font-size: 16px;
+      line-height: 25px;
+      background-color: #ffffff;
+    }
+  }
+}

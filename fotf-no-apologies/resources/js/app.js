@@ -1,0 +1,6 @@
+require('./hamburger')
+require('./course-actions')
+require('./scroll-button')
+require('./quizzes/change-view-questions')
+require('./quizzes/add-class-checked-checkbox')
+require('./swiper')

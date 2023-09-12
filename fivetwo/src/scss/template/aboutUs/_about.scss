@@ -1,0 +1,15 @@
+.page-template-template-aboutUs{
+    .secondaryBanner {
+        &__subtitle {
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1.6rem;
+        }
+        &__title {
+        	margin-top: 0;
+        }
+    }
+}
+.about-title-bg{
+    box-shadow: 0 60px 0px #00a7e1 !important;
+}

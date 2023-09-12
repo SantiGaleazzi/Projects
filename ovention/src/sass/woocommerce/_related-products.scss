@@ -1,0 +1,58 @@
+/* related products, cross-sells */
+
+.woocommerce ul.products li.product .add_to_cart_button {
+	margin-top: 0;
+}
+
+.cross-sells {
+	margin-top: 5rem;
+	clear: both;
+}
+
+.cross-sells,
+.related.products {
+
+	h2 {
+		margin-bottom: 5rem;
+	}
+
+	ul.products {
+
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		column-gap: 30px;
+		row-gap: 50px;
+		grid-auto-rows: minmax(100px, auto);
+
+		@include breakpoint(medium up) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include breakpoint(large up) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		&::before,
+		&::after {
+		    display: none;
+		}
+
+		li.product {
+			width: auto;
+
+			a>img {
+				height: 300px;
+				object-fit: contain;
+			}
+
+			@include breakpoint(medium up) {
+				.added_to_cart {
+					margin-top: 3px;
+					margin-left: 0;
+				}
+			}
+		}
+
+
+	}
+}

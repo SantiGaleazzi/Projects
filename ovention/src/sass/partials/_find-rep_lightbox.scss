@@ -1,0 +1,94 @@
+
+// Contact Light Box
+.find-rep-lightbox {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    transition: 0.5s;
+    padding: 0px 20px;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    background-color: rgba($color: $black, $alpha: 0.8);
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    // Close button
+    &__close {
+        top: 8px;
+        z-index: 3;
+        right: 8px;
+        width: 27px;
+        height: 27px;
+        display: flex;
+        position: absolute;
+        border-radius: 27px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #d0cfcf;
+        background-color: #efefef;
+
+        a {
+            font-size: 12px;
+            line-height: 1;
+            font-weight: 800;
+            color: #2f2f2f !important;
+        }
+    }
+
+    // Form Container
+    &__form {
+        top: 25px;
+        left: 50%;
+        width: 100%;
+        max-width: 800px;
+        border-radius: 5px;
+        position: relative;
+        background-color: $white;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+
+    // Form Container
+    .find-rep-lightbox-container {
+        padding: 45px 40px;
+
+        @include breakpoint(medium down){
+            padding: 20px;
+        }
+
+        // Title
+        &__title {
+            h1 {
+                color: $orange;
+                line-height: 1;
+                font-size: 32.74px;
+                margin-bottom: 20px;
+                font-weight: $global-weight-bold;
+
+                @include breakpoint(small down){
+                    font-size: 25px;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        // Actual Form
+        &__form {
+
+            @include breakpoint(small down) {
+                overflow-y: scroll;
+                max-height: 390px;
+            }
+        }
+    }
+}

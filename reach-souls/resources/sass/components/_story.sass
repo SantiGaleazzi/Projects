@@ -1,0 +1,28 @@
+.story
+
+  &:nth-child(2)
+    @screen md
+      @apply -translate-y-24
+
+  &:nth-child(even)
+
+    .excerpt
+      @apply from-orange-500
+
+      p.copy
+        @apply text-blue-500
+
+    .information
+      @apply bg-gold-500
+
+      .author
+        @apply text-blue-900
+
+  .excerpt
+    @apply bg-gradient-to-t from-blue-900 via-blue-900
+
+  .information
+    @apply bg-blue-500
+
+    .author
+      @apply text-gold-500

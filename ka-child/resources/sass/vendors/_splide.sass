@@ -1,0 +1,23 @@
+@import ~@splidejs/splide/css/skyblue
+
+#country-thumbnails
+
+  .splide__slide
+    &.is-active
+      @apply tw-border-green-500
+
+  .splide__arrows
+
+    .splide__arrow
+
+      &:hover
+        @apply tw-bg-transparent
+
+      svg
+        @apply tw-fill-green-500
+
+      &.splide__arrow--prev
+        @apply -tw-left-10
+
+      &.splide__arrow--next
+        @apply -tw-right-10

@@ -1,0 +1,94 @@
+.social-flex{	
+	display: flex;
+	margin-bottom: 30px;
+	padding-top: 20px;
+}
+
+.menu-footer{
+	max-width: 250px;
+}
+
+.footer-text{
+	max-width: 470px;
+	font-family: "Roboto Condensed";
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: 20px;
+	margin: 0px 20px;
+}
+
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer-text p{
+	font-family: "Roboto Condensed";
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.footer-contact{
+	width: 115px;
+	font-family: "Roboto Condensed";
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.footer-contact a{
+	font-family: "Roboto Condensed";
+	color: #FFFFFF;
+	font-size: 16px;
+	display: block;
+	line-height: 1.2;
+}
+
+.other-links{
+	font-family: "Roboto Condensed";
+	color: #FFFFFF;
+	font-size: 16px;
+	display: block;
+	line-height: 1.2;
+}
+
+.other-links li{
+	color: #FFFFFF;
+	font-size: 16px;
+	display: block;
+	line-height: 1.2;
+	list-style: none;
+}
+
+.other-links a{
+	color: #FFFFFF;
+	font-size: 16px;
+	display: block;
+	line-height: 1.2;
+	list-style: none;
+}
+
+.other-links li a{
+	color: #FFFFFF;
+	font-size: 16px;
+	display: block;
+	line-height: 1.2;
+	list-style: none;
+}
+
+.blue-text-footer{
+	color: #00a7e1;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.other-links ul{
+	margin: 0px;
+}
+
+@media screen and (max-width: 768px){
+	.footer {
+	    padding: 45px 0 65px !important;
+	}
+}

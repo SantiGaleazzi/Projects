@@ -1,0 +1,33 @@
+
+.js-single-oven-data
+  @apply tw-flex-none tw-text-white tw-text-center tw-font-medium tw-px-10 tw-py-6 tw-bg-gray-800 tw-transition-colors tw-duration-200 tw-ease-in-out tw-cursor-pointer tw-relative
+  @screen lg
+    @apply tw-px-8 tw-grow
+
+  &:first-of-type
+    @apply tw-rounded-tl-2xl tw-rounded-bl-2xl
+
+  &:hover
+    @apply tw-bg-orange-500
+
+  &.is-active
+    @apply tw-bg-orange-500
+    @screen xl
+      &::after
+        content: '\f0d7'
+        font-family: 'Font Awesome 6 Free'
+        @apply tw-text-center tw-text-7xl tw-leading-none tw-text-orange-500 tw-font-bold tw-absolute tw-top-full tw-left-0 tw-right-0 tw-mx-auto tw-z-10 -tw-mt-8
+
+    .js-single-oven-count
+      @apply tw-opacity-100 tw-visible tw-translate-y-0
+
+  .js-single-oven-count
+    @apply tw-w-[25px] tw-h-[25px] tw-leading-none tw-opacity-0 tw-invisible tw-bg-orange-900 tw-font-semibold tw-flex tw-items-center tw-justify-center tw-rounded-full tw-absolute tw-bottom-6 -tw-right-4 tw-transition-all tw-duration-100 tw-ease-in-out -tw-translate-y-2 tw-z-10
+    @screen xl
+      @apply tw-w-[30px] tw-h-[30px] -tw-bottom-6 tw-right-3
+
+.js-request-demo-trigger
+  @apply tw-flex-none tw-text-center tw-text-white tw-font-medium tw-px-8 tw-py-6 tw-bg-gray-800 tw-transition-colors tw-duration-200 tw-ease-in-out tw-cursor-pointer tw-rounded-tr-2xl tw-rounded-br-2xl
+
+  &:hover
+    @apply tw-bg-orange-500

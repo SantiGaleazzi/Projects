@@ -1,0 +1,34 @@
+.resources-filter
+
+    &.is-open
+
+        .option-selected
+
+            .option-icon
+                @apply rotate-180
+
+        .options-available
+            max-height: 1000px
+            @apply opacity-100 visible
+
+    .option-selected
+
+        .option-icon
+            @apply transition-transform transform rotate-0 duration-200 ease-in-out
+
+    .options-available
+        max-height: 0px
+        @apply w-full opacity-0 invisible transition-all duration-200 ease-in-out
+
+        [type="radio"]
+            @apply relative grid place-content-center
+
+            &:checked
+
+                &::before
+                    @apply scale-100
+
+            &::before
+                content: '\f00c'
+                font-family: 'Font Awesome 5 Free'
+                @apply w-4 h-4 text-sm text-white font-bold absolute top-0 left-0 transition-all transform scale-0 duration-200 ease-in-out

@@ -1,0 +1,640 @@
+body.error404
+
+	.header-navigation
+
+		.trp-ls-shortcode-current-language
+			background-image: url(../images/chevron-down.png) !important
+
+			a
+				@apply text-blue-500
+
+.main-container
+	max-width: 1285px
+	padding: 0px 20px
+	@apply mx-auto
+
+.header-navigation
+	.trp-ls-shortcode-current-language
+		border-right: 0
+		border-left: 0
+		border-top: 0
+		border-bottom: 0
+		@apply bg-transparent text-white font-noto-sans-bold #{!important}
+
+	.trp-ls-shortcode-language
+		background-image: url(../images/chevron-down.png) !important
+		background-size: 9px
+		background-position: calc(100% - 8px) calc(12px + 0px), calc(100% - 3px) calc(1em + 0px)
+		@apply bg-transparent border-none text-white font-noto-sans-bold #{!important}
+
+		&:hover
+			@apply bg-white #{!important}
+		&:active
+			@apply bg-white #{!important}
+		a
+			@apply text-blue-500 py-1 font-noto-sans-bold #{!important}
+
+	.trp-language-switcher
+		a
+			@apply bg-transparent no-underline #{!important}
+
+.header-navigation
+	.ld-login-button
+		width: 160px !important
+		@apply rounded-none bg-blue-600 text-base font-noto-cond-bold text-lg text-center py-3 leading-none inline-block #{!important}
+
+		span
+			@apply hidden
+
+.sup-heading
+	sup
+		top: -0.7em
+		@apply text-5xl
+
+.banner-image
+	max-width: 490px
+	height: auto
+	@apply overflow-hidden
+
+.remove-underline
+	a
+		@apply no-underline
+
+.header-navigation
+	.trp-ls-shortcode-current-language
+		background-image: url(../images/white-chevron-down.png) !important
+		background-size: 9px
+		background-position: calc(100% - 8px) calc(12px + 0px), calc(100% - 3px) calc(1em + 0px)
+		max-width: 85px
+		@apply mr-5
+
+		a
+			@apply text-white
+
+.w-300
+	width: 300px
+
+.max-w-400
+	max-width: 400px
+
+.dialog-after
+	height: 35px
+	bottom: -12px
+	transition: linear 0.1s all
+	&::before
+		content: ""
+		border-left: 16px solid transparent
+		border-right: 16px solid transparent
+		border-top: 18px solid #53c3cd
+		clear: both
+		left: calc(50% - 16px)
+		bottom: -18px
+		@apply absolute w-0 h-0
+
+.navy-dialog-after
+	height: 35px
+	bottom: -12px
+	transition: linear 0.1s all
+	&::before
+		content: ""
+		border-left: 16px solid transparent
+		border-right: 16px solid transparent
+		border-top: 18px solid #194c75
+		clear: both
+		left: calc(50% - 16px)
+		bottom: -18px
+		@apply absolute w-0 h-0
+
+.w-300:hover .dialog-after
+	bottom: -28px
+	transition: linear 0.1s all
+
+.hightlights-card:nth-child(3)
+	p
+		@apply px-8
+
+.max-w-620
+	max-width: 520px
+
+.yellow-login
+	.ld-login-button
+		width: 160px !important
+		@apply rounded-none bg-yellow-500 text-base font-noto-cond-bold text-lg text-center py-3 leading-none inline-block #{!important}
+		span
+			@apply hidden
+
+.logo-images
+	img
+		max-height: 90px
+
+.transparent-style
+	.trp-ls-shortcode-current-language
+		border: 0
+		@apply bg-transparent text-white
+
+.transparent-style
+	.trp-ls-shortcode-current-language
+		background-image: url(../images/white-chevron-down.png) !important
+		background-size: 9px
+		background-position: calc(100% - 8px) calc(12px + 0px), calc(100% - 3px) calc(1em + 0px)
+		max-width: 85px
+		@apply mr-5
+
+		a
+			@apply text-white font-helvetica-neue
+
+.transparent-style
+	.ld-login-button
+		width: 100px !important
+		@apply rounded-none bg-transparent text-base font-normal font-helvetica-neue text-base text-center py-3 leading-none inline-block #{!important}
+		span
+			@apply hidden
+
+.divider-footer
+	width: 1px
+	height: 40px
+	@apply bg-white
+
+.bg-banner
+	@apply bg-teal-400
+
+.header-logo
+	max-width: 120px !important
+
+.triangle-left-side
+	width: 0
+	height: 0
+	border-top: 20vw solid transparent
+	border-right: 20vw solid transparent
+	border-left: 20vw solid #FAB216
+	border-bottom: 11vw solid #FAB216
+	transform: rotate(-10deg)
+	left: -10px
+	bottom: -44px
+	@apply absolute
+
+.triangle-bottom-yellow
+	width: 0
+	height: 0
+	border-right: 200vw solid #FAB216
+	border-top: 10vw solid transparent
+	border-bottom: 10vw solid transparent
+	position: absolute
+	bottom: 7.6vw
+	right: -100px
+	transform: rotate(-15.2deg)
+
+.triangle-bottom-yellow-left
+	width: 0
+	height: 0
+	border-left: 146vw solid #FAB216
+	border-top: 4vw solid transparent
+	border-bottom: 2vw solid transparent
+	position: absolute
+	bottom: 13vw
+	left: -100px
+	transform: rotate(-15deg)
+	@apply hidden
+
+.triangle-bottom-orange
+	width: 0
+	height: 0
+	border-right: 170vw solid #EE5235
+	border-top: 6vw solid transparent
+	border-bottom: 5vw solid transparent
+	position: absolute
+	bottom: 9.5vw
+	right: -100px
+	transform: rotate(-11.6deg)
+
+.triangle-bottom-purple
+	width: 0
+	height: 0
+	border-right: 155vw solid #512462
+	border-top: 6vw solid transparent
+	border-bottom: 6vw solid transparent
+	position: absolute
+	bottom: 6vw
+	right: -100px
+	transform: rotate(-9deg)
+
+.triangle-bottom-white
+	width: 0
+	height: 0
+	border-right: 150vw solid #4387C3
+	border-top: 12vw solid transparent
+	border-bottom: 11vw solid transparent
+	position: absolute
+	bottom: -7vw
+	right: -100px
+	transform: rotate(-3deg)
+	&::after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-left: 8vw solid #FAB216
+		border-top: 6vw solid transparent
+		border-bottom: 6vw solid transparent
+		left: 67vw
+		bottom: 8vw
+		transform: rotate(-28deg)
+		z-index: 100000
+	&::before
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-left: 8vw solid #EE5235
+		border-top: 6vw solid transparent
+		border-bottom: 6vw solid transparent
+		left: 75.3vw
+		bottom: 5vw
+		transform: rotate(-28deg)
+		z-index: 100000
+
+.grainy-bg
+	background-image: url(../images/grainy-background.png)
+	@apply w-full h-full absolute top-0 left-0
+
+.button-animation
+	transition: all .08s ease-in 0s
+	&:hover
+		transition: all .08s ease-in 0s
+		transform: translate(3px, -3px)
+		border-left: 4px solid #FAB216
+		border-bottom: 4px solid #FAB216
+		box-shadow: -3px 6px 0px #EE5235
+	&:active
+		@apply bg-orange-500
+	&:disabled
+		background-color: #E6E6E6
+
+.yellow-button-animation
+	transition: all .08s ease-in 0s
+	&:hover
+		transition: all .08s ease-in 0s
+		transform: translate(3px, -3px)
+		border-left: 4px solid #EE5235
+		border-bottom: 4px solid #EE5235
+		box-shadow: -3px 6px 0px #512462
+	&:active
+		@apply bg-orange-500
+	&:disabled
+		background-color: #E6E6E6
+
+.max-w-930
+	max-width: 970px
+	padding: 0px 20px
+
+.get-help-widget
+	z-index: 100
+	bottom: 30px
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16)
+	@apply rounded
+
+.form-widget
+	z-index: 10000
+	max-width: 412px
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+	bottom: calc(34vh - 147px)
+	right: -500px
+	transition: all 0.5s ease-in 0s
+.widget-heading
+	@apply relative
+	&::after
+		content: ""
+		width: 8px
+		height: 8px
+		border-bottom: 2px solid
+		border-right: 2px solid
+		transform: rotate(45deg)
+		top: 20px
+		right: 24px
+		@apply text-white absolute
+
+.show-form-widget
+	right: 0px
+	transition: all 0.5s ease-in 0s
+
+.show-form-confirmation-widget
+	right: 0px
+	transition: all 0.5s ease-in 0s
+	bottom: calc(47vh - 147px)
+
+.platform-nav
+	li
+		padding: 13px 20px
+		transition: all .08s ease-in 0s
+		border-bottom: 1px solid rgba(76, 135, 190, 0.5)
+		@apply list-none text-white font-noto-cond-bold text-left no-underline
+
+		&:last-child
+			border: none
+
+		a
+			@apply no-underline text-base
+
+.menu-shape
+	&::after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-left: 50vw solid #fab216
+		border-top: 0vw solid transparent
+		border-bottom: 10px solid transparent
+		left: 0px
+		bottom: -10px
+
+.platform-nav
+	.button-animation
+		&:hover
+			transform: translate(0px, 0px)
+			border: none
+			box-shadow: none
+
+.coach-menu
+	max-width: 1120px
+	@apply mx-auto
+
+.student-menu
+	max-width: 930px
+	@apply mx-auto
+
+.max-w-490
+	max-width: 490px
+
+.max-w-390
+	max-width: 390px
+
+.max-w-446
+	max-width: 446px
+
+.mobile-menu
+	top: -600px
+	@apply transition-all duration-100 ease-in-out
+
+.show-mobile-menu
+	top: 90px
+	transition: all .2s ease-in 0s
+	@apply block #{!important}
+
+.close-login-lightbox
+	width: 22px
+	height: 22px
+	top: 15px
+	right: 15px
+	@apply absolute cursor-pointer
+
+	&::before
+		content: ''
+		width: 2px
+		transform: rotate(-43deg)
+		@apply h-full bg-white absolute
+
+	&::after
+		content: ''
+		width: 2px
+		transform: rotate(43deg)
+		@apply h-full bg-white absolute
+
+.nav-shape
+	&::after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-left: 85vw solid #512462
+		border-bottom: 20px solid transparent
+		border-top: 0px solid transparent
+		left: 0px
+		bottom: -20px
+
+.error404
+	nav
+		@apply bg-yellow-100
+
+.error404.logged-in
+	nav
+		@apply bg-blue-400
+
+.z-100
+	z-index: 100
+
+.footer-section
+	&::before
+		content: ""
+		border-right: 70vw solid #90d4da
+		border-top: 22px solid transparent
+		border-bottom: 0px solid transparent
+		top: -22px
+		@apply w-0 h-0 absolute right-0
+
+	&::after
+		content: ""
+		border-right: 70vw solid #ee5235
+		border-top: 22px solid transparent
+		border-bottom: 0px solid transparent
+		@apply w-0 h-0 absolute right-0 bottom-0
+
+.list-styles
+	ul
+		@apply list-disc mb-7 pl-3
+		li
+			@apply pl-2
+			&::marker
+				@apply text-white text-sm
+
+.home-text-styles
+	a
+		@apply underline
+	p
+		@apply mb-7
+
+.home-prev, .home-next
+	width: 40px
+	height: 40px
+	@apply mx-4 text-white
+
+.home-prev
+	&::after
+		content: 'prev'
+		font-family: swiper-icons
+		font-size: var(--swiper-navigation-size)
+		text-transform: none !important
+		letter-spacing: 0
+		font-variant: initial
+		line-height: 1
+		@apply text-2xl cursor-pointer
+
+.home-next
+	&::after
+		content: 'next'
+		font-family: swiper-icons
+		font-size: var(--swiper-navigation-size)
+		text-transform: none !important
+		letter-spacing: 0
+		font-variant: initial
+		line-height: 1
+		@apply text-2xl cursor-pointer
+
+@screen md
+	.header-navigation
+		.trp-ls-shortcode-current-language
+			border-right: 1px solid #4C295F
+			background-position: calc(100% - 12px) 16px, calc(100% - 3px) calc(1em + 0px)
+			@apply rounded-none
+
+	.header-logo
+		max-width: 100px !important
+
+	.triangle-left-side
+		border-top: 11vw solid transparent
+		border-right: 11vw solid transparent
+		border-left: 11vw solid #FAB216
+		border-bottom: 11vw solid #FAB216
+		transform: rotate(-10deg)
+		left: -40px
+		bottom: -44px
+
+	.platform-nav
+		li
+			margin: 0px 3px 10px
+			padding: 10px 20px
+			@apply text-center text-base transition-all duration-150 ease-in-out relative
+
+			&:hover
+				@apply text-lms-mustard-500
+
+				&::after
+					@apply bg-lms-mustard-500
+
+			&::after
+				content: ""
+				@apply w-full h-1 absolute -bottom-1 left-0
+
+	.platform-language
+		.trp-ls-shortcode-current-language
+			border-right: 1px solid #FFFFFF !important
+			background-position: calc(100% - 12px) 12px, calc(100% - 3px) calc(1em + 0px)
+			background-image: url(../images/white-chevron-down.png) !important
+			@apply rounded-none
+			a
+				@apply text-white #{!important}
+
+	.coach-menu
+		li
+			padding: 0px 10px !important
+	nav
+		.current-menu-item
+			transition: all .08s ease-in 0s
+			@apply text-lms-mustard-500
+
+			&::after
+				@apply bg-lms-mustard-300
+
+	.menu-shape
+		&::after
+			border-bottom: 30px solid transparent
+			bottom: -30px
+
+	.mobile-menu
+		top: 0px
+		transition: all .2s ease-in 0s
+
+	.triangle-bottom-yellow-left
+		@apply block
+
+	.banner-image
+		max-width: 490px
+		height: 600px
+
+	.triangle-bottom-yellow
+		border-right: 120vw solid #FAB216
+		border-top: 3vw solid transparent
+		border-bottom: 6vw solid transparent
+		bottom: 7.6vw
+		right: -100px
+		transform: rotate(-14.2deg)
+
+	.triangle-bottom-orange
+		border-right: 114vw solid #EE5235
+		border-top: 1.2vw solid transparent
+		border-bottom: 1.5vw solid transparent
+		bottom: 9.5vw
+		right: -100px
+		transform: rotate(-11.6deg)
+
+	.triangle-bottom-purple
+		border-right: 113vw solid #512462
+		border-top: 2vw solid transparent
+		border-bottom: 2vw solid transparent
+		bottom: 7.4vw
+		right: -100px
+		transform: rotate(-10deg)
+
+	.triangle-bottom-white
+		border-right: 110vw solid #4387C3
+		border-top: 9.4vw solid transparent
+		border-bottom: 9.3vw solid transparent
+		bottom: -5.3vw
+		right: -100px
+		transform: rotate(-4.2deg)
+		&::after
+			border-left: 4vw solid #FAB216
+			border-top: 2vw solid transparent
+			border-bottom: 3vw solid transparent
+			left: 47.4vw
+			bottom: 4vw
+			transform: rotate(-28deg)
+
+		&::before
+			border-left: 4vw solid #EE5235
+			border-top: 2vw solid transparent
+			border-bottom: 3vw solid transparent
+			left: 51.3vw
+			bottom: 3vw
+			transform: rotate(-28deg)
+
+	.student-menu
+
+		li
+			padding: 5px 0px !important
+			margin: 0px 11px !important
+
+	.get-help-widget
+		bottom: calc(50vh - 30px)
+
+@screen lg
+	.bg-banner
+		background-image: url(../images/banner-shape-background.png)
+		@apply bg-transparent
+
+	.hightlights-card:nth-child(even)
+		@apply flex-row-reverse
+
+	.max-w-620
+		max-width: 620px
+	.platform-nav
+		li
+			padding: 0px 4px !important
+	.banner-image
+		max-width: 590px
+		height: 700px
+	.triangle-bottom-yellow-left
+		bottom: 15vw
+
+	.header-logo
+		max-width: 175px !important
+
+	.student-menu
+		li
+			padding: 5px 0px !important
+			margin: 0px 12px !important
+
+@screen xl
+	.platform-nav
+		li
+			padding: 5px 0px !important
+			margin: 0px 18px !important

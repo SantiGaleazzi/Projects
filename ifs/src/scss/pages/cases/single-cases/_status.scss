@@ -1,0 +1,24 @@
+$status-btn: '.casebtn';
+$color-appeal: #e19b13;
+$color-completed: #38a21c;
+
+%status{
+  border-radius: 0.4rem;
+  color: $white;
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.2rem 1.2rem;
+}
+
+#{$status-btn}{
+  &--status-current{
+    @extend %status;
+    background-color: $color-appeal;
+  }
+  
+  &--status-completed{
+    @extend %status;
+    background-color: $color-completed;
+  }
+}

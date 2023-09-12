@@ -1,0 +1,4 @@
+# This file ignores node_modules, .git by default
+assets
+vendor
+package-lock.json

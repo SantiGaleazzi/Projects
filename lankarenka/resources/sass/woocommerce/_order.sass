@@ -1,0 +1,151 @@
+// After Payment Page
+body.woocommerce-order-received
+
+    // Order Wrapper
+    .woocommerce-order
+        @apply px-6 py-12
+
+        // Title
+        &__title
+            @apply text-3xl text-default font-normal text-center mb-3
+
+        // Notices
+        p.woocommerce-notice
+            @apply text-base text-center text-gray-500
+
+        // Order Overview
+        ul.woocommerce-order-overview
+            @apply bg-white p-6 border-2 border-dashed border-purple-400 rounded-md my-6
+
+            li
+                @apply text-sm font-bold text-default
+
+                strong
+                    @apply font-normal text-gray-500 pl-1
+
+                // Email
+                &.email
+                    @apply mb-3
+                
+                // Total
+                &.total
+                    @apply text-xl font-normal text-default
+
+                // Method
+                &.method
+                    @apply text-sm
+        
+        p
+            @apply text-base #{!important}
+            @apply text-gray-500
+
+            strong
+                @apply text-xl text-default font-normal
+
+        // Order Details
+        .woocommerce-order-details
+            @apply mt-6
+
+            // Title
+            h2.woocommerce-order-details__title
+                @apply text-xl text-default mb-3
+
+            // Product Detail Table
+            table.woocommerce-table--order-details
+                @apply w-full bg-white rounded-none overflow-hidden mb-8 border-collapse border-none
+
+                // Form Head
+                thead
+                    @apply bg-gray-200
+
+                    tr
+                        @apply text-left text-sm text-default px-5 py-2 flex items-center justify-between
+
+                        th
+                            @apply font-normal
+
+                // Form Body
+                tbody
+
+                    tr
+                        @apply text-left text-sm flex items-center justify-between px-5 py-2 border-b border-l border-r border-gray-300
+
+                        td
+
+                            strong.product-quantity
+                                @apply font-normal text-gray-500  inline-block mr-3
+
+                            &.product-name
+                                @apply flex flex-row-reverse truncate pl-2
+
+                // Form Footer
+                tfoot
+
+                    tr.order-subtotal
+                        @apply text-sm flex items-center justify-between px-5 py-2 border-b border-l border-r border-gray-300
+
+                        th
+                            @apply text-default font-normal
+
+                    tr.order-payment
+                        @apply text-sm flex items-center justify-between px-5 py-2 border-b border-l border-r border-gray-300
+
+                        th
+                            @apply text-default font-normal
+
+                        td
+                            @apply text-gray-500 font-normal
+
+                    tr.order-total
+                        @apply text-base flex items-center justify-between px-5 py-2 border-b border-l border-r border-gray-300
+
+                        th,
+                        td
+                            @apply text-default font-normal
+
+                            strong
+                                @apply font-bold
+
+                    tr.order-note
+                        @apply  text-left flex flex-col px-5 py-4 bg-purple-500
+
+                        th
+                            @apply text-sm text-purple-100 font-bold
+
+                        td
+                            @apply text-xs text-purple-100 font-normal
+
+                            strong
+                                @apply font-bold
+
+        // Customer Details
+        .woocommerce-customer-details
+            @apply bg-gray-100 #{!important}
+            @apply px-6 py-5 rounded-none
+            
+            // Title
+            h2.woocommerce-column__title
+                @apply text-xl text-default mb-3
+
+            address
+                @apply text-sm text-gray-500 not-italic
+
+                p
+                    @apply text-default
+
+            // If Shipping address is provided
+            .addresses
+                @apply flex flex-col
+
+                .woocommerce-column--billing-address
+                    @apply mb-5
+
+@screen sm
+    body.woocommerce-order-received
+
+        // Customer Details
+        .woocommerce-customer-details
+
+            // If Shipping address is provided
+            .addresses
+                @apply flex-row justify-center

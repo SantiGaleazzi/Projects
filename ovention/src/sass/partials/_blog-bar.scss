@@ -1,0 +1,96 @@
+$block: '.blog-bar';
+#{$block}{
+	background-color: $orange;
+	&__content{
+		background-image: url(../img/blog-bg.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding:2rem 0;
+		h2{
+			font-size:3.7rem;
+			color: $white;
+			@include breakpoint(small down){
+				text-align:center;
+				font-size:3rem;
+			}
+		}
+		p{
+			font-size:1.8rem;
+			color: $white;
+			line-height:1.8rem;
+			font-weight:300;
+			@media (max-width:767px){
+				text-align:center;
+				font-size:1.4rem;
+			}
+		}
+		@include breakpoint(medium down){
+			background-position: -7.5rem center;
+		}
+		@include breakpoint(small down){
+			background-image:none;
+
+		}
+	}
+	&__button{
+		font-size:1.7rem;
+		line-height:5rem;
+		margin-top: 1.5rem;
+		float:right;
+		@include breakpoint(medium down){
+			width: 100%;
+		}
+		@include breakpoint(small down){
+			float:none;
+			margin: 2rem auto 0;
+
+		}
+	}
+}
+$repre: '.repre-bar';
+#{$repre}{
+	background-image: url(../img/representatives_bg.jpg);
+	background-position: center;
+	&__content{
+		padding:3rem 1rem;
+	}
+	&__button{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		font-size:3rem;
+		text-align: center;
+		color: #fff;
+		max-width: 60rem;
+		border:2px solid #ff892c;
+		border-left: 0;
+		border-radius:5px;
+		line-height: 6.5rem;
+		@include breakpoint(small down){
+			line-height: 2rem;
+		    font-size: 1.5rem;
+		    max-width: 40rem;
+		    padding: 1rem 8rem;
+		}
+		@media screen and (max-width: 420px) {
+			border-left: 2px solid #ff892c;
+		}
+		img{
+			position: absolute;
+		    top: 2px;
+		    left: -27px;
+		    @media screen and (max-width: 420px) {
+				display: none;
+			}
+		}
+		&:hover{
+			color: #fff;
+		}
+		&:active{
+			color: #fff;
+		}
+		&:link{
+			color: #fff;
+		}
+	}
+}

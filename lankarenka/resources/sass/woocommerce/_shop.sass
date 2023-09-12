@@ -1,0 +1,151 @@
+#lankarenka
+    @apply relative
+
+    // Product Page Header
+    header.woocommerce-products-header
+        @apply text-left h-auto px-6 py-12
+
+        h1.page-title
+            @apply text-3xl text-purple-600 font-medium
+
+    // Product Count
+    .woocommerce-result-count
+        @apply text-xs tracking-wider pr-4 uppercase font-medium
+
+
+    // Products
+    ul.products
+        @apply px-3 pt-0 flex flex-wrap
+
+        li.product
+            @apply w-1/2 text-center px-3 my-4 opacity-0 invisible transition-all duration-500 ease-in-out relative
+
+            &.animating
+                @apply opacity-100 visible
+            
+            // Product Link Container
+            a.woocommerce-loop-product__link
+                @apply block relative overflow-hidden
+
+                &:hover
+
+                    // Product Image
+                    .product-image
+
+                        img.attachment-woocommerce_thumbnail
+                            transform: scale(1.1)
+                            -webkit-transform: scale(1.1)
+                
+                // Product On Sale Badge
+                span.onsale
+                    @apply text-xs text-purple-100 font-medium leading-none tracking-wider px-3 py-2 bg-purple-500 rounded flex items-center justify-center uppercase transition-all duration-200 ease-in-out absolute top-4 left-4 z-10
+
+                    &:hover
+                        @apply bg-purple-600
+
+                // Product Image
+                .product-image
+                    @apply relative overflow-hidden transition duration-200 ease-in-out
+
+                    img.attachment-woocommerce_thumbnail
+                        @apply w-full h-full transform transition duration-200 ease-in-out object-cover rounded block
+
+                // Product Name
+                h2.woocommerce-loop-product__title
+                    @apply  text-sm font-medium transition duration-200 ease-in-out truncate mt-4
+
+            // Add to Cart Button
+            a.add_to_cart_button,
+            a.product_type_grouped
+                @apply text-xs text-purple-100 px-5 py-2 bg-purple-500 rounded transition-all duration-500 ease-in-out my-2 inline-block
+
+                &:hover
+                    @apply bg-purple-600
+            
+            // Product added to Cart
+            a.added_to_cart
+                @apply text-xs text-white px-6 py-2 bg-gray-400 rounded transition-all duration-500 ease-in-out inline-block capitalize
+                
+                &:hover
+                    @apply bg-gray-500
+
+    // Product Navigation
+    nav.woocommerce-pagination
+        @apply my-8
+
+        ul.page-numbers
+            @apply flex items-center justify-center
+
+            li
+                @apply inline-block
+
+                span.current
+                    @apply text-purple-500 font-medium leading-none px-1 py-2 inline-block relative mr-1
+
+                a
+                    @apply font-medium px-1 py-2 leading-none rounded inline-block transition duration-200 ease-in-out mx-1
+
+                    &.next
+                        @apply font-medium px-3 relative mx-0 relative
+
+                        &::after
+                            content: '\f054'
+                            font-family: 'Font Awesome 5 Free'
+                            @apply text-sm absolute font-bold top-2 -right-2
+                            
+                    &.prev
+                        @apply font-medium px-3 relative mx-0 relative
+
+                        &::before
+                            content: '\f053'
+                            font-family: 'Font Awesome 5 Free'
+                            @apply text-sm absolute font-bold top-2 -left-2
+
+                    &:hover
+                        @apply text-purple-500
+
+@screen sm
+
+    #lankarenka
+
+        // Product Page Header
+        header.woocommerce-products-header
+            @apply px-0 py-12
+
+            h1.page-title
+                @apply text-4xl
+
+        // Products
+        ul.products
+            @apply px-0
+
+            li.product
+
+                // Product added to Cart
+                a.added_to_cart
+                    @apply ml-2
+
+@screen md
+
+    #lankarenka
+
+        // Product Count
+        .woocommerce-result-count
+            @apply mb-0
+
+        // Products
+        ul.products
+            @apply py-0
+
+            li.product
+                @apply w-1/3
+
+@screen lg
+
+    #lankarenka
+
+        // Products
+        ul.products
+
+            li.product
+                @apply w-1/4

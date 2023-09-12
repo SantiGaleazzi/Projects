@@ -1,0 +1,29 @@
+.hamburger
+  @apply w-6 h-6 flex items-center justify-end cursor-pointer relative
+  @screen md
+    @apply hidden
+
+  &.open
+
+    .hamburger-box
+      @apply w-0 bg-transparent
+
+      &::before
+        @apply translate-y-0 -rotate-45
+
+      &::after
+        @apply w-full translate-y-0 rotate-45
+
+  .hamburger-box
+    @apply w-3/4 h-1 bg-white rounded-full transition-all duration-200 ease-in-out
+
+    &::before,
+    &::after
+      content: ""
+      @apply h-1 bg-white rounded-full absolute right-0 transition-transform transform duration-200 ease-in-out
+
+    &::before
+      @apply w-full -translate-y-2
+
+    &::after
+      @apply w-1/2 translate-y-2

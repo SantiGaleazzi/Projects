@@ -1,0 +1,61 @@
+.gform_wrapper
+
+  .gform_validation_errors
+    @apply tw-hidden
+
+  form
+
+    .gform_body
+
+      .gform_fields
+
+        &.gfield_error
+
+          input[type="text"],
+          input[type="email"]
+            @apply tw-border-red-500
+
+        .gfield
+
+          input[type="text"],
+          input[type="email"],
+          textarea
+            @apply tw-leading-none tw-p-4 tw-rounded-none tw-border-none tw-placeholder-gray-100 #{!important}
+
+          .validation_message
+            @apply tw-text-red-500 tw-px-4 tw-py-2 tw-bg-red-50 tw-border-none
+
+    .gform_footer
+
+      input[type="submit"]
+        @apply tw-capitalize tw-font-bold tw-py-4 tw-bg-orange-800 tw-rounded-none tw-mb-0 #{!important}
+
+#gform_wrapper_20
+
+  form
+    @screen sm
+      @apply tw-flex tw-items-start tw-gap-4
+    @screen md
+      @apply tw-max-w-md
+
+    .gform_body
+      @apply tw-w-full tw-flex-1 tw-mb-4
+      @screen sm
+        @apply tw-mb-0
+
+      .gform_fields
+
+        .gfield
+
+          input[type="text"],
+          input[type="email"],
+          textarea
+            @apply tw-bg-white #{!important}
+
+    .gform_footer
+      @apply tw-w-auto tw-float-none tw-py-0 tw-my-0 #{!important}
+
+      input[type="submit"]
+        @apply tw-w-full tw-leading-none
+        @screen sm
+          @apply tw-w-auto

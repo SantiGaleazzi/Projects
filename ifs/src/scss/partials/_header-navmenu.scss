@@ -1,0 +1,170 @@
+$block-navmenu: '.navmenu';
+
+.header-navmenu{
+	background-color: $secondary-color;
+	&.sticky{
+		&.is-stuck{    
+		  -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		  animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+		  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+		  box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);  
+		  .svglogo{
+		  	display: block;
+		  }
+		}  
+	}
+	&__logo{
+		padding-top: 1rem;
+		.svglogo{
+			width: 15rem;
+			height: 4rem;
+			display: none;
+		}
+	}
+
+	&.overlay{
+		background: -moz-linear-gradient(-45deg, rgba(22,33,73,0.92) 0%, rgba(22,33,73,0.92) 100%); 
+		background: -webkit-linear-gradient(-45deg, rgba(22,33,73,0.92) 0%,rgba(22,33,73,0.92) 100%);
+		background: linear-gradient(135deg, rgba(22,33,73,0.92) 0%,rgba(22,33,73,0.92) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb162149', endColorstr='#eb162149',GradientType=1 );
+	} 
+}
+
+
+#{$block-navmenu}{
+	background-color: transparent;
+	text-align: right;  
+	position: relative;
+
+	&__secondary{
+		text-align: right;
+		display: inline-block;
+		margin: 0;
+		z-index: 8;
+		right: 5.4rem; 
+		li {
+			display: inline-block;
+			position: relative;
+			a {
+				color: $white;
+				display: inline-block;
+				font:{
+					family: $font-neuton;
+					size: 2.2rem;
+					weight: 700;
+				}
+				line-height: 1;
+				padding: 1.6rem 1rem 2.1rem; 
+				
+				@include breakpoint(large down){
+					font-size: 1.8rem;
+					padding: 2.1rem 1.4rem;
+				}    
+				
+				@include breakpoint(medium down){
+					width: 100%;
+				}
+
+				&.donation-btn {
+					padding-left: 2.5rem;
+					padding-right: 2.5rem;
+				}
+			}
+			&.divider{
+				margin-right: 2.8rem;
+				&:after{
+					content: '';
+					position: absolute;
+					right: -1.4rem;
+					top: 1.8rem;
+					background: $white;
+					height: 2rem;
+					width: 1px; 
+					@include breakpoint(large down){
+						top: 2rem;
+					}
+					@include breakpoint(small only){
+						left: calc(50% - 1rem);
+						right: 0;
+						top: 0;
+						bottom: 0;
+						height: 1px;
+						width: 2rem;
+					} 
+				}        
+			}
+			@include breakpoint(small only){
+				width: 100%;
+				text-align: center;
+				display: block;
+			}
+		}
+		
+		@include breakpoint(large down){
+
+		}
+		
+		@include breakpoint(medium down){
+			position: static;
+			 max-width: 100%;
+			 margin-top: 0;
+			 left: 0;
+			 text-align: center;
+			 right: 0;
+			 display: block;
+		}
+	}
+
+	.is-dropdown-submenu-parent.opens-right {
+		.is-dropdown-submenu {
+			background-color: $secondary-color;
+			position: absolute;
+			border: none;
+			right: 0;
+			left:0;
+			top: initial;
+			margin: 0;
+			min-width: auto;
+			z-index: 2;
+			li {
+				display: block;
+
+				a {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}
+
+.data-sticky-container{
+
+	.sticky {
+		z-index: 6;
+		transform:none;
+	}
+}
+
+.sticky-nav{
+	&.sticky{
+		position: fixed;
+		top: 0;
+		width: 100%; 
+		z-index: 6;
+		background-color: #1e3764;
+		-webkit-animation: slide-in-bck-center-2 0.7s linear;
+		animation: slide-in-bck-center-2 0.7s linear;
+		-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);  
+		.svglogo{
+			display: block;
+		}
+		@include breakpoint(small down){
+			position: relative;
+		} 
+	}
+
+}

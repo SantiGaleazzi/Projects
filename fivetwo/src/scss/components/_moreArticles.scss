@@ -1,0 +1,46 @@
+$block: '.moreArticles';
+
+#{$block}{
+    margin-bottom: 4rem;
+    
+    &__wrapper {
+        background-color: $lightest-blue;
+        border-radius: 5px;
+        @include breakpoint(medium down) {
+            width: 29.2rem;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        font-family: $header-font-family;
+        font-size: 2.1rem;
+        font-weight: bold;
+        margin-bottom: .6rem;
+        @include breakpoint(medium down) {
+            text-align: center;
+        }
+    }
+    &__article {
+        padding: 3rem 1.5rem;
+        border-bottom: 1px solid #b5d1db;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__link {
+        color: $dark-blue;
+        display: block;
+        font-family: $header-font-family;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    &__date {
+        color: $light-blue;
+        font-family: $header-font-family;
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+    @include breakpoint(medium down) {
+        margin-top: 2rem;
+    }
+}

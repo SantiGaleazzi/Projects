@@ -1,0 +1,21 @@
+.series-season-dropdown
+
+    &.is-open
+
+        .season-selected
+
+            .season-icon
+                @apply rotate-180
+
+        .seasons-available
+            max-height: 1000px
+            @apply opacity-100 visible
+
+    .season-selected
+
+        .season-icon
+            @apply transition-transform transform rotate-0 duration-200 ease-in-out
+
+    .seasons-available
+        max-height: 0px
+        @apply w-full opacity-0 invisible transition-all duration-200 ease-in-out

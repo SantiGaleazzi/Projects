@@ -1,0 +1,43 @@
+
+@import ~leaflet/dist/leaflet
+
+.js-map
+  height: 600px
+  @screen md
+    height: 666px
+
+.leaflet-popup
+
+  &.tip-top-left
+    .leaflet-popup-tip-container
+      @apply -tw-top-4 tw-left-0 tw-rotate-180 tw-ml-0
+
+  &.tip-top-center
+    .leaflet-popup-tip-container
+      @apply -tw-top-4 tw-rotate-180
+
+  &.tip-top-right
+    .leaflet-popup-tip-container
+      @apply -tw-top-4 tw-right-0 tw-left-auto tw-rotate-180 tw-ml-0
+
+  &.tip-bottom-left
+    .leaflet-popup-tip-container
+      @apply tw-left-0 tw-ml-0
+
+  &.tip-bottom-right
+    .leaflet-popup-tip-container
+      @apply tw-right-0 tw-left-auto tw-ml-0
+
+  .leaflet-popup-content-wrapper
+    @apply tw-bg-blue-500 tw-rounded-none tw-shadow-none
+
+    .leaflet-popup-content
+      @apply tw-m-2
+
+      a
+        @apply tw-text-white tw-no-underline
+
+  .leaflet-popup-tip-container
+
+    .leaflet-popup-tip
+      @apply tw-bg-blue-500 tw-shadow-none

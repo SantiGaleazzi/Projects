@@ -1,0 +1,129 @@
+// Product Info
+.woocommerce-tabs
+    @apply p-6 bg-gray-100 rounded-md mt-8
+
+    ul.tabs
+        @apply overflow-x-scroll whitespace-no-wrap
+
+        li
+            @apply w-auto text-sm font-medium pb-3 inline-block mr-4
+
+            &.active
+                @apply font-semibold rounded relative
+                &::after
+                    content: ''
+                    height: 3px
+                    @apply w-full bg-purple-500 absolute left-0 bottom-0
+
+
+    .woocommerce-Tabs-panel
+        @apply text-gray-500 pt-6
+
+        h2
+            @apply hidden
+
+        p
+            @apply text-sm
+
+        // Product Reviews
+        .woocommerce-Reviews
+
+            // Comments
+            #comments
+
+                p.woocommerce-noreviews
+                    @apply text-xs text-center text-purple-100 px-4 py-3 bg-purple-500 rounded mb-4
+
+            // Reviews Form Wrapper
+            #review_form_wrapper
+
+                span.comment-reply-title
+                    @apply text-purple-500 mb-3
+
+                // Form
+                form.comment-form
+                    @apply w-full
+
+                    // Global
+                    label
+                        @apply text-sm mb-1
+
+                    // Global 
+                    input[type="text"],
+                    input[type="email"],
+                    textarea
+                        @apply text-sm text-purple-500 px-4 py-2 bg-white border-2 border-transparent rounded transition duration-300 ease-in-out
+
+                        &:focus
+                            @apply border-purple-500
+
+                    p.comment-notes
+                        @apply text-xs mb-4
+
+                        span#email-notes
+                            @apply block
+
+                    // Ratting
+                    .comment-form-rating
+                        @apply mb-4
+
+                        label
+                            @apply text-xl text-purple-500
+
+                        p.stars
+
+                            a
+                                @apply text-transparent px-2 relative inline-block mr-1
+
+                                &:hover::before,
+                                &.active::before
+                                    @apply text-yellow-400
+
+                                &::before
+                                    content: '\f005'
+                                    font-family: 'Font Awesome 5 Free'
+                                    @apply text-base text-gray-400 font-bold absolute top-0 left-1 transition duration-300 ease-in-out
+
+                    // Comment
+                    .comment-form-comment
+                        @apply flex flex-col mb-4
+
+                        textarea
+                            @apply h-24 p-3 border-2 border-gray-300 resize-none
+
+                    // Name
+                    .comment-form-author
+                        @apply flex flex-col mb-4
+
+                    // Email
+                    .comment-form-email
+                        @apply flex flex-col mb-4
+
+                    // Cookies
+                    .comment-form-cookies-consent
+                        @apply text-sm mb-3
+
+                    // Submit
+                    .form-submit
+                        @apply flex justify-end
+
+@screen sm
+
+    // Product Info
+    .woocommerce-tabs
+        @apply mt-16
+
+        ul.tabs
+            @apply overflow-auto
+
+        .woocommerce-Tabs-panel
+
+            // Product Reviews
+            .woocommerce-Reviews
+
+                // Reviews Form Wrapper
+                #review_form_wrapper
+
+                    // Form
+                    form.comment-form
+                        @apply max-w-xs

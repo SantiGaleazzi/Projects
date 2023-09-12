@@ -1,0 +1,89 @@
+$block: '.singlePage';
+
+#{$block}{
+    padding: 2rem 0 3.5rem;
+    &__title {
+       @include title;
+    }
+    &__content {
+        padding-right: 6.5rem;
+        h5 {
+            @include subtitle;
+            padding: 1rem 0;
+        }
+        p {
+            color: #000000;
+            margin-bottom: 2rem;
+        }
+        .wp-block-image {
+            @include breakpoint(medium down) {
+                text-align: center;
+            }
+        }
+        @include breakpoint(medium down) {
+            padding-right: 0rem;
+        }
+    }
+    &__back {
+        margin-top: 3rem;
+        a {
+            font-family: $header-font-family;
+            font-size: 1.8rem;
+        }
+    }
+    &__meta {
+        padding-right: 8rem;
+        max-width: 100%;
+        padding-bottom: 1.2rem;
+        @include breakpoint(medium down) {
+            padding-right: 0rem;
+        }
+    }
+    &__date {
+        @include subtitle;
+        font-family: $header-font-family;
+        font-size: 1.6rem;
+    }
+    &__share {
+        color: $medium-gray;
+        font-family: $header-font-family;
+        font-size: 1.8rem;
+        width: 13.8rem;
+        .fab {
+            color: $dark-blue;
+        }
+    }
+
+    &__is-webinar {
+        margin-top: 2.5rem;
+        text-align: center;
+
+        a {
+            text-align: center;
+            color: #26466c;
+            font-size: 2rem;
+            line-height: 1;
+            padding: 1.5rem 4rem;
+            display: inline-block;
+            font-weight: bold;
+            font-family: 'PT Sans', sans-serif;
+            background: #ffac46;
+            border-radius: 999px;
+            background: -moz-linear-gradient(left,  #ffac46 0%, #e2ad5b 100%);
+            background: -webkit-linear-gradient(left,  #ffac46 0%,#e2ad5b 100%);
+            background: linear-gradient(to right,  #ffac46 0%,#e2ad5b 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac46', endColorstr='#e2ad5b',GradientType=1 );
+
+            &:hover {
+                color: inherit;
+            }
+
+            @include breakpoint(small down) {
+                width: 100%;
+                max-width: 31rem;
+                font-size: 1.6rem;
+                padding: 1.5rem 3.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$block: '.reveal';
+
+#{$block}{
+    border-top: 5px solid #da10c9;
+    overflow-y: visible;
+
+    @include breakpoint(small only) {
+        padding-top: 5rem;
+        overflow-y: inherit;
+    }
+
+}
+
+.close-button {
+    background-color: #001a38;
+    @include box(34px, 34px, true);
+    border: 2px solid $white;
+    @include breakpoint(small only) {
+        right: 0.66rem;
+        top: 0.33em;
+    }
+}

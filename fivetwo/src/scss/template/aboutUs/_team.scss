@@ -1,0 +1,133 @@
+$block: '.team';
+
+#{$block}{
+    padding: 3.3rem 0 7rem;
+    h2.title{
+        width: 100%;
+    }
+    &__wrapper {
+        padding-top: 3rem;
+    }
+    &__picture {
+        img {
+            border-radius: 25% 0% 25% 0%;
+        }
+        &-empty {
+            border-radius: 25% 0% 25% 0%;
+            background-color: $dark-blue;
+            @include box(170px, 170px, false);
+            @include breakpoint(medium down) {
+                margin: 0 auto;
+            }
+        }
+        @include breakpoint(medium down) {
+            text-align: center;
+        }
+    }
+    &__member {
+        width: 50%;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+
+        &-name {
+            line-height: 1;
+            @include breakpoint(medium down) {
+                margin-top: 1rem;
+            }
+        }
+
+        &-spot {
+            margin-top: 1px;
+
+            &.subtitle {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+
+        &-location {
+            margin-bottom: 10px;
+
+            &.title {
+                font-weight: normal !important;
+                font-style: italic;
+                margin-top: 0px !important;
+                font-size: 18px !important;
+                line-height: 20px !important;
+            }
+        }
+        &-read {
+            padding-top: 1rem;
+            .button, .button:hover {
+                color: $white;
+            }
+        }
+        &-full {
+            padding: 2rem;
+            @include breakpoint(medium down) {
+                padding: 1rem;
+            }
+        }
+        &-lightbox {
+            cursor: pointer;
+        }
+        @include breakpoint(small only) {
+            width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &__envelope {
+        width: 39.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+
+        p {
+            margin: .5rem 0 0;
+
+            span {
+                color: $light-blue;
+            }
+        }
+
+        &-full {
+            .title {
+                margin-top: 2rem;
+                font-size: 24px;
+                color: #001a38;
+                line-height: 26px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 18px !important;
+                line-height: 20px !important;
+                color: #001a38 !important;
+                font-family: 'Roboto Condensed' !important;
+                margin-bottom: 16px;
+
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+
+                span {
+                    color: $light-blue;
+                }
+            }
+
+            
+        }
+        @include breakpoint(medium down) {
+            width: 100%;
+        }
+    }
+    @include breakpoint(medium down) {
+        padding: 1.5rem 0 3rem;
+    }
+}
+
+#Biography {
+    @include breakpoint(medium down) {
+        padding-top: 1rem;
+    }
+}

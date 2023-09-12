@@ -1,0 +1,31 @@
+.js-single-oven-media
+
+  &.is-playing
+    @apply tw-bg-white
+
+    .js-oven-video-play
+      @apply tw-w-[40px] tw-h-[40px] tw-bg-orange-500/90 tw-top-0 tw-right-0 -tw-translate-y-full tw-mt-6 tw-mr-6
+      @screen md
+        @apply tw-w-[50px] tw-h-[50px] tw-translate-x-full
+
+      .fa-xmark
+        @apply tw-text-4xl
+        @screen md
+          @apply tw-text-5xl
+
+    #js-oven-player
+      @apply tw-bg-white
+
+  .js-oven-video-play
+    @apply tw-w-[100px] tw-h-[100px] tw-bg-gray-900/40 tw-absolute tw-top-1/2 tw-right-1/2 tw-translate-x-1/2 -tw-translate-y-1/2 tw-transition-all tw-duration-300 tw-ease-in-out
+
+    .fa-xmark
+      @apply tw-text-[0px] tw-transition-all tw-duration-150 tw-ease-in-out
+
+  .media-loader
+    @apply tw-overflow-hidden tw-absolute tw-inset-0
+
+    iframe,
+    object,
+    embed
+      @apply tw-w-full tw-h-full
